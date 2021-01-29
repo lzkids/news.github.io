@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-29T08:14:38.145Z</updated>
+  <updated>2021-01-29T10:54:26.821Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>DeepLTranslate翻译</title>
+    <link href="http://kisskisso.com/2021/01/29/DeepLTranslate%E7%BF%BB%E8%AF%91/"/>
+    <id>http://kisskisso.com/2021/01/29/DeepLTranslate%E7%BF%BB%E8%AF%91/</id>
+    <published>2021-01-29T09:45:25.000Z</published>
+    <updated>2021-01-29T10:54:26.821Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/deelp_2021-01-29%20185315.png" alt=""></p><p> <span class="exturl"><a class="exturl__link" href="https://www.deepl.com/translator" target="_blank" rel="noopener">DeepL</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是人工智能语言辅助，训练人工智能来理解和翻译文本。系统能快速、自动地识别语言，将单词转化为你想要的语言，并尝试添加特殊的语言细微差别和表达方式。拥有神经性网络。官网支持中文。支持网页翻译和客户端翻译<span class="exturl"><a class="exturl__link" href="https://www.deepl.com/app" target="_blank" rel="noopener">下载地址</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/deelp_2021-01-29%20185315.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;span class=&quot;exturl&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>推荐RSS网站</title>
     <link href="http://kisskisso.com/2021/01/29/%E6%8E%A8%E8%8D%90RSS%E7%BD%91%E7%AB%99/"/>
     <id>http://kisskisso.com/2021/01/29/%E6%8E%A8%E8%8D%90RSS%E7%BD%91%E7%AB%99/</id>
     <published>2021-01-29T08:02:09.000Z</published>
-    <updated>2021-01-29T08:14:38.145Z</updated>
+    <updated>2021-01-29T09:34:08.130Z</updated>
     
     <content type="html"><![CDATA[<p>游戏时光头条：<span class="exturl"><a class="exturl__link" href="https://www.vgtime.com/rss.jhtml" target="_blank" rel="noopener">https://www.vgtime.com/rss.jhtml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>青柠学术：<span class="exturl"><a class="exturl__link" href="https://iseex.github.io/feed.xml" target="_blank" rel="noopener">https://iseex.github.io/feed.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>少数派：<span class="exturl"><a class="exturl__link" href="https://sspai.com/feed" target="_blank" rel="noopener">https://sspai.com/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>森林集：<span class="exturl"><a class="exturl__link" href="https://senlinjimore.com/archives/category/%e8%bd%af%e4%bb%b6/%e7%94%b5%e8%84%91/feed" target="_blank" rel="noopener">https://senlinjimore.com/archives/category/%25e8%25bd%25af%25e4%25bb%25b6/%25e7%2594%25b5%25e8%2584%2591/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>数码荔枝：<span class="exturl"><a class="exturl__link" href="https://www.lizhi.io/feed/" target="_blank" rel="noopener">https://www.lizhi.io/feed/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>小众软件：<span class="exturl"><a class="exturl__link" href="https://www.appinn.com/feed/" target="_blank" rel="noopener">https://www.appinn.com/feed/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>知乎日报：<span class="exturl"><a class="exturl__link" href="http://feedmaker.kindle4rss.com/feeds/zhihu-daily.xml" target="_blank" rel="noopener">http://feedmaker.kindle4rss.com/feeds/zhihu-daily.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>178动漫频道：<span class="exturl"><a class="exturl__link" href="http://acg.178.com/s/rss.xml" target="_blank" rel="noopener">http://acg.178.com/s/rss.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>反斗软件：<span class="exturl"><a class="exturl__link" href="http://www.apprcn.com/feed" target="_blank" rel="noopener">http://www.apprcn.com/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>更新中……</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -540,33 +565,6 @@
     
     
       <category term="http重定向" scheme="http://kisskisso.com/tags/http%E9%87%8D%E5%AE%9A%E5%90%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何正确删除linux分区</title>
-    <link href="http://kisskisso.com/2020/08/19/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4linux%E5%88%86%E5%8C%BA/"/>
-    <id>http://kisskisso.com/2020/08/19/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4linux%E5%88%86%E5%8C%BA/</id>
-    <published>2020-08-19T06:25:17.000Z</published>
-    <updated>2021-01-26T10:26:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p> 原因：</p><p>​         当初装双系统低估了win10的占量，高估了linux的占量。导致win10空间急速下降，之后找到了cmd终端替代品。就打算删除linux分区，（win10并不识别linux分区）就直接在win10自带的磁盘管理系统，直接删除了分区。结果导致开机无法正常启动系统</p><p>解决办法：</p><p>1、启动进入Windows系统</p><p>2、下载Mbrfix</p><p>3、解压到C盘根目录下 </p><p>4、打开Windows命令行，也就是开始－运行－打入cmd<a id="more"></a></p><p>5、在命令行下，键入：cd，然后回车</p><p>在键入：mbrfix /drive 0 fixmbr /yes回车</p><p>6、进入磁盘管理器，把将要删除的Ubuntu分区删除，这里说明一下，其实大家都知道哈，就是Windows里边有ntfs和fat格式，所以非Windows格式的分区即是Ubuntu的分区。</p><p>7、右键新的分区，点击创建新的逻辑分区。</p><p>8、重启，ok！</p><p>如果说你像我一样已经删除了linux，无法进入，而我的做法是在安装一遍linux系统，然后在像上面操作一样</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 原因：&lt;/p&gt;
-&lt;p&gt;​         当初装双系统低估了win10的占量，高估了linux的占量。导致win10空间急速下降，之后找到了cmd终端替代品。就打算删除linux分区，（win10并不识别linux分区）就直接在win10自带的磁盘管理系统，直接删除了分区。结果导致开机无法正常启动系统&lt;/p&gt;
-&lt;p&gt;解决办法：&lt;/p&gt;
-&lt;p&gt;1、启动进入Windows系统&lt;/p&gt;
-&lt;p&gt;2、下载Mbrfix&lt;/p&gt;
-&lt;p&gt;3、解压到C盘根目录下 &lt;/p&gt;
-&lt;p&gt;4、打开Windows命令行，也就是开始－运行－打入cmd&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
     
   </entry>
   

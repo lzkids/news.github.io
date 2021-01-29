@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Life</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kisskisso.com/"/>
+  <updated>2021-01-29T05:20:32.000Z</updated>
+  <id>http://kisskisso.com/</id>
+  
+  <author>
+    <name>唯獨少了個字</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用wsl部署博客报错</title>
+    <link href="http://kisskisso.com/2021/01/29/%E7%94%A8wsl%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E6%8A%A5%E9%94%99/"/>
+    <id>http://kisskisso.com/2021/01/29/%E7%94%A8wsl%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E6%8A%A5%E9%94%99/</id>
+    <published>2021-01-29T05:12:01.000Z</published>
+    <updated>2021-01-29T05:20:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何删除鼠标右键的cmder</title>
+    <link href="http://kisskisso.com/2021/01/29/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E7%9A%84cmder/"/>
+    <id>http://kisskisso.com/2021/01/29/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E7%9A%84cmder/</id>
+    <published>2021-01-29T03:39:43.000Z</published>
+    <updated>2021-01-29T07:13:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>如何删除鼠标右键选项的cmder（或其他添加到文件目录中的应用）</strong></p><p>1.打开注册表设置（打开方式：直接搜索“注册表”或者win + r → regedit） <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%89%93%E5%BC%80%E6%B3%A8%E5%86%8C%E8%A1%A8%202021-01-29%20114632.png" alt=""></p><p>2.找到HKEY_CLASSES_ROOT → Directory → Background → cmder（删除选项）</p><p>或者打开注册表之后，编辑 –&gt;查找 –&gt;输入cmder进行查找</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;如何删除鼠标右键选项的cmder（或其他添加到文件目录中的应用）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.打开注册表设置（打开方式：直接搜索“注册表”或者win + r → regedit）&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>入门oh-my-zsh</title>
+    <link href="http://kisskisso.com/2021/01/28/%E5%85%A5%E9%97%A8oh-my-zsh/"/>
+    <id>http://kisskisso.com/2021/01/28/%E5%85%A5%E9%97%A8oh-my-zsh/</id>
+    <published>2021-01-28T12:05:34.000Z</published>
+    <updated>2021-01-29T03:17:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Oh-my-zsh是一个开源的、社区驱动的管理zsh的框架，它是免费的。它有超过180个可选的插件（rails、git……），超过120个主题和一个自动更新工具来保持oh-my-zsh的最新状态。</p></blockquote><p>在本教程中，我将指导你在你的PC/笔记本电脑上安装它。最大的好处是你可以自定义你的Shell和添加插件。不像老式的Bash shell，它看起来并不吸引人，当你大量使用命令行工作时，会让你很难使用。</p>        <h4 id="前提条件">          <a href="#前提条件" class="heading-link"><i class="fas fa-link"></i></a><a href="#前提条件" class="headerlink" title="前提条件"></a><strong>前提条件</strong></h4>      <ul><li>Linux 和 macOS，因为 oh-my-zsh 在基于 Unix 的操作系统上工作得最好。</li><li>WSL(Windows Subsystem for Linux)也可以和oh-my-zsh一起工作。<a id="more"></a></li><li>zsh必须是预装的，在OSX中，它已经被预装了。在OSX中，它已经被预装了。在 Linux 中，你需要在终端中输入命令来安装。</li><li>curl或wget必须安装.</li><li>对于Debian/Ubuntu，你需要在终端输入命令：必须安装curl或wget。</li></ul><pre><code class="shell">sudo apt-get installl zsh</code></pre><ul><li><p>对于Fedora：</p><pre><code class="shell">sudo yum install zsh</code></pre><p>下载oh-my-zsh</p><p>通过curl</p><pre><code class="shell">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh</code></pre><p>通过wget</p><pre><code class="shell">wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh</code></pre><p>更改默认shell</p><pre><code class="shell">chsh -s /bin/zsh</code></pre><p>对于某些操作系统，可能需要重新启动计算机才能生效。</p></li></ul>        <h4 id="更换终端主题">          <a href="#更换终端主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#更换终端主题" class="headerlink" title="更换终端主题"></a><strong>更换终端主题</strong></h4>      <p>现在你已经成功安装了 oh-my-zsh。你需要改变适合你的主题，而不是使用默认的。要改变它，你需要修改<code>.zshrc</code>文件:</p><pre><code class="shell">vim ~/.zshrc</code></pre><p>在本教程中，我使用的是vim文本编辑器，如果你喜欢可以使用其他的文本编辑器。接下来，在文件中找到这一行:</p><pre><code class="shell">ZSH_THEME="robbyrussell"</code></pre><p>把名字 “robbyrussell “改为另一个主题的名字。你可以看看这个网站上的所有可用的<span class="exturl"><a class="exturl__link" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>最后，只要重启终端，你就会看到不同的效果。</p>        <h4 id="添加插件">          <a href="#添加插件" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加插件" class="headerlink" title="添加插件"></a><strong>添加插件</strong></h4>      <p>在.zshrc文件中，你需要编辑以 “plugins “字样开头的一行:</p><pre><code class="shell">plugins=(git bundler osx rake ruby)</code></pre><p>如果你喜欢，你可以添加更多或删除插件。要使用这些插件，大多数插件都有README文件，其中记录了如何使用它们。</p>        <h4 id="自动补全与⬆">          <a href="#自动补全与⬆" class="heading-link"><i class="fas fa-link"></i></a><a href="#自动补全与⬆" class="headerlink" title="自动补全与⬆"></a><strong>自动补全与⬆</strong></h4>      <p>在Bash shell中，你可以使用Ctrl + R和⬆来自动填写最近的和匹配的命令。</p><p>使用 oh-my-zsh，还有另一种方法：你可以输入你想要的命令的起始词，然后按 ⬆来循环浏览历史记录。</p>        <h4 id="用Tab键自动完成">          <a href="#用Tab键自动完成" class="heading-link"><i class="fas fa-link"></i></a><a href="#用Tab键自动完成" class="headerlink" title="用Tab键自动完成"></a><strong>用Tab键自动完成</strong></h4>      <p>在Bash shell中，你可以输入关键字，然后按Tab键显示匹配命令列表，但是你需要在列表中循环并记住你想要的名称，并手动进一步输入以完成。</p><p>有了oh-my-zsh，事情就好办了，第一次按Tab键后，可以按第二次，允许在列表中循环，选择你想要的命令，然后它会自动填入剩下的单词，最后只要按Enter键就可以了。比如说：</p><ol><li>第一次输入并按Tab键<code>doc</code></li></ol><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/apt_2021-01-29%20105236.png" alt=""></p><p>  2.第二次按Tab键，然后按Tab键进行上、下、左、右循环。</p>        <h4 id="更新-oh-my-zsh">          <a href="#更新-oh-my-zsh" class="heading-link"><i class="fas fa-link"></i></a><a href="#更新-oh-my-zsh" class="headerlink" title="更新 oh-my-zsh"></a><strong>更新 oh-my-zsh</strong></h4>      <p>它会自动更新，但如果你想手动更新，只需在终端机上输入以下命令即可。</p><pre><code class="shell">omz update</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Oh-my-zsh是一个开源的、社区驱动的管理zsh的框架，它是免费的。它有超过180个可选的插件（rails、git……），超过120个主题和一个自动更新工具来保持oh-my-zsh的最新状态。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在本教程中，我将指导你在你的PC/笔记本电脑上安装它。最大的好处是你可以自定义你的Shell和添加插件。不像老式的Bash shell，它看起来并不吸引人，当你大量使用命令行工作时，会让你很难使用。&lt;/p&gt;
+
+        &lt;h4 id=&quot;前提条件&quot;&gt;
+          &lt;a href=&quot;#前提条件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前提条件&quot; class=&quot;headerlink&quot; title=&quot;前提条件&quot;&gt;&lt;/a&gt;&lt;strong&gt;前提条件&lt;/strong&gt;&lt;/h4&gt;
+      &lt;ul&gt;
+&lt;li&gt;Linux 和 macOS，因为 oh-my-zsh 在基于 Unix 的操作系统上工作得最好。&lt;/li&gt;
+&lt;li&gt;WSL(Windows Subsystem for Linux)也可以和oh-my-zsh一起工作。&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="omz" scheme="http://kisskisso.com/tags/omz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux入门指南-一</title>
+    <link href="http://kisskisso.com/2021/01/28/Linux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E4%B8%80/"/>
+    <id>http://kisskisso.com/2021/01/28/Linux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E4%B8%80/</id>
+    <published>2021-01-28T07:56:29.000Z</published>
+    <updated>2021-01-28T08:53:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Linux-是什么？">          <a href="#Linux-是什么？" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-是什么？" class="headerlink" title="Linux 是什么？"></a><strong>Linux 是什么？</strong></h3>      <p>Linux 是一个开源操作系统和 IT 基础架构平台。它由 Linus Torvalds 于 1991 年构思设计而成，</p>        <h3 id="Linux-的优点">          <a href="#Linux-的优点" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-的优点" class="headerlink" title="Linux 的优点"></a>Linux 的优点</h3>      <p>跨平台的硬件支持</p><p>低资源占用下良好的稳定性</p><p>高效的文件系统</p><p>可靠的安全性 <a id="more"></a></p><p>完善纯净的软件包管理机制</p><p>随心所欲定制 UI</p><p>社区的支持</p><p>开源</p>        <h3 id="哪些大众用户比较适合-Linux-桌面版？">          <a href="#哪些大众用户比较适合-Linux-桌面版？" class="heading-link"><i class="fas fa-link"></i></a><a href="#哪些大众用户比较适合-Linux-桌面版？" class="headerlink" title="哪些大众用户比较适合 Linux 桌面版？"></a>哪些大众用户比较适合 Linux 桌面版？</h3>      <p>学习和探索</p><p>业余个人内容创作</p><p>极度重视安全和隐私</p><p>机器已经跑不动 Windows / macOS</p>        <h3 id="Linux-上软件有多少？">          <a href="#Linux-上软件有多少？" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-上软件有多少？" class="headerlink" title="Linux 上软件有多少？"></a>Linux 上软件有多少？</h3>      <p>网页版应用</p><p>支持同类网络传输协议的客户端</p><p>任务自动化服务</p><p>即时通讯软件内置的聊天机器人</p><p>Wine 兼容运行 Windows 应用</p><p>模拟器兼容运行 Android 应用</p><p>虚拟机软件模拟运行 macOS 或 Windows 系统</p>        <h3 id="总结">          <a href="#总结" class="heading-link"><i class="fas fa-link"></i></a><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3>      <p>Linux 因为其完全模块化的基理，干净得像水一样。水本身无固定的形态，它可以随环境而作出适应，让自己变成外物的形态。</p><p>所以，朋友，像水一样吧！</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Linux-是什么？&quot;&gt;
+          &lt;a href=&quot;#Linux-是什么？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Linux 是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;Linux 是什么？&lt;/strong&gt;&lt;/h3&gt;
+      &lt;p&gt;Linux 是一个开源操作系统和 IT 基础架构平台。它由 Linus Torvalds 于 1991 年构思设计而成，&lt;/p&gt;
+
+        &lt;h3 id=&quot;Linux-的优点&quot;&gt;
+          &lt;a href=&quot;#Linux-的优点&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux-的优点&quot; class=&quot;headerlink&quot; title=&quot;Linux 的优点&quot;&gt;&lt;/a&gt;Linux 的优点&lt;/h3&gt;
+      &lt;p&gt;跨平台的硬件支持&lt;/p&gt;
+&lt;p&gt;低资源占用下良好的稳定性&lt;/p&gt;
+&lt;p&gt;高效的文件系统&lt;/p&gt;
+&lt;p&gt;可靠的安全性&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="语言与Linux" scheme="http://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hyper终端简单配置</title>
+    <link href="http://kisskisso.com/2021/01/28/Hyper%E7%BB%88%E7%AB%AF%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/"/>
+    <id>http://kisskisso.com/2021/01/28/Hyper%E7%BB%88%E7%AB%AF%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-01-28T05:31:28.000Z</published>
+    <updated>2021-01-28T11:53:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>  <span class="exturl"><a class="exturl__link" href="https://hyper.is/" target="_blank" rel="noopener">Hyper</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是一个开源的、全平台适用的、有着丰富主题和插件的现代化终端。</p><p>打开之后是默认的cmd，更改顺序是左上角Edit—&gt;Preferences如图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/komi_2021-01-28_13-37-46.png" alt=""></p><p>打开之后是一个.hyper.js的文件找到shell，在引号内写入<code>C:\\Windows\\System32\\bash.exe</code> 如图 <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/shell_2021-01-28_13-44-18.png" alt=""></p><p>当然前提是有子系统，更改主题找到<code>plugins</code>(在.hyper.js里) 填入你喜欢的<span class="exturl"><a class="exturl__link" href="https://hyper.is/themes" target="_blank" rel="noopener">主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> （hyperterm-monokai）</p><p>如果要切换zsh则需要在Preferences的shell在引号内写入<code>C:\\Windows\\System32\\wsl.exe</code> 和<code>shellArgs: ['~']</code>如图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-28%20192821.png" alt=""></p><p><strong>下载插件</strong> </p><p>推荐这两个插件，<span class="exturl"><a class="exturl__link" href="https://hyper.is/plugins" target="_blank" rel="noopener">其它插件</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><pre><code class="bash"> # hyper-opacity,解决windows下hyper原生不支持的窗口透明化 hyper i hyper-opacity # Hyper的扩展，可以打开电源模式，并有额外的哇模式。 hyper i hyperpower # 在 Hyper 终端启动之前和之后初始化命令的终极和最完整的扩展 hyper i hyper-init</code></pre><p>在Hyper安装会报错，需要在管理员Windows PowerShell中下载或者管理员cmd中下载</p><p>安装成功如下图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-28%20194803.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  &lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://hyper.is/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hyper&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 是一个开源的、全平台适用的、有着丰富主题和插件的现代化终端。&lt;/p&gt;
+&lt;p&gt;打开之后是默认的cmd，更改顺序是左上角Edit—&amp;gt;Preferences如图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/komi_2021-01-28_13-37-46.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开之后是一个.hyper.js的文件找到shell，在引号内写入&lt;code&gt;C:\\Windows\\System32\\bash.exe&lt;/code&gt; 如图&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="终端" scheme="http://kisskisso.com/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>子系统下不识别u盘</title>
+    <link href="http://kisskisso.com/2021/01/28/%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%B8%8D%E8%AF%86%E5%88%ABu%E7%9B%98/"/>
+    <id>http://kisskisso.com/2021/01/28/%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%B8%8D%E8%AF%86%E5%88%ABu%E7%9B%98/</id>
+    <published>2021-01-28T05:03:53.000Z</published>
+    <updated>2021-01-28T05:28:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Windows下Linux不识别U盘的解决办法">          <a href="#Windows下Linux不识别U盘的解决办法" class="heading-link"><i class="fas fa-link"></i></a><a href="#Windows下Linux不识别U盘的解决办法" class="headerlink" title="Windows下Linux不识别U盘的解决办法"></a>Windows下Linux不识别U盘的解决办法</h1>      <p>在终端进入<code>/mnt/</code> 在终端输入<code>sudo mkdir /mnt/d</code>然后紧接输入<code>sudo mount -t drvfs D: /mnt/d</code></p><p>现在，能够访问D：驱动器的文件。如果卸载驱动器以便安全地将其卸载下时，运行以下命令：<code>sudo umount /mnt/d</code></p><p>具体的内容请访问<span class="exturl"><a class="exturl__link" href="https://docs.microsoft.com/zh-cn/archive/blogs/wsl/file-system-improvements-to-the-windows-subsystem-for-linux" target="_blank" rel="noopener">微软文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Windows下Linux不识别U盘的解决办法&quot;&gt;
+          &lt;a href=&quot;#Windows下Linux不识别U盘的解决办法&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>windows10中的剪切版</title>
+    <link href="http://kisskisso.com/2021/01/27/windows10%E4%B8%AD%E7%9A%84%E5%89%AA%E5%88%87%E7%89%88/"/>
+    <id>http://kisskisso.com/2021/01/27/windows10%E4%B8%AD%E7%9A%84%E5%89%AA%E5%88%87%E7%89%88/</id>
+    <published>2021-01-27T12:31:49.000Z</published>
+    <updated>2021-01-28T01:06:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Windows中的剪切板使用基于云的剪贴板从一台电脑上复制图像和文本并粘贴到另一台电脑上。你不仅可以重剪贴板历史记录中粘贴，还可以固定发现自己经常使用的项目。</p><ol><li>若要随时访问剪贴板历史记录，请按 Windows 徽标键 + V。你还可以从剪贴板菜单中选择单个项来“粘贴”和“固定”常用的项。</li><li>若要在你的 Windows 10 设备之间共享剪贴板项目，请依次选择“开始”菜单 &gt;“设置” &gt;“系统”&gt;“剪贴板”。选择“跨设备同步”下的“自动同步我复制的文本”。同步功能与你的 Microsoft 帐户或工作帐户绑定，因此请记得在所有设备上使用相同的登录信息。</li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Windows中的剪切板使用基于云的剪贴板从一台电脑上复制图像和文本并粘贴到另一台电脑上。你不仅可以重剪贴板历史记录中粘贴，还可以固定发现自己经常使用的项目。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;若要随时访问剪贴板历史记录，请按 Windows 徽标键 + V。你还可以从剪贴板菜单中
+      
+    
+    </summary>
+    
+    
+      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>DirectoryOpus文件管理</title>
+    <link href="http://kisskisso.com/2021/01/27/DirectoryOpus%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"/>
+    <id>http://kisskisso.com/2021/01/27/DirectoryOpus%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</id>
+    <published>2021-01-27T07:06:07.000Z</published>
+    <updated>2021-01-27T07:28:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="DirectoryOpus">          <a href="#DirectoryOpus" class="heading-link"><i class="fas fa-link"></i></a><a href="#DirectoryOpus" class="headerlink" title="DirectoryOpus"></a>DirectoryOpus</h1>      <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/header.png" alt=""></p><p><span class="exturl"><a class="exturl__link" href="https://www.gpsoft.com.au/" target="_blank" rel="noopener">DirectoryOpus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是 Win 平台上de1资源管理器，功能最完全、可定制化程度高。可以通过 DO 完成几乎所有操作，包括查看图片元信息、预览图片、阅读文本文件内容、批量重命名、操作压缩文件以及 FTP 同步请求等</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;DirectoryOpus&quot;&gt;
+          &lt;a href=&quot;#DirectoryOpus&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#DirectoryOpus&quot; clas
+      
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小技巧</title>
+    <link href="http://kisskisso.com/2021/01/27/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>http://kisskisso.com/2021/01/27/%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-01-27T06:50:41.000Z</published>
+    <updated>2021-01-27T06:59:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="小技巧">          <a href="#小技巧" class="heading-link"><i class="fas fa-link"></i></a><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h1>      <ul><li>☺笑容会给你带来一整天的灿烂。</li><li>别犹豫别放弃，保持速度，不要慢下来。</li><li>没有必要为了别人而改变，别人总有离开的时候。改变应该是自发而主动的。</li><li>改变你的思考模式。</li><li>变是为了让自己快乐，为了别人而改变，不会长久的。</li><li>改变外在是改变内心的途径之一。</li><li>别人的想法不重要，要尊重你自己的想法。</li><li>有意识的去改变，要知道自己在做什么。</li><li>可以改变很多次，一切都处于运动变化中。</li><li>坚持。养成一个新习惯至少需要21天。第一天非常难，后来就会越来越简单。</li><li>一个人都有缺点，请做独一无二的你。</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;小技巧&quot;&gt;
+          &lt;a href=&quot;#小技巧&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何改变自己(一)</title>
+    <link href="http://kisskisso.com/2021/01/27/%E5%A6%82%E4%BD%95%E6%94%B9%E5%8F%98%E8%87%AA%E5%B7%B1-%E4%B8%80/"/>
+    <id>http://kisskisso.com/2021/01/27/%E5%A6%82%E4%BD%95%E6%94%B9%E5%8F%98%E8%87%AA%E5%B7%B1-%E4%B8%80/</id>
+    <published>2021-01-27T06:45:00.000Z</published>
+    <updated>2021-01-28T00:19:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何改变自己">          <a href="#如何改变自己" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何改变自己" class="headerlink" title="如何改变自己"></a>如何改变自己</h1>              <h3 id="前言">          <a href="#前言" class="heading-link"><i class="fas fa-link"></i></a><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3>      <p>大多数人会在某些时刻对自己的人生或者自我感到不满足。如果你意识到自己需要做出很大改变，那么你是幸运的。因为你有了这样的意识，就能够改变。重大的改变虽然令人望而生畏，但只要你目标明确、计划清晰就可以做到。行为上的改变，最终会带来对自身整体看法的改变。</p>        <h3 id="一-评估你的需求。">          <a href="#一-评估你的需求。" class="heading-link"><i class="fas fa-link"></i></a><a href="#一-评估你的需求。" class="headerlink" title="一.评估你的需求。"></a>一<strong>.评估你的需求</strong>。</h3>      <p><strong>1.发现问题。</strong>你决定要改变，原因和具体措施是什么？看清引起你改变的那个问题，分析问题是解决问题的必要前提。你要知道改变会带来哪些好处。</p><ul><li>态度积极。列出你身上能被自我欣赏的优点，如果你觉得这很难，那就想想别人对你的评价，在改正坏习惯的过程中，你可以拿你的优点作为参照。<a id="more"></a></li><li>简单来说，就是得明确你想要什么，别人对你的期待不等同于你自己的追求，假如你本身不渴望改变，那改变自然也不会发生。</li><li>然后，列出你之所以想改变的原因，把原因写在纸上，当你看见时就会有动力，这能够让你坚持下去。</li></ul><p><strong>2.自我肯定</strong>。认可自己的积极面，以此强化你的核心价值观，你就可以不断靠近理想中的自己，当然盲目的自我肯定并没有用，因为这种盲目无法激发你的潜能，而切合实际的肯定，可以让你保持积极心态，进而促使你更好的解决问题，有效的自我肯定。有效的自我肯定示例： </p><ul><li>用“我是”句式</li><li>用“我能”句式</li><li>用“我会”句式</li></ul><p><strong>3.将改变后的未来可视化。</strong>可视化是一种心理预演，帮助你设想一个不同的情景。抽象的可视化在脑海中进行，具体的可视化即收集一些和你的目标相关的图片。有效的可视化，帮你细化目标和调整目标。可视化还能培养你对环境和人生的控制力。操作步骤：</p><ul><li>闭上眼睛。</li><li>想象理想中未来的自己，你在哪？在做什么？环境发生了什么变化？那时的你什么样？哪些变化让你感到快乐？</li><li>试着探索理想中未来的细节。动用视觉，听觉，嗅觉，味觉去想象。细节具体化能够让可视化，更为真实。</li><li>运用积极的可视化帮你设立切实可行的阶段性目标。</li></ul><p><strong>4.好遇到障碍的准备。</strong>人生有很多事情无法预料，每一条改变之路都充斥着困难和别人的阻挠，那些困难和最终的成功相比都是小事，而且也终将被克服，你要坚信这一点，才能够成功。</p><ul><li>切合实际是应对任何困难的最佳途径，遇到障碍时不要责怪别人或他人，因为阻碍是正常的，而且必然会发生。</li></ul><p><strong>5.表面的失败中学习。</strong>很多时候你会觉得自己失败了，你没有达成目标，你遭遇坎坷，你不得不改变目标，但请你记住，失败只是表面的，实际上失败意义的新机遇，从失败中学得宝贵的经验，学会灵活的调整目标，这样你会更快乐。</p><p>6.耐心。要是改变是轻而易举就能做到的，那就没有什么价值了，成果比你预想中来的慢，有时候旁人能够一眼看到你的改变和成果，只是你自己还不知道而已，你每天都有细微的改变，所以自己无法察觉，但改变的确发生了。</p><ul><li>大目标分成小目标有益于对自己进行阶段性评估，每当达成一个小目标适当的奖励自己，这样你就可以保持前进的动力。</li></ul>        <h3 id="二-设立合理的目标。">          <a href="#二-设立合理的目标。" class="heading-link"><i class="fas fa-link"></i></a><a href="#二-设立合理的目标。" class="headerlink" title="二.设立合理的目标。"></a><strong>二.设立合理的目标。</strong></h3>      <p>1.在SMART法则指导下设立目标。定目标也是门艺术。目标定得好，才能够确保实现。SMART是5个英文单词首字母的集合，该法则是一个用于衡量目标的合理程度的有效工具。</p><ul><li>具体（Specific）／重要（Significant）</li><li>可衡量（Measurable）／有意义（Meaningful）</li><li>可达成（Achievable）／基于行动（Action-oriented）</li><li>相关（Relevant）／基于成果（Results-oriented）</li><li>有时限（Time-bound）／可追踪（Trackable）</li></ul><p><strong>2.制定具体的目标。</strong> 也就是说目标要有针对性。假如目标过于宽泛，就难以据此制定实现目标的行动方案。</p><p><strong>3.确保目标是可衡量的。</strong> 你得知道怎样算达成目标。要是无法判断目标实现与否，离现实还有多少距离，那样的目标是不可衡量的。</p><p><strong>4.确保目标可达成。</strong>根据每个人的能力不同，因人而异。判断一个目标是否可达成，要考虑很多因素。有些因素是人为不可控的。需要考虑的是自己是否有足够的知识与技能去实现目标。判断该目标实现的可能性。</p><p><strong>5.评估目标的相关性。</strong>这个标准对于阶段性目标来说，尤为重要。你的阶段性目标必须和总目标相关，并且逐步促进最终目标达成。不相关的目标对成功没有帮助。</p><p><strong>6.设定达成目标的时间</strong>。 有效的目标应当有时限，否则努力就没有意义。</p>        <h3 id="三-付诸行动。">          <a href="#三-付诸行动。" class="heading-link"><i class="fas fa-link"></i></a><a href="#三-付诸行动。" class="headerlink" title="三.付诸行动。"></a><strong>三.付诸行动。</strong></h3>      <p><strong>1.从现在开始。</strong> 别总想着明天再说，而明天又拖到后天。停止拖延是改变的第一步。如果你战胜不了拖延，那就不会有所成。</p><p><strong>2.把大目标分解为小目标。</strong> 总目标分解成阶段性目标，因为阶段性目标容易实现，带来的成就感使你继续努力的动力。</p><ul><li>永远的目标让人望而怯步，你先不要想的太过遥远，专注于第1个阶段性目标。</li><li>尝试定制倒推式日程。从总目标的实现日期往前推算各阶段目标的达成日期，直到推及现在，在总时间既定的情况下，你可能需要调整几次日程安排或者必要时调整总时间。</li><li>用倒推的办法安排日程，能够帮你推算出第1步该做什么，万事开头难知道第1步做什么，以后就会越来越顺利。</li></ul><p><strong>3.奖励自己</strong>。 积极的看待自己的进步给予合理的奖励，这对于实现长远目标也很有帮助，放松一下。</p><ul><li>但是奖励不该和目标相违背。</li></ul><p><strong>4.恰当运用情绪。</strong> 实现目标的过程中，你会有各种各样的情绪，这很正常，你需要学会借助这些情绪来促进目标的实现。</p><ul><li>当你实现一个阶段性目标，你应该开心开心，会让你更有动力继续努力。</li><li>当你遇到困难你会感到沮丧，沮丧会让你更专注目标。</li><li>当你接近目标时突然遇到阻碍，你会愤怒，把愤怒转化为最后一搏的动力。</li></ul><p><strong>5.走出自己的舒适区。</strong> 多数人喜欢做自己喜欢的事，然而如果你想做出一个重大改变，你必须走出自身的舒适区，但是不要担心，不适感会给你带来新视角，助你成长。</p><ul><li>我们要再次提及分解目标的好处。你觉得目标让人望而怯步时，你就先专注于实现第1个阶段性目标，这样能够减少畏惧。</li><li>向目标努力的过程中，试着走出自己的舒适区，这会让你开拓视野、增长经验、变得更积极。</li></ul>        <h3 id="四-回顾成绩">          <a href="#四-回顾成绩" class="heading-link"><i class="fas fa-link"></i></a><a href="#四-回顾成绩" class="headerlink" title="四.回顾成绩"></a><strong>四.回顾成绩</strong></h3>      <p><strong>1.保持动力。</strong>在改变自我的过程中，你会遇到意料之外的阻碍，这些时刻要尤为小心恰当的应对，让自己保持正确的方向。</p><ul><li>言出必行。</li><li>别让自己过于疲惫。</li><li>留意心理暗示。</li><li>找到志同道合的朋友。</li></ul><p><strong>2.记录并追踪感受。</strong> 记录自己的行为从中发现规律，以找到最有效的途径。</p><ul><li>你发现自己总是退回老习惯，无法改变时，写下时间、原因和细节。分析可能的因素。</li><li>记录你的进步。如果这天你表现不错，写下来回顾自己的进步，会让你保持前进的动力。</li></ul><p><strong>3.保持健康。</strong>身体健康什么事都变得更容易，身体健康，不仅提高生活质量，而且有助于保持积极的心态。</p><ul><li>合理饮食保证充足的睡眠，这是最基本的要求，毕竟改变自己和实现目标是很难的事情，你得用最佳的心理和身体状态来迎接挑战。</li><li>身体不好的时候先调整好自身的状态。健康快乐是第1位，其次才是想法和目标。</li></ul><p><strong>4.调整目标。</strong> 当你不断进步，在接近目标的过程中要不断调试，记录你的进步，据此调整计划，使它更适合你。</p><ul><li>当你进步飞速时，可以制定更有挑战性的新目标。</li><li>如果你没有达到预期的成绩，不要自责，把目标调整的更为合理，别因挫败而放弃。</li></ul><p><strong>5.坚持。</strong> 当你实现了预期的结果，不要停止努力，新的习惯需要花时间来保持，让自己慢慢适应新状态。</p><ul><li>让改变持续一生。</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;如何改变自己&quot;&gt;
+          &lt;a href=&quot;#如何改变自己&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#如何改变自己&quot; class=&quot;headerlink&quot; title=&quot;如何改变自己&quot;&gt;&lt;/a&gt;如何改变自己&lt;/h1&gt;
+      
+        &lt;h3 id=&quot;前言&quot;&gt;
+          &lt;a href=&quot;#前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/h3&gt;
+      &lt;p&gt;大多数人会在某些时刻对自己的人生或者自我感到不满足。如果你意识到自己需要做出很大改变，那么你是幸运的。因为你有了这样的意识，就能够改变。重大的改变虽然令人望而生畏，但只要你目标明确、计划清晰就可以做到。行为上的改变，最终会带来对自身整体看法的改变。&lt;/p&gt;
+
+        &lt;h3 id=&quot;一-评估你的需求。&quot;&gt;
+          &lt;a href=&quot;#一-评估你的需求。&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#一-评估你的需求。&quot; class=&quot;headerlink&quot; title=&quot;一.评估你的需求。&quot;&gt;&lt;/a&gt;一&lt;strong&gt;.评估你的需求&lt;/strong&gt;。&lt;/h3&gt;
+      &lt;p&gt;&lt;strong&gt;1.发现问题。&lt;/strong&gt;你决定要改变，原因和具体措施是什么？看清引起你改变的那个问题，分析问题是解决问题的必要前提。你要知道改变会带来哪些好处。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;态度积极。列出你身上能被自我欣赏的优点，如果你觉得这很难，那就想想别人对你的评价，在改正坏习惯的过程中，你可以拿你的优点作为参照。&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>知识点（一）</title>
+    <link href="http://kisskisso.com/2021/01/26/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>http://kisskisso.com/2021/01/26/%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2021-01-26T10:43:54.000Z</published>
+    <updated>2021-01-26T10:43:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="知识点">          <a href="#知识点" class="heading-link"><i class="fas fa-link"></i></a><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2>      <p>​          1.display:none *与visitibility:hidden  前者不保留位置,后者保留位置</p><p>​          2.额外标签法 overflow  伪元素法</p><p>​          3.css3盒子模型border-box中,盒子的width包含了conter+border+padding(实际宽高)</p><p>​         4.vertical-align:middle            vertical-align:top       vertical-align:bottom  </p><p>​         5.绝对定位元素可以配合除静态定位之外的所有定位属性使用。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;知识点&quot;&gt;
+          &lt;a href=&quot;#知识点&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#知识点&quot; class=&quot;headerlink&quot; title=&quot;知识点&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="知识点（一）" scheme="http://kisskisso.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我遇到的问题</title>
+    <link href="http://kisskisso.com/2021/01/26/%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/"/>
+    <id>http://kisskisso.com/2021/01/26/%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/</id>
+    <published>2021-01-26T10:42:16.000Z</published>
+    <updated>2021-01-26T10:42:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题">          <a href="#问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#问题" class="headerlink" title="问题"></a>问题</h2>      <ol><li><p>什么是行内块元素()?</p></li><li><p>什么是块元素 (占一整行)? </p></li><li><p>什么是行内元素(一行内显示的)</p></li><li><p>阴影的设置   box-shadow  :x轴 y轴  阴影大小 模糊程度  颜色 内阴影inset/外阴影(默认)   如果一分为二,需要设置模糊成度</p></li><li><p>权重问题 —- !&gt;行内式&gt;id选择器&gt;类选择器&gt;标签选择器&gt;通配符选择器&gt;浏览器默认&gt;继承选择<a id="more"></a></p></li><li><p>定位 ?  </p><p>绝对定位([absolute]不占位置) </p><p>相对定位(relative永远参照自身定位)</p><p>固定定位([fixed]浏览器的可是区域移动)</p></li><li><p>双伪元素的写法   (伪元素清除浮动)—(               )</p><pre><code class="css">①                                                 ②.clearfix:after{                           .clearfix:before, content:"";                                  .clearfix:after{  display:block;                                contrnt:"";    height:0;                                        display:table;visibitility:hidden;(隐藏)               } clear: both;                                   }.clearfix{*zoom:1;}</code></pre></li></ol><p>   ​      *zoom:1(ps:应该是这个)</p><ol start="8"><li><p>overflow的用法</p></li><li><p>相对路径和绝对路径</p></li><li><p>按钮部分</p></li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题&quot;&gt;
+          &lt;a href=&quot;#问题&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;什么是行内块元素()?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;什么是块元素 (占一整行)? &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;什么是行内元素(一行内显示的)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;阴影的设置   box-shadow  :x轴 y轴  阴影大小 模糊程度  颜色 内阴影inset/外阴影(默认)   如果一分为二,需要设置模糊成度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;权重问题 —- !&amp;gt;行内式&amp;gt;id选择器&amp;gt;类选择器&amp;gt;标签选择器&amp;gt;通配符选择器&amp;gt;浏览器默认&amp;gt;继承选择&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="问题" scheme="http://kisskisso.com/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第三方评论Gittalk</title>
+    <link href="http://kisskisso.com/2021/01/26/%E7%AC%AC%E4%B8%89%E6%96%B9%E8%AF%84%E8%AE%BA/"/>
+    <id>http://kisskisso.com/2021/01/26/%E7%AC%AC%E4%B8%89%E6%96%B9%E8%AF%84%E8%AE%BA/</id>
+    <published>2021-01-26T07:58:24.000Z</published>
+    <updated>2021-01-26T14:24:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p> <strong>前言</strong></p><p>如何给博客集成Gittalk。Gittalk是基于GitHub Issue开发的评论插件，它是把GitHub 的issue集成在hexo博客中。</p><p>首先你的hexo主题支持Gittalk。然后就是有个GitHub账号。</p><p><strong>配置Gittalk</strong></p>        <h3 id="Register-Application">          <a href="#Register-Application" class="heading-link"><i class="fas fa-link"></i></a><a href="#Register-Application" class="headerlink" title="Register Application"></a>Register Application</h3>      <p>在GitHub注册新应用<br>登录GitHub-&gt;点击头像-&gt;Setting-&gt;Developer settings-&gt;OAuth Apps-&gt;New OAuth App<br>顺序如图<a id="more"></a></p><p>1.</p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Developer%20settings.png" style="zoom: 67%;"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OAuth%20apps_2021-01-26_21-36-28.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%96%B0%E5%BB%BAOAuth_2021-01-26_21-37-58.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/michi_2021-01-26_21-58-01.png" alt=""></p>        <h3 id="config-yml">          <a href="#config-yml" class="heading-link"><i class="fas fa-link"></i></a><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3>      <p>在主题配置文件<code>xxx/_config.yml</code>中按需添加内容：</p><pre><code class="yml">gitalk:  enable: true  githubID: github帐号  # 例：xxx    repo: 仓库名称   # 例：xxxx.github.io  ClientID: Client ID  ClientSecret: Client Secret  adminUser: github帐号 #指定可初始化评论账户  labels: 'gitalk' #GitHub issues的标签  distractionFreeMode: true</code></pre><p>以上就是添加gitalk评论的配置，博客上传到GitHub上后，打开页面进入某一博客内容下，就可看到评论处。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如何给博客集成Gittalk。Gittalk是基于GitHub Issue开发的评论插件，它是把GitHub 的issue集成在hexo博客中。&lt;/p&gt;
+&lt;p&gt;首先你的hexo主题支持Gittalk。然后就是有个GitHub账号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置Gittalk&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;h3 id=&quot;Register-Application&quot;&gt;
+          &lt;a href=&quot;#Register-Application&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Register-Application&quot; class=&quot;headerlink&quot; title=&quot;Register Application&quot;&gt;&lt;/a&gt;Register Application&lt;/h3&gt;
+      &lt;p&gt;在GitHub注册新应用&lt;br&gt;登录GitHub-&amp;gt;点击头像-&amp;gt;Setting-&amp;gt;Developer settings-&amp;gt;OAuth Apps-&amp;gt;New OAuth App&lt;br&gt;顺序如图&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Gittalk" scheme="http://kisskisso.com/tags/Gittalk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简悦插件</title>
+    <link href="http://kisskisso.com/2021/01/25/%E7%AE%80%E6%82%A6%E6%8F%92%E4%BB%B6/"/>
+    <id>http://kisskisso.com/2021/01/25/%E7%AE%80%E6%82%A6%E6%8F%92%E4%BB%B6/</id>
+    <published>2021-01-25T07:31:37.000Z</published>
+    <updated>2021-01-26T10:06:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>简于型 · 悦于心</p><p> <span class="exturl"><a class="exturl__link" href="https://simpread.pro/" target="_blank" rel="noopener">简悦</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> - 为你提供「如杂志般沉浸式阅读体验」的扩展,免费使用，但是有些功能需要高级会员才能使用</p><p>阅读模式</p><p>独有功能，通过提取 标题 · 描述 ·正文 · 媒体 图片 / 视频 等资源<br>生成符合中文阅读习惯的页面，具有零干扰 · 沉浸式特点，适合深入阅读</p><p>聚焦模式</p><p>不改变当前页面的结构，仅仅高亮需要阅读的部分<br>适合临时阅读或者未适配阅读模式的网站</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;简于型 · 悦于心&lt;/p&gt;
+&lt;p&gt; &lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://simpread.pro/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简悦&lt;/a&gt;&lt;span cl
+      
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="插件" scheme="http://kisskisso.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notion笔记软件</title>
+    <link href="http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/</id>
+    <published>2021-01-23T06:22:46.000Z</published>
+    <updated>2021-01-26T09:26:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Notion">          <a href="#Notion" class="heading-link"><i class="fas fa-link"></i></a><a href="#Notion" class="headerlink" title="Notion"></a>Notion</h1>      <p><a href="https://www.notion.so" target="_blank" rel="noopener"><strong>Notion</strong></a>是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）<a id="more"></a></p><p>支持 谷歌插件 </p><p>IOS &amp; Android谷歌插件 </p><p>Mac &amp; Windows</p><p>Web Clipper</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Notion&quot;&gt;
+          &lt;a href=&quot;#Notion&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Notion&quot; class=&quot;headerlink&quot; title=&quot;Notion&quot;&gt;&lt;/a&gt;Notion&lt;/h1&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.notion.so&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Notion&lt;/strong&gt;&lt;/a&gt;是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SSH的建立</title>
+    <link href="http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/"/>
+    <id>http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/</id>
+    <published>2020-09-22T13:43:42.000Z</published>
+    <updated>2021-01-26T09:38:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code class="bash">ssh-keygen -t rsa -C "youremail"</code></pre><p>然后一路回车，生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p><pre><code class="bash">~/.ssh/id_rsa.pub</code></pre><p>打开<span class="exturl"><a class="exturl__link" href="https://github.com/" target="_blank" rel="noopener">github</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ssh-keygen -t rsa -C &quot;youremail&quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后一路回车，生成了&lt;code&gt;.ssh&lt;/code&gt;的文件夹。在你的电脑中找到这个文件夹。&lt;/p&gt;
+&lt;pre&gt;&lt;code class
+      
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="SSH" scheme="http://kisskisso.com/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS通用初始化</title>
+    <link href="http://kisskisso.com/2020/09/12/CSS%E9%80%9A%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+    <id>http://kisskisso.com/2020/09/12/CSS%E9%80%9A%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</id>
+    <published>2020-09-12T14:30:15.000Z</published>
+    <updated>2021-01-26T08:53:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p> 通用的CSS初始化（也许有用）</p><p><strong>什么是css初始化？</strong></p><p>CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，所以开发时的第一件事可能就是如何把它们统一。如果没对CSS初始化往往会出现浏览器之间的页面差异。</p><p><strong>为什么要初始化css？</strong></p><p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。<a id="more"></a></p><pre><code class="css">/*css reset*/    /*清除内外边距*/    body, h1, h2, h3, h4, h5, h6, p, hr, /*结构元素*/    ul, ol, li, dl, dt, dd, /*列表元素*/    form, fieldset, legend, input, button, select, textarea, /*表单元素*/    th, td, /*表格元素*/    pre {        padding: 0;        margin: 0;    }    /*重置默认样式*/    body, button, input, select, textarea {        /*font: 12px/1 微软雅黑, Tahoma, Helvetica, Arial, 宋体, sans-serif;*/        color: #333;        font: 12px/1 "Microsoft YaHei", Tahoma, Helvetica, Arial, SimSun, sans-serif;    }    h1, h2, h3, h4, h5, h6 {        font-size: 100%;        font-weight: normal;    }    em, i {        font-style: normal;    }    a {        text-decoration: none;    }    li {        list-style-type: none;        vertical-align: top;    }    img {        border: none;        /*display: block;*/        vertical-align: top;    }    textarea {        overflow: auto;        resize: none;    }    table {        border-spacing: 0;        border-collapse: collapse;    }/*常用公共样式*/    .fl {        float: left;        display: inline;    }    .fr {        float: right;        display: inline;    }    .cf:before,    .cf:after {        content: " ";        display: table;    }    .cf:after {        clear: both;    }    .cf {        *zoom: 1;    }</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 通用的CSS初始化（也许有用）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是css初始化？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，所以开发时的第一件事可能就是如何把它们统一。如果没对CSS初始化往往会出现浏览器之间的页面差异。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么要初始化css？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://kisskisso.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue完整框架大建</title>
+    <link href="http://kisskisso.com/2020/09/08/vue%E5%AE%8C%E6%95%B4%E6%A1%86%E6%9E%B6%E5%A4%A7%E5%BB%BA/"/>
+    <id>http://kisskisso.com/2020/09/08/vue%E5%AE%8C%E6%95%B4%E6%A1%86%E6%9E%B6%E5%A4%A7%E5%BB%BA/</id>
+    <published>2020-09-08T13:00:11.000Z</published>
+    <updated>2021-01-26T09:45:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-用vue-cli生成项目">          <a href="#1-用vue-cli生成项目" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-用vue-cli生成项目" class="headerlink" title="1.用vue-cli生成项目"></a><strong>1.用<code>vue-cli</code>生成项目</strong></h2>      <p>​     1.1 使用 vue create 创建一个项目</p><p>​          1.1.1在终端/cmd输入 vue create 项目名</p><p>​           1.1.2按下下方向键选择自定义配置    回车（Enter）</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/vue%E9%85%8D%E7%BD%AE.png" alt=""></p><p>   按 空格键 选择  <code>Router</code>、<code>Vuex</code>、<code>CSS Pre-processors</code>、<code>Linter / Formatter</code> 其它按照默认即可 。选好后  回车 <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%85%8D%E7%BD%AE1.png" alt=""></p><p>​            选择2.x版本（或按需选择）回车</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/vue%E9%A1%B9%E7%9B%AE2.png" alt=""></p><p>输入y 回车</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%A1%B9%E7%9B%AE4.png" alt=""></p><p> 选择 Less 作为css预处理器</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%A2%84%E7%BC%96%E8%AF%91less.png" alt=""></p><p>选择 Standard 代码风格</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC.png" alt=""></p><p>检查代码风格的时机：保存代码，提交代码 去做检查。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A3%80%E6%9F%A5%E4%BB%A3%E7%A0%81%E6%97%B6%E6%9C%BA.png" alt=""></p><p>依赖的工具，每一个工具对应生成一个配置文件。而不是统一写在package.json中。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%BE%9D%E8%B5%96%E5%B7%A5%E5%85%B7.png" alt=""></p><p>是否记录以上选择操作，方便下次快速创建。不记录，因为每次都不一样。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E8%AE%B0%E5%BD%95%E6%93%8D%E4%BD%9C.png" alt=""></p><p>创建成功</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%88%9B%E5%BB%BA%E6%88%90%E5%8A%9F.png" alt=""></p>        <h2 id="2-了解结构目录">          <a href="#2-了解结构目录" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-了解结构目录" class="headerlink" title="2.了解结构目录"></a><strong>2.了解结构目录</strong></h2>      <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E7%BB%93%E6%9E%84%E7%9B%AE%E5%BD%95.png" alt=""></p>        <h2 id="3-调整目录结构">          <a href="#3-调整目录结构" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-调整目录结构" class="headerlink" title="3.调整目录结构"></a><strong>3.调整目录结构</strong></h2>      <p>需要调整src的目录结构，分工明确，代码可维护性更好。</p><pre><code class="bash">src├─api            # 接口相关代码，axios相关代码├─assets         # 静态资源，css  images ...├─components     # 公用级别组件├─router         # 路由相关代码├─styles         # less相关代码├─utils          # 全局工具模块相关代码├─views          # 路由级别组件└─App.vue        # 根组件└─main.js        # 入口文件</code></pre>        <h2 id="4-安装常用的npm包">          <a href="#4-安装常用的npm包" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-安装常用的npm包" class="headerlink" title="4.安装常用的npm包"></a>4.安装常用的npm包</h2>      <pre><code>npm i axios  # 一款基于Promise API 的HTTP客户端   https://github.com/axios/axios</code></pre><pre><code>npm install mockjs    # 生成随机数据，拦截 Ajax 请求   http://mockjs.com/</code></pre><pre><code>npm install moment --save  # 一个轻量级的JS日期库，用于分析、校验、操作和格式化日期  http://momentjs.cn/</code></pre><pre><code>npm i --save lodash  # 一款JS库，封装了很多有用的JS API https://lodash.com/</code></pre><p>带更新中…..</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-用vue-cli生成项目&quot;&gt;
+          &lt;a href=&quot;#1-用vue-cli生成项目&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#1-用vue-cli生成项目&quot; class=&quot;headerlink&quot; title=&quot;1.用vue-cli生成项目&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.用&lt;code&gt;vue-cli&lt;/code&gt;生成项目&lt;/strong&gt;&lt;/h2&gt;
+      &lt;p&gt;​     1.1 使用 vue create 创建一个项目&lt;/p&gt;
+&lt;p&gt;​          1.1.1在终端/cmd输入 vue create 项目名&lt;/p&gt;
+&lt;p&gt;​           1.1.2按下下方向键选择自定义配置    回车（Enter）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/vue%E9%85%8D%E7%BD%AE.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;   按 空格键 选择  &lt;code&gt;Router&lt;/code&gt;、&lt;code&gt;Vuex&lt;/code&gt;、&lt;code&gt;CSS Pre-processors&lt;/code&gt;、&lt;code&gt;Linter / Formatter&lt;/code&gt; 其它按照默认即可 。选好后  回车&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="vue" scheme="http://kisskisso.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP重定向</title>
+    <link href="http://kisskisso.com/2020/08/30/HTTP%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    <id>http://kisskisso.com/2020/08/30/HTTP%E9%87%8D%E5%AE%9A%E5%90%91/</id>
+    <published>2020-08-30T14:14:56.000Z</published>
+    <updated>2021-01-26T09:05:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTTP的重定向">          <a href="#HTTP的重定向" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP的重定向" class="headerlink" title="HTTP的重定向"></a>HTTP的重定向</h1>      <p>One of the most common and largely overlooked vulnerabilities by web developers is Open Redirect (also known as “Unvalidated Redirects and Forwards”).</p><blockquote><p>其中一个最常见的，也是大部分被网站开发者忽视的漏洞是开放重定向（也称为 “无效重定向和转发”）。</p></blockquote><p>  A website is vulnerable to Open Redirect when parameter values (the portion of URL after “?”) in an HTTP GET request allow for information that will redirect a user to a new website without any validation of the target of redirect.<a id="more"></a></p><blockquote><p>当HTTP GET请求中的参数值（”? “后的部分URL）允许提供信息，将用户重定向到一个新的网站，而不对重定向的目标进行任何验证时，网站就会受到Open Redirect的攻击。</p></blockquote><p> Depending on the architecture of a vulnerable website, redirection could happen after certain action, such as login, and sometimes it could happen instantaneously upon loading of a page.</p><blockquote><p>根据易受攻击网站的架构，重定向可能会在某些操作后发生，如登录，有时也可能在页面加载时瞬间发生。</p></blockquote><p>An example of a vulnerable website link could look something like this: <span class="exturl"><a class="exturl__link" href="https://www.example.com/login.html?RelayState=http%3A%2F%2Fexample.com%2Fnext" target="_blank" rel="noopener">https://www.example.com/login.html?RelayState=http%3A%2F%2Fexample.com%2Fnext</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><blockquote><p>一个脆弱的网站链接的例子可能是这样的：: <span class="exturl"><a class="exturl__link" href="https://www.example.com/login.html?RelayState=http%3A%2F%2Fexample.com%2Fnext" target="_blank" rel="noopener">https://www.example.com/login.html?RelayState=http%3A%2F%2Fexample.com%2Fnext</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p></blockquote><p>In this example, “RelayState” parameter indicates where to send user upon successful login (In our example it is “<span class="exturl"><a class="exturl__link" href="http://example.com/next&quot;).If" target="_blank" rel="noopener">http://example.com/next").If</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> website doesn’t validate the “RelayState” parameter value to make sure that target web page is legitimate and intended, attacker  could manipulate that parameter to send a victim to a fake page crafted by attacker: <span class="exturl"><a class="exturl__link" href="https://www.example.com/login.html?RelayState=http%3A%2F%2FEvilWebsite.com" target="_blank" rel="noopener">https://www.example.com/login.html?RelayState=http%3A%2F%2FEvilWebsite.com</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><blockquote><p>在这个例子中，”RelayState “参数表示在用户成功登录后将用户发送到哪里（在我们的例子中是 “<span class="exturl"><a class="exturl__link" href="http://example.com/next&quot;）。如果网站没有验证" target="_blank" rel="noopener">http://example.com/next"）。如果网站没有验证</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> “RelayState “参数的值，以确保目标网页是合法的，攻击者可以操纵该参数，将受害者发送到一个由攻击者制作的虚假页面：<span class="exturl"><a class="exturl__link" href="https://www.example.com/login.html?RelayState=http%3A%2F%2FEvilWebsite.com。" target="_blank" rel="noopener">https://www.example.com/login.html?RelayState=http%3A%2F%2FEvilWebsite.com。</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p></blockquote><p>Open Redirect vulnerabilities don’t get enough attention from developers because they don’t directly damage website and do not allow an attacker to directly steal data that belong to the company. However, that doesn’t mean that Open Redirect attacks are not a threat. One of the main uses for this vulnerability is to make phishing attacks more credible and effective.</p><blockquote><p>开放式重定向漏洞没有引起开发者的足够重视，因为它们不会直接破坏网站，也不允许攻击者直接窃取数据，而这些数据是属于该公司。然而，这并不意味着Open Redirect攻击不构成威胁。这个漏洞的主要用途之一是使钓鱼攻击更加可信和有效。</p></blockquote><p>When an Open Redirect is used in a phishing attack, the victim receives an email that looks legitimate with a link that points to a correct and expected domain. What the victim may not notice, is that in a middle of a long URL there are parameters that manipulate and change where the link will take them.</p><blockquote><p>当开放重定向被用于网络钓鱼攻击时，受害者会收到一封看似合法的电子邮件，其中的链接指向一个正确的、预期的域名。受害者可能没有注意到的是，在长长的URL中间，有一些参数可以操纵和改变链接的位置。</p></blockquote><p> To make identification of the Open Redirect even more difficult, redirection could take place after victim provides login on a legitimate website first. Attackers have found that an effective way to trick a victim is to redirect him to a fake website after they enter their credentials on a legitimate page. The fake website would look identical to a legitimate website, and it would ask the victim to re-enter their password. After the victim re-enters their password it would be recorded by the attacker and victim would be redirected back to a valid website. If done correctly, victim would think that he mistyped password once and would not notice that his username and password were stolen.</p><blockquote><p>为了使识别开放重定向更加困难，重定向可能发生在受害者先提供登录合法网站之后。攻击者发现，欺骗受害者的有效方法是在受害者在合法网页上输入凭证后将其重定向到一个假网站。这个假网站看起来和合法网站一样，它会要求受害者重新输入密码。当受害者重新输入密码后，攻击者会记录下来，受害者会被重定向到一个有效的网站。如果操作得当，受害者会认为自己打错了一次密码，不会注意到自己的用户名和密码被盗。</p></blockquote><p>Phishing is used in most successful targeted hacks and also regularly in opportunistic attacks. Considering how prominent phishing is in our daily lives, Open Redirect vulnerabilities should not be dismissed.</p><blockquote><p>网络钓鱼被用于大多数成功的目标黑客，也经常用于机会主义攻击。考虑到网络钓鱼在我们的日常生活中是多么的突出，Open Redirect漏洞不应该被忽视。</p></blockquote><p>It would have been unfair to single out any specific website or company as being vulnerable to Open Redirect because so many companies have it. Instead, it’s more useful to demonstrate how common those websites are and how easy it is to find them.</p><blockquote><p>如果单独指出任何特定的网站或公司容易受到开放重定向的影响，这是不公平的，因为有这么多公司都有这种情况。相反，更有用的是展示这些网站有多普遍，以及找到它们有多容易。</p></blockquote><p>Doing a web search is one of the best tools to find Open Redirect on your own website and across a wider Internet.</p><blockquote><p>进行网络搜索是在自己的网站和更广泛的互联网上找到Open Redirect(开放重定向)的最佳工具之一。</p></blockquote><p>Google Search allows for a great flexibility in writing search queries, including queries that specifically search through URLs of pages.</p><blockquote><p>Google搜索可以非常灵活地编写搜索查询，包括专门通过网页的URL进行搜索的查询。</p></blockquote><p>The following operators and special symbols allow anyone to craft very targeted Google Searches for finding Open Redirects:</p><blockquote><p>以下操作符和特殊符号使任何人都可以针对特定的Google搜索，以查找开放重定向：</p></blockquote><p><strong>allinurl</strong> - operator that tells Google to search within URL for all provided keywords</p><p>Example: allinurl:ReturnUrl which searches for web pages that have “ReturnUrl” as part of their URL</p><blockquote><p>allinurl - 操作符，告诉谷歌在URL中搜索所有提供的关键字。</p><p>例如：allinurl:ReturnUrl，它可以搜索URL中含有 “ReturnUrl “的网页。</p></blockquote><p><strong>site</strong> - operator that tells to only return results that are on specific domain or a web site<br>Example: site:example.com which searches for web pages from example.com</p><blockquote><p>site - 操作符，指示只返回特定域名或网站上的结果。<br>例如：site:example.com可以搜索example.com的网页。</p></blockquote><p><strong>“”</strong> - double quotes are a special symbols that used to indicate to search for exact combination of words and symbols within quotes</p><blockquote><p>“”–双引号是一种特殊的符号，用来表示搜索引号内的单词和符号的精确组合。</p></blockquote><p>*- The asterisk is a wildcard that represents one or more words</p><blockquote><p>*- 星号是通配符，代表一个或多个词。</p></blockquote><p>Using these allows us to search for certain tell tale signs of potential Open Redirect:</p><p>We can look for the general presence of “http” or “https” within parameter area of GET request. For instance:</p><blockquote><p>使用这些可以让我们搜索某些潜在的开放重定向的迹象：</p><p>我们可以在GET请求的参数区域中寻找 “http “或 “https “的一般存在。例如，我们可以在GET请求的参数区寻找 “http “或 “https “的存在:</p></blockquote><p>allinurl:%3Dhttps*</p><p> allinurl:%253Dhttps* </p><p>allinurl:%3Dhttp* </p><p>allinurl:%253Dhttp*</p><p>We can also search for specific, common words related to forwarding within parameter area of GET request. For instance:</p><blockquote><p>我们还可以在GET请求的参数区中搜索与转发相关的特定的、常用的词。比如说:</p></blockquote><p>allinurl:”&lt;keyword&gt;=https” </p><p>allinurl:”&lt;keyword&gt;=http” </p><p>allinurl:&lt;keyword&gt;=https </p><p>allinurl:&lt;keyword&gt;=http </p><p>allinurl:&lt;keyword&gt;%3Dhttps </p><p>allinurl:”&lt;keyword&gt;%3Dhttps* “</p><p>allinurl:&lt;keyword&gt;%253Dhttps </p><p>allinurl:”&lt;keyword&gt;%253Dhttps* “</p><p>…</p><p>Instead of &lt;keyword&gt;, we would use one of the following words typical of redirects:RelayState, ReturnUrl, RedirectUri, Return, Return_url, Redirect, Redirect_uri, Redirect_url,RedirectUrl, Forward, ForwardUrl, Forward_URL, SuccessUrl, Redir, Exit_url, Destination. This is by no means a comprehensive list of keywords. You can find more by analyzing results from the more general queries looking for a URL in the parameter section of the GET request.</p><blockquote><p>我们将使用以下典型的重定向词来代替\keyword&gt;：RelayState，ReturnUrl，RedirectUri，Return，Return_url，Redirect，Redirect_uri，Redirect_url，RedirectUrl，Forward，ForwardUrl，Forward_URL，SuccessUrl，Redir，Exit_url，Destination。这绝不是一个全面的关键词列表。你可以通过分析GET请求的参数部分中寻找URL的更一般查询的结果来找到更多。</p></blockquote><p>For targeted searches, you can add “site:<domain_name>“ to the end of your Google Queries. This can help you identify Open Redirect vulnerabilities on your own website.</domain_name></p><blockquote><p>对于有针对性的搜索，你可以在Google查询的结尾添加 “site:<domain_name>“。这可以帮助你找出自己网站上的Open Redirect漏洞。</domain_name></p></blockquote><p>Using this simple search technique you can find dozens of Open Redirect vulnerabilities within minutes. List of vulnerable websites includes banking websites, websites of international corporations, trusted companies, beloved projects and numerous websites of smaller organizations. As an additional bonus, each time Google’s web crawler comes across new website that has Open Redirect, we will get updated results through our queries.</p><blockquote><p>使用这种简单的搜索技术，你可以在几分钟内找到几十个Open Redirect漏洞。易受攻击的网站列表包括银行网站、国际公司网站、值得信赖的公司、心爱的项目和众多小型组织的网站。作为额外的奖励，每次Google的网络爬虫遇到有Open Redirect的新网站，我们都会通过查询得到更新的结果。</p></blockquote><p>The best way to avoid Open Redirect vulnerability is to avoid redirecting based on parameter controlled by users or supplied through GET method. If redirecting is unavoidable,it can be dealt with by validating a redirect target and sanitizing it using whitelist of approved URLs.</p><blockquote><p>避免Open Redirect漏洞的最好方法是避免基于用户控制的参数或通过GET方法提供的重定向。如果重定向是不可避免的，可以通过验证重定向目标，并使用批准的URL白名单对其进行消毒处理。</p></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTTP的重定向&quot;&gt;
+          &lt;a href=&quot;#HTTP的重定向&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#HTTP的重定向&quot; class=&quot;headerlink&quot; title=&quot;HTTP的重定向&quot;&gt;&lt;/a&gt;HTTP的重定向&lt;/h1&gt;
+      &lt;p&gt;One of the most common and largely overlooked vulnerabilities by web developers is Open Redirect (also known as “Unvalidated Redirects and Forwards”).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中一个最常见的，也是大部分被网站开发者忽视的漏洞是开放重定向（也称为 “无效重定向和转发”）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  A website is vulnerable to Open Redirect when parameter values (the portion of URL after “?”) in an HTTP GET request allow for information that will redirect a user to a new website without any validation of the target of redirect.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="http重定向" scheme="http://kisskisso.com/tags/http%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何正确删除linux分区</title>
+    <link href="http://kisskisso.com/2020/08/19/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4linux%E5%88%86%E5%8C%BA/"/>
+    <id>http://kisskisso.com/2020/08/19/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4linux%E5%88%86%E5%8C%BA/</id>
+    <published>2020-08-19T06:25:17.000Z</published>
+    <updated>2021-01-26T10:26:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p> 原因：</p><p>​         当初装双系统低估了win10的占量，高估了linux的占量。导致win10空间急速下降，之后找到了cmd终端替代品。就打算删除linux分区，（win10并不识别linux分区）就直接在win10自带的磁盘管理系统，直接删除了分区。结果导致开机无法正常启动系统</p><p>解决办法：</p><p>1、启动进入Windows系统</p><p>2、下载Mbrfix</p><p>3、解压到C盘根目录下 </p><p>4、打开Windows命令行，也就是开始－运行－打入cmd<a id="more"></a></p><p>5、在命令行下，键入：cd，然后回车</p><p>在键入：mbrfix /drive 0 fixmbr /yes回车</p><p>6、进入磁盘管理器，把将要删除的Ubuntu分区删除，这里说明一下，其实大家都知道哈，就是Windows里边有ntfs和fat格式，所以非Windows格式的分区即是Ubuntu的分区。</p><p>7、右键新的分区，点击创建新的逻辑分区。</p><p>8、重启，ok！</p><p>如果说你像我一样已经删除了linux，无法进入，而我的做法是在安装一遍linux系统，然后在像上面操作一样</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 原因：&lt;/p&gt;
+&lt;p&gt;​         当初装双系统低估了win10的占量，高估了linux的占量。导致win10空间急速下降，之后找到了cmd终端替代品。就打算删除linux分区，（win10并不识别linux分区）就直接在win10自带的磁盘管理系统，直接删除了分区。结果导致开机无法正常启动系统&lt;/p&gt;
+&lt;p&gt;解决办法：&lt;/p&gt;
+&lt;p&gt;1、启动进入Windows系统&lt;/p&gt;
+&lt;p&gt;2、下载Mbrfix&lt;/p&gt;
+&lt;p&gt;3、解压到C盘根目录下 &lt;/p&gt;
+&lt;p&gt;4、打开Windows命令行，也就是开始－运行－打入cmd&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+</feed>

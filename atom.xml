@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-29T05:20:32.000Z</updated>
+  <updated>2021-01-29T08:14:38.145Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,28 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>用wsl部署博客报错</title>
-    <link href="http://kisskisso.com/2021/01/29/%E7%94%A8wsl%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E6%8A%A5%E9%94%99/"/>
-    <id>http://kisskisso.com/2021/01/29/%E7%94%A8wsl%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E6%8A%A5%E9%94%99/</id>
-    <published>2021-01-29T05:12:01.000Z</published>
-    <updated>2021-01-29T05:20:32.000Z</updated>
+    <title>推荐RSS网站</title>
+    <link href="http://kisskisso.com/2021/01/29/%E6%8E%A8%E8%8D%90RSS%E7%BD%91%E7%AB%99/"/>
+    <id>http://kisskisso.com/2021/01/29/%E6%8E%A8%E8%8D%90RSS%E7%BD%91%E7%AB%99/</id>
+    <published>2021-01-29T08:02:09.000Z</published>
+    <updated>2021-01-29T08:14:38.145Z</updated>
     
-    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>游戏时光头条：<span class="exturl"><a class="exturl__link" href="https://www.vgtime.com/rss.jhtml" target="_blank" rel="noopener">https://www.vgtime.com/rss.jhtml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>青柠学术：<span class="exturl"><a class="exturl__link" href="https://iseex.github.io/feed.xml" target="_blank" rel="noopener">https://iseex.github.io/feed.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>少数派：<span class="exturl"><a class="exturl__link" href="https://sspai.com/feed" target="_blank" rel="noopener">https://sspai.com/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>森林集：<span class="exturl"><a class="exturl__link" href="https://senlinjimore.com/archives/category/%e8%bd%af%e4%bb%b6/%e7%94%b5%e8%84%91/feed" target="_blank" rel="noopener">https://senlinjimore.com/archives/category/%25e8%25bd%25af%25e4%25bb%25b6/%25e7%2594%25b5%25e8%2584%2591/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>数码荔枝：<span class="exturl"><a class="exturl__link" href="https://www.lizhi.io/feed/" target="_blank" rel="noopener">https://www.lizhi.io/feed/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>小众软件：<span class="exturl"><a class="exturl__link" href="https://www.appinn.com/feed/" target="_blank" rel="noopener">https://www.appinn.com/feed/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>知乎日报：<span class="exturl"><a class="exturl__link" href="http://feedmaker.kindle4rss.com/feeds/zhihu-daily.xml" target="_blank" rel="noopener">http://feedmaker.kindle4rss.com/feeds/zhihu-daily.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>178动漫频道：<span class="exturl"><a class="exturl__link" href="http://acg.178.com/s/rss.xml" target="_blank" rel="noopener">http://acg.178.com/s/rss.xml</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>反斗软件：<span class="exturl"><a class="exturl__link" href="http://www.apprcn.com/feed" target="_blank" rel="noopener">http://www.apprcn.com/feed</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>更新中……</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-        
+        &lt;p&gt;游戏时光头条：&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://www.vgtime.com/rss.jhtml&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.vg
       
     
     </summary>
     
     
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="RSS" scheme="http://kisskisso.com/tags/RSS/"/>
     
   </entry>
   

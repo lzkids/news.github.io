@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-29T23:55:29.601Z</updated>
+  <updated>2021-01-30T01:08:45.646Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GoodSync同步备份</title>
+    <link href="http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/"/>
+    <id>http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/</id>
+    <published>2021-01-30T01:00:43.000Z</published>
+    <updated>2021-01-30T01:08:45.646Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png" alt=""></p><p> <span class="exturl"><a class="exturl__link" href="https://www.goodsync.com/cn" target="_blank" rel="noopener">GoodSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款备份和文件同步程序。它用于在一台计算机上的两个目录之间，或计算机与另一个存储设备（如另一台计算机、可移动磁盘、闪存驱动器或智能手机）之间，或计算机与远程计算机或服务器之间同步文件。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;span class=&quot;exturl&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux下如何切换root</title>
     <link href="http://kisskisso.com/2021/01/29/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E5%88%87%E6%8D%A2root/"/>
     <id>http://kisskisso.com/2021/01/29/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E5%88%87%E6%8D%A2root/</id>
     <published>2021-01-29T12:16:13.000Z</published>
-    <updated>2021-01-29T23:55:29.601Z</updated>
+    <updated>2021-01-29T23:56:14.004Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p> 如果想临时使用一下root权限，只需要在命令前面加上<code>sudo</code><br>如果想一直使用root权限，需要通过su切换到root用户：（不推荐一直使用）</p></blockquote>        <h3 id="重设root用户密码">          <a href="#重设root用户密码" class="heading-link"><i class="fas fa-link"></i></a><a href="#重设root用户密码" class="headerlink" title="重设root用户密码"></a><strong>重设root用户密码</strong></h3>      <pre><code class="shell">sudo passwd root</code></pre><p>根据提示，输入新root密码（不要和非root用户密码一样）</p>        <h3 id="切换root用户">          <a href="#切换root用户" class="heading-link"><i class="fas fa-link"></i></a><a href="#切换root用户" class="headerlink" title="切换root用户"></a><strong>切换root用户</strong></h3>      <pre><code class="shell">su</code></pre><p>输入root用户密码</p>        <h3 id="回到非root用户权限">          <a href="#回到非root用户权限" class="heading-link"><i class="fas fa-link"></i></a><a href="#回到非root用户权限" class="headerlink" title="回到非root用户权限"></a><strong>回到非root用户权限</strong></h3>      <p>使用<code>su “yc”</code>或者<code>exit</code>命令，回到用户权限</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -535,33 +560,6 @@
     
     
       <category term="SSH" scheme="http://kisskisso.com/tags/SSH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS通用初始化</title>
-    <link href="http://kisskisso.com/2020/09/12/CSS%E9%80%9A%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
-    <id>http://kisskisso.com/2020/09/12/CSS%E9%80%9A%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</id>
-    <published>2020-09-12T14:30:15.000Z</published>
-    <updated>2021-01-26T08:53:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p> 通用的CSS初始化（也许有用）</p><p><strong>什么是css初始化？</strong></p><p>CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，所以开发时的第一件事可能就是如何把它们统一。如果没对CSS初始化往往会出现浏览器之间的页面差异。</p><p><strong>为什么要初始化css？</strong></p><p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。<a id="more"></a></p><pre><code class="css">/*css reset*/    /*清除内外边距*/    body, h1, h2, h3, h4, h5, h6, p, hr, /*结构元素*/    ul, ol, li, dl, dt, dd, /*列表元素*/    form, fieldset, legend, input, button, select, textarea, /*表单元素*/    th, td, /*表格元素*/    pre {        padding: 0;        margin: 0;    }    /*重置默认样式*/    body, button, input, select, textarea {        /*font: 12px/1 微软雅黑, Tahoma, Helvetica, Arial, 宋体, sans-serif;*/        color: #333;        font: 12px/1 "Microsoft YaHei", Tahoma, Helvetica, Arial, SimSun, sans-serif;    }    h1, h2, h3, h4, h5, h6 {        font-size: 100%;        font-weight: normal;    }    em, i {        font-style: normal;    }    a {        text-decoration: none;    }    li {        list-style-type: none;        vertical-align: top;    }    img {        border: none;        /*display: block;*/        vertical-align: top;    }    textarea {        overflow: auto;        resize: none;    }    table {        border-spacing: 0;        border-collapse: collapse;    }/*常用公共样式*/    .fl {        float: left;        display: inline;    }    .fr {        float: right;        display: inline;    }    .cf:before,    .cf:after {        content: " ";        display: table;    }    .cf:after {        clear: both;    }    .cf {        *zoom: 1;    }</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 通用的CSS初始化（也许有用）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;什么是css初始化？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，所以开发时的第一件事可能就是如何把它们统一。如果没对CSS初始化往往会出现浏览器之间的页面差异。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为什么要初始化css？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="CSS" scheme="http://kisskisso.com/tags/CSS/"/>
     
   </entry>
   

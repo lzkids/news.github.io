@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-30T01:08:45.646Z</updated>
+  <updated>2021-01-30T11:16:23.280Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Nodejs本地版本出错</title>
+    <link href="http://kisskisso.com/2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/"/>
+    <id>http://kisskisso.com/2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/</id>
+    <published>2021-01-30T11:16:22.000Z</published>
+    <updated>2021-01-30T11:16:23.280Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo上传报错</title>
+    <link href="http://kisskisso.com/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/"/>
+    <id>http://kisskisso.com/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/</id>
+    <published>2021-01-30T07:06:26.000Z</published>
+    <updated>2021-01-30T10:14:47.793Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    电脑死循环自启重置电脑后，安装node出错</p><pre><code>(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(Use `node --trace-warnings ...` to show where the warning was created)(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency</code></pre><p>node版本过高</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    电脑死循环自启重置电脑后，安装node出错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(node:11276) Warning: Accessing non-existent property &#39;lineno&#39; of module exports inside circula
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>GoodSync同步备份</title>
     <link href="http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/"/>
     <id>http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/</id>
     <published>2021-01-30T01:00:43.000Z</published>
-    <updated>2021-01-30T01:08:45.646Z</updated>
+    <updated>2021-01-30T01:09:38.375Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png" alt=""></p><p> <span class="exturl"><a class="exturl__link" href="https://www.goodsync.com/cn" target="_blank" rel="noopener">GoodSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款备份和文件同步程序。它用于在一台计算机上的两个目录之间，或计算机与另一个存储设备（如另一台计算机、可移动磁盘、闪存驱动器或智能手机）之间，或计算机与远程计算机或服务器之间同步文件。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -507,59 +558,6 @@
     
     
       <category term="插件" scheme="http://kisskisso.com/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notion笔记软件</title>
-    <link href="http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/</id>
-    <published>2021-01-23T06:22:46.000Z</published>
-    <updated>2021-01-26T09:26:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Notion">          <a href="#Notion" class="heading-link"><i class="fas fa-link"></i></a><a href="#Notion" class="headerlink" title="Notion"></a>Notion</h1>      <p><a href="https://www.notion.so" target="_blank" rel="noopener"><strong>Notion</strong></a>是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）<a id="more"></a></p><p>支持 谷歌插件 </p><p>IOS &amp; Android谷歌插件 </p><p>Mac &amp; Windows</p><p>Web Clipper</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Notion&quot;&gt;
-          &lt;a href=&quot;#Notion&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Notion&quot; class=&quot;headerlink&quot; title=&quot;Notion&quot;&gt;&lt;/a&gt;Notion&lt;/h1&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.notion.so&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Notion&lt;/strong&gt;&lt;/a&gt;是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
-    
-    
-      <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SSH的建立</title>
-    <link href="http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/"/>
-    <id>http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/</id>
-    <published>2020-09-22T13:43:42.000Z</published>
-    <updated>2021-01-26T09:38:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code class="bash">ssh-keygen -t rsa -C "youremail"</code></pre><p>然后一路回车，生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p><pre><code class="bash">~/.ssh/id_rsa.pub</code></pre><p>打开<span class="exturl"><a class="exturl__link" href="https://github.com/" target="_blank" rel="noopener">github</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ssh-keygen -t rsa -C &quot;youremail&quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后一路回车，生成了&lt;code&gt;.ssh&lt;/code&gt;的文件夹。在你的电脑中找到这个文件夹。&lt;/p&gt;
-&lt;pre&gt;&lt;code class
-      
-    
-    </summary>
-    
-    
-      <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="SSH" scheme="http://kisskisso.com/tags/SSH/"/>
     
   </entry>
   

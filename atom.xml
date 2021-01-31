@@ -6,7 +6,7 @@
   <link href="http://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-31T09:59:00.305Z</updated>
+  <updated>2021-01-31T12:33:42.963Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,21 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何更新hexo和插件版本</title>
+    <link href="http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/"/>
+    <id>http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/</id>
+    <published>2021-01-31T12:15:32.000Z</published>
+    <updated>2021-01-31T12:33:42.963Z</updated>
+    
+    <content type="html"><![CDATA[<p> 自动更新—-进入博客根目录运行<code>npm update</code></p><p>手动更新—-进入博客根目录运行<code>npm outdated</code></p><p>运行后查看Hexo和插件的最新版本然后修改根目录下的<code>package.json</code>将对应的插件名和Hexo对应的版本号更新为要更新的版本号</p><p>开始更新—-<code>npm install --save</code></p><p>查看版本号—-<code>hexo version</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; 自动更新—-进入博客根目录运行&lt;code&gt;npm update&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;手动更新—-进入博客根目录运行&lt;code&gt;npm outdated&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;运行后查看Hexo和插件的最新版本然后修改根目录下的&lt;code&gt;package.js</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>vim下方向键无法移动光标</title>
     <link href="http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/"/>
     <id>http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/</id>
     <published>2021-01-31T09:54:08.000Z</published>
-    <updated>2021-01-31T09:59:00.305Z</updated>
+    <updated>2021-01-31T10:00:23.740Z</updated>
     
-    <content type="html"><![CDATA[<p>  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改</p><p>方式二：下载vim自动的vim是精简版<code>sudo apt-get install vim</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改</p><p>方式二：下载vim自动的vim是精简版<code>sudo apt-get install vim</code></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改&lt;/p&gt;
 &lt;p&gt;方式二：下载vim自动的vim是精简版&lt;code&gt;sudo apt-get install vim&lt;/code&gt;&lt;/p&gt;
-&lt;script&gt;
-        document.querySelec</summary>
+</summary>
       
     
     
@@ -46,9 +69,9 @@
     <link href="http://kisskisso.com/2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/"/>
     <id>http://kisskisso.com/2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/</id>
     <published>2021-01-31T09:26:34.000Z</published>
-    <updated>2021-01-31T09:32:20.120Z</updated>
+    <updated>2021-01-31T10:00:23.759Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="创建系统还原点">          <a href="#创建系统还原点" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建系统还原点" class="headerlink" title="创建系统还原点"></a>创建系统还原点</h1>      <p>Windows 10</p><ol><li>在任务栏上的搜索框中，键入“创建还原点”，然后从结果列表中选择它。</li><li>在“系统属性”的“系统保护”选项卡上，选择“创建”。</li><li>键入有关还原点的描述，然后依次选择“创建”&gt;“确定”。</li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="创建系统还原点">          <a href="#创建系统还原点" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建系统还原点" class="headerlink" title="创建系统还原点"></a>创建系统还原点</h1>      <p>Windows 10</p><ol><li>在任务栏上的搜索框中，键入“创建还原点”，然后从结果列表中选择它。</li><li>在“系统属性”的“系统保护”选项卡上，选择“创建”。</li><li>键入有关还原点的描述，然后依次选择“创建”&gt;“确定”。</li></ol>]]></content>
     
     
       
@@ -485,29 +508,6 @@
     
     
     <category term="插件" scheme="http://kisskisso.com/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notion笔记软件</title>
-    <link href="http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://kisskisso.com/2021/01/23/Notion%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/</id>
-    <published>2021-01-23T06:22:46.000Z</published>
-    <updated>2021-01-26T09:26:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Notion">          <a href="#Notion" class="heading-link"><i class="fas fa-link"></i></a><a href="#Notion" class="headerlink" title="Notion"></a>Notion</h1>      <p><a href="https://www.notion.so/"><strong>Notion</strong></a>是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）<a id="more"></a></p><p>支持 谷歌插件 </p><p>IOS &amp; Android谷歌插件 </p><p>Mac &amp; Windows</p><p>Web Clipper</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;Notion&quot;&gt;
-          &lt;a href=&quot;#Notion&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Notion&quot; class=&quot;headerlink&quot; title=&quot;Notion&quot;&gt;&lt;/a&gt;Notion&lt;/h1&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.notion.so/&quot;&gt;&lt;strong&gt;Notion&lt;/strong&gt;&lt;/a&gt;是一款提供笔记、任务、数据库、看板、维基、日历和提醒等组件的应用程序。用户可以将这些组件连接起来，来创建自己的系统，用于知识管理、笔记记录、数据管理、项目管理等。这些组件和系统可以单独使用，也可以与他人进行跨平台协作。支持英语和韩语。官方消息说马上支持中文（还在本地化翻译）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   

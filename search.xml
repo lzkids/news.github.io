@@ -5267,11 +5267,11 @@
     
     
     <entry>
-      <title>事件对象event属性</title>
-      <link href="2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/"/>
-      <url>2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/</url>
+      <title>less补充</title>
+      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
+      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
       
-        <content type="html"><![CDATA[<h2 id="事件对象event属性">          <a href="#事件对象event属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event属性" class="headerlink" title="事件对象event属性"></a>事件对象event属性</h2>              <h3 id="事件对象的使用方法">          <a href="#事件对象的使用方法" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象的使用方法" class="headerlink" title="事件对象的使用方法"></a>事件对象的使用方法</h3>      <p>处理函数定义是作为函数的第一个形参,就代表event对象:</p><p>enter编码13  </p><pre><code class="html">xx元素.onxx事件 = function(e){ //在此函数中,e就代表event对象}</code></pre><p>或</p><pre><code class="html">xx元素.addEventListener('xx事件',function(e)){//在此函数中,e就代表event对象}</code></pre><p>或 <a id="more"></a></p><pre><code>xx元素.onxx事件= func1;xx元素.addEventListener('xx事件',func1);//特别注意:这里只要写也只能写函数名称function funcl1(e){// 在此函数中， e 就代表 event对象}</code></pre>        <h3 id="事件对象event的属性">          <a href="#事件对象event的属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event的属性" class="headerlink" title="事件对象event的属性"></a>事件对象event的属性</h3>      <p>event.target</p><p>  ++- 代表当前直接触发事件的元素本身</p><p>this对比：</p><p>代表事件发生时绑定了当前事件的元素</p><p>●event.type</p><p>代表当前事件类型,其实就是事件的名称,</p><p>●event.clientX,event.clientY</p><p>代表事件发生时鼠标在当前窗口可视范围的位置</p><p>仅仅只对鼠标事件有效</p><p>●event.pageX,ebent.pageY</p><p>代表事件发生时鼠标在页面文档范围的位置</p><p>仅仅对鼠标事件有效</p><p>●event.keyCode()</p><p>代表键盘事件ain发生是所按下的按键的按键码,是一个数字</p><p>仅仅对键盘事件有效</p>        <h3 id="事件对象event的方法">          <a href="#事件对象event的方法" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event的方法" class="headerlink" title="事件对象event的方法"></a>事件对象event的方法</h3>      <p>●even.preventDefault()</p><p>取消事件的默认行为,</p><p>所谓默认行为，是指一个元素发生某个事件时，默认会产生的结果（行为）。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -5283,7 +5283,7 @@
       
         <tags>
             
-            <tag> event </tag>
+            <tag> less </tag>
             
         </tags>
       
@@ -5317,6 +5317,56 @@
     
     
     <entry>
+      <title>CSS高级用法</title>
+      <link href="2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/"/>
+      <url>2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h3 id="CSS高级用法">          <a href="#CSS高级用法" class="heading-link"><i class="fas fa-link"></i></a><a href="#CSS高级用法" class="headerlink" title="CSS高级用法"></a><strong>CSS高级用法</strong></h3>      <p>   <strong>核心知识点</strong></p>        <h3 id="2D转化及相关属性-重要">          <a href="#2D转化及相关属性-重要" class="heading-link"><i class="fas fa-link"></i></a><a href="#2D转化及相关属性-重要" class="headerlink" title="2D转化及相关属性[重要]"></a><strong>2D转化及相关属性[重要]</strong></h3>      <a id="more"></a><ol><li><pre><code class="css">基本语法:                 transition:all .5;[过度动画]旋转:transform:rotate(deg/*度*/)  正顺负逆默中心tranform-origin/*改变旋转中心点*/   绕点旋转具体坐标 | 缩放:tranform:scale(x (w), y (h));  倍数 scale()中设置的值表示的是一个倍数,没单位scale()中设置的值如果大于0且小于1, 缩小scale()中设置的值大于1, 放大scale()中设置的值等于1, 不变 scale()中设置的值等于0,该宽高等于0scale()中设置的值可以设置一个,宽和高的倍数scale()中不能设置负数注:如果页面中元素要同时设置多个tranform属性的时候,tranform属性要合写[防层叠]位移:x轴:水平,左向右为正y轴:垂直,上向下为正tranform:tranlate(x,y);中第一个值代表水平方向位移,第二个值代表垂直方向位移补充:线性渐变background-image: linear-gradient( /* 渐变的方向 */ to right, #34c2aa, #6cd557 /* 使用角度的方式渐变 */ /* 135deg, red, blue */ );</code></pre></li></ol>        <h3 id="3D转换">          <a href="#3D转换" class="heading-link"><i class="fas fa-link"></i></a><a href="#3D转换" class="headerlink" title="3D转换"></a><strong>3D转换</strong></h3>      <pre><code class="css">语法:   tranform:tranlateX(值) /*x必须大写*/可以设置百分比   tranlateX只能让元素沿着水平方向位移           可以设置负数,沿水平相反的方向位移(从右往左)           可以设置百分比,百分比是相对于当前元素的宽度   Y      Z   prespective: 透视在浏览器中出现近大远小的效果  (透视:推荐值--&gt;600--1000)   prespective属性设置:给tranform属性的父元素添加   总结:         旋转:       加个坐标轴       x  正往我这边        Y 正往右  开门      z 于2d转换效果一样   总结:如果元素沿着x轴旋转,x轴默认中间位置   3d改旋转轴 tranSform-origin             tranSform-origin:left;轴   缩放:   tranSporfm: scale()      转化样式平面转立体   transform-style:preserve-3d;   </code></pre>        <h3 id="animation属性">          <a href="#animation属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#animation属性" class="headerlink" title="animation属性"></a><strong>animation属性</strong></h3>      <p>animation–动画自动播放 ,动画次数可以无限次执行</p><p>transition—    动画需用户动作,动画随着用户动作的取消</p><pre><code class="css">@keyframes name {       /*设置动画在开始时候的样式*/       from {                           }            /* 动画开始后的一个效果 */            to {                           }}animation-name:调用动画名称animation-dyration:设置动画时间animation-iteraton-count:设置动画次数 infinite;无限次执行animation-direction:alternate; 逆播animation-timing-function:;速度默认值ease | linear匀速ease-in 加速 | ease-out 减速 |ease-in-outanimation-fill-mode:forwards;让动画在结束位置停止[条件不能设置无限次数]animation-delay:设置动画延迟时间animation复合属性:1.设置  animation -name2 设置 animation-duration</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css高级 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>事件对象event属性</title>
+      <link href="2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/"/>
+      <url>2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<h2 id="事件对象event属性">          <a href="#事件对象event属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event属性" class="headerlink" title="事件对象event属性"></a>事件对象event属性</h2>              <h3 id="事件对象的使用方法">          <a href="#事件对象的使用方法" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象的使用方法" class="headerlink" title="事件对象的使用方法"></a>事件对象的使用方法</h3>      <p>处理函数定义是作为函数的第一个形参,就代表event对象:</p><p>enter编码13  </p><pre><code class="html">xx元素.onxx事件 = function(e){ //在此函数中,e就代表event对象}</code></pre><p>或</p><pre><code class="html">xx元素.addEventListener('xx事件',function(e)){//在此函数中,e就代表event对象}</code></pre><p>或 <a id="more"></a></p><pre><code>xx元素.onxx事件= func1;xx元素.addEventListener('xx事件',func1);//特别注意:这里只要写也只能写函数名称function funcl1(e){// 在此函数中， e 就代表 event对象}</code></pre>        <h3 id="事件对象event的属性">          <a href="#事件对象event的属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event的属性" class="headerlink" title="事件对象event的属性"></a>事件对象event的属性</h3>      <p>event.target</p><p>  ++- 代表当前直接触发事件的元素本身</p><p>this对比：</p><p>代表事件发生时绑定了当前事件的元素</p><p>●event.type</p><p>代表当前事件类型,其实就是事件的名称,</p><p>●event.clientX,event.clientY</p><p>代表事件发生时鼠标在当前窗口可视范围的位置</p><p>仅仅只对鼠标事件有效</p><p>●event.pageX,ebent.pageY</p><p>代表事件发生时鼠标在页面文档范围的位置</p><p>仅仅对鼠标事件有效</p><p>●event.keyCode()</p><p>代表键盘事件ain发生是所按下的按键的按键码,是一个数字</p><p>仅仅对键盘事件有效</p>        <h3 id="事件对象event的方法">          <a href="#事件对象event的方法" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件对象event的方法" class="headerlink" title="事件对象event的方法"></a>事件对象event的方法</h3>      <p>●even.preventDefault()</p><p>取消事件的默认行为,</p><p>所谓默认行为，是指一个元素发生某个事件时，默认会产生的结果（行为）。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DOM模型</title>
       <link href="2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"/>
       <url>2020/01/04/DOM%E6%A8%A1%E5%9E%8B/</url>
@@ -5342,48 +5392,23 @@
     
     
     <entry>
-      <title>less补充</title>
-      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
-      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
+      <title>如何有效阅读一本书（一）</title>
+      <link href="2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/"/>
+      <url>2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/</url>
       
-        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="如何有效阅读一本书（一）">          <a href="#如何有效阅读一本书（一）" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何有效阅读一本书（一）" class="headerlink" title="如何有效阅读一本书（一）"></a>如何有效阅读一本书（一）</h2>      <p><strong>1.随想笔记:记录平时的感悟,这与日后的选书息息相关.</strong></p><pre><code>  【注:a.可以书写任何内容 b.按时间顺序书写  c.附上日期 d.灵活运用速记或略记 e.可以粘贴 】</code></pre><p><strong>2.购书清单:找到真正想读的书.</strong></p><p>  <strong>[注:选书.购书.读书和活用才是读书的完整流程] (归档…..)</strong>     </p><blockquote><p>​         <strong>|书名、作者与出版社名.|       标注:所谓读书的动机或目的性,就好比照片的’焦点’.即使拍摄同样的场景,聚焦于面前的花朵和聚焦于远处的建筑,得到的效果完全不同.读书也一样,抱着不同的目的阅读同一本书,也会产生截然不同的效果.</strong></p></blockquote><p><strong>3.各种报道的剪报:尽情的收录感兴趣的内容.</strong></p><p><strong>4.读书笔记:将读后感转变成文字保存下来.</strong><a id="more"></a></p><p><strong>5.养成习惯</strong></p><p><strong>6.放大读书笔记的作用.</strong></p><p><strong>7.创造别具一格的记录方式</strong></p><p><strong>8.信息一元化(读书一元化)</strong>      </p><pre><code class="文字"> 【注:①简单易懂.人人都能做到       ②更容易坚持.       ③自由度高,可自行设置      ④信息'存在'于同一个地方       ⑤直接记录.参考.不易混肴.        ⑥因为'杂乱无章',所以便于活用】</code></pre><p><strong>杂:绫辻行人的钟表馆事件.远宁的八声甘州以及岛田庄司系列和江户川乱步系列.     –新星出版社–</strong>     <strong><del>ps:听说他们家的纸不是很好 :）</del></strong>   </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
           
-          <category> Web前端 </category>
+          <category> 笔记 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> less </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CSS高级用法</title>
-      <link href="2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/"/>
-      <url>2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<h3 id="CSS高级用法">          <a href="#CSS高级用法" class="heading-link"><i class="fas fa-link"></i></a><a href="#CSS高级用法" class="headerlink" title="CSS高级用法"></a><strong>CSS高级用法</strong></h3>      <p>   <strong>核心知识点</strong></p>        <h3 id="2D转化及相关属性-重要">          <a href="#2D转化及相关属性-重要" class="heading-link"><i class="fas fa-link"></i></a><a href="#2D转化及相关属性-重要" class="headerlink" title="2D转化及相关属性[重要]"></a><strong>2D转化及相关属性[重要]</strong></h3>      <a id="more"></a><ol><li><pre><code class="css">基本语法:                 transition:all .5;[过度动画]旋转:transform:rotate(deg/*度*/)  正顺负逆默中心tranform-origin/*改变旋转中心点*/   绕点旋转具体坐标 | 缩放:tranform:scale(x (w), y (h));  倍数 scale()中设置的值表示的是一个倍数,没单位scale()中设置的值如果大于0且小于1, 缩小scale()中设置的值大于1, 放大scale()中设置的值等于1, 不变 scale()中设置的值等于0,该宽高等于0scale()中设置的值可以设置一个,宽和高的倍数scale()中不能设置负数注:如果页面中元素要同时设置多个tranform属性的时候,tranform属性要合写[防层叠]位移:x轴:水平,左向右为正y轴:垂直,上向下为正tranform:tranlate(x,y);中第一个值代表水平方向位移,第二个值代表垂直方向位移补充:线性渐变background-image: linear-gradient( /* 渐变的方向 */ to right, #34c2aa, #6cd557 /* 使用角度的方式渐变 */ /* 135deg, red, blue */ );</code></pre></li></ol>        <h3 id="3D转换">          <a href="#3D转换" class="heading-link"><i class="fas fa-link"></i></a><a href="#3D转换" class="headerlink" title="3D转换"></a><strong>3D转换</strong></h3>      <pre><code class="css">语法:   tranform:tranlateX(值) /*x必须大写*/可以设置百分比   tranlateX只能让元素沿着水平方向位移           可以设置负数,沿水平相反的方向位移(从右往左)           可以设置百分比,百分比是相对于当前元素的宽度   Y      Z   prespective: 透视在浏览器中出现近大远小的效果  (透视:推荐值--&gt;600--1000)   prespective属性设置:给tranform属性的父元素添加   总结:         旋转:       加个坐标轴       x  正往我这边        Y 正往右  开门      z 于2d转换效果一样   总结:如果元素沿着x轴旋转,x轴默认中间位置   3d改旋转轴 tranSform-origin             tranSform-origin:left;轴   缩放:   tranSporfm: scale()      转化样式平面转立体   transform-style:preserve-3d;   </code></pre>        <h3 id="animation属性">          <a href="#animation属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#animation属性" class="headerlink" title="animation属性"></a><strong>animation属性</strong></h3>      <p>animation–动画自动播放 ,动画次数可以无限次执行</p><p>transition—    动画需用户动作,动画随着用户动作的取消</p><pre><code class="css">@keyframes name {       /*设置动画在开始时候的样式*/       from {                           }            /* 动画开始后的一个效果 */            to {                           }}animation-name:调用动画名称animation-dyration:设置动画时间animation-iteraton-count:设置动画次数 infinite;无限次执行animation-direction:alternate; 逆播animation-timing-function:;速度默认值ease | linear匀速ease-in 加速 | ease-out 减速 |ease-in-outanimation-fill-mode:forwards;让动画在结束位置停止[条件不能设置无限次数]animation-delay:设置动画延迟时间animation复合属性:1.设置  animation -name2 设置 animation-duration</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> css高级 </tag>
+            <tag> 我的读书笔记 </tag>
             
         </tags>
       
@@ -5434,31 +5459,6 @@
         <tags>
             
             <tag> bootstrap </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如何有效阅读一本书（一）</title>
-      <link href="2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/"/>
-      <url>2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/</url>
-      
-        <content type="html"><![CDATA[<h2 id="如何有效阅读一本书（一）">          <a href="#如何有效阅读一本书（一）" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何有效阅读一本书（一）" class="headerlink" title="如何有效阅读一本书（一）"></a>如何有效阅读一本书（一）</h2>      <p><strong>1.随想笔记:记录平时的感悟,这与日后的选书息息相关.</strong></p><pre><code>  【注:a.可以书写任何内容 b.按时间顺序书写  c.附上日期 d.灵活运用速记或略记 e.可以粘贴 】</code></pre><p><strong>2.购书清单:找到真正想读的书.</strong></p><p>  <strong>[注:选书.购书.读书和活用才是读书的完整流程] (归档…..)</strong>     </p><blockquote><p>​         <strong>|书名、作者与出版社名.|       标注:所谓读书的动机或目的性,就好比照片的’焦点’.即使拍摄同样的场景,聚焦于面前的花朵和聚焦于远处的建筑,得到的效果完全不同.读书也一样,抱着不同的目的阅读同一本书,也会产生截然不同的效果.</strong></p></blockquote><p><strong>3.各种报道的剪报:尽情的收录感兴趣的内容.</strong></p><p><strong>4.读书笔记:将读后感转变成文字保存下来.</strong><a id="more"></a></p><p><strong>5.养成习惯</strong></p><p><strong>6.放大读书笔记的作用.</strong></p><p><strong>7.创造别具一格的记录方式</strong></p><p><strong>8.信息一元化(读书一元化)</strong>      </p><pre><code class="文字"> 【注:①简单易懂.人人都能做到       ②更容易坚持.       ③自由度高,可自行设置      ④信息'存在'于同一个地方       ⑤直接记录.参考.不易混肴.        ⑥因为'杂乱无章',所以便于活用】</code></pre><p><strong>杂:绫辻行人的钟表馆事件.远宁的八声甘州以及岛田庄司系列和江户川乱步系列.     –新星出版社–</strong>     <strong><del>ps:听说他们家的纸不是很好 :）</del></strong>   </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 我的读书笔记 </tag>
             
         </tags>
       

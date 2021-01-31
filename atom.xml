@@ -6,7 +6,7 @@
   <link href="http://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-31T12:33:42.963Z</updated>
+  <updated>2021-01-31T12:46:01.538Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/"/>
     <id>http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/</id>
     <published>2021-01-31T12:15:32.000Z</published>
-    <updated>2021-01-31T12:33:42.963Z</updated>
+    <updated>2021-01-31T12:46:01.538Z</updated>
     
     <content type="html"><![CDATA[<p> 自动更新—-进入博客根目录运行<code>npm update</code></p><p>手动更新—-进入博客根目录运行<code>npm outdated</code></p><p>运行后查看Hexo和插件的最新版本然后修改根目录下的<code>package.json</code>将对应的插件名和Hexo对应的版本号更新为要更新的版本号</p><p>开始更新—-<code>npm install --save</code></p><p>查看版本号—-<code>hexo version</code></p>]]></content>
     

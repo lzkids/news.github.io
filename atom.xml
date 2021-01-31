@@ -6,7 +6,7 @@
   <link href="http://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-30T11:16:23.280Z</updated>
+  <updated>2021-01-31T09:59:00.305Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,25 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Nodejs本地版本出错</title>
-    <link href="http://kisskisso.com/2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/"/>
-    <id>http://kisskisso.com/2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/</id>
-    <published>2021-01-30T11:16:22.000Z</published>
-    <updated>2021-01-30T11:16:23.280Z</updated>
+    <title>vim下方向键无法移动光标</title>
+    <link href="http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/"/>
+    <id>http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/</id>
+    <published>2021-01-31T09:54:08.000Z</published>
+    <updated>2021-01-31T09:59:00.305Z</updated>
     
-    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改</p><p>方式二：下载vim自动的vim是精简版<code>sudo apt-get install vim</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     
       
       
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-        </summary>
+    <summary type="html">&lt;p&gt;  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改&lt;/p&gt;
+&lt;p&gt;方式二：下载vim自动的vim是精简版&lt;code&gt;sudo apt-get install vim&lt;/code&gt;&lt;/p&gt;
+&lt;script&gt;
+        document.querySelec</summary>
       
     
     
+    
+    <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows创建还原点</title>
+    <link href="http://kisskisso.com/2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/"/>
+    <id>http://kisskisso.com/2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/</id>
+    <published>2021-01-31T09:26:34.000Z</published>
+    <updated>2021-01-31T09:32:20.120Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="创建系统还原点">          <a href="#创建系统还原点" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建系统还原点" class="headerlink" title="创建系统还原点"></a>创建系统还原点</h1>      <p>Windows 10</p><ol><li>在任务栏上的搜索框中，键入“创建还原点”，然后从结果列表中选择它。</li><li>在“系统属性”的“系统保护”选项卡上，选择“创建”。</li><li>键入有关还原点的描述，然后依次选择“创建”&gt;“确定”。</li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;创建系统还原点&quot;&gt;
+          &lt;a href=&quot;#创建系统还原点&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#创建系统还原点&quot; class=&quot;headerlink&quot; tit</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -484,33 +508,6 @@
     
     
     <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SSH的建立</title>
-    <link href="http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/"/>
-    <id>http://kisskisso.com/2020/09/22/SSH%E7%9A%84%E5%BB%BA%E7%AB%8B/</id>
-    <published>2020-09-22T13:43:42.000Z</published>
-    <updated>2021-01-26T09:38:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code class="bash">ssh-keygen -t rsa -C "youremail"</code></pre><p>然后一路回车，生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p><pre><code class="bash">~/.ssh/id_rsa.pub</code></pre><p>打开<span class="exturl"><a class="exturl__link" href="https://github.com/">github</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ssh-keygen -t rsa -C &quot;youremail&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后一路回车，生成了&lt;code&gt;.ssh&lt;/code&gt;的文件夹。在你的电脑中找到这个文件夹。&lt;/p&gt;
-&lt;pre&gt;&lt;code clas</summary>
-      
-    
-    
-    
-    <category term="Web前端" scheme="http://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="SSH" scheme="http://kisskisso.com/tags/SSH/"/>
     
   </entry>
   

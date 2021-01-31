@@ -4,12 +4,37 @@
   
     
     <entry>
-      <title>Nodejs本地版本出错</title>
-      <link href="2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/"/>
-      <url>2021/01/30/Nodejs%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%87%BA%E9%94%99/</url>
+      <title>vim下方向键无法移动光标</title>
+      <link href="2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/"/>
+      <url>2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<p>  方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改</p><p>方式二：下载vim自动的vim是精简版<code>sudo apt-get install vim</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows创建还原点</title>
+      <link href="2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/"/>
+      <url>2021/01/31/Windows%E5%88%9B%E5%BB%BA%E8%BF%98%E5%8E%9F%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="创建系统还原点">          <a href="#创建系统还原点" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建系统还原点" class="headerlink" title="创建系统还原点"></a>创建系统还原点</h1>      <p>Windows 10</p><ol><li>在任务栏上的搜索框中，键入“创建还原点”，然后从结果列表中选择它。</li><li>在“系统属性”的“系统保护”选项卡上，选择“创建”。</li><li>键入有关还原点的描述，然后依次选择“创建”&gt;“确定”。</li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
       
       
     </entry>
@@ -4848,31 +4873,6 @@
     
     
     <entry>
-      <title>事件流</title>
-      <link href="2020/01/09/event%E6%96%B9%E6%B3%95/"/>
-      <url>2020/01/09/event%E6%96%B9%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<h2 id="事件流">          <a href="#事件流" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2>      <p>a标签的链接 【】   form标签的提交 【】 return false——–其它做法</p>        <h3 id="event事件">          <a href="#event事件" class="heading-link"><i class="fas fa-link"></i></a><a href="#event事件" class="headerlink" title="event事件:"></a>event事件:</h3>      <p>属性:target,type,clientX/Y,pageX/Y,keyCode</p><a id="more"></a><p>方法:preventDefault(),stopPropagation()</p>        <h3 id="事件绑定方式">          <a href="#事件绑定方式" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件绑定方式" class="headerlink" title="事件绑定方式:"></a><strong>事件绑定方式:</strong></h3>      <p> //只能绑定一次,而且只能是冒泡事件</p><p>  元素.onxx事件 = function(){}</p><p>//可以绑定多次,也可以绑定捕获或冒泡事件</p><p>元素.addEventListener(‘xx事件’,function(){}true/false)//true为捕获.false为冒泡</p>        <h3 id="阻止事件默认行为">          <a href="#阻止事件默认行为" class="heading-link"><i class="fas fa-link"></i></a><a href="#阻止事件默认行为" class="headerlink" title="阻止事件默认行为:"></a>阻止事件默认行为:</h3>      <p>​    e.preventDefault()</p>        <h3 id="阻止事件传播">          <a href="#阻止事件传播" class="heading-link"><i class="fas fa-link"></i></a><a href="#阻止事件传播" class="headerlink" title="阻止事件传播:"></a>阻止事件传播:</h3>      <p> e.stopPropagation()</p><p>某个节点.modeType</p><p>1.代表元素</p><p>2.代表书序</p><p>节点属性:</p><p>node.nodeType</p><p>​                  name[元素节点的nodename也就是元素的标签名,而且必然是大写]</p><p>Value/</p>        <h3 id="事件委托">          <a href="#事件委托" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件委托" class="headerlink" title="事件委托:"></a>事件委托:</h3>      <p>event.target获取当前触发事件的对象</p><p>keyCode获取键盘码</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 事件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>BOM模型</title>
       <link href="2020/01/09/BOM%E6%A8%A1%E5%9E%8B/"/>
       <url>2020/01/09/BOM%E6%A8%A1%E5%9E%8B/</url>
@@ -4890,6 +4890,31 @@
         <tags>
             
             <tag> BOM模型 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>事件流</title>
+      <link href="2020/01/09/event%E6%96%B9%E6%B3%95/"/>
+      <url>2020/01/09/event%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="事件流">          <a href="#事件流" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2>      <p>a标签的链接 【】   form标签的提交 【】 return false——–其它做法</p>        <h3 id="event事件">          <a href="#event事件" class="heading-link"><i class="fas fa-link"></i></a><a href="#event事件" class="headerlink" title="event事件:"></a>event事件:</h3>      <p>属性:target,type,clientX/Y,pageX/Y,keyCode</p><a id="more"></a><p>方法:preventDefault(),stopPropagation()</p>        <h3 id="事件绑定方式">          <a href="#事件绑定方式" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件绑定方式" class="headerlink" title="事件绑定方式:"></a><strong>事件绑定方式:</strong></h3>      <p> //只能绑定一次,而且只能是冒泡事件</p><p>  元素.onxx事件 = function(){}</p><p>//可以绑定多次,也可以绑定捕获或冒泡事件</p><p>元素.addEventListener(‘xx事件’,function(){}true/false)//true为捕获.false为冒泡</p>        <h3 id="阻止事件默认行为">          <a href="#阻止事件默认行为" class="heading-link"><i class="fas fa-link"></i></a><a href="#阻止事件默认行为" class="headerlink" title="阻止事件默认行为:"></a>阻止事件默认行为:</h3>      <p>​    e.preventDefault()</p>        <h3 id="阻止事件传播">          <a href="#阻止事件传播" class="heading-link"><i class="fas fa-link"></i></a><a href="#阻止事件传播" class="headerlink" title="阻止事件传播:"></a>阻止事件传播:</h3>      <p> e.stopPropagation()</p><p>某个节点.modeType</p><p>1.代表元素</p><p>2.代表书序</p><p>节点属性:</p><p>node.nodeType</p><p>​                  name[元素节点的nodename也就是元素的标签名,而且必然是大写]</p><p>Value/</p>        <h3 id="事件委托">          <a href="#事件委托" class="heading-link"><i class="fas fa-link"></i></a><a href="#事件委托" class="headerlink" title="事件委托:"></a>事件委托:</h3>      <p>event.target获取当前触发事件的对象</p><p>keyCode获取键盘码</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 事件 </tag>
             
         </tags>
       
@@ -5223,81 +5248,6 @@
     
     
     <entry>
-      <title>less</title>
-      <link href="2020/01/04/less/"/>
-      <url>2020/01/04/less/</url>
-      
-        <content type="html"><![CDATA[<h3 id="less-less-bootcss-com">          <a href="#less-less-bootcss-com" class="heading-link"><i class="fas fa-link"></i></a><a href="#less-less-bootcss-com" class="headerlink" title="less        less.bootcss.com/#"></a><strong>less</strong>        <strong>less.bootcss.com/#</strong></h3>      <p><strong>less去写css代码优势:</strong></p><p>1.less中可以进行数字运算</p><p>2.less中可以支持选择器中嵌套选择器</p><p>   <strong>less使用步骤:</strong></p><p>1.新建less文件</p><p>​     ☂ 文件名以less结尾</p><p>2.less按照css语法编写</p><p>​       ☂ less文件中完全可以使用css原生的语法去写</p> <a id="more"></a><p>3.less语法</p><p>​      ☂  <strong>less嵌套语法</strong>(只适用嵌套结构的标签)</p><pre><code class="less">.nav{    li{            }}</code></pre><p>​       ☞<strong>支持数学运算</strong></p><p>​       ☞<strong>支持变量的设置</strong>(如果某个值是一个变化的值,那么就可以将改制保存到变量中)</p><pre><code class="less">@div_width: ***;</code></pre><p>​        ☞less混合写法</p><pre><code class="less">//less中的函数 [类似于css中的公共样式]#abc(){    color:red;    font-size:20px;}例如:.public(){    width:300px;    height:300px;    background-color:skyblue;}.one{    color:red;    .public()}.two{    color:black;    .public()}</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> less </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>rem适配</title>
-      <link href="2020/01/04/rem/"/>
-      <url>2020/01/04/rem/</url>
-      
-        <content type="html"><![CDATA[<h3 id="rem适配-vw">          <a href="#rem适配-vw" class="heading-link"><i class="fas fa-link"></i></a><a href="#rem适配-vw" class="headerlink" title="rem适配 [vw]"></a><strong>rem适配</strong> [vw]</h3>              <h3 id="移动端方式-补-opacity-透明颜色">          <a href="#移动端方式-补-opacity-透明颜色" class="heading-link"><i class="fas fa-link"></i></a><a href="#移动端方式-补-opacity-透明颜色" class="headerlink" title="移动端方式          补:opacity: 透明颜色;"></a><strong>移动端方式</strong>          补:opacity: 透明颜色;</h3>      <p> 1.<strong>流式布局(百分比布局)**2.**伸缩布局(弹性布局)**3.**响应式布局(媒体查询)</strong></p><p>4.**rem适配:**让元素(内容)随着设备的宽度改变,自己发生大小的改变</p><pre><code class="css">计算移动端中根标签[html]文字大小=当前设备宽度(动态获取)/缩放的倍数 媒体查询----定义一个变量</code></pre><pre><code class="css">计算ui图片中测量元素的rem值=测量大小/(ui图大小/缩放倍数)rem值是根据根(html)标签的文字大小来设置的</code></pre><p>​      <strong>注:</strong> UI 图中缩放的倍数必须和设备中缩放的倍数统一</p><p>@size是什么? <a id="more"></a></p>        <h4 id="补充-为什么页面适配要使用rem而不是em">          <a href="#补充-为什么页面适配要使用rem而不是em" class="heading-link"><i class="fas fa-link"></i></a><a href="#补充-为什么页面适配要使用rem而不是em" class="headerlink" title="补充: 为什么页面适配要使用rem而不是em?"></a><strong>补充:</strong> <strong>为什么页面适配要使用rem而不是em?</strong></h4>      <p>  1.rem在适配的时候是相对html中的文字大小</p><p>   2.html中的文字大小不会影响某个具体标签中的文字大小(继承的权重为0)</p><p>   3.rem适配最重要的一步就是要保证html中设置文字的大小</p><p><del>**注:**保证当前标签中文字大小是30px 又要保证当前标签的宽度是400px</del></p><p> UI 640px —-20倍   750px—-25倍</p><p>**em:**相对单位,em是相对当前标签中文字大小</p><p>**rem:**相对单位,r(root),rem单位是相对html根标签中文字的大小</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> rem适配 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>DOM模型</title>
-      <link href="2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"/>
-      <url>2020/01/04/DOM%E6%A8%A1%E5%9E%8B/</url>
-      
-        <content type="html"><![CDATA[<h1 id="DOM模型">          <a href="#DOM模型" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h1>              <h3 id="JavaScript由以下三部分构成">          <a href="#JavaScript由以下三部分构成" class="heading-link"><i class="fas fa-link"></i></a><a href="#JavaScript由以下三部分构成" class="headerlink" title="JavaScript由以下三部分构成"></a>JavaScript由以下三部分构成</h3>      <p>1.ECMAScript  2.Bom（浏览器对象） 3.Dom（文档对象）</p><pre><code class="js">注：&lt;script&gt;放在body的最后面</code></pre><a id="more"></a>        <h5 id="术语">          <a href="#术语" class="heading-link"><i class="fas fa-link"></i></a><a href="#术语" class="headerlink" title="术语"></a>术语</h5>      <p>1.文档（document）</p><pre><code class="文字">注：1.语法 2.注意大小写3.样式不加-4.多加或少加单引号''</code></pre><p> 2.节点（了解）</p><pre><code class="CN">构成网页的所有组成部分，在js中都被成为节点。节点类型：①标签节点②属性节点③文本节点节点属性：①nodeType节点类型②nodeName节点类型③nodeValue节点值</code></pre><p>注：节点本身就是对象。</p><p>元素节 == 标签名    属性节 == 属性名  文本节 == #text    value == null(空)</p><p>3.元素</p><pre><code class="cn">就是html中的标签，在js中称为元素或对象，是节点的一种，也称为元素节点</code></pre>        <h5 id="Dom编程的基本理解">          <a href="#Dom编程的基本理解" class="heading-link"><i class="fas fa-link"></i></a><a href="#Dom编程的基本理解" class="headerlink" title="Dom编程的基本理解"></a>Dom编程的基本理解</h5>      <pre><code class="cn">在js代码中获取到网页中的有关标签（元素），并对其进行某种操作。</code></pre>        <h3 id="DOM模型-1">          <a href="#DOM模型-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型-1" class="headerlink" title="DOM模型"></a>DOM模型</h3>              <h5 id="如何获取元素">          <a href="#如何获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何获取元素" class="headerlink" title="如何获取元素"></a>如何获取元素</h5>      <pre><code class="js">根据ID名获取元素 ------document.getElementByid（'id名'）【结果是该id所对应的元素（对象/节点）】根据标签获取元素 ------document.getElementsByTagName（'标签名'）【结果是一个'集合'（伪数组）】|注意：标签获取即使只获取一个元素，也是一个伪数组，也是集合，也要用下标去获取|    根据类名获取元素 ------document.getElementsByClassName（'类名'）【结果是一个'集合'（伪数组）】               ------document.querySelector('选择器')【结果是该选择器所对应的第一个元素（对象/节点）】根据选择器获取元素               ------document.querySelectorAll('选择器')【结果是一个'集合'（伪数组）】</code></pre>        <h5 id="元素（节点）关系获取元素">          <a href="#元素（节点）关系获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#元素（节点）关系获取元素" class="headerlink" title="元素（节点）关系获取元素"></a>元素（节点）关系获取元素</h5>      <pre><code class="js">xx元素.parentNode--------【获取到某元素的父元素】xx元素.children---------【获取到某元素的所有子元素，是一个集合】xx元素.firstElementChild--------【获取到某个元素的第一个子元素】xx元素.lastElementChild--------【获取到某个元素的最后一个子元素】xx元素.nextElementSibing-------【获取到某个元素的后一个兄弟元素】xx元素.previousElementSibing------【获取到某个元素的前一个兄弟元素】</code></pre>        <h5 id="添加元素">          <a href="#添加元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h5>      <pre><code class="js">创建元素-----var 变量 = document.createElement（'标签名'）|注：创建的元素以内存变量的形式，未放入页面中|克隆元素-----var 变量 = xx元素.cloneNode（true/false）【true表示同时克隆该元素的所有内部内容。false表示不克隆该元素的内部内容】添加元素到父元素中的最后位置------xx父元素.appendChild（xx要添加的元素）【结果该新添加的元素成为了父元素的最后一个子元素】添加元素到父元素中的某个元素之前-----xx父元素.insertBefore（xx要添加的元素，xx现有的元素）【结果该新添加的元素成为了父元素的一个子元素，并在指定的子元素前】替换某个现有元素------xx父元素.replaceChild（xx新，xx旧）【结果就是新的元素替换了所给定的现有子元素】</code></pre>        <h5 id="删除元素">          <a href="#删除元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5>      <pre><code>父元素.removeChild（子元素）</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> API </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CSS高级用法</title>
       <link href="2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/"/>
       <url>2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</url>
@@ -5348,31 +5298,6 @@
     
     
     <entry>
-      <title>less补充</title>
-      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
-      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
-      
-        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> less </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>事件对象event属性</title>
       <link href="2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/"/>
       <url>2020/01/04/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1exent%E5%B1%9E%E6%80%A7/</url>
@@ -5398,6 +5323,31 @@
     
     
     <entry>
+      <title>DOM模型</title>
+      <link href="2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"/>
+      <url>2020/01/04/DOM%E6%A8%A1%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="DOM模型">          <a href="#DOM模型" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h1>              <h3 id="JavaScript由以下三部分构成">          <a href="#JavaScript由以下三部分构成" class="heading-link"><i class="fas fa-link"></i></a><a href="#JavaScript由以下三部分构成" class="headerlink" title="JavaScript由以下三部分构成"></a>JavaScript由以下三部分构成</h3>      <p>1.ECMAScript  2.Bom（浏览器对象） 3.Dom（文档对象）</p><pre><code class="js">注：&lt;script&gt;放在body的最后面</code></pre><a id="more"></a>        <h5 id="术语">          <a href="#术语" class="heading-link"><i class="fas fa-link"></i></a><a href="#术语" class="headerlink" title="术语"></a>术语</h5>      <p>1.文档（document）</p><pre><code class="文字">注：1.语法 2.注意大小写3.样式不加-4.多加或少加单引号''</code></pre><p> 2.节点（了解）</p><pre><code class="CN">构成网页的所有组成部分，在js中都被成为节点。节点类型：①标签节点②属性节点③文本节点节点属性：①nodeType节点类型②nodeName节点类型③nodeValue节点值</code></pre><p>注：节点本身就是对象。</p><p>元素节 == 标签名    属性节 == 属性名  文本节 == #text    value == null(空)</p><p>3.元素</p><pre><code class="cn">就是html中的标签，在js中称为元素或对象，是节点的一种，也称为元素节点</code></pre>        <h5 id="Dom编程的基本理解">          <a href="#Dom编程的基本理解" class="heading-link"><i class="fas fa-link"></i></a><a href="#Dom编程的基本理解" class="headerlink" title="Dom编程的基本理解"></a>Dom编程的基本理解</h5>      <pre><code class="cn">在js代码中获取到网页中的有关标签（元素），并对其进行某种操作。</code></pre>        <h3 id="DOM模型-1">          <a href="#DOM模型-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型-1" class="headerlink" title="DOM模型"></a>DOM模型</h3>              <h5 id="如何获取元素">          <a href="#如何获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何获取元素" class="headerlink" title="如何获取元素"></a>如何获取元素</h5>      <pre><code class="js">根据ID名获取元素 ------document.getElementByid（'id名'）【结果是该id所对应的元素（对象/节点）】根据标签获取元素 ------document.getElementsByTagName（'标签名'）【结果是一个'集合'（伪数组）】|注意：标签获取即使只获取一个元素，也是一个伪数组，也是集合，也要用下标去获取|    根据类名获取元素 ------document.getElementsByClassName（'类名'）【结果是一个'集合'（伪数组）】               ------document.querySelector('选择器')【结果是该选择器所对应的第一个元素（对象/节点）】根据选择器获取元素               ------document.querySelectorAll('选择器')【结果是一个'集合'（伪数组）】</code></pre>        <h5 id="元素（节点）关系获取元素">          <a href="#元素（节点）关系获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#元素（节点）关系获取元素" class="headerlink" title="元素（节点）关系获取元素"></a>元素（节点）关系获取元素</h5>      <pre><code class="js">xx元素.parentNode--------【获取到某元素的父元素】xx元素.children---------【获取到某元素的所有子元素，是一个集合】xx元素.firstElementChild--------【获取到某个元素的第一个子元素】xx元素.lastElementChild--------【获取到某个元素的最后一个子元素】xx元素.nextElementSibing-------【获取到某个元素的后一个兄弟元素】xx元素.previousElementSibing------【获取到某个元素的前一个兄弟元素】</code></pre>        <h5 id="添加元素">          <a href="#添加元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h5>      <pre><code class="js">创建元素-----var 变量 = document.createElement（'标签名'）|注：创建的元素以内存变量的形式，未放入页面中|克隆元素-----var 变量 = xx元素.cloneNode（true/false）【true表示同时克隆该元素的所有内部内容。false表示不克隆该元素的内部内容】添加元素到父元素中的最后位置------xx父元素.appendChild（xx要添加的元素）【结果该新添加的元素成为了父元素的最后一个子元素】添加元素到父元素中的某个元素之前-----xx父元素.insertBefore（xx要添加的元素，xx现有的元素）【结果该新添加的元素成为了父元素的一个子元素，并在指定的子元素前】替换某个现有元素------xx父元素.replaceChild（xx新，xx旧）【结果就是新的元素替换了所给定的现有子元素】</code></pre>        <h5 id="删除元素">          <a href="#删除元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5>      <pre><code>父元素.removeChild（子元素）</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> API </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTML基础（二）</title>
       <link href="2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
       <url>2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
@@ -5415,6 +5365,81 @@
         <tags>
             
             <tag> HTML（二） </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>less补充</title>
+      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
+      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
+      
+        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> less </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>less</title>
+      <link href="2020/01/04/less/"/>
+      <url>2020/01/04/less/</url>
+      
+        <content type="html"><![CDATA[<h3 id="less-less-bootcss-com">          <a href="#less-less-bootcss-com" class="heading-link"><i class="fas fa-link"></i></a><a href="#less-less-bootcss-com" class="headerlink" title="less        less.bootcss.com/#"></a><strong>less</strong>        <strong>less.bootcss.com/#</strong></h3>      <p><strong>less去写css代码优势:</strong></p><p>1.less中可以进行数字运算</p><p>2.less中可以支持选择器中嵌套选择器</p><p>   <strong>less使用步骤:</strong></p><p>1.新建less文件</p><p>​     ☂ 文件名以less结尾</p><p>2.less按照css语法编写</p><p>​       ☂ less文件中完全可以使用css原生的语法去写</p> <a id="more"></a><p>3.less语法</p><p>​      ☂  <strong>less嵌套语法</strong>(只适用嵌套结构的标签)</p><pre><code class="less">.nav{    li{            }}</code></pre><p>​       ☞<strong>支持数学运算</strong></p><p>​       ☞<strong>支持变量的设置</strong>(如果某个值是一个变化的值,那么就可以将改制保存到变量中)</p><pre><code class="less">@div_width: ***;</code></pre><p>​        ☞less混合写法</p><pre><code class="less">//less中的函数 [类似于css中的公共样式]#abc(){    color:red;    font-size:20px;}例如:.public(){    width:300px;    height:300px;    background-color:skyblue;}.one{    color:red;    .public()}.two{    color:black;    .public()}</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> less </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rem适配</title>
+      <link href="2020/01/04/rem/"/>
+      <url>2020/01/04/rem/</url>
+      
+        <content type="html"><![CDATA[<h3 id="rem适配-vw">          <a href="#rem适配-vw" class="heading-link"><i class="fas fa-link"></i></a><a href="#rem适配-vw" class="headerlink" title="rem适配 [vw]"></a><strong>rem适配</strong> [vw]</h3>              <h3 id="移动端方式-补-opacity-透明颜色">          <a href="#移动端方式-补-opacity-透明颜色" class="heading-link"><i class="fas fa-link"></i></a><a href="#移动端方式-补-opacity-透明颜色" class="headerlink" title="移动端方式          补:opacity: 透明颜色;"></a><strong>移动端方式</strong>          补:opacity: 透明颜色;</h3>      <p> 1.<strong>流式布局(百分比布局)**2.**伸缩布局(弹性布局)**3.**响应式布局(媒体查询)</strong></p><p>4.**rem适配:**让元素(内容)随着设备的宽度改变,自己发生大小的改变</p><pre><code class="css">计算移动端中根标签[html]文字大小=当前设备宽度(动态获取)/缩放的倍数 媒体查询----定义一个变量</code></pre><pre><code class="css">计算ui图片中测量元素的rem值=测量大小/(ui图大小/缩放倍数)rem值是根据根(html)标签的文字大小来设置的</code></pre><p>​      <strong>注:</strong> UI 图中缩放的倍数必须和设备中缩放的倍数统一</p><p>@size是什么? <a id="more"></a></p>        <h4 id="补充-为什么页面适配要使用rem而不是em">          <a href="#补充-为什么页面适配要使用rem而不是em" class="heading-link"><i class="fas fa-link"></i></a><a href="#补充-为什么页面适配要使用rem而不是em" class="headerlink" title="补充: 为什么页面适配要使用rem而不是em?"></a><strong>补充:</strong> <strong>为什么页面适配要使用rem而不是em?</strong></h4>      <p>  1.rem在适配的时候是相对html中的文字大小</p><p>   2.html中的文字大小不会影响某个具体标签中的文字大小(继承的权重为0)</p><p>   3.rem适配最重要的一步就是要保证html中设置文字的大小</p><p><del>**注:**保证当前标签中文字大小是30px 又要保证当前标签的宽度是400px</del></p><p> UI 640px —-20倍   750px—-25倍</p><p>**em:**相对单位,em是相对当前标签中文字大小</p><p>**rem:**相对单位,r(root),rem单位是相对html根标签中文字的大小</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rem适配 </tag>
             
         </tags>
       

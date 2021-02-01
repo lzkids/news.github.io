@@ -6,7 +6,7 @@
   <link href="http://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-01-31T12:46:01.538Z</updated>
+  <updated>2021-02-01T10:34:34.968Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机安装增强功能</title>
+    <link href="http://kisskisso.com/2021/02/01/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%8A%9F%E8%83%BD/"/>
+    <id>http://kisskisso.com/2021/02/01/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%8A%9F%E8%83%BD/</id>
+    <published>2021-02-01T10:27:56.000Z</published>
+    <updated>2021-02-01T10:34:34.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>  打开虚拟机光盘，在终端运行<code>sudo ./VBoxLinuxAdditions.run</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;  打开虚拟机光盘，在终端运行&lt;code&gt;sudo ./VBoxLinuxAdditions.run&lt;/code&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>坚果云更改备份路径</title>
+    <link href="http://kisskisso.com/2021/02/01/%E5%9D%9A%E6%9E%9C%E4%BA%91%E6%9B%B4%E6%94%B9%E5%A4%87%E4%BB%BD%E8%B7%AF%E5%BE%84/"/>
+    <id>http://kisskisso.com/2021/02/01/%E5%9D%9A%E6%9E%9C%E4%BA%91%E6%9B%B4%E6%94%B9%E5%A4%87%E4%BB%BD%E8%B7%AF%E5%BE%84/</id>
+    <published>2021-02-01T05:34:27.000Z</published>
+    <updated>2021-02-01T05:34:27.772Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何更新hexo和插件版本</title>
@@ -455,59 +491,6 @@
     
     <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>第三方评论Gittalk</title>
-    <link href="http://kisskisso.com/2021/01/26/%E7%AC%AC%E4%B8%89%E6%96%B9%E8%AF%84%E8%AE%BA/"/>
-    <id>http://kisskisso.com/2021/01/26/%E7%AC%AC%E4%B8%89%E6%96%B9%E8%AF%84%E8%AE%BA/</id>
-    <published>2021-01-26T07:58:24.000Z</published>
-    <updated>2021-01-26T14:24:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p> <strong>前言</strong></p><p>如何给博客集成Gittalk。Gittalk是基于GitHub Issue开发的评论插件，它是把GitHub 的issue集成在hexo博客中。</p><p>首先你的hexo主题支持Gittalk。然后就是有个GitHub账号。</p><p><strong>配置Gittalk</strong></p>        <h3 id="Register-Application">          <a href="#Register-Application" class="heading-link"><i class="fas fa-link"></i></a><a href="#Register-Application" class="headerlink" title="Register Application"></a>Register Application</h3>      <p>在GitHub注册新应用<br>登录GitHub-&gt;点击头像-&gt;Setting-&gt;Developer settings-&gt;OAuth Apps-&gt;New OAuth App<br>顺序如图<a id="more"></a></p><p>1.</p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Developer%20settings.png" style="zoom: 67%;"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OAuth%20apps_2021-01-26_21-36-28.png"></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%96%B0%E5%BB%BAOAuth_2021-01-26_21-37-58.png"></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/michi_2021-01-26_21-58-01.png"></p>        <h3 id="config-yml">          <a href="#config-yml" class="heading-link"><i class="fas fa-link"></i></a><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3>      <p>在主题配置文件<code>xxx/_config.yml</code>中按需添加内容：</p><pre><code class="yml">gitalk:  enable: true  githubID: github帐号  # 例：xxx    repo: 仓库名称   # 例：xxxx.github.io  ClientID: Client ID  ClientSecret: Client Secret  adminUser: github帐号 #指定可初始化评论账户  labels: 'gitalk' #GitHub issues的标签  distractionFreeMode: true</code></pre><p>以上就是添加gitalk评论的配置，博客上传到GitHub上后，打开页面进入某一博客内容下，就可看到评论处。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt; &lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如何给博客集成Gittalk。Gittalk是基于GitHub Issue开发的评论插件，它是把GitHub 的issue集成在hexo博客中。&lt;/p&gt;
-&lt;p&gt;首先你的hexo主题支持Gittalk。然后就是有个GitHub账号。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;配置Gittalk&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;h3 id=&quot;Register-Application&quot;&gt;
-          &lt;a href=&quot;#Register-Application&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Register-Application&quot; class=&quot;headerlink&quot; title=&quot;Register Application&quot;&gt;&lt;/a&gt;Register Application&lt;/h3&gt;
-      &lt;p&gt;在GitHub注册新应用&lt;br&gt;登录GitHub-&amp;gt;点击头像-&amp;gt;Setting-&amp;gt;Developer settings-&amp;gt;OAuth Apps-&amp;gt;New OAuth App&lt;br&gt;顺序如图&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Gittalk" scheme="http://kisskisso.com/tags/Gittalk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简悦插件</title>
-    <link href="http://kisskisso.com/2021/01/25/%E7%AE%80%E6%82%A6%E6%8F%92%E4%BB%B6/"/>
-    <id>http://kisskisso.com/2021/01/25/%E7%AE%80%E6%82%A6%E6%8F%92%E4%BB%B6/</id>
-    <published>2021-01-25T07:31:37.000Z</published>
-    <updated>2021-01-26T10:06:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>简于型 · 悦于心</p><p> <span class="exturl"><a class="exturl__link" href="https://simpread.pro/">简悦</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> - 为你提供「如杂志般沉浸式阅读体验」的扩展,免费使用，但是有些功能需要高级会员才能使用</p><p>阅读模式</p><p>独有功能，通过提取 标题 · 描述 ·正文 · 媒体 图片 / 视频 等资源<br>生成符合中文阅读习惯的页面，具有零干扰 · 沉浸式特点，适合深入阅读</p><p>聚焦模式</p><p>不改变当前页面的结构，仅仅高亮需要阅读的部分<br>适合临时阅读或者未适配阅读模式的网站</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;简于型 · 悦于心&lt;/p&gt;
-&lt;p&gt; &lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://simpread.pro/&quot;&gt;简悦&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fa</summary>
-      
-    
-    
-    
-    <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
-    
-    
-    <category term="插件" scheme="http://kisskisso.com/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   

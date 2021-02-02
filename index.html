@@ -48,6 +48,56 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/02/hexo%E6%8A%A5%E9%94%99/">hexo报错</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">101</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>  <strong>报错</strong></p>
+<p>hexo 报错 use_date_for_updated is deprecated…</p>
+<p>WARN Deprecated config detected: “use_date_for_updated” is deprecated, please se “updated option” instead. See <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">https://hexo.io/docs/configuration</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more deails.</p>
+<p><strong>解决办法</strong></p>
+<p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/02/VirtualBox%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/">VirtualBox共享文件设置</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">190</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>   在 VirtualBox 中选择<code>设置/共享文件夹</code>，添加想要共享文件夹；设置共享文件夹的名称，选择 <code>固定分配</code>；确认 <code>OK</code>。</p>
+<p>进入 Linux系统，选择一个文件夹作为共享文件夹</p>
+<p>打开终端，写入 <code>$ sudo mount -t vboxsf 共享文件夹的名 在Linux建立的共享文件夹名</code></p>
+<p>ps：</p>
+<ul>
+<li>重启后，已设置的共享文件夹将会消失，需要再次执行挂载命令。</li>
+<li>在Linux建立的文件夹需要<code>sudo chmod 777 [文件夹名]</code></li>
+<li>可是设置<code>自动挂载</code></li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
       </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">Linux安装配置</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">188</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>更新源      <code>sudo apt-get update</code></p>
 <p>更新软件   <code>sudo apt-get upgrade</code></p>
 <p>安装vim   <code>sudo apt-get install vim</code></p>
@@ -161,7 +211,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/">hexo上传报错</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">169</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>​    电脑死循环自启重置电脑后，安装node出错</p>
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/">hexo上传报错</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">176</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>​    电脑死循环自启重置电脑后，安装node出错</p>
 <pre><code>(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency
 (Use `node --trace-warnings ...` to show where the warning was created)
 (node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency
@@ -169,7 +219,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 (node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency
 (node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency
 (node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency
-</code></pre><p>node版本过高</p>
+</code></pre><p>node版本过高 卸载安装旧版本</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -188,62 +238,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/">GoodSync同步备份</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">138</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png" alt=""></p>
-<p> <span class="exturl"><a class="exturl__link" href="https://www.goodsync.com/cn" target="_blank" rel="noopener">GoodSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款备份和文件同步程序。它用于在一台计算机上的两个目录之间，或计算机与另一个存储设备（如另一台计算机、可移动磁盘、闪存驱动器或智能手机）之间，或计算机与远程计算机或服务器之间同步文件。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/29/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E5%88%87%E6%8D%A2root/">Linux下如何切换root</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-01-29</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-30</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">168</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><blockquote>
-<p> 如果想临时使用一下root权限，只需要在命令前面加上<code>sudo</code><br>如果想一直使用root权限，需要通过su切换到root用户：（不推荐一直使用）</p>
-</blockquote>
-
-        <h3 id="重设root用户密码">
-          <a href="#重设root用户密码" class="heading-link"><i class="fas fa-link"></i></a><a href="#重设root用户密码" class="headerlink" title="重设root用户密码"></a><strong>重设root用户密码</strong></h3>
-      <pre><code class="shell">sudo passwd root</code></pre>
-<p>根据提示，输入新root密码（不要和非root用户密码一样）</p>
-
-        <h3 id="切换root用户">
-          <a href="#切换root用户" class="heading-link"><i class="fas fa-link"></i></a><a href="#切换root用户" class="headerlink" title="切换root用户"></a><strong>切换root用户</strong></h3>
-      <pre><code class="shell">su</code></pre>
-<p>输入root用户密码</p>
-
-        <h3 id="回到非root用户权限">
-          <a href="#回到非root用户权限" class="heading-link"><i class="fas fa-link"></i></a><a href="#回到非root用户权限" class="headerlink" title="回到非root用户权限"></a><strong>回到非root用户权限</strong></h3>
-      <p>使用<code>su “yc”</code>或者<code>exit</code>命令，回到用户权限</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">232</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">103</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
+      </script></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">234</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">104</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 

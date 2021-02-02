@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-02T02:50:27.316Z</updated>
+  <updated>2021-02-02T07:32:36.773Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo报错</title>
+    <link href="http://kisskisso.com/2021/02/02/hexo%E6%8A%A5%E9%94%99/"/>
+    <id>http://kisskisso.com/2021/02/02/hexo%E6%8A%A5%E9%94%99/</id>
+    <published>2021-02-02T07:29:29.000Z</published>
+    <updated>2021-02-02T07:32:36.773Z</updated>
+    
+    <content type="html"><![CDATA[<p>  <strong>报错</strong></p><p>hexo 报错 use_date_for_updated is deprecated…</p><p>WARN Deprecated config detected: “use_date_for_updated” is deprecated, please se “updated option” instead. See <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">https://hexo.io/docs/configuration</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more deails.</p><p><strong>解决办法</strong></p><p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  &lt;strong&gt;报错&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;hexo 报错 use_date_for_updated is deprecated…&lt;/p&gt;
+&lt;p&gt;WARN Deprecated config detected: “use_date_for_updated” i
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="hexo" scheme="http://kisskisso.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VirtualBox共享文件设置</title>
+    <link href="http://kisskisso.com/2021/02/02/VirtualBox%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://kisskisso.com/2021/02/02/VirtualBox%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/</id>
+    <published>2021-02-02T07:19:16.000Z</published>
+    <updated>2021-02-02T07:28:40.616Z</updated>
+    
+    <content type="html"><![CDATA[<p>   在 VirtualBox 中选择<code>设置/共享文件夹</code>，添加想要共享文件夹；设置共享文件夹的名称，选择 <code>固定分配</code>；确认 <code>OK</code>。</p><p>进入 Linux系统，选择一个文件夹作为共享文件夹</p><p>打开终端，写入 <code>$ sudo mount -t vboxsf 共享文件夹的名 在Linux建立的共享文件夹名</code></p><p>ps：</p><ul><li>重启后，已设置的共享文件夹将会消失，需要再次执行挂载命令。</li><li>在Linux建立的文件夹需要<code>sudo chmod 777 [文件夹名]</code></li><li>可是设置<code>自动挂载</code></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   在 VirtualBox 中选择&lt;code&gt;设置/共享文件夹&lt;/code&gt;，添加想要共享文件夹；设置共享文件夹的名称，选择 &lt;code&gt;固定分配&lt;/code&gt;；确认 &lt;code&gt;OK&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;进入 Linux系统，选择一个文件夹作为共享文件夹&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux安装配置</title>
@@ -180,9 +233,9 @@
     <link href="http://kisskisso.com/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/"/>
     <id>http://kisskisso.com/2021/01/30/hexo%20g%E6%8A%A5%E9%94%99/</id>
     <published>2021-01-30T07:06:26.000Z</published>
-    <updated>2021-01-30T10:14:47.793Z</updated>
+    <updated>2021-02-02T07:32:53.844Z</updated>
     
-    <content type="html"><![CDATA[<p>​    电脑死循环自启重置电脑后，安装node出错</p><pre><code>(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(Use `node --trace-warnings ...` to show where the warning was created)(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency</code></pre><p>node版本过高</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>​    电脑死循环自启重置电脑后，安装node出错</p><pre><code>(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(Use `node --trace-warnings ...` to show where the warning was created)(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'column' of module exports inside circular dependency(node:11276) Warning: Accessing non-existent property 'filename' of module exports inside circular dependency</code></pre><p>node版本过高 卸载安装旧版本</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
@@ -482,58 +535,6 @@
         &lt;p&gt;Windows中的剪切板使用基于云的剪贴板从一台电脑上复制图像和文本并粘贴到另一台电脑上。你不仅可以重剪贴板历史记录中粘贴，还可以固定发现自己经常使用的项目。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;若要随时访问剪贴板历史记录，请按 Windows 徽标键 + V。你还可以从剪贴板菜单中
-      
-    
-    </summary>
-    
-    
-      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>DirectoryOpus文件管理</title>
-    <link href="http://kisskisso.com/2021/01/27/DirectoryOpus%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"/>
-    <id>http://kisskisso.com/2021/01/27/DirectoryOpus%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</id>
-    <published>2021-01-27T07:06:07.000Z</published>
-    <updated>2021-01-27T07:28:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="DirectoryOpus">          <a href="#DirectoryOpus" class="heading-link"><i class="fas fa-link"></i></a><a href="#DirectoryOpus" class="headerlink" title="DirectoryOpus"></a>DirectoryOpus</h1>      <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/header.png" alt=""></p><p><span class="exturl"><a class="exturl__link" href="https://www.gpsoft.com.au/" target="_blank" rel="noopener">DirectoryOpus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是 Win 平台上de1资源管理器，功能最完全、可定制化程度高。可以通过 DO 完成几乎所有操作，包括查看图片元信息、预览图片、阅读文本文件内容、批量重命名、操作压缩文件以及 FTP 同步请求等</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;DirectoryOpus&quot;&gt;
-          &lt;a href=&quot;#DirectoryOpus&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#DirectoryOpus&quot; clas
-      
-    
-    </summary>
-    
-    
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
-    
-    
-      <category term="软件" scheme="http://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小技巧</title>
-    <link href="http://kisskisso.com/2021/01/27/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>http://kisskisso.com/2021/01/27/%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
-    <published>2021-01-27T06:50:41.000Z</published>
-    <updated>2021-01-27T06:59:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="小技巧">          <a href="#小技巧" class="heading-link"><i class="fas fa-link"></i></a><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h1>      <ul><li>☺笑容会给你带来一整天的灿烂。</li><li>别犹豫别放弃，保持速度，不要慢下来。</li><li>没有必要为了别人而改变，别人总有离开的时候。改变应该是自发而主动的。</li><li>改变你的思考模式。</li><li>变是为了让自己快乐，为了别人而改变，不会长久的。</li><li>改变外在是改变内心的途径之一。</li><li>别人的想法不重要，要尊重你自己的想法。</li><li>有意识的去改变，要知道自己在做什么。</li><li>可以改变很多次，一切都处于运动变化中。</li><li>坚持。养成一个新习惯至少需要21天。第一天非常难，后来就会越来越简单。</li><li>一个人都有缺点，请做独一无二的你。</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;小技巧&quot;&gt;
-          &lt;a href=&quot;#小技巧&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a
       
     
     </summary>

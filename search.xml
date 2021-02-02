@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Linux安装配置</title>
+      <link href="2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虚拟机安装增强功能</title>
       <link href="2021/02/01/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%8A%9F%E8%83%BD/"/>
       <url>2021/02/01/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%8A%9F%E8%83%BD/</url>
@@ -5174,31 +5193,6 @@
     
     
     <entry>
-      <title>流式布局</title>
-      <link href="2020/01/06/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%AC%94%E8%AE%B0/"/>
-      <url>2020/01/06/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%AC%94%E8%AE%B0/</url>
-      
-        <content type="html"><![CDATA[<h3 id="流式布局">          <a href="#流式布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#流式布局" class="headerlink" title="流式布局"></a><strong>流式布局</strong></h3>      <p>1.ppi 像素密度(越高画质越好,相反)—–没用[设备像素]</p><p>2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]                  </p>        <h2 id="视口-viewport">          <a href="#视口-viewport" class="heading-link"><i class="fas fa-link"></i></a><a href="#视口-viewport" class="headerlink" title="视口(viewport)"></a>视口(viewport)</h2>      <p>1.禁止——水平滚动—页面缩放</p><p>2.视口—–pc[浏览器的大小]—-移动[移动设备的大小]</p>        <h3 id="视口的设置">          <a href="#视口的设置" class="heading-link"><i class="fas fa-link"></i></a><a href="#视口的设置" class="headerlink" title="视口的设置"></a><strong>视口的设置</strong></h3>      <pre><code class="css">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;                      移动设备宽 ←↑         ↑→ 忘了</code></pre><p> <strong>注:</strong> 左右固定—中自适应     **注:**精灵图—-向上向左        <a id="more"></a></p><p>**注:**转元素转块元素、行内元素</p><p>​             ♦行内块元素是一个非标准的元素      </p><p>​             ♦  行内块元素默认都会找基线对齐—(底部多3像素空白)</p><p>​             ♦’’图片是行内块元素转化为块元素  (加浮动=转化块=)—-[清除浮动]’ ‘</p><pre><code>             ∮  盒子之间用padding值撑开,切记不要用margin值</code></pre>        <h3 id="多行文字显示省略号">          <a href="#多行文字显示省略号" class="heading-link"><i class="fas fa-link"></i></a><a href="#多行文字显示省略号" class="headerlink" title="多行文字显示省略号"></a><strong>多行文字显示省略号</strong></h3>      <pre><code class="css">              /* 实现多行文字溢出显示省略号 */              overflow: hidden;             /* 文字溢出显示省略号：单行文字 */              text-overflow: ellipsis;             /* 辅助属性：兼容性 */             -webkit-line-clamp: 2;             /* 文字就要垂直显示 */             -webkit-box-orient: vertical;             /* 还需要设置一个弹性盒子 */             display: -webkit-box;</code></pre>        <h3 id="防止汉字自动换行-默认">          <a href="#防止汉字自动换行-默认" class="heading-link"><i class="fas fa-link"></i></a><a href="#防止汉字自动换行-默认" class="headerlink" title="防止汉字自动换行(默认)"></a><strong>防止汉字自动换行</strong>(默认)</h3>      <pre><code class="css">/*解决让文字不在特殊符号(空格,特殊符号)位置处换行*/  word-break:break-all;</code></pre><p>​         </p>        <h3 id="网页的步骤">          <a href="#网页的步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#网页的步骤" class="headerlink" title="网页的步骤"></a><strong>网页的步骤</strong></h3>      <ol><li><p>页面样式初始化</p></li><li><p>任何的一个项目都要单独的在一个文件夹中</p></li><li><p>任何文件的命名都不能出现汉字</p>        <h3 id="html的步骤">          <a href="#html的步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#html的步骤" class="headerlink" title="html的步骤"></a><strong>html的步骤</strong></h3>      <p>1.一般情况下,在网页中先设置一个大盒子</p><p>​     ▶<u>如果是一个最外层的大盒子,设置宽度100%( 重要)</u></p><p>​      ▶如果盒子的高度可以直接测量出来,可以设置高度,反之让内容撑开</p><p>2.在最外层大盒子中划分其它盒子</p><p>​       ▶搜索盒子(宽度与设备一宽,要设置高度,设置背景颜色,固定定位盒子,以及内[三个盒子])</p><p>​         ▶搜索盒子中要实现     [两端固定大小,中间[设置padding值]自适应效果]</p><p>{为了防止padding撑大盒子设置! !初始化(最好用一个写一个,以防..以防..[<del>ps：想不起来用什么词了…</del>])’}</p>        <h3 id="注-初始化">          <a href="#注-初始化" class="heading-link"><i class="fas fa-link"></i></a><a href="#注-初始化" class="headerlink" title="注:                                                               [初始化]"></a>注:                                                               [初始化]</h3>      <pre><code class="css">/*实际开发不写*/*{   padding:0;   margin:0;}/*真确写法*/body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{    margin:0;    padding:0;    list-style:none;    font-size:14px;    font-familt:'宋体';}a{    /*清除下划线*/    text-decoration:none;}img,input{      vertical-align:middle;      /*去掉边框*/    border:0;    /*轮廓线*/    outline:none;    padding:0;}/*清除浮动*/.clearfix::after{    content:"";    display:block;    height:0;    visibility:hidden;    clear:both;}.clearfix{    *zoom:1;}</code></pre><p> <strong>例外 问题:</strong></p><p>♣背景图片:当页面中的标签某个图标效果,或者图片只是一个衬托效果(给高宽)</p><p>♣img图片:图片角色很重要[广告,商品]</p><p><strong>重要:</strong>  </p><p>选择器层级不要太高,类选择器不要超过3个[权限会很高]</p><p><strong>扩展知识点:</strong></p><p>♠定位 ——♪当一个元素加了定位有层级关系(后来居上原则)[z-index:*;]</p><p>​        ♪定位脱标元素盒子居中</p><pre><code class="css">transform:translate(-50%);[后期会讲,先记住]</code></pre><p>♠盒子模型 ——</p><pre><code class="css">      ♪max-width---最大宽度    ♪min-width-----最小宽度</code></pre><p>♠其它内部属性</p><pre><code class="css">div{    position:absolute;    left:0;    top:0;     width:**px;    height:**px;        font-size:**px;        /*字的大小颜色(背景)对齐方式*/    text-align:****;}</code></pre><p>底部的固定定位:需要加padding-bottom撑开</p><p>名:没有固定的宽或高</p></li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 视口 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>移动回顾</title>
       <link href="2020/01/06/%E7%A7%BB%E5%8A%A8%E5%9B%9E%E9%A1%BE/"/>
       <url>2020/01/06/%E7%A7%BB%E5%8A%A8%E5%9B%9E%E9%A1%BE/</url>
@@ -5216,6 +5210,31 @@
         <tags>
             
             <tag> 移动端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>流式布局</title>
+      <link href="2020/01/06/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%AC%94%E8%AE%B0/"/>
+      <url>2020/01/06/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="流式布局">          <a href="#流式布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#流式布局" class="headerlink" title="流式布局"></a><strong>流式布局</strong></h3>      <p>1.ppi 像素密度(越高画质越好,相反)—–没用[设备像素]</p><p>2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]                  </p>        <h2 id="视口-viewport">          <a href="#视口-viewport" class="heading-link"><i class="fas fa-link"></i></a><a href="#视口-viewport" class="headerlink" title="视口(viewport)"></a>视口(viewport)</h2>      <p>1.禁止——水平滚动—页面缩放</p><p>2.视口—–pc[浏览器的大小]—-移动[移动设备的大小]</p>        <h3 id="视口的设置">          <a href="#视口的设置" class="heading-link"><i class="fas fa-link"></i></a><a href="#视口的设置" class="headerlink" title="视口的设置"></a><strong>视口的设置</strong></h3>      <pre><code class="css">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;                      移动设备宽 ←↑         ↑→ 忘了</code></pre><p> <strong>注:</strong> 左右固定—中自适应     **注:**精灵图—-向上向左        <a id="more"></a></p><p>**注:**转元素转块元素、行内元素</p><p>​             ♦行内块元素是一个非标准的元素      </p><p>​             ♦  行内块元素默认都会找基线对齐—(底部多3像素空白)</p><p>​             ♦’’图片是行内块元素转化为块元素  (加浮动=转化块=)—-[清除浮动]’ ‘</p><pre><code>             ∮  盒子之间用padding值撑开,切记不要用margin值</code></pre>        <h3 id="多行文字显示省略号">          <a href="#多行文字显示省略号" class="heading-link"><i class="fas fa-link"></i></a><a href="#多行文字显示省略号" class="headerlink" title="多行文字显示省略号"></a><strong>多行文字显示省略号</strong></h3>      <pre><code class="css">              /* 实现多行文字溢出显示省略号 */              overflow: hidden;             /* 文字溢出显示省略号：单行文字 */              text-overflow: ellipsis;             /* 辅助属性：兼容性 */             -webkit-line-clamp: 2;             /* 文字就要垂直显示 */             -webkit-box-orient: vertical;             /* 还需要设置一个弹性盒子 */             display: -webkit-box;</code></pre>        <h3 id="防止汉字自动换行-默认">          <a href="#防止汉字自动换行-默认" class="heading-link"><i class="fas fa-link"></i></a><a href="#防止汉字自动换行-默认" class="headerlink" title="防止汉字自动换行(默认)"></a><strong>防止汉字自动换行</strong>(默认)</h3>      <pre><code class="css">/*解决让文字不在特殊符号(空格,特殊符号)位置处换行*/  word-break:break-all;</code></pre><p>​         </p>        <h3 id="网页的步骤">          <a href="#网页的步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#网页的步骤" class="headerlink" title="网页的步骤"></a><strong>网页的步骤</strong></h3>      <ol><li><p>页面样式初始化</p></li><li><p>任何的一个项目都要单独的在一个文件夹中</p></li><li><p>任何文件的命名都不能出现汉字</p>        <h3 id="html的步骤">          <a href="#html的步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#html的步骤" class="headerlink" title="html的步骤"></a><strong>html的步骤</strong></h3>      <p>1.一般情况下,在网页中先设置一个大盒子</p><p>​     ▶<u>如果是一个最外层的大盒子,设置宽度100%( 重要)</u></p><p>​      ▶如果盒子的高度可以直接测量出来,可以设置高度,反之让内容撑开</p><p>2.在最外层大盒子中划分其它盒子</p><p>​       ▶搜索盒子(宽度与设备一宽,要设置高度,设置背景颜色,固定定位盒子,以及内[三个盒子])</p><p>​         ▶搜索盒子中要实现     [两端固定大小,中间[设置padding值]自适应效果]</p><p>{为了防止padding撑大盒子设置! !初始化(最好用一个写一个,以防..以防..[<del>ps：想不起来用什么词了…</del>])’}</p>        <h3 id="注-初始化">          <a href="#注-初始化" class="heading-link"><i class="fas fa-link"></i></a><a href="#注-初始化" class="headerlink" title="注:                                                               [初始化]"></a>注:                                                               [初始化]</h3>      <pre><code class="css">/*实际开发不写*/*{   padding:0;   margin:0;}/*真确写法*/body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{    margin:0;    padding:0;    list-style:none;    font-size:14px;    font-familt:'宋体';}a{    /*清除下划线*/    text-decoration:none;}img,input{      vertical-align:middle;      /*去掉边框*/    border:0;    /*轮廓线*/    outline:none;    padding:0;}/*清除浮动*/.clearfix::after{    content:"";    display:block;    height:0;    visibility:hidden;    clear:both;}.clearfix{    *zoom:1;}</code></pre><p> <strong>例外 问题:</strong></p><p>♣背景图片:当页面中的标签某个图标效果,或者图片只是一个衬托效果(给高宽)</p><p>♣img图片:图片角色很重要[广告,商品]</p><p><strong>重要:</strong>  </p><p>选择器层级不要太高,类选择器不要超过3个[权限会很高]</p><p><strong>扩展知识点:</strong></p><p>♠定位 ——♪当一个元素加了定位有层级关系(后来居上原则)[z-index:*;]</p><p>​        ♪定位脱标元素盒子居中</p><pre><code class="css">transform:translate(-50%);[后期会讲,先记住]</code></pre><p>♠盒子模型 ——</p><pre><code class="css">      ♪max-width---最大宽度    ♪min-width-----最小宽度</code></pre><p>♠其它内部属性</p><pre><code class="css">div{    position:absolute;    left:0;    top:0;     width:**px;    height:**px;        font-size:**px;        /*字的大小颜色(背景)对齐方式*/    text-align:****;}</code></pre><p>底部的固定定位:需要加padding-bottom撑开</p><p>名:没有固定的宽或高</p></li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 视口 </tag>
             
         </tags>
       
@@ -5299,23 +5318,23 @@
     
     
     <entry>
-      <title>如何有效阅读一本书（一）</title>
-      <link href="2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/"/>
-      <url>2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/</url>
+      <title>bootstrap框架</title>
+      <link href="2020/01/04/bootstrap%E6%A1%86%E6%9E%B6/"/>
+      <url>2020/01/04/bootstrap%E6%A1%86%E6%9E%B6/</url>
       
-        <content type="html"><![CDATA[<h2 id="如何有效阅读一本书（一）">          <a href="#如何有效阅读一本书（一）" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何有效阅读一本书（一）" class="headerlink" title="如何有效阅读一本书（一）"></a>如何有效阅读一本书（一）</h2>      <p><strong>1.随想笔记:记录平时的感悟,这与日后的选书息息相关.</strong></p><pre><code>  【注:a.可以书写任何内容 b.按时间顺序书写  c.附上日期 d.灵活运用速记或略记 e.可以粘贴 】</code></pre><p><strong>2.购书清单:找到真正想读的书.</strong></p><p>  <strong>[注:选书.购书.读书和活用才是读书的完整流程] (归档…..)</strong>     </p><blockquote><p>​         <strong>|书名、作者与出版社名.|       标注:所谓读书的动机或目的性,就好比照片的’焦点’.即使拍摄同样的场景,聚焦于面前的花朵和聚焦于远处的建筑,得到的效果完全不同.读书也一样,抱着不同的目的阅读同一本书,也会产生截然不同的效果.</strong></p></blockquote><p><strong>3.各种报道的剪报:尽情的收录感兴趣的内容.</strong></p><p><strong>4.读书笔记:将读后感转变成文字保存下来.</strong><a id="more"></a></p><p><strong>5.养成习惯</strong></p><p><strong>6.放大读书笔记的作用.</strong></p><p><strong>7.创造别具一格的记录方式</strong></p><p><strong>8.信息一元化(读书一元化)</strong>      </p><pre><code class="文字"> 【注:①简单易懂.人人都能做到       ②更容易坚持.       ③自由度高,可自行设置      ④信息'存在'于同一个地方       ⑤直接记录.参考.不易混肴.        ⑥因为'杂乱无章',所以便于活用】</code></pre><p><strong>杂:绫辻行人的钟表馆事件.远宁的八声甘州以及岛田庄司系列和江户川乱步系列.     –新星出版社–</strong>     <strong><del>ps:听说他们家的纸不是很好 :）</del></strong>   </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h3 id="bootstrap框架">          <a href="#bootstrap框架" class="heading-link"><i class="fas fa-link"></i></a><a href="#bootstrap框架" class="headerlink" title="bootstrap框架"></a>bootstrap框架</h3>      <p>1.为了快速实现响应式布局和移动端页面为主.</p><p>2.全局样式[网页中常见标签的基本样式设置]</p><p>栅格系统[为实现响应式布局的]——-媒体查询</p><a id="more"></a><p><strong>☞下载</strong>(css文件)</p><p> <strong>生产环境</strong>:压缩,快速开发,并不适合学习</p><p><strong>源码</strong>:手写,没压缩</p><p><strong>使用</strong>—引用</p><p>语义标签—–(忘了)</p>        <h3 id="全局标签-最好刚刚不要使用…">          <a href="#全局标签-最好刚刚不要使用…" class="heading-link"><i class="fas fa-link"></i></a><a href="#全局标签-最好刚刚不要使用…" class="headerlink" title="全局标签(最好刚刚不要使用…)"></a><strong>全局标签</strong>(最好刚刚不要使用…)</h3>      <pre><code class="css">标题标签(可以直接写标签名字 | 对应类名)表示超小文字(可以使用small标签 | 对应的类名)text-capitallizr //*首个字母大小.text-capitalize</code></pre>        <h3 id="栅格系统-odd奇数-even偶数">          <a href="#栅格系统-odd奇数-even偶数" class="heading-link"><i class="fas fa-link"></i></a><a href="#栅格系统-odd奇数-even偶数" class="headerlink" title="栅格系统             odd奇数   even偶数"></a><strong>栅格系统</strong>             odd奇数   even偶数</h3>      <pre><code class="css">作用:用来实现响应式布局,通过将设备(视口)分为12列</code></pre><pre><code class="css">使用:1.引用bootstrap.css文件  [用一个就行]2.给父元素容器设置container[固定居中]或者container-fluid[满屏]3.只要给盒子设置了****或者***类名后就会分为12列4.通过栅格参数实现响应式布</code></pre><pre><code>.col-md ----&gt;适配电脑屏幕.col-sm ----&gt;适配平板设备.col-xs ----&gt;适配手机设备.col-lg ----&gt;适配大屏幕设备  2000px(或者1200px)?忘了</code></pre><p>可以给 *加边框,也可以加padding值</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Web前端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 我的读书笔记 </tag>
+            <tag> bootstrap </tag>
             
         </tags>
       
@@ -5349,11 +5368,11 @@
     
     
     <entry>
-      <title>bootstrap框架</title>
-      <link href="2020/01/04/bootstrap%E6%A1%86%E6%9E%B6/"/>
-      <url>2020/01/04/bootstrap%E6%A1%86%E6%9E%B6/</url>
+      <title>HTML基础（二）</title>
+      <link href="2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
+      <url>2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
       
-        <content type="html"><![CDATA[<h3 id="bootstrap框架">          <a href="#bootstrap框架" class="heading-link"><i class="fas fa-link"></i></a><a href="#bootstrap框架" class="headerlink" title="bootstrap框架"></a>bootstrap框架</h3>      <p>1.为了快速实现响应式布局和移动端页面为主.</p><p>2.全局样式[网页中常见标签的基本样式设置]</p><p>栅格系统[为实现响应式布局的]——-媒体查询</p><a id="more"></a><p><strong>☞下载</strong>(css文件)</p><p> <strong>生产环境</strong>:压缩,快速开发,并不适合学习</p><p><strong>源码</strong>:手写,没压缩</p><p><strong>使用</strong>—引用</p><p>语义标签—–(忘了)</p>        <h3 id="全局标签-最好刚刚不要使用…">          <a href="#全局标签-最好刚刚不要使用…" class="heading-link"><i class="fas fa-link"></i></a><a href="#全局标签-最好刚刚不要使用…" class="headerlink" title="全局标签(最好刚刚不要使用…)"></a><strong>全局标签</strong>(最好刚刚不要使用…)</h3>      <pre><code class="css">标题标签(可以直接写标签名字 | 对应类名)表示超小文字(可以使用small标签 | 对应的类名)text-capitallizr //*首个字母大小.text-capitalize</code></pre>        <h3 id="栅格系统-odd奇数-even偶数">          <a href="#栅格系统-odd奇数-even偶数" class="heading-link"><i class="fas fa-link"></i></a><a href="#栅格系统-odd奇数-even偶数" class="headerlink" title="栅格系统             odd奇数   even偶数"></a><strong>栅格系统</strong>             odd奇数   even偶数</h3>      <pre><code class="css">作用:用来实现响应式布局,通过将设备(视口)分为12列</code></pre><pre><code class="css">使用:1.引用bootstrap.css文件  [用一个就行]2.给父元素容器设置container[固定居中]或者container-fluid[满屏]3.只要给盒子设置了****或者***类名后就会分为12列4.通过栅格参数实现响应式布</code></pre><pre><code>.col-md ----&gt;适配电脑屏幕.col-sm ----&gt;适配平板设备.col-xs ----&gt;适配手机设备.col-lg ----&gt;适配大屏幕设备  2000px(或者1200px)?忘了</code></pre><p>可以给 *加边框,也可以加padding值</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="第二天">          <a href="#第二天" class="heading-link"><i class="fas fa-link"></i></a><a href="#第二天" class="headerlink" title="第二天"></a><strong>第二天</strong></h2>      <p>json  更改          </p><p>表格:跨行(rowspan)是竖着[从上往下夸]   跨列(colspan)横着</p><p>ctrl  f  查找<br>ctrl   s   保存<br>auto rename tag 插件<br>按住滚轮往下b</p><a id="more"></a><p>dl 自定义列表  </p><p>dt  文字类标签</p><p>dd   并列</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -5365,7 +5384,7 @@
       
         <tags>
             
-            <tag> bootstrap </tag>
+            <tag> HTML（二） </tag>
             
         </tags>
       
@@ -5399,11 +5418,11 @@
     
     
     <entry>
-      <title>less补充</title>
-      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
-      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
+      <title>DOM模型</title>
+      <link href="2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"/>
+      <url>2020/01/04/DOM%E6%A8%A1%E5%9E%8B/</url>
       
-        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="DOM模型">          <a href="#DOM模型" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h1>              <h3 id="JavaScript由以下三部分构成">          <a href="#JavaScript由以下三部分构成" class="heading-link"><i class="fas fa-link"></i></a><a href="#JavaScript由以下三部分构成" class="headerlink" title="JavaScript由以下三部分构成"></a>JavaScript由以下三部分构成</h3>      <p>1.ECMAScript  2.Bom（浏览器对象） 3.Dom（文档对象）</p><pre><code class="js">注：&lt;script&gt;放在body的最后面</code></pre><a id="more"></a>        <h5 id="术语">          <a href="#术语" class="heading-link"><i class="fas fa-link"></i></a><a href="#术语" class="headerlink" title="术语"></a>术语</h5>      <p>1.文档（document）</p><pre><code class="文字">注：1.语法 2.注意大小写3.样式不加-4.多加或少加单引号''</code></pre><p> 2.节点（了解）</p><pre><code class="CN">构成网页的所有组成部分，在js中都被成为节点。节点类型：①标签节点②属性节点③文本节点节点属性：①nodeType节点类型②nodeName节点类型③nodeValue节点值</code></pre><p>注：节点本身就是对象。</p><p>元素节 == 标签名    属性节 == 属性名  文本节 == #text    value == null(空)</p><p>3.元素</p><pre><code class="cn">就是html中的标签，在js中称为元素或对象，是节点的一种，也称为元素节点</code></pre>        <h5 id="Dom编程的基本理解">          <a href="#Dom编程的基本理解" class="heading-link"><i class="fas fa-link"></i></a><a href="#Dom编程的基本理解" class="headerlink" title="Dom编程的基本理解"></a>Dom编程的基本理解</h5>      <pre><code class="cn">在js代码中获取到网页中的有关标签（元素），并对其进行某种操作。</code></pre>        <h3 id="DOM模型-1">          <a href="#DOM模型-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型-1" class="headerlink" title="DOM模型"></a>DOM模型</h3>              <h5 id="如何获取元素">          <a href="#如何获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何获取元素" class="headerlink" title="如何获取元素"></a>如何获取元素</h5>      <pre><code class="js">根据ID名获取元素 ------document.getElementByid（'id名'）【结果是该id所对应的元素（对象/节点）】根据标签获取元素 ------document.getElementsByTagName（'标签名'）【结果是一个'集合'（伪数组）】|注意：标签获取即使只获取一个元素，也是一个伪数组，也是集合，也要用下标去获取|    根据类名获取元素 ------document.getElementsByClassName（'类名'）【结果是一个'集合'（伪数组）】               ------document.querySelector('选择器')【结果是该选择器所对应的第一个元素（对象/节点）】根据选择器获取元素               ------document.querySelectorAll('选择器')【结果是一个'集合'（伪数组）】</code></pre>        <h5 id="元素（节点）关系获取元素">          <a href="#元素（节点）关系获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#元素（节点）关系获取元素" class="headerlink" title="元素（节点）关系获取元素"></a>元素（节点）关系获取元素</h5>      <pre><code class="js">xx元素.parentNode--------【获取到某元素的父元素】xx元素.children---------【获取到某元素的所有子元素，是一个集合】xx元素.firstElementChild--------【获取到某个元素的第一个子元素】xx元素.lastElementChild--------【获取到某个元素的最后一个子元素】xx元素.nextElementSibing-------【获取到某个元素的后一个兄弟元素】xx元素.previousElementSibing------【获取到某个元素的前一个兄弟元素】</code></pre>        <h5 id="添加元素">          <a href="#添加元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h5>      <pre><code class="js">创建元素-----var 变量 = document.createElement（'标签名'）|注：创建的元素以内存变量的形式，未放入页面中|克隆元素-----var 变量 = xx元素.cloneNode（true/false）【true表示同时克隆该元素的所有内部内容。false表示不克隆该元素的内部内容】添加元素到父元素中的最后位置------xx父元素.appendChild（xx要添加的元素）【结果该新添加的元素成为了父元素的最后一个子元素】添加元素到父元素中的某个元素之前-----xx父元素.insertBefore（xx要添加的元素，xx现有的元素）【结果该新添加的元素成为了父元素的一个子元素，并在指定的子元素前】替换某个现有元素------xx父元素.replaceChild（xx新，xx旧）【结果就是新的元素替换了所给定的现有子元素】</code></pre>        <h5 id="删除元素">          <a href="#删除元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5>      <pre><code>父元素.removeChild（子元素）</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -5415,7 +5434,7 @@
       
         <tags>
             
-            <tag> less </tag>
+            <tag> API </tag>
             
         </tags>
       
@@ -5449,31 +5468,6 @@
     
     
     <entry>
-      <title>HTML基础（二）</title>
-      <link href="2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
-      <url>2020/01/04/HTML%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
-      
-        <content type="html"><![CDATA[<h2 id="第二天">          <a href="#第二天" class="heading-link"><i class="fas fa-link"></i></a><a href="#第二天" class="headerlink" title="第二天"></a><strong>第二天</strong></h2>      <p>json  更改          </p><p>表格:跨行(rowspan)是竖着[从上往下夸]   跨列(colspan)横着</p><p>ctrl  f  查找<br>ctrl   s   保存<br>auto rename tag 插件<br>按住滚轮往下b</p><a id="more"></a><p>dl 自定义列表  </p><p>dt  文字类标签</p><p>dd   并列</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> HTML（二） </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CSS高级用法</title>
       <link href="2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/"/>
       <url>2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</url>
@@ -5499,11 +5493,36 @@
     
     
     <entry>
-      <title>DOM模型</title>
-      <link href="2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"/>
-      <url>2020/01/04/DOM%E6%A8%A1%E5%9E%8B/</url>
+      <title>如何有效阅读一本书（一）</title>
+      <link href="2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/"/>
+      <url>2020/01/04/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6(%E4%B8%80)/</url>
       
-        <content type="html"><![CDATA[<h1 id="DOM模型">          <a href="#DOM模型" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h1>              <h3 id="JavaScript由以下三部分构成">          <a href="#JavaScript由以下三部分构成" class="heading-link"><i class="fas fa-link"></i></a><a href="#JavaScript由以下三部分构成" class="headerlink" title="JavaScript由以下三部分构成"></a>JavaScript由以下三部分构成</h3>      <p>1.ECMAScript  2.Bom（浏览器对象） 3.Dom（文档对象）</p><pre><code class="js">注：&lt;script&gt;放在body的最后面</code></pre><a id="more"></a>        <h5 id="术语">          <a href="#术语" class="heading-link"><i class="fas fa-link"></i></a><a href="#术语" class="headerlink" title="术语"></a>术语</h5>      <p>1.文档（document）</p><pre><code class="文字">注：1.语法 2.注意大小写3.样式不加-4.多加或少加单引号''</code></pre><p> 2.节点（了解）</p><pre><code class="CN">构成网页的所有组成部分，在js中都被成为节点。节点类型：①标签节点②属性节点③文本节点节点属性：①nodeType节点类型②nodeName节点类型③nodeValue节点值</code></pre><p>注：节点本身就是对象。</p><p>元素节 == 标签名    属性节 == 属性名  文本节 == #text    value == null(空)</p><p>3.元素</p><pre><code class="cn">就是html中的标签，在js中称为元素或对象，是节点的一种，也称为元素节点</code></pre>        <h5 id="Dom编程的基本理解">          <a href="#Dom编程的基本理解" class="heading-link"><i class="fas fa-link"></i></a><a href="#Dom编程的基本理解" class="headerlink" title="Dom编程的基本理解"></a>Dom编程的基本理解</h5>      <pre><code class="cn">在js代码中获取到网页中的有关标签（元素），并对其进行某种操作。</code></pre>        <h3 id="DOM模型-1">          <a href="#DOM模型-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#DOM模型-1" class="headerlink" title="DOM模型"></a>DOM模型</h3>              <h5 id="如何获取元素">          <a href="#如何获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何获取元素" class="headerlink" title="如何获取元素"></a>如何获取元素</h5>      <pre><code class="js">根据ID名获取元素 ------document.getElementByid（'id名'）【结果是该id所对应的元素（对象/节点）】根据标签获取元素 ------document.getElementsByTagName（'标签名'）【结果是一个'集合'（伪数组）】|注意：标签获取即使只获取一个元素，也是一个伪数组，也是集合，也要用下标去获取|    根据类名获取元素 ------document.getElementsByClassName（'类名'）【结果是一个'集合'（伪数组）】               ------document.querySelector('选择器')【结果是该选择器所对应的第一个元素（对象/节点）】根据选择器获取元素               ------document.querySelectorAll('选择器')【结果是一个'集合'（伪数组）】</code></pre>        <h5 id="元素（节点）关系获取元素">          <a href="#元素（节点）关系获取元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#元素（节点）关系获取元素" class="headerlink" title="元素（节点）关系获取元素"></a>元素（节点）关系获取元素</h5>      <pre><code class="js">xx元素.parentNode--------【获取到某元素的父元素】xx元素.children---------【获取到某元素的所有子元素，是一个集合】xx元素.firstElementChild--------【获取到某个元素的第一个子元素】xx元素.lastElementChild--------【获取到某个元素的最后一个子元素】xx元素.nextElementSibing-------【获取到某个元素的后一个兄弟元素】xx元素.previousElementSibing------【获取到某个元素的前一个兄弟元素】</code></pre>        <h5 id="添加元素">          <a href="#添加元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h5>      <pre><code class="js">创建元素-----var 变量 = document.createElement（'标签名'）|注：创建的元素以内存变量的形式，未放入页面中|克隆元素-----var 变量 = xx元素.cloneNode（true/false）【true表示同时克隆该元素的所有内部内容。false表示不克隆该元素的内部内容】添加元素到父元素中的最后位置------xx父元素.appendChild（xx要添加的元素）【结果该新添加的元素成为了父元素的最后一个子元素】添加元素到父元素中的某个元素之前-----xx父元素.insertBefore（xx要添加的元素，xx现有的元素）【结果该新添加的元素成为了父元素的一个子元素，并在指定的子元素前】替换某个现有元素------xx父元素.replaceChild（xx新，xx旧）【结果就是新的元素替换了所给定的现有子元素】</code></pre>        <h5 id="删除元素">          <a href="#删除元素" class="heading-link"><i class="fas fa-link"></i></a><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5>      <pre><code>父元素.removeChild（子元素）</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="如何有效阅读一本书（一）">          <a href="#如何有效阅读一本书（一）" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何有效阅读一本书（一）" class="headerlink" title="如何有效阅读一本书（一）"></a>如何有效阅读一本书（一）</h2>      <p><strong>1.随想笔记:记录平时的感悟,这与日后的选书息息相关.</strong></p><pre><code>  【注:a.可以书写任何内容 b.按时间顺序书写  c.附上日期 d.灵活运用速记或略记 e.可以粘贴 】</code></pre><p><strong>2.购书清单:找到真正想读的书.</strong></p><p>  <strong>[注:选书.购书.读书和活用才是读书的完整流程] (归档…..)</strong>     </p><blockquote><p>​         <strong>|书名、作者与出版社名.|       标注:所谓读书的动机或目的性,就好比照片的’焦点’.即使拍摄同样的场景,聚焦于面前的花朵和聚焦于远处的建筑,得到的效果完全不同.读书也一样,抱着不同的目的阅读同一本书,也会产生截然不同的效果.</strong></p></blockquote><p><strong>3.各种报道的剪报:尽情的收录感兴趣的内容.</strong></p><p><strong>4.读书笔记:将读后感转变成文字保存下来.</strong><a id="more"></a></p><p><strong>5.养成习惯</strong></p><p><strong>6.放大读书笔记的作用.</strong></p><p><strong>7.创造别具一格的记录方式</strong></p><p><strong>8.信息一元化(读书一元化)</strong>      </p><pre><code class="文字"> 【注:①简单易懂.人人都能做到       ②更容易坚持.       ③自由度高,可自行设置      ④信息'存在'于同一个地方       ⑤直接记录.参考.不易混肴.        ⑥因为'杂乱无章',所以便于活用】</code></pre><p><strong>杂:绫辻行人的钟表馆事件.远宁的八声甘州以及岛田庄司系列和江户川乱步系列.     –新星出版社–</strong>     <strong><del>ps:听说他们家的纸不是很好 :）</del></strong>   </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的读书笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>less补充</title>
+      <link href="2020/01/04/less%E8%A1%A5%E5%85%85/"/>
+      <url>2020/01/04/less%E8%A1%A5%E5%85%85/</url>
+      
+        <content type="html"><![CDATA[<h3 id="less补充">          <a href="#less补充" class="heading-link"><i class="fas fa-link"></i></a><a href="#less补充" class="headerlink" title="less补充"></a><strong>less补充</strong></h3>      <p><strong>引入less</strong>:</p><pre><code class="css">1.通过link引入less文件Eg: &lt;link rel="stylesheet/less"  href="css/less" &gt;2.需要在网页中引入less.js文件Eg:&lt;script src="less.js"&gt; &lt;script&gt;3.需要在服务器环境下执行</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -5515,7 +5534,7 @@
       
         <tags>
             
-            <tag> API </tag>
+            <tag> less </tag>
             
         </tags>
       

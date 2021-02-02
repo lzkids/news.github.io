@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="state：作用：定义全局数据(保存所以公共数据)。类似data export default new Vue.store({     state:{              }   }) export default store  获取数据：state 直接使用：1.this.$store.state.自定义 映射的方式：2.computed:{...mapState([&#39;&#39;])}">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="state：作用：定义全局数据(保存所以公共数据)。类似data export default new Vue.store({     state:{      }   }) export default store 获取数据：state 直接使用：1.this.$store.state.自定义 映射的方式：2.computed:{...mapState([&#39;&#39;])}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vuex的核心">
 <meta property="og:url" content="http://kisskisso.com/2020/04/08/vuex%E7%9A%84%E6%A0%B8%E5%BF%83/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="state：作用：定义全局数据(保存所以公共数据)。类似data export default new Vue.store({     state:{              }   }) export default store  获取数据：state 直接使用：1.this.$store.state.自定义 映射的方式：2.computed:{...mapState([&#39;&#39;])}">
+<meta property="og:description" content="state：作用：定义全局数据(保存所以公共数据)。类似data export default new Vue.store({     state:{      }   }) export default store 获取数据：state 直接使用：1.this.$store.state.自定义 映射的方式：2.computed:{...mapState([&#39;&#39;])}">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-08T05:33:08.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:43:02.000Z">
@@ -33,17 +33,14 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">vuex的核心</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-04-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">249</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">2分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><code>state：</code>作用：定义全局数据(<code>保存所以公共数据</code>)。类似data</p>
 <pre><code class="js">export default new Vue.store({
     state:{
-        
+
     }
   })
-export default store
-</code></pre>
+export default store</code></pre>
 <p>获取数据：<code>state</code></p>
 <p>直接使用：<code>1.this.$store.state.自定义</code></p>
 <p>映射的方式：<code>2.computed:{...mapState([''])}</code>     <a id="more"></a></p>
@@ -51,26 +48,29 @@ export default store
 <p><code>mutation</code>作用：修改公共数据</p>
 <pre><code class="js">const store = new Vuex.Store({
     state: {
-        
+
     },
     mutations: {
-        
+
     }
-})
-</code></pre>
+})</code></pre>
 <p>修改：<code>mutations</code></p>
 <p>直接使用：<code>this.$store.commit('','')</code><strong><u>不推荐</u></strong></p>
-<p><code>map</code>映射的方式：<code>{ methods:{ // 相当于是在当前组件内部的methods加了对应的方法    ...mapMutations(['mutation名'，'mutation名']) } }</code></p>
+<p><code>map</code>映射的方式：<code>{
+methods:{
+// 相当于是在当前组件内部的methods加了对应的方法
+   ...mapMutations(['mutation名'，'mutation名'])
+}
+}</code></p>
 <p><code>※action</code>作用：可以执行异步代码；可以同时调用多个mutation</p>
 <pre><code class="js">new Vuex.store ({
     state: {},
     actions: {
        函数名 :function（参数1，参数2）{
-        
+
    }
   }
-})
-</code></pre>
+})</code></pre>
 <p>使用：<code>actions</code></p>
 <p>直接使用：<code>this.$store.dispatch</code></p>
 <p><code>map</code>映射的方式：<code>methods:{...mapActions ([''])}</code></p>

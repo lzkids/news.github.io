@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-09T12:25:02.705Z</updated>
+  <updated>2021-02-10T09:06:34.046Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何在Firefox中禁用WebRTC</title>
+    <link href="http://kisskisso.com/2021/02/10/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC/"/>
+    <id>http://kisskisso.com/2021/02/10/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC/</id>
+    <published>2021-02-10T08:30:30.000Z</published>
+    <updated>2021-02-10T09:06:34.046Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="如何在Firefox中禁用WebRTC？">          <a href="#如何在Firefox中禁用WebRTC？" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何在Firefox中禁用WebRTC？" class="headerlink" title="如何在Firefox中禁用WebRTC？"></a>如何在Firefox中禁用WebRTC？</h3>      <p>简而言之：在 <code>about:config</code> 中设置 <code>media.peerconnection.enabled</code>为 <code>false</code>。<br>解释一下:<br>在firefox地址栏输入 “about:config “然后按回车键。<br>按 “我会小心的，我保证！”按钮。<br>搜索 “media.peerconnection.enabled”<br>双击该条目，”Value “列现在应该是 “false”<br>完成。再做一次<span class="exturl"><a class="exturl__link" href="https://ipleak.net/" target="_blank" rel="noopener">WebRTC泄漏测试</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>如果你想确保每一个与WebRTC相关的设置真的被禁用，请更改这些设置。<br>1.media.peerconnection.turn.disable = true。<br>2.media.peerconnection.use_document_iceservers = false<br>3.media.peerconnection.video.enabled = false<br>4.media.peerconnection.identity.timeout = 1<br>现在你可以100%确定WebRTC被禁用。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;如何在Firefox中禁用WebRTC？&quot;&gt;
+          &lt;a href=&quot;#如何在Firefox中禁用WebRTC？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#如何在Fi
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>向你而生</title>
     <link href="http://kisskisso.com/2021/02/09/%E5%90%91%E4%BD%A0%E8%80%8C%E7%94%9F/"/>
     <id>http://kisskisso.com/2021/02/09/%E5%90%91%E4%BD%A0%E8%80%8C%E7%94%9F/</id>
     <published>2021-02-09T12:22:48.000Z</published>
-    <updated>2021-02-09T12:25:02.705Z</updated>
+    <updated>2021-02-09T12:26:25.566Z</updated>
     
     <content type="html"><![CDATA[<p>“反抗将自身价值给予人生，贯穿人生的始末，恢复人生的伟大对眼光开阔的人而言，最美的景观莫过于智力与超过人的现实之间的搏斗。”—–走出自卑陰影，在更高､更遠的地方找到生命的補償</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -523,32 +548,6 @@
     
       <category term="语言与Linux" scheme="http://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hyper终端简单配置</title>
-    <link href="http://kisskisso.com/2021/01/28/Hyper%E7%BB%88%E7%AB%AF%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/"/>
-    <id>http://kisskisso.com/2021/01/28/Hyper%E7%BB%88%E7%AB%AF%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</id>
-    <published>2021-01-28T05:31:28.000Z</published>
-    <updated>2021-01-28T11:53:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>  <span class="exturl"><a class="exturl__link" href="https://hyper.is/" target="_blank" rel="noopener">Hyper</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是一个开源的、全平台适用的、有着丰富主题和插件的现代化终端。</p><p>打开之后是默认的cmd，更改顺序是左上角Edit—&gt;Preferences如图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/komi_2021-01-28_13-37-46.png" alt=""></p><p>打开之后是一个.hyper.js的文件找到shell，在引号内写入<code>C:\\Windows\\System32\\bash.exe</code> 如图 <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/shell_2021-01-28_13-44-18.png" alt=""></p><p>当然前提是有子系统，更改主题找到<code>plugins</code>(在.hyper.js里) 填入你喜欢的<span class="exturl"><a class="exturl__link" href="https://hyper.is/themes" target="_blank" rel="noopener">主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> （hyperterm-monokai）</p><p>如果要切换zsh则需要在Preferences的shell在引号内写入<code>C:\\Windows\\System32\\wsl.exe</code> 和<code>shellArgs: ['~']</code>如图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-28%20192821.png" alt=""></p><p><strong>下载插件</strong> </p><p>推荐这两个插件，<span class="exturl"><a class="exturl__link" href="https://hyper.is/plugins" target="_blank" rel="noopener">其它插件</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><pre><code class="bash"> # hyper-opacity,解决windows下hyper原生不支持的窗口透明化 hyper i hyper-opacity # Hyper的扩展，可以打开电源模式，并有额外的哇模式。 hyper i hyperpower # 在 Hyper 终端启动之前和之后初始化命令的终极和最完整的扩展 hyper i hyper-init</code></pre><p>在Hyper安装会报错，需要在管理员Windows PowerShell中下载或者管理员cmd中下载</p><p>安装成功如下图</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-28%20194803.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  &lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://hyper.is/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hyper&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 是一个开源的、全平台适用的、有着丰富主题和插件的现代化终端。&lt;/p&gt;
-&lt;p&gt;打开之后是默认的cmd，更改顺序是左上角Edit—&amp;gt;Preferences如图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/komi_2021-01-28_13-37-46.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;打开之后是一个.hyper.js的文件找到shell，在引号内写入&lt;code&gt;C:\\Windows\\System32\\bash.exe&lt;/code&gt; 如图&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
-    
-    
-      <category term="终端" scheme="http://kisskisso.com/tags/%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   

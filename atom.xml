@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-10T09:06:34.046Z</updated>
+  <updated>2021-02-15T09:20:25.883Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何在Firefox中禁用WebRTC补充</title>
+    <link href="http://kisskisso.com/2021/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC%E8%A1%A5%E5%85%85/"/>
+    <id>http://kisskisso.com/2021/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC%E8%A1%A5%E5%85%85/</id>
+    <published>2021-02-15T08:10:28.000Z</published>
+    <updated>2021-02-15T09:20:25.883Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="FireFox-“about-config”的隐私设置调整">          <a href="#FireFox-“about-config”的隐私设置调整" class="heading-link"><i class="fas fa-link"></i></a><a href="#FireFox-“about-config”的隐私设置调整" class="headerlink" title="FireFox: “about:config”的隐私设置调整"></a>FireFox: “about:config”的隐私设置调整</h2>              <h3 id="准备：">          <a href="#准备：" class="heading-link"><i class="fas fa-link"></i></a><a href="#准备：" class="headerlink" title="准备："></a>准备：</h3>      <p>1.在浏览器的网址列输入 “about:config” 并点击 enter 键</p><p>2.点击”I’ll be careful, I promise!”按钮<br>3.依照下方的指示操作…</p>        <h3 id="开始动手：">          <a href="#开始动手：" class="heading-link"><i class="fas fa-link"></i></a><a href="#开始动手：" class="headerlink" title="开始动手："></a>开始动手：</h3>      <ol><li><p>privacy.firstparty.isolate = true</p></li><li><ul><li><span class="exturl"><a class="exturl__link" href="https://wiki.mozilla.org/Security/Tor_Uplift" target="_blank" rel="noopener">Tor Uplift</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>效用的结果，它可隔绝主要访问网域中所有浏览器辨识器来源（如 cookies），并期能可阻挡跨域名的追踪。（如果已使用扩展 “Cookie AutoDelete”，请不要打开此功能。）</li></ul></li><li><p>privacy.resistFingerprinting = true</p></li><li><ul><li><span class="exturl"><a class="exturl__link" href="https://wiki.mozilla.org/Security/Tor_Uplift" target="_blank" rel="noopener">Tor Uplift</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 效用的结果, 此偏好可让 Firefox 更能抵抗指纹辨识。</li></ul></li><li><p>privacy.trackingprotection.enabled = true</p></li><li><ul><li>Mozilla 新內建的追踪保护功能，其利用 Disconnect.me 过滤名单，但如果你已使用其它第三方的屏滤器如 uBlock Origin，其效能就会重复多余，因此你可以将之设为关闭。</li></ul></li><li><p>browser.cache.offline.enable = false</p></li><li><ul><li>取消离线的缓存快取资料</li></ul></li><li><p>browser.safebrowsing.malware = false <a id="more"></a></p></li><li><ul><li>取消 Google 安全浏览的恶意软件检查。这会有安全上的风险，但可改善隐私。</li></ul></li><li><p>browser.safebrowsing.phishing.enabled = false</p></li><li><ul><li>取消Google安全浏览与防钓鱼保护。这会有安全上的风险，但可改善隐私。</li></ul></li><li><p>browser.send_pings = false</p></li><li><ul><li>这个性能可让网站追踪访客的点击情況。</li></ul></li><li><p>browser.sessionstore.max_tabs_undo = 0</p></li><li><ul><li>尽管 Firefox 设定为不记录浏览资讯，但在用户关闭浏览器分页之前，这些资讯仍会暂存在选单 -&gt; 浏览历史 -&gt; 近期关闭的分页 底下</li></ul></li><li><p>browser.urlbar.speculativeConnect.enabled = false</p></li><li><ul><li>关闭自动完成的 URLs 预载， 当用户在网址列输入资讯时，Firefox 会自行预载，有人担心这些浏览器自动建议的网址并非是用户想要连上的网站。</li></ul></li><li><p>dom.battery.enabled = false</p></li><li><ul><li>网站主人可以追踪用户上网设备的电池状况。</li></ul></li><li><p>dom.event.clipboardevents.enabled = false</p></li><li><ul><li>取消让网站在让你从某网页中复制、贴上是剪下任何内容時，会发出通知。这会让他们知道网页的哪一部份被挑选。</li></ul></li><li><p>geo.enabled = false</p></li><li><ul><li>取消地理定位资料</li></ul></li><li><p>media.navigator.enabled = false</p></li><li><ul><li>网站可以跟踪用户上网设备里的麦克风和摄影机状态</li></ul></li><li><p>network.cookie.cookieBehavior = 1</p></li><li><ul><li>取消cookies</li><li>0 = Accept all cookies by default （默认接受所有cookies）</li><li>1 = Only accept from the originating site (block third party cookies) (只接受来自原网站的Cookies（阻止第三方Cookies）。)</li><li>2 = Block all cookies by default ( 默认情况下禁止所有cookies)</li></ul></li><li><p>network.cookie.lifetimePolicy = 2</p></li><li><ul><li>cookies 在期间结束后会被刪除</li><li>0 = Accept cookies normally (正常接受cookies)</li><li>1 = Prompt for each cookie (每个cookie的提示)</li><li>2 = Accept for current session only (只接受当前会议)</li><li>3 = Accept for N days (接受N天)</li></ul></li><li><p>network.http.referer.trimmingPolicy = 2</p></li><li><ul><li>Send only the scheme, host, and port in the <code>Referer</code> header  (只发送Referer标头中的方案、主机和端口。)</li><li>0 = Send the full URL in the <code>Referer</code> header (在Referer header中发送完整的URL。)</li><li>1 = Send the URL without its query string in the <code>Referer</code> header (发送不含查询字符串的URL的Referer header)</li><li>2 = Send only the scheme, host, and port in the <code>Referer</code> header</li></ul></li><li><p>network.http.referer.XOriginPolicy = 2</p></li><li><ul><li>Only send <code>Referer</code> header when the full hostnames match. (Note: if you notice significant breakage, you might try <code>1</code> combined with an <code>XOriginTrimmingPolicy</code> tweak below.) </li><li>0 = Send <code>Referer</code> in all cases</li><li>1 = Send <code>Referer</code> to same eTLD sites</li><li>2 = Send <code>Referer</code> only when the full hostnames match</li></ul></li><li><p>network.http.referer.XOriginTrimmingPolicy = 2</p></li><li><ul><li>When sending <code>Referer</code> across origins, only send scheme, host, and port in the <code>Referer</code> header of cross-origin requests. </li><li>0 = Send full url in <code>Referer</code></li><li>1 = Send url without query string in <code>Referer</code></li><li>2 = Only send scheme, host, and port in <code>Referer</code></li></ul></li><li><p>webgl.disabled = true</p></li><li><ul><li>WebGL 有潜在的安全风险</li></ul></li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;FireFox-“about-config”的隐私设置调整&quot;&gt;
+          &lt;a href=&quot;#FireFox-“about-config”的隐私设置调整&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#FireFox-“about-config”的隐私设置调整&quot; class=&quot;headerlink&quot; title=&quot;FireFox: “about:config”的隐私设置调整&quot;&gt;&lt;/a&gt;FireFox: “about:config”的隐私设置调整&lt;/h2&gt;
+      
+        &lt;h3 id=&quot;准备：&quot;&gt;
+          &lt;a href=&quot;#准备：&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#准备：&quot; class=&quot;headerlink&quot; title=&quot;准备：&quot;&gt;&lt;/a&gt;准备：&lt;/h3&gt;
+      &lt;p&gt;1.在浏览器的网址列输入 “about:config” 并点击 enter 键&lt;/p&gt;
+&lt;p&gt;2.点击”I’ll be careful, I promise!”按钮&lt;br&gt;3.依照下方的指示操作…&lt;/p&gt;
+
+        &lt;h3 id=&quot;开始动手：&quot;&gt;
+          &lt;a href=&quot;#开始动手：&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#开始动手：&quot; class=&quot;headerlink&quot; title=&quot;开始动手：&quot;&gt;&lt;/a&gt;开始动手：&lt;/h3&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;privacy.firstparty.isolate = true&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://wiki.mozilla.org/Security/Tor_Uplift&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tor Uplift&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;效用的结果，它可隔绝主要访问网域中所有浏览器辨识器来源（如 cookies），并期能可阻挡跨域名的追踪。（如果已使用扩展 “Cookie AutoDelete”，请不要打开此功能。）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;privacy.resistFingerprinting = true&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://wiki.mozilla.org/Security/Tor_Uplift&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tor Uplift&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 效用的结果, 此偏好可让 Firefox 更能抵抗指纹辨识。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;privacy.trackingprotection.enabled = true&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;Mozilla 新內建的追踪保护功能，其利用 Disconnect.me 过滤名单，但如果你已使用其它第三方的屏滤器如 uBlock Origin，其效能就会重复多余，因此你可以将之设为关闭。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;browser.cache.offline.enable = false&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;取消离线的缓存快取资料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;browser.safebrowsing.malware = false&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="WebRTC" scheme="http://kisskisso.com/tags/WebRTC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何在Firefox中禁用WebRTC</title>
     <link href="http://kisskisso.com/2021/02/10/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC/"/>
     <id>http://kisskisso.com/2021/02/10/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC/</id>
     <published>2021-02-10T08:30:30.000Z</published>
-    <updated>2021-02-10T09:06:34.046Z</updated>
+    <updated>2021-02-10T09:07:14.208Z</updated>
     
     <content type="html"><![CDATA[<h3 id="如何在Firefox中禁用WebRTC？">          <a href="#如何在Firefox中禁用WebRTC？" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何在Firefox中禁用WebRTC？" class="headerlink" title="如何在Firefox中禁用WebRTC？"></a>如何在Firefox中禁用WebRTC？</h3>      <p>简而言之：在 <code>about:config</code> 中设置 <code>media.peerconnection.enabled</code>为 <code>false</code>。<br>解释一下:<br>在firefox地址栏输入 “about:config “然后按回车键。<br>按 “我会小心的，我保证！”按钮。<br>搜索 “media.peerconnection.enabled”<br>双击该条目，”Value “列现在应该是 “false”<br>完成。再做一次<span class="exturl"><a class="exturl__link" href="https://ipleak.net/" target="_blank" rel="noopener">WebRTC泄漏测试</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>如果你想确保每一个与WebRTC相关的设置真的被禁用，请更改这些设置。<br>1.media.peerconnection.turn.disable = true。<br>2.media.peerconnection.use_document_iceservers = false<br>3.media.peerconnection.video.enabled = false<br>4.media.peerconnection.identity.timeout = 1<br>现在你可以100%确定WebRTC被禁用。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -518,36 +576,6 @@
     
     
       <category term="omz" scheme="http://kisskisso.com/tags/omz/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux入门指南-一</title>
-    <link href="http://kisskisso.com/2021/01/28/Linux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E4%B8%80/"/>
-    <id>http://kisskisso.com/2021/01/28/Linux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E4%B8%80/</id>
-    <published>2021-01-28T07:56:29.000Z</published>
-    <updated>2021-01-28T08:53:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Linux-是什么？">          <a href="#Linux-是什么？" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-是什么？" class="headerlink" title="Linux 是什么？"></a><strong>Linux 是什么？</strong></h3>      <p>Linux 是一个开源操作系统和 IT 基础架构平台。它由 Linus Torvalds 于 1991 年构思设计而成，</p>        <h3 id="Linux-的优点">          <a href="#Linux-的优点" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-的优点" class="headerlink" title="Linux 的优点"></a>Linux 的优点</h3>      <p>跨平台的硬件支持</p><p>低资源占用下良好的稳定性</p><p>高效的文件系统</p><p>可靠的安全性 <a id="more"></a></p><p>完善纯净的软件包管理机制</p><p>随心所欲定制 UI</p><p>社区的支持</p><p>开源</p>        <h3 id="哪些大众用户比较适合-Linux-桌面版？">          <a href="#哪些大众用户比较适合-Linux-桌面版？" class="heading-link"><i class="fas fa-link"></i></a><a href="#哪些大众用户比较适合-Linux-桌面版？" class="headerlink" title="哪些大众用户比较适合 Linux 桌面版？"></a>哪些大众用户比较适合 Linux 桌面版？</h3>      <p>学习和探索</p><p>业余个人内容创作</p><p>极度重视安全和隐私</p><p>机器已经跑不动 Windows / macOS</p>        <h3 id="Linux-上软件有多少？">          <a href="#Linux-上软件有多少？" class="heading-link"><i class="fas fa-link"></i></a><a href="#Linux-上软件有多少？" class="headerlink" title="Linux 上软件有多少？"></a>Linux 上软件有多少？</h3>      <p>网页版应用</p><p>支持同类网络传输协议的客户端</p><p>任务自动化服务</p><p>即时通讯软件内置的聊天机器人</p><p>Wine 兼容运行 Windows 应用</p><p>模拟器兼容运行 Android 应用</p><p>虚拟机软件模拟运行 macOS 或 Windows 系统</p>        <h3 id="总结">          <a href="#总结" class="heading-link"><i class="fas fa-link"></i></a><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3>      <p>Linux 因为其完全模块化的基理，干净得像水一样。水本身无固定的形态，它可以随环境而作出适应，让自己变成外物的形态。</p><p>所以，朋友，像水一样吧！</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Linux-是什么？&quot;&gt;
-          &lt;a href=&quot;#Linux-是什么？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Linux 是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;Linux 是什么？&lt;/strong&gt;&lt;/h3&gt;
-      &lt;p&gt;Linux 是一个开源操作系统和 IT 基础架构平台。它由 Linus Torvalds 于 1991 年构思设计而成，&lt;/p&gt;
-
-        &lt;h3 id=&quot;Linux-的优点&quot;&gt;
-          &lt;a href=&quot;#Linux-的优点&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux-的优点&quot; class=&quot;headerlink&quot; title=&quot;Linux 的优点&quot;&gt;&lt;/a&gt;Linux 的优点&lt;/h3&gt;
-      &lt;p&gt;跨平台的硬件支持&lt;/p&gt;
-&lt;p&gt;低资源占用下良好的稳定性&lt;/p&gt;
-&lt;p&gt;高效的文件系统&lt;/p&gt;
-&lt;p&gt;可靠的安全性&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="语言与Linux" scheme="http://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
-    
     
   </entry>
   

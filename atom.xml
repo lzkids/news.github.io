@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-15T09:40:52.147Z</updated>
+  <updated>2021-02-22T06:45:27.059Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VMware切换大小写作用失效</title>
+    <link href="http://kisskisso.com/2021/02/22/VMware%E5%88%87%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BD%9C%E7%94%A8%E5%A4%B1%E6%95%88/"/>
+    <id>http://kisskisso.com/2021/02/22/VMware%E5%88%87%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BD%9C%E7%94%A8%E5%A4%B1%E6%95%88/</id>
+    <published>2021-02-22T06:36:55.000Z</published>
+    <updated>2021-02-22T06:45:27.059Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法">          <a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="heading-link"><i class="fas fa-link"></i></a><a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="headerlink" title="VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法"></a><strong>VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法</strong></h3>      <p>1.用shift + 要大写的字母</p><p><del>2.首先停止运行中的虚拟机，打开虚拟机镜像安装的位置找到<code>.vmx</code>在vscode打开在最后添加<code>mks.win32.useInjectedMagic = "FALSE"</code></del></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot;&gt;
+          &lt;a href=&quot;#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas 
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ArchLinux安装</title>
+    <link href="http://kisskisso.com/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/"/>
+    <id>http://kisskisso.com/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/</id>
+    <published>2021-02-21T12:17:02.000Z</published>
+    <updated>2021-02-22T06:59:18.884Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="如何在虚拟机安装Arch-Linux？">          <a href="#如何在虚拟机安装Arch-Linux？" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何在虚拟机安装Arch-Linux？" class="headerlink" title="如何在虚拟机安装Arch Linux？"></a><strong>如何在虚拟机安装Arch Linux？</strong></h3>      <p>1.新建一个虚拟机。下载Arch ios（镜像站下载）</p><p><strong>2.</strong>虚拟机设置—选项—高级—选择uefi</p><p>3.开机</p><p>4.配置网络 </p><pre><code class="bash">dhcpcd</code></pre><p>5.wifi-menu </p><blockquote><p>会显示zsh: command not found: wifi-memu</p><p>zsh：找不到命令：wifi-memu。</p></blockquote><p>6.配置镜像源 </p><pre><code class="bash">nano /etc/pacman.d/mirrorlist</code></pre><p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/" target="_blank" rel="noopener">清华大学镜像源</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>ctrl + x 然后输入y按回车</p><p>7.磁盘分区</p><pre><code class="bash"> cfdisk /dev/sda</code></pre><p>创建300m EFI分区 剩余空间创建根分区</p><p>new 回车 300m（第二个同理指剩余的空间）</p><p>选择write回车输入yes</p><p>quit退出</p><p>8.把根分区格式化为ext4 </p><pre><code class="bash">mkfs.ext4 /dev/sda2</code></pre><p>9.把EFI分区格式化为fat32</p><pre><code class="bash">mkfs.fat -F32 /dev/sda1</code></pre><p>10.挂在根分区</p><pre><code class="bash">mount /dev/sda2 /mnt</code></pre><p>11.创建EFI分区挂载点</p><pre><code class="bash">mkdir /mnt/boot  mkdir /mnt/boot/EFI</code></pre><p>12.挂在EFI分区</p><pre><code class="bash">mount /dev/sda1 /mnt/boot/EFI</code></pre><p>13.安装基础包</p><pre><code class="bash">pacstrap -i /mnt base base-devel linux linux-firmware</code></pre><p> 注：需要按两下回车 然后yes</p><p>14.生成文件系统表</p><pre><code class="bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></pre><p>15检查文件系统表有没有问题</p><pre><code class="bash">cat  /mnt/etc/fstab</code></pre><p>16.切换根目录</p><pre><code class="bash">arch-chroot /mnt</code></pre><p>17.设置时区</p><pre><code class="bash">ln -sf /usr/share/zoneinfo$(tzselect) /etc/localtime</code></pre><blockquote><p>4 &gt;&gt;9&gt;&gt;1&gt;&gt;1</p></blockquote><p>18.设置时间漂移</p><pre><code class="bash">hwclock --systohc --utc</code></pre><p>19.配置locale</p><pre><code class="bash">nano /etc/locale.gen</code></pre><blockquote><p>   19.1终端显示 bash: nano:command not found(bash: nano:命令未找到)</p><p>​      19.1.1下载nano pacman -S nano</p></blockquote><p>20.生成locale文件</p><pre><code class="bash">locale-gen</code></pre><p>21.设置语言（tty中文乱码）</p><pre><code class="bash">echo LANG=en_US.UTF-8 &gt; /etc/locale.conf</code></pre><p>22.设置主机名</p><pre><code class="bash">echo kiss &gt; /etc/hostname</code></pre><p>23.配置hosts文件</p><p>nano  /etc/hostname</p><pre><code>127.0.0.1        localhost::1              localhost127.0.1.1        myhostname.localdomain        myhostname </code></pre><p>24.安装DHCP</p><pre><code class="bash">pacman -S dhcpcd</code></pre><p>25.启动dhcp服务</p><pre><code class="bash">systemctl enable dhcpcd.service</code></pre><p>26.设置root密码</p><pre><code class="bash">passwd</code></pre><p>27.创建普通用户</p><pre><code class="bash">useradd -m -G wheel -s /bin/bash xxx</code></pre><p> 27.1设置密码 用户名</p><pre><code class="ba">passwd xxx</code></pre><p>28.安装vim sudo</p><pre><code class="bash">pacman -S vim sudo</code></pre><p>29.赋予用户sudo权限</p><pre><code class="bash">visudo 去掉%wheel ALL=(ALL)ALL的#</code></pre><p>30.安装引导</p><pre><code class="bash">pacman -s grub efibootmgr 多系统安装os-prober</code></pre><p>31.grub安装</p><pre><code class="bash">grub-install --target=x86_64-efi --efi-directory=/boot/EFI</code></pre><p>32.生成配置文件</p><pre><code class="bash">grub-mkconfig -o /boot/grub/grub.cfg</code></pre><p>33.退出重启</p><pre><code class="bash">exit reboot</code></pre><hr><p>34.查看显示设备</p><pre><code class="bash">lspci | grep vga</code></pre><p>35.安装通用的显示驱动</p><pre><code class="bash">pacman -s xf86-video-vesa</code></pre><p>36.安装xorg</p><pre><code class="bash">pacman -s xorg</code></pre><p>38.安装字体</p><pre><code class="bash">pacman -s ttf-dejavu wqy-microhei</code></pre><p>39.安装kde桌面环境和应用</p><pre><code class="bash">pacman -s plasma kde-applications</code></pre><p>40启用显示管理服务</p><pre><code class="bash">systemctl enable sddm</code></pre><p>41启用网络管理器 </p><pre><code class="bash">systemctl  enable NetworkManager</code></pre><p>42.重启</p><pre><code class="bash">reboot</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;如何在虚拟机安装Arch-Linux？&quot;&gt;
+          &lt;a href=&quot;#如何在虚拟机安装Arch-Linux？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#如何在虚拟机安
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>如何在Firefox中禁用WebRTC补充</title>
@@ -508,60 +558,6 @@
     
     
       <category term="RSS" scheme="http://kisskisso.com/tags/RSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何删除鼠标右键的cmder</title>
-    <link href="http://kisskisso.com/2021/01/29/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E7%9A%84cmder/"/>
-    <id>http://kisskisso.com/2021/01/29/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E7%9A%84cmder/</id>
-    <published>2021-01-29T03:39:43.000Z</published>
-    <updated>2021-01-29T07:13:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>如何删除鼠标右键选项的cmder（或其他添加到文件目录中的应用）</strong></p><p>1.打开注册表设置（打开方式：直接搜索“注册表”或者win + r → regedit） <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%89%93%E5%BC%80%E6%B3%A8%E5%86%8C%E8%A1%A8%202021-01-29%20114632.png" alt=""></p><p>2.找到HKEY_CLASSES_ROOT → Directory → Background → cmder（删除选项）</p><p>或者打开注册表之后，编辑 –&gt;查找 –&gt;输入cmder进行查找</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;如何删除鼠标右键选项的cmder（或其他添加到文件目录中的应用）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.打开注册表设置（打开方式：直接搜索“注册表”或者win + r → regedit）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>入门oh-my-zsh</title>
-    <link href="http://kisskisso.com/2021/01/28/%E5%85%A5%E9%97%A8oh-my-zsh/"/>
-    <id>http://kisskisso.com/2021/01/28/%E5%85%A5%E9%97%A8oh-my-zsh/</id>
-    <published>2021-01-28T12:05:34.000Z</published>
-    <updated>2021-01-29T03:17:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Oh-my-zsh是一个开源的、社区驱动的管理zsh的框架，它是免费的。它有超过180个可选的插件（rails、git……），超过120个主题和一个自动更新工具来保持oh-my-zsh的最新状态。</p></blockquote><p>在本教程中，我将指导你在你的PC/笔记本电脑上安装它。最大的好处是你可以自定义你的Shell和添加插件。不像老式的Bash shell，它看起来并不吸引人，当你大量使用命令行工作时，会让你很难使用。</p>        <h4 id="前提条件">          <a href="#前提条件" class="heading-link"><i class="fas fa-link"></i></a><a href="#前提条件" class="headerlink" title="前提条件"></a><strong>前提条件</strong></h4>      <ul><li>Linux 和 macOS，因为 oh-my-zsh 在基于 Unix 的操作系统上工作得最好。</li><li>WSL(Windows Subsystem for Linux)也可以和oh-my-zsh一起工作。<a id="more"></a></li><li>zsh必须是预装的，在OSX中，它已经被预装了。在OSX中，它已经被预装了。在 Linux 中，你需要在终端中输入命令来安装。</li><li>curl或wget必须安装.</li><li>对于Debian/Ubuntu，你需要在终端输入命令：必须安装curl或wget。</li></ul><pre><code class="shell">sudo apt-get installl zsh</code></pre><ul><li><p>对于Fedora：</p><pre><code class="shell">sudo yum install zsh</code></pre><p>下载oh-my-zsh</p><p>通过curl</p><pre><code class="shell">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh</code></pre><p>通过wget</p><pre><code class="shell">wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh</code></pre><p>更改默认shell</p><pre><code class="shell">chsh -s /bin/zsh</code></pre><p>对于某些操作系统，可能需要重新启动计算机才能生效。</p></li></ul>        <h4 id="更换终端主题">          <a href="#更换终端主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#更换终端主题" class="headerlink" title="更换终端主题"></a><strong>更换终端主题</strong></h4>      <p>现在你已经成功安装了 oh-my-zsh。你需要改变适合你的主题，而不是使用默认的。要改变它，你需要修改<code>.zshrc</code>文件:</p><pre><code class="shell">vim ~/.zshrc</code></pre><p>在本教程中，我使用的是vim文本编辑器，如果你喜欢可以使用其他的文本编辑器。接下来，在文件中找到这一行:</p><pre><code class="shell">ZSH_THEME="robbyrussell"</code></pre><p>把名字 “robbyrussell “改为另一个主题的名字。你可以看看这个网站上的所有可用的<span class="exturl"><a class="exturl__link" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>最后，只要重启终端，你就会看到不同的效果。</p>        <h4 id="添加插件">          <a href="#添加插件" class="heading-link"><i class="fas fa-link"></i></a><a href="#添加插件" class="headerlink" title="添加插件"></a><strong>添加插件</strong></h4>      <p>在.zshrc文件中，你需要编辑以 “plugins “字样开头的一行:</p><pre><code class="shell">plugins=(git bundler osx rake ruby)</code></pre><p>如果你喜欢，你可以添加更多或删除插件。要使用这些插件，大多数插件都有README文件，其中记录了如何使用它们。</p>        <h4 id="自动补全与⬆">          <a href="#自动补全与⬆" class="heading-link"><i class="fas fa-link"></i></a><a href="#自动补全与⬆" class="headerlink" title="自动补全与⬆"></a><strong>自动补全与⬆</strong></h4>      <p>在Bash shell中，你可以使用Ctrl + R和⬆来自动填写最近的和匹配的命令。</p><p>使用 oh-my-zsh，还有另一种方法：你可以输入你想要的命令的起始词，然后按 ⬆来循环浏览历史记录。</p>        <h4 id="用Tab键自动完成">          <a href="#用Tab键自动完成" class="heading-link"><i class="fas fa-link"></i></a><a href="#用Tab键自动完成" class="headerlink" title="用Tab键自动完成"></a><strong>用Tab键自动完成</strong></h4>      <p>在Bash shell中，你可以输入关键字，然后按Tab键显示匹配命令列表，但是你需要在列表中循环并记住你想要的名称，并手动进一步输入以完成。</p><p>有了oh-my-zsh，事情就好办了，第一次按Tab键后，可以按第二次，允许在列表中循环，选择你想要的命令，然后它会自动填入剩下的单词，最后只要按Enter键就可以了。比如说：</p><ol><li>第一次输入并按Tab键<code>doc</code></li></ol><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/apt_2021-01-29%20105236.png" alt=""></p><p>  2.第二次按Tab键，然后按Tab键进行上、下、左、右循环。</p>        <h4 id="更新-oh-my-zsh">          <a href="#更新-oh-my-zsh" class="heading-link"><i class="fas fa-link"></i></a><a href="#更新-oh-my-zsh" class="headerlink" title="更新 oh-my-zsh"></a><strong>更新 oh-my-zsh</strong></h4>      <p>它会自动更新，但如果你想手动更新，只需在终端机上输入以下命令即可。</p><pre><code class="shell">omz update</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Oh-my-zsh是一个开源的、社区驱动的管理zsh的框架，它是免费的。它有超过180个可选的插件（rails、git……），超过120个主题和一个自动更新工具来保持oh-my-zsh的最新状态。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在本教程中，我将指导你在你的PC/笔记本电脑上安装它。最大的好处是你可以自定义你的Shell和添加插件。不像老式的Bash shell，它看起来并不吸引人，当你大量使用命令行工作时，会让你很难使用。&lt;/p&gt;
-
-        &lt;h4 id=&quot;前提条件&quot;&gt;
-          &lt;a href=&quot;#前提条件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前提条件&quot; class=&quot;headerlink&quot; title=&quot;前提条件&quot;&gt;&lt;/a&gt;&lt;strong&gt;前提条件&lt;/strong&gt;&lt;/h4&gt;
-      &lt;ul&gt;
-&lt;li&gt;Linux 和 macOS，因为 oh-my-zsh 在基于 Unix 的操作系统上工作得最好。&lt;/li&gt;
-&lt;li&gt;WSL(Windows Subsystem for Linux)也可以和oh-my-zsh一起工作。&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="omz" scheme="http://kisskisso.com/tags/omz/"/>
     
   </entry>
   

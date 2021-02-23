@@ -59,8 +59,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/">虚拟机安装开源增强工具</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">90</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>安装open-vm-tools增强工具</p>
 <pre><code class="bash">sudo pacman -S open-vm-tools</code></pre>
 <p>开机启动服务</p>
-<pre><code class="bash">systemctl enable  vmtoolsd.service
-systemctl enable   vmware-vmblock-fuse.service</code></pre>
+<pre><code class="bash">systemctl enable  vmtoolsd.service</code></pre>
+<pre><code class="bash">systemctl enable   vmware-vmblock-fuse.service</code></pre>
 <p>安装gtkmm3</p>
 <pre><code class="bash">sudo pacman -S gtkmm3</code></pre>
 <script>
@@ -113,31 +113,7 @@ sudo pacman -S  fcitx5-rime</code></pre>
 <p> pacman -Rs package_name 【推荐命令】</p>
 <p>要删除软件包和所有依赖这个软件包的程序: </p>
 <p>⚠pacman -Rsc package_name </p>
-<p>警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。 </p>
-<p>要删除软件包，但是不删除依赖这个软件包的其他程序：</p>
-<p> ⚠pacman -Rdd package_name pacman </p>
-<p>删除某些程序时会备份重要配置文件，在其后面加上*.pacsave扩展名。-n 选项可以删除这些文件： </p>
-<p>pacman -Rn package_name </p>
-<p>pacman -Rsn package_name</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/22/VMware%E5%88%87%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BD%9C%E7%94%A8%E5%A4%B1%E6%95%88/">VMware切换大小写作用失效</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">119</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h3 id="VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法">
+<p>警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/22/VMware%E5%88%87%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BD%9C%E7%94%A8%E5%A4%B1%E6%95%88/">VMware切换大小写作用失效</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">119</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h3 id="VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法">
           <a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="heading-link"><i class="fas fa-link"></i></a><a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="headerlink" title="VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法"></a><strong>VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法</strong></h3>
       <p>1.用shift + 要大写的字母</p>
 <p><del>2.首先停止运行中的虚拟机，打开虚拟机镜像安装的位置找到<code>.vmx</code>在vscode打开在最后添加<code>mks.win32.useInjectedMagic = "FALSE"</code></del></p>

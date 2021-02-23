@@ -48,6 +48,95 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/">虚拟机配置共享文件</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">287</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">2分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名</p>
+<pre><code class="bash">vmware-hgfsclient</code></pre>
+<p>进入/etc/systemd/system目录</p>
+<pre><code class="bash">cd /etc/systemd/system</code></pre>
+<p>创建一个文件</p>
+<pre><code class="bash">touch xxx.xxx.service</code></pre>
+<p>用vim或者其它喜欢的软件打开</p>
+<pre><code class="bash">sudo vim xxx.xxx.service</code></pre>
+<p>填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/">虚拟机安装开源增强工具</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">90</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>安装open-vm-tools增强工具</p>
+<pre><code class="bash">sudo pacman -S open-vm-tools</code></pre>
+<p>开机启动服务</p>
+<pre><code class="bash">systemctl enable  vmtoolsd.service
+systemctl enable   vmware-vmblock-fuse.service</code></pre>
+<p>安装gtkmm3</p>
+<pre><code class="bash">sudo pacman -S gtkmm3</code></pre>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/">安装fcitx5</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">120</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><strong>安装fcitx5</strong></p>
+<pre><code class="bash">sudo pacman -S fcitx5
+sudo pacman -S  fcitx5-rime</code></pre>
+<blockquote>
+<p>打开fcitx5配置报错说你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p>
+</blockquote>
+<p>需要安装：</p>
+<pre><code class="bash">sudo pacman -S fcitx5-configtool</code></pre>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/">Arch删除卸载命令</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">231</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>  删除单个软件包，保留其全部已经安装的依赖关系 </p>
+<p>pacman -R package_name </p>
+<p>删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系：</p>
+<p> pacman -Rs package_name 【推荐命令】</p>
+<p>要删除软件包和所有依赖这个软件包的程序: </p>
+<p>⚠pacman -Rsc package_name </p>
+<p>警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。 </p>
+<p>要删除软件包，但是不删除依赖这个软件包的其他程序：</p>
+<p> ⚠pacman -Rdd package_name pacman </p>
+<p>删除某些程序时会备份重要配置文件，在其后面加上*.pacsave扩展名。-n 选项可以删除这些文件： </p>
+<p>pacman -Rn package_name </p>
+<p>pacman -Rsn package_name</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
       </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/22/VMware%E5%88%87%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BD%9C%E7%94%A8%E5%A4%B1%E6%95%88/">VMware切换大小写作用失效</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">119</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h3 id="VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法">
           <a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="heading-link"><i class="fas fa-link"></i></a><a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="headerlink" title="VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法"></a><strong>VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法</strong></h3>
       <p>1.用shift + 要大写的字母</p>
@@ -70,131 +159,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/">ArchLinux安装</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-22</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">670</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">5分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h3 id="如何在虚拟机安装Arch-Linux？">
+      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/">ArchLinux安装</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">692</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">6分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h3 id="如何在虚拟机安装Arch-Linux？">
           <a href="#如何在虚拟机安装Arch-Linux？" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何在虚拟机安装Arch-Linux？" class="headerlink" title="如何在虚拟机安装Arch Linux？"></a><strong>如何在虚拟机安装Arch Linux？</strong></h3>
       <p>1.新建一个虚拟机。下载Arch ios（镜像站下载）</p>
 <p><strong>2.</strong>虚拟机设置—选项—高级—选择uefi</p>
 <p>3.开机</p>
 <p>4.配置网络 </p>
 <pre><code class="bash">dhcpcd</code></pre>
-<p>5.wifi-menu </p>
-<blockquote>
-<p>会显示zsh: command not found: wifi-memu</p>
-<p>zsh：找不到命令：wifi-memu。</p>
-</blockquote>
-<p>6.配置镜像源 </p>
-<pre><code class="bash">nano /etc/pacman.d/mirrorlist</code></pre>
-<p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/" target="_blank" rel="noopener">清华大学镜像源</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-<p>ctrl + x 然后输入y按回车</p>
-<p>7.磁盘分区</p>
-<pre><code class="bash"> cfdisk /dev/sda</code></pre>
-<p>创建300m EFI分区 剩余空间创建根分区</p>
-<p>new 回车 300m（第二个同理指剩余的空间）</p>
-<p>选择write回车输入yes</p>
-<p>quit退出</p>
-<p>8.把根分区格式化为ext4 </p>
-<pre><code class="bash">mkfs.ext4 /dev/sda2</code></pre>
-<p>9.把EFI分区格式化为fat32</p>
-<pre><code class="bash">mkfs.fat -F32 /dev/sda1</code></pre>
-<p>10.挂在根分区</p>
-<pre><code class="bash">mount /dev/sda2 /mnt</code></pre>
-<p>11.创建EFI分区挂载点</p>
-<pre><code class="bash">mkdir /mnt/boot  mkdir /mnt/boot/EFI</code></pre>
-<p>12.挂在EFI分区</p>
-<pre><code class="bash">mount /dev/sda1 /mnt/boot/EFI</code></pre>
-<p>13.安装基础包</p>
-<pre><code class="bash">pacstrap -i /mnt base base-devel linux linux-firmware</code></pre>
-<p> 注：需要按两下回车 然后yes</p>
-<p>14.生成文件系统表</p>
-<pre><code class="bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></pre>
-<p>15检查文件系统表有没有问题</p>
-<pre><code class="bash">cat  /mnt/etc/fstab</code></pre>
-<p>16.切换根目录</p>
-<pre><code class="bash">arch-chroot /mnt</code></pre>
-<p>17.设置时区</p>
-<pre><code class="bash">ln -sf /usr/share/zoneinfo$(tzselect) /etc/localtime</code></pre>
-<blockquote>
-<p>4 &gt;&gt;9&gt;&gt;1&gt;&gt;1</p>
-</blockquote>
-<p>18.设置时间漂移</p>
-<pre><code class="bash">hwclock --systohc --utc</code></pre>
-<p>19.配置locale</p>
-<pre><code class="bash">nano /etc/locale.gen</code></pre>
-<blockquote>
-<p>   19.1终端显示 bash: nano:command not found(bash: nano:命令未找到)</p>
-<p>​      19.1.1下载nano pacman -S nano</p>
-</blockquote>
-<p>20.生成locale文件</p>
-<pre><code class="bash">locale-gen</code></pre>
-<p>21.设置语言（tty中文乱码）</p>
-<pre><code class="bash">echo LANG=en_US.UTF-8 &gt; /etc/locale.conf</code></pre>
-<p>22.设置主机名</p>
-<pre><code class="bash">echo kiss &gt; /etc/hostname</code></pre>
-<p>23.配置hosts文件</p>
-<p>nano  /etc/hostname</p>
-<pre><code>127.0.0.1        localhost
-::1              localhost
-127.0.1.1        myhostname.localdomain        myhostname </code></pre><p>24.安装DHCP</p>
-<pre><code class="bash">pacman -S dhcpcd</code></pre>
-<p>25.启动dhcp服务</p>
-<pre><code class="bash">systemctl enable dhcpcd.service</code></pre>
-<p>26.设置root密码</p>
-<pre><code class="bash">passwd</code></pre>
-<p>27.创建普通用户</p>
-<pre><code class="bash">useradd -m -G wheel -s /bin/bash xxx</code></pre>
-<p> 27.1设置密码 用户名</p>
-<pre><code class="ba">passwd xxx</code></pre>
-<p>28.安装vim sudo</p>
-<pre><code class="bash">pacman -S vim sudo</code></pre>
-<p>29.赋予用户sudo权限</p>
-<pre><code class="bash">visudo 
-去掉%wheel ALL=(ALL)ALL的#</code></pre>
-<p>30.安装引导</p>
-<pre><code class="bash">pacman -s grub efibootmgr 
-多系统安装os-prober</code></pre>
-<p>31.grub安装</p>
-<pre><code class="bash">grub-install --target=x86_64-efi --efi-directory=/boot/EFI</code></pre>
-<p>32.生成配置文件</p>
-<pre><code class="bash">grub-mkconfig -o /boot/grub/grub.cfg</code></pre>
-<p>33.退出重启</p>
-<pre><code class="bash">exit 
-reboot</code></pre>
-<hr>
-<p>34.查看显示设备</p>
-<pre><code class="bash">lspci | grep vga</code></pre>
-<p>35.安装通用的显示驱动</p>
-<pre><code class="bash">pacman -s xf86-video-vesa</code></pre>
-<p>36.安装xorg</p>
-<pre><code class="bash">pacman -s xorg</code></pre>
-<p>38.安装字体</p>
-<pre><code class="bash">pacman -s ttf-dejavu wqy-microhei</code></pre>
-<p>39.安装kde桌面环境和应用</p>
-<pre><code class="bash">pacman -s plasma kde-applications</code></pre>
-<p>40启用显示管理服务</p>
-<pre><code class="bash">systemctl enable sddm</code></pre>
-<p>41启用网络管理器 </p>
-<pre><code class="bash">systemctl  enable NetworkManager</code></pre>
-<p>42.重启</p>
-<pre><code class="bash">reboot</code></pre>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC%E8%A1%A5%E5%85%85/">如何在Firefox中禁用WebRTC补充</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">906</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">7分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h2 id="FireFox-“about-config”的隐私设置调整">
+<p>5.wifi-menu</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8Firefox%E4%B8%AD%E7%A6%81%E7%94%A8WebRTC%E8%A1%A5%E5%85%85/">如何在Firefox中禁用WebRTC补充</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">906</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">7分</span></span></div></header><div class="post-body"><div class="post-excerpt"><h2 id="FireFox-“about-config”的隐私设置调整">
           <a href="#FireFox-“about-config”的隐私设置调整" class="heading-link"><i class="fas fa-link"></i></a><a href="#FireFox-“about-config”的隐私设置调整" class="headerlink" title="FireFox: “about:config”的隐私设置调整"></a>FireFox: “about:config”的隐私设置调整</h2>
       
         <h3 id="准备：">
@@ -256,83 +228,7 @@ reboot</code></pre>
             });
             document.body.appendChild(img);
           });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/07/%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%B0%B4%E5%B9%B3/">小學生水平</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-07</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-07</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">52</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%84%9B%E9%BA%97%E7%B5%B22.png" alt=""></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/02/hexo%E6%8A%A5%E9%94%99/">hexo报错</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">101</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>  <strong>报错</strong></p>
-<p>hexo 报错 use_date_for_updated is deprecated…</p>
-<p>WARN Deprecated config detected: “use_date_for_updated” is deprecated, please se “updated option” instead. See <span class="exturl"><a class="exturl__link" href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">https://hexo.io/docs/configuration</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more deails.</p>
-<p><strong>解决办法</strong></p>
-<p>编辑根目录的 <code>_config.yml</code> 文件 , 把 <code>use_date_for_updated</code> 值改为 <code>updated_option</code></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/02/VirtualBox%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/">VirtualBox共享文件设置</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">190</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>   在 VirtualBox 中选择<code>设置/共享文件夹</code>，添加想要共享文件夹；设置共享文件夹的名称，选择 <code>固定分配</code>；确认 <code>OK</code>。</p>
-<p>进入 Linux系统，选择一个文件夹作为共享文件夹</p>
-<p>打开终端，写入 <code>$ sudo mount -t vboxsf 共享文件夹的名 在Linux建立的共享文件夹名</code></p>
-<p>ps：</p>
-<ul>
-<li>重启后，已设置的共享文件夹将会消失，需要再次执行挂载命令。</li>
-<li>在Linux建立的文件夹需要<code>sudo chmod 777 [文件夹名]</code></li>
-<li>可是设置<code>自动挂载</code></li>
-</ul>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">Linux安装配置</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-02</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">309</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>更新源      <code>sudo apt-get update</code></p>
-<p>更新软件   <code>sudo apt-get upgrade</code></p>
-<p>安装vim   <code>sudo apt-get install vim</code></p>
-<p>安装zsh   <code>sudo apt-get install zsh</code></p>
-<p>安装oh-my-zsh</p>
-<p>安装nodejs   <code>sudo apt-get install nodejs</code></p>
-<p>切換鏡像源</p>
-<pre><code>npm config set registry=https://registry.npm.taobao.org/</code></pre><p>檢查鏡像源是否下載成功：</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">240</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">106</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
+      </script></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">244</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">106</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 

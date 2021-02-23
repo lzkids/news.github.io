@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-23T11:22:04.514Z</updated>
+  <updated>2021-02-23T13:02:38.000Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装fcitx5與配置</title>
+    <link href="http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/"/>
+    <id>http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/</id>
+    <published>2021-02-23T18:52:23.000Z</published>
+    <updated>2021-02-23T13:02:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>安装fcitx5</strong></p><pre><code class="bash">sudo pacman -S fcitx5sudo pacman -S  fcitx5-rime</code></pre><blockquote><p>打开fcitx5配置报错说你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p></blockquote><p>需要安装：</p><pre><code class="bash">sudo pacman -S fcitx5-configtool</code></pre><p>配置編輯<code>etc/profile</code>文件，末尾寫入</p><pre><code class="bash"># Fcitxexport GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitxexport XMODIFIERS="@im=fcitx"</code></pre><p>如果還不支持請嘗試運行<code>sudo pacman -S fcitx5-im</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;安装fcitx5&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo pacman -S fcitx5
+sudo pacman -S  fcitx5-rime&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;打开fc
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>虚拟机配置共享文件</title>
@@ -62,34 +90,6 @@
 &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo pacman -S open-vm-tools&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;开机启动服务&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;systemctl
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>安装fcitx5</title>
-    <link href="http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/"/>
-    <id>http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/</id>
-    <published>2021-02-23T10:52:23.000Z</published>
-    <updated>2021-02-23T10:55:33.904Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>安装fcitx5</strong></p><pre><code class="bash">sudo pacman -S fcitx5sudo pacman -S  fcitx5-rime</code></pre><blockquote><p>打开fcitx5配置报错说你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p></blockquote><p>需要安装：</p><pre><code class="bash">sudo pacman -S fcitx5-configtool</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;安装fcitx5&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo pacman -S fcitx5
-sudo pacman -S  fcitx5-rime&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;打开fc
       
     
     </summary>

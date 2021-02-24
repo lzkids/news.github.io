@@ -5,7 +5,7 @@
 <meta property="og:site_name" content="My Life">
 <meta property="og:description" content="分支结构 if语句的使用【构造分支结构的关键字】 ①if ②elif ③else 注：和c&#x2F;c++、Java等语言不同，Python中没有花括号构造代码而是使用了缩进的方式来设置的层次结构【连续的代码如果保持了相同的缩进那么它们属于同 一个代码块，相当于是一个执行的整体】。 构造跟多的分支则：【if…elif…else】结构。 练习1：英制单位英寸与公制单位厘米互换。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-12T22:15:23.000Z">
+<meta property="article:published_time" content="2020-01-12T14:15:23.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:59:56.000Z">
 <meta property="article:author" content="唯獨少了個字">
 <meta property="article:tag" content="python">
@@ -34,60 +34,21 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">分支结构</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">463</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h1>分支结构</h1>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">分支结构</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">462</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h1>分支结构</h1>
 <p><strong>if语句的使用【构造分支结构的关键字】</strong></p>
 <p><strong>①if</strong> <strong>②elif</strong> <strong>③else</strong></p>
 <p>注：和c/c++、Java等语言不同，Python中没有花括号构造代码而是使用了缩进的方式来设置的层次结构【连续的代码如果保持了相同的缩进那么它们属于同</p>
 <p>一个代码块，相当于是一个执行的整体】。</p>
 <p>构造跟多的分支则：【if…elif…else】结构。</p>
 <p><strong>练习1：英制单位英寸与公制单位厘米互换。</strong> <a id="more"></a></p>
-<pre><code class="language-python">kid = float（input（'请输入长度：'））
-
-kids = input（‘请输入单位：’）
-
-if kids ==‘in’ or kid ==‘英寸’：
-
-print（’%f英寸 =%f厘米‘ % （kid，kid*2.54））
-
-else kids ==‘cm’ or kids ==‘厘米’：
-
-print（‘%f厘米=%f英寸’%（kid，kid/2.54））
-
-else：
-
-  print（‘请输入有效单位’）
-
-</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">kid = float（input（<span class="string">'请输入长度：'</span>））</span><br><span class="line"></span><br><span class="line">kids = input（‘请输入单位：’）</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> kids ==‘<span class="keyword">in</span>’ <span class="keyword">or</span> kid ==‘英寸’：</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span>（’%f英寸 =%f厘米‘ % （kid，kid*<span class="number">2.54</span>））</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span> kids ==‘cm’ <span class="keyword">or</span> kids ==‘厘米’：</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span>（‘%f厘米=%f英寸’%（kid，kid/<span class="number">2.54</span>））</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>：</span><br><span class="line"></span><br><span class="line">  <span class="keyword">print</span>（‘请输入有效单位’）</span><br></pre></td></tr></tbody></table></div></figure>
 <p><strong>练习2：百分制成绩转换为等级制成绩。</strong></p>
 <blockquote>
 <p><strong>要求</strong>：如果输入的成绩在90分以上（含90分）输出A；80分-90分（不含90分）输出B；70分-80分（不含80分）输出C；60分-70分（不含70分）输出D；60分以下输出E。</p>
 </blockquote>
-<pre><code class="language-python">kid = input（'请输入成绩。。。'）；
-if  kid &gt;= 90:
-kids = 'A'
-elif  kid &gt;= 80 and kid &lt; 90:
-kids='B'
-elif  kid &gt;= 70 and kid &lt; 80:
-kids='C'
-elif  kid &gt;= 60 and kid &lt; 70:
-kids='D'
-ekse:
-   kids='E'
-   print('对应等级是：'，kids)
- 
-</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">kid = input（<span class="string">'请输入成绩。。。'</span>）；</span><br><span class="line"><span class="keyword">if</span>  kid &gt;= <span class="number">90</span>:</span><br><span class="line">kids = <span class="string">'A'</span></span><br><span class="line"><span class="keyword">elif</span>  kid &gt;= <span class="number">80</span> <span class="keyword">and</span> kid &lt; <span class="number">90</span>:</span><br><span class="line">kids=<span class="string">'B'</span></span><br><span class="line"><span class="keyword">elif</span>  kid &gt;= <span class="number">70</span> <span class="keyword">and</span> kid &lt; <span class="number">80</span>:</span><br><span class="line">kids=<span class="string">'C'</span></span><br><span class="line"><span class="keyword">elif</span>  kid &gt;= <span class="number">60</span> <span class="keyword">and</span> kid &lt; <span class="number">70</span>:</span><br><span class="line">kids=<span class="string">'D'</span></span><br><span class="line">ekse:</span><br><span class="line">   kids=<span class="string">'E'</span></span><br><span class="line">   print(<span class="string">'对应等级是：'</span>，kids)</span><br></pre></td></tr></tbody></table></div></figure>
 <p><strong>练习3：输入三条边长，如果能构成三角形就计算周长和面积。</strong></p>
-<pre><code class="language-python">a = float(input('a='))
-b = float(input('b='))
-c = float(input('c'))
-if a+b&gt;c and a+c&gt;b and b+c&gt;a:
-print('周长：%.2f' % (a+b+c))
-p =(a+b+c)/2
-area =(p*(p-a)*(p-b)*(p-c))**0.5  //海伦公式
-print('面积：%.2f' % (area))
-else:
-    print('不能构成三角形')
-</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a = float(input(<span class="string">'a='</span>))</span><br><span class="line">b = float(input(<span class="string">'b='</span>))</span><br><span class="line">c = float(input(<span class="string">'c'</span>))</span><br><span class="line"><span class="keyword">if</span> a+b&gt;c <span class="keyword">and</span> a+c&gt;b <span class="keyword">and</span> b+c&gt;a:</span><br><span class="line">print(<span class="string">'周长：%.2f'</span> % (a+b+c))</span><br><span class="line">p =(a+b+c)/<span class="number">2</span></span><br><span class="line">area =(p*(p-a)*(p-b)*(p-c))**<span class="number">0.5</span>  //海伦公式</span><br><span class="line">print(<span class="string">'面积：%.2f'</span> % (area))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'不能构成三角形'</span>)</span><br></pre></td></tr></tbody></table></div></figure>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

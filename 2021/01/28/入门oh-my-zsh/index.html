@@ -6,7 +6,7 @@
 <meta property="og:description" content="Oh-my-zsh是一个开源的、社区驱动的管理zsh的框架，它是免费的。它有超过180个可选的插件（rails、git…），超过120个主题和一个自动更新工具来保持oh-my-zsh的最新状态。  在本教程中，我将指导你在你的PC&#x2F;笔记本电脑上安装它。最大的好处是你可以自定义你的Shell和添加插件。不像老式的Bash shell，它看起来并不吸引人，当你大量使用命令行工作时，会让你很难使用。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/apt_2021-01-29%20105236.png">
-<meta property="article:published_time" content="2021-01-28T20:05:34.000Z">
+<meta property="article:published_time" content="2021-01-28T12:05:34.000Z">
 <meta property="article:modified_time" content="2021-01-29T03:17:48.000Z">
 <meta property="article:author" content="唯獨少了個字">
 <meta property="article:tag" content="omz">
@@ -51,23 +51,18 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <li>curl或wget必须安装.</li>
 <li>对于Debian/Ubuntu，你需要在终端输入命令：必须安装curl或wget。</li>
 </ul>
-<pre><code class="language-shell">sudo apt-get installl zsh
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get installl zsh</span><br></pre></td></tr></tbody></table></div></figure>
 <ul>
 <li>
 <p>对于Fedora：</p>
-<pre><code class="language-shell">sudo yum install zsh
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install zsh</span><br></pre></td></tr></tbody></table></div></figure>
 <p>下载oh-my-zsh</p>
 <p>通过curl</p>
-<pre><code class="language-shell">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh</span><br></pre></td></tr></tbody></table></div></figure>
 <p>通过wget</p>
-<pre><code class="language-shell">wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh</span><br></pre></td></tr></tbody></table></div></figure>
 <p>更改默认shell</p>
-<pre><code class="language-shell">chsh -s /bin/zsh
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></tbody></table></div></figure>
 <p>对于某些操作系统，可能需要重新启动计算机才能生效。</p>
 </li>
 </ul>
@@ -76,11 +71,9 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
           <a href="#更换终端主题" class="heading-link"><i class="fas fa-link"></i></a><strong>更换终端主题</strong></h4>
       
 <p>现在你已经成功安装了 oh-my-zsh。你需要改变适合你的主题，而不是使用默认的。要改变它，你需要修改<code>.zshrc</code>文件:</p>
-<pre><code class="language-shell">vim ~/.zshrc
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></tbody></table></div></figure>
 <p>在本教程中，我使用的是vim文本编辑器，如果你喜欢可以使用其他的文本编辑器。接下来，在文件中找到这一行:</p>
-<pre><code class="language-shell">ZSH_THEME="robbyrussell"
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME="robbyrussell"</span><br></pre></td></tr></tbody></table></div></figure>
 <p>把名字 "robbyrussell "改为另一个主题的名字。你可以看看这个网站上的所有可用的<span class="exturl"><a class="exturl__link" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p>
 <p>最后，只要重启终端，你就会看到不同的效果。</p>
 
@@ -88,8 +81,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
           <a href="#添加插件" class="heading-link"><i class="fas fa-link"></i></a><strong>添加插件</strong></h4>
       
 <p>在.zshrc文件中，你需要编辑以 "plugins "字样开头的一行:</p>
-<pre><code class="language-shell">plugins=(git bundler osx rake ruby)
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins=(git bundler osx rake ruby)</span><br></pre></td></tr></tbody></table></div></figure>
 <p>如果你喜欢，你可以添加更多或删除插件。要使用这些插件，大多数插件都有README文件，其中记录了如何使用它们。</p>
 
         <h4 id="自动补全与⬆">
@@ -113,8 +105,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
           <a href="#更新-oh-my-zsh" class="heading-link"><i class="fas fa-link"></i></a><strong>更新 oh-my-zsh</strong></h4>
       
 <p>它会自动更新，但如果你想手动更新，只需在终端机上输入以下命令即可。</p>
-<pre><code class="language-shell">omz update
-</code></pre>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">omz update</span><br></pre></td></tr></tbody></table></div></figure>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

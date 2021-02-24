@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="WebPAI案例(一)                           放大与缩小案例       &lt;button id&#x3D;&#39;jkl&#39;&gt;放大&lt;&#x2F;button&gt; &lt;button id&#x3D;&#39;kjl&#39;&gt;缩小&lt;&#x2F;button&gt; &lt;br&gt; &lt;img src&#x3D;&quot;gl.jpg&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;100&quot;&gt;">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="WebPAI案例(一)                            放大与缩小案例        &lt;button id&#x3D;&#39;jkl&#39;&gt;放大&lt;&#x2F;button&gt; &lt;button id&#x3D;&#39;kjl&#39;&gt;缩小&lt;&#x2F;button&gt; &lt;br&gt; &lt;img src&#x3D;&quot;gl.jpg&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;100&quot;&amp;gt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WebPAI案例(一)">
 <meta property="og:url" content="http://kisskisso.com/2020/01/06/WebAPI%E6%A1%88%E4%BE%8B/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="WebPAI案例(一)                           放大与缩小案例       &lt;button id&#x3D;&#39;jkl&#39;&gt;放大&lt;&#x2F;button&gt; &lt;button id&#x3D;&#39;kjl&#39;&gt;缩小&lt;&#x2F;button&gt; &lt;br&gt; &lt;img src&#x3D;&quot;gl.jpg&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;100&quot;&gt;">
+<meta property="og:description" content="WebPAI案例(一)                            放大与缩小案例        &lt;button id&#x3D;&#39;jkl&#39;&gt;放大&lt;&#x2F;button&gt; &lt;button id&#x3D;&#39;kjl&#39;&gt;缩小&lt;&#x2F;button&gt; &lt;br&gt; &lt;img src&#x3D;&quot;gl.jpg&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;100&quot;&amp;gt">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-06T09:09:27.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:47:10.000Z">
@@ -35,11 +35,13 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">WebPAI案例(一)</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">1.3k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">13分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="WebPAI案例-一">
-          <a href="#WebPAI案例-一" class="heading-link"><i class="fas fa-link"></i></a><a href="#WebPAI案例-一" class="headerlink" title="WebPAI案例(一)"></a>WebPAI案例(一)</h2>
+          <a href="#WebPAI案例-一" class="heading-link"><i class="fas fa-link"></i></a>WebPAI案例(一)</h2>
       
+
         <h3 id="放大与缩小案例">
-          <a href="#放大与缩小案例" class="heading-link"><i class="fas fa-link"></i></a><a href="#放大与缩小案例" class="headerlink" title="放大与缩小案例"></a>放大与缩小案例</h3>
-      <pre><code class="html">&lt;button id='jkl'&gt;放大&lt;/button&gt;
+          <a href="#放大与缩小案例" class="heading-link"><i class="fas fa-link"></i></a>放大与缩小案例</h3>
+      
+<pre><code class="language-html">&lt;button id='jkl'&gt;放大&lt;/button&gt;
 &lt;button id='kjl'&gt;缩小&lt;/button&gt;
 &lt;br&gt;
 &lt;img src="gl.jpg" alt="" width="100"&gt;
@@ -56,71 +58,74 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
         kids -= 20；
         img.width = kids；
     ｝
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
  <a id="more"></a>
 
-
         <h3 id="特殊属性的运用案例">
-          <a href="#特殊属性的运用案例" class="heading-link"><i class="fas fa-link"></i></a><a href="#特殊属性的运用案例" class="headerlink" title="特殊属性的运用案例"></a>特殊属性的运用案例</h3>
-      <pre><code class="html">加与减
+          <a href="#特殊属性的运用案例" class="heading-link"><i class="fas fa-link"></i></a>特殊属性的运用案例</h3>
+      
+<pre><code class="language-html">加与减
 &lt;style&gt;
-        div {
-            width: 80px;
-        }
-        input[type="text"] {
-            width: 50px;
-            height: 44px;
-            outline: none;
-            border:1px solid #ccc;
-            text-align: center;
-        }
-        input[type="button"] {
-            height: 24px;
-            width: 22px;
-        }
-        input {
-            float: left;
-        }
-    &lt;/style&gt;
+		div {
+			width: 80px;
+		}
+		input[type="text"] {
+			width: 50px;
+			height: 44px;
+			outline: none;
+			border:1px solid #ccc;
+			text-align: center;
+		}
+		input[type="button"] {
+			height: 24px;
+			width: 22px;
+		}
+		input {
+			float: left;
+		}
+	&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 
-    &lt;div&gt;
-        &lt;input type="text" id="total" value="1" readonly&gt;
-        &lt;input type="button" value="+" id="add"&gt;
-        &lt;input type="button" value="-" id="reduce" &gt;
-        &lt;script&gt;
-            var total = document.querySelector('#total')
-            var add = document.querySelector('#add')
-            var reduce = document.querySelector('#reduce')
-            add.onclick = function(){
-                // 获取到输入框中现有的值
-                var v1 = total.value;
-                v1++;
-                // 在将该变化了值赋值回输入框
-                total.value = v1;
-                // 加上去之后，值至少已经是2 了，所以，“-”按钮要重新设置为可用状态：
-                reduce.disabled = false;
-            }
-            reduce.onclick = function(){
-                // 获取到输入框中现有的值
-                var v1 = total.value;
-                v1--;
-                if( v1 &lt;= 0) {
-                    v1 = 1;
-                    // 此时，还需要去禁用“-”这个按钮
-                    // reduce.disable = "disabled";// 发现这种写法无效！！！
-                    reduce.disabled = true;
-                }
-                // 在将该变化了值赋值回输入框
-                total.value = v1;
-            }
-        &lt;/script&gt;
-    &lt;/div&gt;</code></pre>
+	&lt;div&gt;
+		&lt;input type="text" id="total" value="1" readonly&gt;
+		&lt;input type="button" value="+" id="add"&gt;
+		&lt;input type="button" value="-" id="reduce" &gt;
+		&lt;script&gt;
+			var total = document.querySelector('#total')
+			var add = document.querySelector('#add')
+			var reduce = document.querySelector('#reduce')
+			add.onclick = function(){
+				// 获取到输入框中现有的值
+				var v1 = total.value;
+				v1++;
+				// 在将该变化了值赋值回输入框
+				total.value = v1;
+				// 加上去之后，值至少已经是2 了，所以，“-”按钮要重新设置为可用状态：
+				reduce.disabled = false;
+			}
+			reduce.onclick = function(){
+				// 获取到输入框中现有的值
+				var v1 = total.value;
+				v1--;
+				if( v1 &lt;= 0) {
+					v1 = 1;
+					// 此时，还需要去禁用“-”这个按钮
+					// reduce.disable = "disabled";// 发现这种写法无效！！！
+					reduce.disabled = true;
+				}
+				// 在将该变化了值赋值回输入框
+				total.value = v1;
+			}
+		&lt;/script&gt;
+	&lt;/div&gt;
+</code></pre>
 
         <h3 id="开关灯案例（开关思想）">
-          <a href="#开关灯案例（开关思想）" class="heading-link"><i class="fas fa-link"></i></a><a href="#开关灯案例（开关思想）" class="headerlink" title="开关灯案例（开关思想）"></a>开关灯案例（开关思想）</h3>
-      <pre><code class="html"> 注：如何获取body元素（标签）？|document.body|
+          <a href="#开关灯案例（开关思想）" class="heading-link"><i class="fas fa-link"></i></a>开关灯案例（开关思想）</h3>
+      
+<pre><code class="language-html"> 注：如何获取body元素（标签）？|document.body|
  &lt;input type="button" value="关灯" id="kids"&gt;
 &lt;script&gt;  
         var kids = document.quertSelector('#kids');
@@ -131,23 +136,25 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
                kid = true；
             var body = document.body;
           body.style.backgroundColor = 'black';
-
+       
         }else{
              kids.value = '关灯'；
                kid = false；
              var body = document.body;
           body.style.backgroundColor = 'while';
         }
-
+          
     }
 
 
 
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
 
         <h3 id="批量删除案例">
-          <a href="#批量删除案例" class="heading-link"><i class="fas fa-link"></i></a><a href="#批量删除案例" class="headerlink" title="批量删除案例"></a>批量删除案例</h3>
-      <pre><code class="html"> &lt;input type="button" id="btn1" disabled value="批量删除"&gt;
+          <a href="#批量删除案例" class="heading-link"><i class="fas fa-link"></i></a>批量删除案例</h3>
+      
+<pre><code class="language-html"> &lt;input type="button" id="btn1" disabled value="批量删除"&gt;
     &lt;table border="1" cellspacing="0" id="table1" width="200"&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -184,108 +191,114 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             }
 
 
-        &lt;/script&gt;</code></pre>
+        &lt;/script&gt;
+</code></pre>
 
         <h3 id="innerHtml和-innerText复制的区别【经典案例】">
-          <a href="#innerHtml和-innerText复制的区别【经典案例】" class="heading-link"><i class="fas fa-link"></i></a><a href="#innerHtml和-innerText复制的区别【经典案例】" class="headerlink" title="innerHtml和 innerText复制的区别【经典案例】"></a>innerHtml和 innerText复制的区别【经典案例】</h3>
-      <pre><code class="html">&lt;button id="btn1"&gt;复制html&lt;/button&gt;
-    &lt;button id="btn2"&gt;复制text&lt;/button&gt;
-    &lt;div id="box1"&gt;
-        &lt;ul &gt;
-            &lt;li&gt;项目1&lt;/li&gt;
-            &lt;li&gt;项目2&lt;/li&gt;
-            &lt;li&gt;项目3&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div id="box2"&gt;&lt;/div&gt;
+          <a href="#innerHtml和-innerText复制的区别【经典案例】" class="heading-link"><i class="fas fa-link"></i></a>innerHtml和 innerText复制的区别【经典案例】</h3>
+      
+<pre><code class="language-html">&lt;button id="btn1"&gt;复制html&lt;/button&gt;
+	&lt;button id="btn2"&gt;复制text&lt;/button&gt;
+	&lt;div id="box1"&gt;
+		&lt;ul &gt;
+			&lt;li&gt;项目1&lt;/li&gt;
+			&lt;li&gt;项目2&lt;/li&gt;
+			&lt;li&gt;项目3&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div id="box2"&gt;&lt;/div&gt;
         &lt;script&gt;
-        var btn1 = document.querySelector('#btn1');
-        var btn2 = document.querySelector('#btn2');
-        var box1 = document.querySelector('#box1');
-        var box2 = document.querySelector('#box2');
-        btn1.onclick = function(){
-            var str = box1.innerHTML;
-            console.log(str);
-            box2.innerHTML = str;
-        }
-        btn2.onclick = function(){
-            var str = box1.innerText;
-            console.log(str);
-            box2.innerText = str;
-        }
-    &lt;/script&gt;
+		var btn1 = document.querySelector('#btn1');
+		var btn2 = document.querySelector('#btn2');
+		var box1 = document.querySelector('#box1');
+		var box2 = document.querySelector('#box2');
+		btn1.onclick = function(){
+			var str = box1.innerHTML;
+			console.log(str);
+			box2.innerHTML = str;
+		}
+		btn2.onclick = function(){
+			var str = box1.innerText;
+			console.log(str);
+			box2.innerText = str;
+		}
+	&lt;/script&gt;
+
 
 </code></pre>
 <p><strong>对比innerHTML和createElement()创建元素的效率:</strong></p>
-<pre><code class="html">&lt;button id="btn1"&gt;使用innerHTML&lt;/button&gt;
-    &lt;button id="btn2"&gt;使用createElement&lt;/button&gt;
-    &lt;ul id="list"&gt;&lt;/ul&gt;
-    &lt;script&gt;
-        var btn1 = document.querySelector('#btn1')
-        var btn2 = document.querySelector('#btn2')
-        var list = document.querySelector('#list')
-        btn1.onclick = function(){
-            // 先将ul中的所有内容（元素）清掉
-            list.innerHTML = '';
-            var str = ''; // 这个变量用于存储 html 代码
-            var start = new Date();    // 开始时间
-            // 意图放入1000个li标签到ul中
-            for(var i = 0; i &lt; 1000; i++) {
-                str += "&lt;li&gt;" + Math.random() + "&lt;/li&gt;";
-                list.innerHTML = str;
-            }
-            var end = new Date();    // 结束事件
-            console.log('耗时：' + (end - start));
+<pre><code class="language-html">&lt;button id="btn1"&gt;使用innerHTML&lt;/button&gt;
+	&lt;button id="btn2"&gt;使用createElement&lt;/button&gt;
+	&lt;ul id="list"&gt;&lt;/ul&gt;
+	&lt;script&gt;
+		var btn1 = document.querySelector('#btn1')
+		var btn2 = document.querySelector('#btn2')
+		var list = document.querySelector('#list')
+		btn1.onclick = function(){
+			// 先将ul中的所有内容（元素）清掉
+			list.innerHTML = '';
+			var str = ''; // 这个变量用于存储 html 代码
+			var start = new Date();	// 开始时间
+			// 意图放入1000个li标签到ul中
+			for(var i = 0; i &lt; 1000; i++) {
+				str += "&lt;li&gt;" + Math.random() + "&lt;/li&gt;";
+				list.innerHTML = str;
+			}
+			var end = new Date();	// 结束事件
+			console.log('耗时：' + (end - start));
 
-        }
-        btn2.onclick = function(){
-            // 先将ul中的所有内容（元素）清掉
-            list.innerHTML = '';
-            var start = new Date();    // 开始时间
-            // 意图放入1000个li标签到ul中
-            for(var i = 0; i &lt; 1000; i++) {
-                var li = document.createElement('li');
-                li.innerText = Math.random();
-                list.appendChild( li );
-            }
-            var end = new Date();    // 结束事件
-            console.log('耗时：' + (end - start));
-        }
-    &lt;/script&gt;
+		}
+		btn2.onclick = function(){
+			// 先将ul中的所有内容（元素）清掉
+			list.innerHTML = '';
+			var start = new Date();	// 开始时间
+			// 意图放入1000个li标签到ul中
+			for(var i = 0; i &lt; 1000; i++) {
+				var li = document.createElement('li');
+				li.innerText = Math.random();
+				list.appendChild( li );
+			}
+			var end = new Date();	// 结束事件
+			console.log('耗时：' + (end - start));
+		}
+	&lt;/script&gt;
+
 </code></pre>
 
         <h3 id="打折案例">
-          <a href="#打折案例" class="heading-link"><i class="fas fa-link"></i></a><a href="#打折案例" class="headerlink" title="打折案例"></a>打折案例</h3>
-      <pre><code class="html">&lt;button id="btn1"&gt;打8折！&lt;/button&gt;
-    &lt;ul id="list1"&gt;
-        &lt;li oldPrice="222"&gt;&lt;span&gt;产品1&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
-        &lt;li oldPrice="414"&gt;&lt;span&gt;产品2&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
-        &lt;li oldPrice="244"&gt;&lt;span&gt;产品3&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
-        &lt;li oldPrice="513"&gt;&lt;span&gt;产品4&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
-        &lt;li oldPrice="144"&gt;&lt;span&gt;产品5&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+          <a href="#打折案例" class="heading-link"><i class="fas fa-link"></i></a>打折案例</h3>
+      
+<pre><code class="language-html">&lt;button id="btn1"&gt;打8折！&lt;/button&gt;
+	&lt;ul id="list1"&gt;
+		&lt;li oldPrice="222"&gt;&lt;span&gt;产品1&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li oldPrice="414"&gt;&lt;span&gt;产品2&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li oldPrice="244"&gt;&lt;span&gt;产品3&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li oldPrice="513"&gt;&lt;span&gt;产品4&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li oldPrice="144"&gt;&lt;span&gt;产品5&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;/ul&gt;
 &lt;script&gt;   
     var btn1 = document.querySelector('#btn1');
     var ul= document.querySelector('#list1');
       var lii = ul.children;   //获取ul里面的li
        //1.初始显示原价
     for(var i = 0;i &lt; lii.length;i++){
-                 var oldPrice = list[i].getAttribute('oldPrice');
-            // 当前 li 中的第2个span
-            var span2 = list[i].children[1];
-            span2.innerHTML = "，原价 &lt;del&gt;¥" + oldPrice + "&lt;/del&gt;";
-        }
+         		var oldPrice = list[i].getAttribute('oldPrice');
+			// 当前 li 中的第2个span
+			var span2 = list[i].children[1];
+			span2.innerHTML = "，原价 &lt;del&gt;¥" + oldPrice + "&lt;/del&gt;";
+		}
     btn1.onclick = function(){
-            for(var i = 0; i &lt; list.length; i++){
-                // 先取出当前li的oldPrice这个自定义属性的值（原价）
-                var oldPrice = list[i].getAttribute('oldPrice');
-                // 当前 li 中的第3个span
-                var span3 = list[i].children[2];
-                span3.innerHTML = "，折后价 &lt;del&gt;¥" + (oldPrice*0.8).toFixed(2) + "&lt;/del&gt;";
-            }
-        }
+			for(var i = 0; i &lt; list.length; i++){
+				// 先取出当前li的oldPrice这个自定义属性的值（原价）
+				var oldPrice = list[i].getAttribute('oldPrice');
+				// 当前 li 中的第3个span
+				var span3 = list[i].children[2];
+				span3.innerHTML = "，折后价 &lt;del&gt;¥" + (oldPrice*0.8).toFixed(2) + "&lt;/del&gt;";
+			}
+		}
     }
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

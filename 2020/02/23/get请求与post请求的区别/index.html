@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="总结                           get请求与post请求的区别：       1.语义区别:    -get -post    请求用于获取数据 请求用于发送数据">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="总结                            get请求与post请求的区别：        1.语义区别:    -get -post     请求用于获取数据 请求用于发送数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="get请求与post请求的区别">
 <meta property="og:url" content="http://kisskisso.com/2020/02/23/get%E8%AF%B7%E6%B1%82%E4%B8%8Epost%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="总结                           get请求与post请求的区别：       1.语义区别:    -get -post    请求用于获取数据 请求用于发送数据">
+<meta property="og:description" content="总结                            get请求与post请求的区别：        1.语义区别:    -get -post     请求用于获取数据 请求用于发送数据">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-23T19:22:18.000Z">
 <meta property="article:modified_time" content="2021-01-26T08:59:06.000Z">
@@ -35,11 +35,13 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">get请求与post请求的区别</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-02-23</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">1.1k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">7分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="总结">
-          <a href="#总结" class="heading-link"><i class="fas fa-link"></i></a><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h2>
+          <a href="#总结" class="heading-link"><i class="fas fa-link"></i></a><strong>总结</strong></h2>
       
+
         <h3 id="get请求与post请求的区别：">
-          <a href="#get请求与post请求的区别：" class="heading-link"><i class="fas fa-link"></i></a><a href="#get请求与post请求的区别：" class="headerlink" title="get请求与post请求的区别："></a><strong>get请求与post请求的区别：</strong></h3>
-      <p><strong>1.语义区别:</strong></p>
+          <a href="#get请求与post请求的区别：" class="heading-link"><i class="fas fa-link"></i></a><strong>get请求与post请求的区别：</strong></h3>
+      
+<p><strong>1.语义区别:</strong></p>
 <div class="table-container"><table>
 <thead>
 <tr>
@@ -47,52 +49,61 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <th>-post</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>请求用于获取数据</td>
 <td>请求用于发送数据</td>
 </tr>
-</tbody></table></div>
+</tbody>
+</table></div>
 <a id="more"></a>
-
 <p><strong>2.请求参数的发送位置有区别：</strong></p>
-<p>  -get请求的参数，在URL中传递</p>
-<p>  -post请求的请求参数，无法看到传递位置</p>
+<p>-get请求的参数，在URL中传递</p>
+<p>-post请求的请求参数，无法看到传递位置</p>
 <p><strong>3.可发送数据大小不同</strong></p>
-<p>   -get请求参数在URL中发送，浏览器限制了URL的长度，不同浏览器限制不同</p>
+<p>-get请求参数在URL中发送，浏览器限制了URL的长度，不同浏览器限制不同</p>
 <p>​        -可发送数据大小为2k</p>
 <p>​    -post请求，理论上没有大小限制（都是由服务器限制）</p>
 <p>​         -根据需求进行限制设置</p>
 <p>​         -根据服务器处理能力进行限制设置</p>
 <p><strong>4.可发送内容格式不同</strong></p>
 <p>​    -get只能发送文字数据</p>
-<pre><code> -post可以发送各种类型数据</code></pre><p><strong>get请求参数的形式：</strong></p>
+<pre><code> -post可以发送各种类型数据
+</code></pre>
+<p><strong>get请求参数的形式：</strong></p>
 <p>格式为：接口地址？请求参数</p>
 <p>​          形式为：</p>
-<pre><code>       请求参数：名=值&amp;名=值&amp;名=值......【注：某个值为中文，中文会自动进行编码处理】</code></pre><p>（network-&gt;点击某个get请求-&gt;headers-&gt;Query String Parameters-&gt;可以查看所参数）</p>
+<pre><code>       请求参数：名=值&amp;名=值&amp;名=值......【注：某个值为中文，中文会自动进行编码处理】
+</code></pre>
+<p>（network-&gt;点击某个get请求-&gt;headers-&gt;Query String Parameters-&gt;可以查看所参数）</p>
 <p><strong>post请求参数形式：</strong></p>
 <p>形式为：</p>
 <p>​    URL编码形式urlencoded，只是与get发送位置不同，数据的形式相同</p>
-<p>   （network-&gt;点击某个post请求-&gt;headers-&gt;Form Data-&gt;可以查看所有参数）</p>
+<p>（network-&gt;点击某个post请求-&gt;headers-&gt;Form Data-&gt;可以查看所有参数）</p>
 
         <h3 id="原生的ajax发送get请求的使用：">
-          <a href="#原生的ajax发送get请求的使用：" class="heading-link"><i class="fas fa-link"></i></a><a href="#原生的ajax发送get请求的使用：" class="headerlink" title="原生的ajax发送get请求的使用："></a><strong>原生的ajax发送get请求的使用：</strong></h3>
-      <p>浏览器提供XMLHttpRequest构造函数，用于创建可以发送ajax对象</p>
+          <a href="#原生的ajax发送get请求的使用：" class="heading-link"><i class="fas fa-link"></i></a><strong>原生的ajax发送get请求的使用：</strong></h3>
+      
+<p>浏览器提供XMLHttpRequest构造函数，用于创建可以发送ajax对象</p>
 
-        <h4 id="—–请求发送功能—–">
-          <a href="#—–请求发送功能—–" class="heading-link"><i class="fas fa-link"></i></a><a href="#—–请求发送功能—–" class="headerlink" title="—–请求发送功能—–"></a><strong>—–请求发送功能—–</strong></h4>
-      <pre><code class="js">1创建xhr实例
+        <h4 id="请求发送功能">
+          <a href="#请求发送功能" class="heading-link"><i class="fas fa-link"></i></a><strong>-----请求发送功能-----</strong></h4>
+      
+<pre><code class="language-js">1创建xhr实例
 var xhr = new XMLMLHttpRequest();
 2调用open()用于建立与服务器的链接
-    -设置请求方式和请求地址
-    -参数1：请求方式，get或者post
-    -请求地址
+ -设置请求方式和请求地址
+ -参数1：请求方式，get或者post
+ -请求地址
 xhr.open('get','地址')；
 3调用send()，用于将请求发送出去，这一句send()是异步代码
-xhr.send();</code></pre>
+xhr.send();
+</code></pre>
 
-        <h4 id="—–响应处理功能—–">
-          <a href="#—–响应处理功能—–" class="heading-link"><i class="fas fa-link"></i></a><a href="#—–响应处理功能—–" class="headerlink" title="—–响应处理功能—–"></a><strong>—–响应处理功能—–</strong></h4>
-      <pre><code class="js">由于send()是异步操作，所有不能直接在send()之后直接写代码获取响应内容
+        <h4 id="响应处理功能">
+          <a href="#响应处理功能" class="heading-link"><i class="fas fa-link"></i></a><strong>-----响应处理功能-----</strong></h4>
+      
+<pre><code class="language-js">由于send()是异步操作，所有不能直接在send()之后直接写代码获取响应内容
 - xhr.readyState 用于表示ajax对象的操作状态
      - 0 初始化阶段：创建了xhr实例
      - 1 调用open：建立与服务器的连接
@@ -108,31 +119,36 @@ xhr.send();</code></pre>
             3 获取响应内容
         // console.log(xhr.responseText);
             var data = xhr.responseText;
-
-
+             
+             
          4 将JSON格式的数据转换为js对象 
          由于是原生写法，没有人帮我们进行数据类型处理，我们需要自己进行数据处理
         data = JSON.parse(data);
         console.log(data);
          }
- };</code></pre>
+ };
+</code></pre>
 
         <h3 id="发送带有参数的get请求：">
-          <a href="#发送带有参数的get请求：" class="heading-link"><i class="fas fa-link"></i></a><a href="#发送带有参数的get请求：" class="headerlink" title="发送带有参数的get请求："></a><strong>发送带有参数的get请求：</strong></h3>
+          <a href="#发送带有参数的get请求：" class="heading-link"><i class="fas fa-link"></i></a><strong>发送带有参数的get请求：</strong></h3>
       
+
         <h4 id="—-请求发送功能—">
-          <a href="#—-请求发送功能—" class="heading-link"><i class="fas fa-link"></i></a><a href="#—-请求发送功能—" class="headerlink" title="— 请求发送功能—"></a><strong>— 请求发送功能—</strong></h4>
-      <pre><code class="js">    1 初始化xhr对象
+          <a href="#—-请求发送功能—" class="heading-link"><i class="fas fa-link"></i></a><strong>— 请求发送功能—</strong></h4>
+      
+<pre><code class="language-js">    1 初始化xhr对象
     var xhr = new XMLHttpRequest();
     2 调用open
        - get请求参数以?连接，拼接在url后面，形式为urlencoded
     xhr.open('get', 'http://www.liulongbin.top:3006/api/getbooks?id=2&amp;bookname=红楼梦');
     3 调用send
-    xhr.send();</code></pre>
+    xhr.send();
+</code></pre>
 
         <h4 id="—响应处理—">
-          <a href="#—响应处理—" class="heading-link"><i class="fas fa-link"></i></a><a href="#—响应处理—" class="headerlink" title="—响应处理—"></a><strong>—响应处理—</strong></h4>
-      <pre><code class="js">     1 设置事件
+          <a href="#—响应处理—" class="heading-link"><i class="fas fa-link"></i></a><strong>—响应处理—</strong></h4>
+      
+<pre><code class="language-js">     1 设置事件
     xhr.onreadystatechange = function () {
      2 检测响应是否下载完毕/请求是否成功
       if (xhr.readyState === 4 &amp;&amp; xhr.status === 200) {
@@ -143,11 +159,13 @@ xhr.send();</code></pre>
         res = JSON.parse(res);
         console.log(res);
       }
-    };</code></pre>
+    };
+</code></pre>
 
         <h3 id="发送post请求：">
-          <a href="#发送post请求：" class="heading-link"><i class="fas fa-link"></i></a><a href="#发送post请求：" class="headerlink" title="发送post请求："></a><strong>发送post请求：</strong></h3>
-      <pre><code class="js">    1 初始化xhr对象
+          <a href="#发送post请求：" class="heading-link"><i class="fas fa-link"></i></a><strong>发送post请求：</strong></h3>
+      
+<pre><code class="language-js">    1 初始化xhr对象
     var xhr = new XMLHttpRequest();
 
      2 调用open
@@ -161,7 +179,8 @@ xhr.send();</code></pre>
 
      4 发送请求
        - post请求的请求参数为urlencoded形式，传入到send()中即可
-    xhr.send('bookname=老人与海&amp;author=海明威&amp;publisher=机械工业出版社');</code></pre>
+    xhr.send('bookname=老人与海&amp;author=海明威&amp;publisher=机械工业出版社');
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -183,9 +202,9 @@ xhr.send();</code></pre>
       </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/2020/02/23/get%E8%AF%B7%E6%B1%82%E4%B8%8Epost%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/">http://kisskisso.com/2020/02/23/get%E8%AF%B7%E6%B1%82%E4%B8%8Epost%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/Ajax/">Ajax</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/02/23/%E5%B0%81%E8%A3%85Ajax%E5%87%BD%E6%95%B0/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">封装Ajax函数</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/02/22/%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86/"><span class="paginator-prev__text">图书管理</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">1.</span> <span class="toc-text">
           总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#get请求与post请求的区别："><span class="toc-number">1.1.</span> <span class="toc-text">
           get请求与post请求的区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原生的ajax发送get请求的使用："><span class="toc-number">1.2.</span> <span class="toc-text">
-          原生的ajax发送get请求的使用：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#—–请求发送功能—–"><span class="toc-number">1.2.1.</span> <span class="toc-text">
-          —–请求发送功能—–</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#—–响应处理功能—–"><span class="toc-number">1.2.2.</span> <span class="toc-text">
-          —–响应处理功能—–</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发送带有参数的get请求："><span class="toc-number">1.3.</span> <span class="toc-text">
+          原生的ajax发送get请求的使用：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#请求发送功能"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+          -----请求发送功能-----</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#响应处理功能"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+          -----响应处理功能-----</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发送带有参数的get请求："><span class="toc-number">1.3.</span> <span class="toc-text">
           发送带有参数的get请求：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#—-请求发送功能—"><span class="toc-number">1.3.1.</span> <span class="toc-text">
           — 请求发送功能—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#—响应处理—"><span class="toc-number">1.3.2.</span> <span class="toc-text">
           —响应处理—</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发送post请求："><span class="toc-number">1.4.</span> <span class="toc-text">

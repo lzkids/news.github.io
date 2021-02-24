@@ -41,7 +41,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p><font color="#008B8B" size="5">扩展：</font>Object.defineProperty()方法</p>
 <p>Object.defineProperty(obj，prop，descriptor)参数：obj（定义属性对象）prop（定义或修改的属性）descriptor（具体的改变方法）<a id="more"></a></p>
 <p>用这个方法定义一个值，当调用时使用它里面的get方法，当给属性赋值时，又用到set方法</p>
-<pre><code class="js">var obj = {};
+<pre><code class="language-js">var obj = {};
  Object.defineProperty(obj, 'hello',{
      get: function () {
          console.log('调用了get方法')
@@ -51,13 +51,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
      }
  })；
  obj.hello;
-obj.hello = 'hi';</code></pre>
+obj.hello = 'hi';
+</code></pre>
 <p><font color="#00C5CD" size="5">JS双向数据绑定</font>通过添加事件监听keyup来触发set方法，而set在修改访问器属性的同时，在修改了dom样式，改变了span标签的文本</p>
-<pre><code class="js">&lt;script&gt;
+<pre><code class="language-js">&lt;script&gt;
    var obj = [];   // 定义一个空对象
 
    var k = 'once'; // 赋予初始值
-
+     
     Object.defineProperty(obj, 'k', {
         get: function () {
             return k;
@@ -76,17 +77,18 @@ obj.hello = 'hi';</code></pre>
         obj.k = e.target.value;                                   
     })
 
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
 <p><font color="#00C5CD" size="5">vue的双向数据绑定：</font>就是普通单向绑定和事件组合来完成的</p>
-<pre><code class="vue">&lt;div id="vm"&gt;
-
+<pre><code class="language-vue">&lt;div id="vm"&gt;
+           
         &lt;p&gt;邮箱&lt;input v-model="email"&gt;&lt;/p&gt;
             &lt;span&gt;{{email}}&lt;/span&gt;
         &lt;p&gt;名字&lt;input v-model="name"&gt;&lt;/p&gt;
      &lt;span&gt;{{name}}&lt;/span&gt;
        &lt;/div&gt;
-
-
+            
+       
         &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript"&gt;
             var vm = new Vue({
@@ -96,7 +98,8 @@ obj.hello = 'hi';</code></pre>
                     name: ''
                 }
             });   
-    &lt;/script&gt;</code></pre>
+    &lt;/script&gt;
+</code></pre>
 <p><font color="red" size="5">理解：</font></p>
 <p>①将vue中的data中的内容绑定到输入文本框和文本节点中</p>
 <p>②文本框的内容改变时，vue实例中的data也同时发生改变</p>

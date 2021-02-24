@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="伸缩布局       什么时候使用伸缩布局: 1.如果在在网页中希望让元素一行显示,并且元素随着父元素的宽度改变布局方式不会受影响 2.使用了伸缩布局以后,还可以使用浮动,定位,margin,padding 3.伸缩布局只是一个新的布局方式,不要把伸缩布局看的太重或者太难                     核心知识点       1.伸缩盒子设置 2.设置伸缩盒子主轴">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="伸缩布局        什么时候使用伸缩布局: 1.如果在在网页中希望让元素一行显示,并且元素随着父元素的宽度改变布局方式不会受影响 2.使用了伸缩布局以后,还可以使用浮动,定位,margin,padding 3.伸缩布局只是一个新的布局方式,不要把伸缩布局看的太重或者太难                     核心知识点        1.伸缩盒子设置 2.设置伸缩盒子主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="伸缩布局">
 <meta property="og:url" content="http://kisskisso.com/2020/01/08/%E4%BC%B8%E7%BC%A9%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="伸缩布局       什么时候使用伸缩布局: 1.如果在在网页中希望让元素一行显示,并且元素随着父元素的宽度改变布局方式不会受影响 2.使用了伸缩布局以后,还可以使用浮动,定位,margin,padding 3.伸缩布局只是一个新的布局方式,不要把伸缩布局看的太重或者太难                     核心知识点       1.伸缩盒子设置 2.设置伸缩盒子主轴">
+<meta property="og:description" content="伸缩布局        什么时候使用伸缩布局: 1.如果在在网页中希望让元素一行显示,并且元素随着父元素的宽度改变布局方式不会受影响 2.使用了伸缩布局以后,还可以使用浮动,定位,margin,padding 3.伸缩布局只是一个新的布局方式,不要把伸缩布局看的太重或者太难                     核心知识点        1.伸缩盒子设置 2.设置伸缩盒子主">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-08T18:02:45.000Z">
 <meta property="article:modified_time" content="2021-01-26T10:27:34.000Z">
@@ -35,15 +35,17 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">伸缩布局</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">783</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">4分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="伸缩布局">
-          <a href="#伸缩布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#伸缩布局" class="headerlink" title="伸缩布局"></a><strong>伸缩布局</strong></h2>
-      <p><strong>什么时候使用伸缩布局:</strong></p>
+          <a href="#伸缩布局" class="heading-link"><i class="fas fa-link"></i></a><strong>伸缩布局</strong></h2>
+      
+<p><strong>什么时候使用伸缩布局:</strong></p>
 <p>1.如果在在网页中希望让元素一行显示,并且元素随着父元素的宽度改变<strong>布局方式不会受影响</strong></p>
 <p>2.使用了伸缩布局以后,还可以使用浮动,定位,margin,padding</p>
 <p>3.伸缩布局只是一个新的布局方式,不要把伸缩布局看的太重或者太难</p>
 
         <h3 id="核心知识点">
-          <a href="#核心知识点" class="heading-link"><i class="fas fa-link"></i></a><a href="#核心知识点" class="headerlink" title="核心知识点"></a>核心知识点</h3>
-      <p>1.伸缩盒子设置</p>
+          <a href="#核心知识点" class="heading-link"><i class="fas fa-link"></i></a>核心知识点</h3>
+      
+<p>1.伸缩盒子设置</p>
 <p>2.设置伸缩盒子主轴 <a id="more"></a></p>
 <p>3.设置伸缩盒子主轴对齐方式</p>
 <p>4.设置伸缩盒子侧轴对齐方式</p>
@@ -51,43 +53,53 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>6.less基本语法及使用</p>
 
         <h3 id="伸缩布局两个步骤">
-          <a href="#伸缩布局两个步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#伸缩布局两个步骤" class="headerlink" title="伸缩布局两个步骤:"></a><strong>伸缩布局两个步骤:</strong></h3>
-      <p>​             <strong>●给父元素设置的属性</strong>  </p>
-<pre><code class="css">display:flex;   /*设置为伸缩盒子(弹性盒子)*/ 注:一定给父级!!!一定给父级!!!一定给父级!!!</code></pre>
-<pre><code class="css">justify-content/*设置元素在主轴对齐*/
+          <a href="#伸缩布局两个步骤" class="heading-link"><i class="fas fa-link"></i></a><strong>伸缩布局两个步骤:</strong></h3>
+      
+<p>​             <strong>●给父元素设置的属性</strong></p>
+<pre><code class="language-css">display:flex;   /*设置为伸缩盒子(弹性盒子)*/ 注:一定给父级!!!一定给父级!!!一定给父级!!!
+</code></pre>
+<pre><code class="language-css">justify-content/*设置元素在主轴对齐*/
 
 justify-content:flex- start;  /*默认*/
 justify-content:flex-end;     /*结束*/
 justify-concent:center;  /*居中*/
 justify-content:space-between;/* 两端对齐中间自适应 */
-justify-content: space-around; /* 环绕 */</code></pre>
-<pre><code class="css">flex-direction: /*设置主轴的方向*/
-row(默认,水平)  | column(竖显示) | row-reverse(横-右到左) |   column-reverse(纵-右到左)</code></pre>
-<pre><code class="css">align-items; /*设置元素相对侧轴对齐方式*/
-stretch(默认,拉伸效果)  | flex-start(起点对齐)  | flex-end(终点对齐) | center(中心)   |  baseline(第一行文字的基线对齐)</code></pre>
-<pre><code class="css">flex-wrap:/*设置伸缩盒子中元素是否换行显示*/
-nowrap 默认不换行 |  wrap 换行</code></pre>
-<pre><code class="css">align-content:/*当元素换行后的一种对齐方式*/
+justify-content: space-around; /* 环绕 */
+</code></pre>
+<pre><code class="language-css">flex-direction: /*设置主轴的方向*/
+row(默认,水平)  | column(竖显示) | row-reverse(横-右到左) |   column-reverse(纵-右到左)
+</code></pre>
+<pre><code class="language-css">align-items; /*设置元素相对侧轴对齐方式*/
+stretch(默认,拉伸效果)  | flex-start(起点对齐)  | flex-end(终点对齐) | center(中心)   |  baseline(第一行文字的基线对齐)
+</code></pre>
+<pre><code class="language-css">flex-wrap:/*设置伸缩盒子中元素是否换行显示*/
+nowrap 默认不换行 |  wrap 换行
+</code></pre>
+<pre><code class="language-css">align-content:/*当元素换行后的一种对齐方式*/
 stretch(默认)
-注:如果要设置align-content必须要保证元素是换行的</code></pre>
+注:如果要设置align-content必须要保证元素是换行的
+</code></pre>
 <p>​                                                  <strong>注:</strong>  flex-flow复合属性 ===flex- direction和flex- wrap</p>
-<p> <strong>●给子元素设置的属性</strong></p>
-<pre><code class="css">flex:/*设置元素占父元素剩余宽度的一个比例*/'也就是1份'
+<p><strong>●给子元素设置的属性</strong></p>
+<pre><code class="language-css">flex:/*设置元素占父元素剩余宽度的一个比例*/'也就是1份'
 注:
     1.flex 属性是给子元素设置的
-    2.剩余宽度:如果父元素中固定宽度的盒子,那么flex所占的比例是父元素整个的宽度-固定宽度后的比例</code></pre>
+    2.剩余宽度:如果父元素中固定宽度的盒子,那么flex所占的比例是父元素整个的宽度-固定宽度后的比例
+</code></pre>
 <p>​    <strong>● 伸缩盒子中-子元素排序</strong></p>
-<pre><code class="css">order:值;  /*设置元素排序*/
+<pre><code class="language-css">order:值;  /*设置元素排序*/
 特点:
      1.值越大元素越靠后显示
-     2.在排序时候,完全不用修改html结构</code></pre>
+     2.在排序时候,完全不用修改html结构
+</code></pre>
 
         <h3 id="伸缩盒子的特点">
-          <a href="#伸缩盒子的特点" class="heading-link"><i class="fas fa-link"></i></a><a href="#伸缩盒子的特点" class="headerlink" title="伸缩盒子的特点:"></a><strong>伸缩盒子的特点:</strong></h3>
-      <p>​         1.伸缩盒子中的所有元素都是一行显示的</p>
+          <a href="#伸缩盒子的特点" class="heading-link"><i class="fas fa-link"></i></a><strong>伸缩盒子的特点:</strong></h3>
+      
+<p>​         1.伸缩盒子中的所有元素都是一行显示的</p>
 <p>​         2.解释为什么伸缩盒子中的元素默认会一行显示?</p>
 <p>​                      ✖在伸缩盒子中元素都是按照<strong>主轴显示</strong>的</p>
-<p>​                      ✖在伸缩盒子中有一条主轴,主轴的<strong>默认水平显示</strong>  </p>
+<p>​                      ✖在伸缩盒子中有一条主轴,主轴的<strong>默认水平显示</strong></p>
 <p>​         3.在伸缩盒子中还有一条轴,叫侧轴.(侧轴始终要垂直于主轴,侧轴的方向是随着儿主轴的方向发生改变的)</p>
 <p>​          4.在伸缩盒子中,如果子元素的宽度超出父元素的宽度,那么元素也不会换行</p>
 <p><strong>注:</strong>                                                                                                                                                                                                                                                                              在伸缩盒子中元素一行显示,与脱标没有任何关系</p>

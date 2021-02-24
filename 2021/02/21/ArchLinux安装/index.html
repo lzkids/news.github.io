@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="如何在虚拟机安装Arch Linux？       1.新建一个虚拟机。下载Arch ios（镜像站下载） 2.虚拟机设置—选项—高级—选择uefi 3.开机 4.配置网络  dhcpcd 5.wifi-menu">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="如何在虚拟机安装Arch Linux？        1.新建一个虚拟机。下载Arch ios（镜像站下载） **2.**虚拟机设置—选项—高级—选择uefi 3.开机 4.配置网络 dhcpcd  5.wifi-menu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ArchLinux安装">
 <meta property="og:url" content="http://kisskisso.com/2021/02/21/ArchLinux%E5%AE%89%E8%A3%85/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="如何在虚拟机安装Arch Linux？       1.新建一个虚拟机。下载Arch ios（镜像站下载） 2.虚拟机设置—选项—高级—选择uefi 3.开机 4.配置网络  dhcpcd 5.wifi-menu">
+<meta property="og:description" content="如何在虚拟机安装Arch Linux？        1.新建一个虚拟机。下载Arch ios（镜像站下载） **2.**虚拟机设置—选项—高级—选择uefi 3.开机 4.配置网络 dhcpcd  5.wifi-menu">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-21T20:17:02.000Z">
 <meta property="article:modified_time" content="2021-02-23T11:30:00.000Z">
@@ -33,113 +33,153 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">ArchLinux安装</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">694</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h3 id="如何在虚拟机安装Arch-Linux？">
-          <a href="#如何在虚拟机安装Arch-Linux？" class="heading-link"><i class="fas fa-link"></i></a><a href="#如何在虚拟机安装Arch-Linux？" class="headerlink" title="如何在虚拟机安装Arch Linux？"></a><strong>如何在虚拟机安装Arch Linux？</strong></h3>
-      <p>1.新建一个虚拟机。下载Arch ios（镜像站下载）</p>
-<p><strong>2.</strong>虚拟机设置—选项—高级—选择uefi</p>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">ArchLinux安装</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2021-02-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-02-23</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">695</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h3 id="如何在虚拟机安装Arch-Linux？">
+          <a href="#如何在虚拟机安装Arch-Linux？" class="heading-link"><i class="fas fa-link"></i></a><strong>如何在虚拟机安装Arch Linux？</strong></h3>
+      
+<p>1.新建一个虚拟机。下载Arch ios（镜像站下载）</p>
+<p>**2.**虚拟机设置—选项—高级—选择uefi</p>
 <p>3.开机</p>
-<p>4.配置网络 </p>
-<pre><code class="bash">dhcpcd</code></pre>
+<p>4.配置网络</p>
+<pre><code class="language-bash">dhcpcd
+</code></pre>
 <p>5.wifi-menu <a id="more"></a></p>
 <blockquote>
 <p>会显示zsh: command not found: wifi-memu</p>
 <p>zsh：找不到命令：wifi-memu。</p>
 </blockquote>
-<p>6.配置镜像源 </p>
-<pre><code class="bash">nano /etc/pacman.d/mirrorlist</code></pre>
+<p>6.配置镜像源</p>
+<pre><code class="language-bash">nano /etc/pacman.d/mirrorlist
+</code></pre>
 <p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/" target="_blank" rel="noopener">清华大学镜像源</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <p>ctrl + x 然后输入y按回车</p>
 <p>7.磁盘分区</p>
-<pre><code class="bash"> cfdisk /dev/sda</code></pre>
+<pre><code class="language-bash"> cfdisk /dev/sda
+</code></pre>
 <p>创建300m EFI分区 剩余空间创建根分区</p>
 <p>new 回车 300m（第二个同理指剩余的空间）</p>
 <p>选择write回车输入yes</p>
 <p>quit退出</p>
-<p>8.把根分区格式化为ext4 </p>
-<pre><code class="bash">mkfs.ext4 /dev/sda2</code></pre>
+<p>8.把根分区格式化为ext4</p>
+<pre><code class="language-bash">mkfs.ext4 /dev/sda2
+</code></pre>
 <p>9.把EFI分区格式化为fat32</p>
-<pre><code class="bash">mkfs.fat -F32 /dev/sda1</code></pre>
+<pre><code class="language-bash">mkfs.fat -F32 /dev/sda1
+</code></pre>
 <p>10.挂在根分区</p>
-<pre><code class="bash">mount /dev/sda2 /mnt</code></pre>
+<pre><code class="language-bash">mount /dev/sda2 /mnt
+</code></pre>
 <p>11.创建EFI分区挂载点</p>
-<pre><code class="bash">mkdir /mnt/boot  mkdir /mnt/boot/EFI</code></pre>
+<pre><code class="language-bash">mkdir /mnt/boot  mkdir /mnt/boot/EFI
+</code></pre>
 <p>12.挂在EFI分区</p>
-<pre><code class="bash">mount /dev/sda1 /mnt/boot/EFI</code></pre>
+<pre><code class="language-bash">mount /dev/sda1 /mnt/boot/EFI
+</code></pre>
 <p>13.安装基础包</p>
-<pre><code class="bash">pacstrap -i /mnt base base-devel linux linux-firmware</code></pre>
-<p> 注：需要按两下回车 然后yes</p>
+<pre><code class="language-bash">pacstrap -i /mnt base base-devel linux linux-firmware
+</code></pre>
+<p>注：需要按两下回车 然后yes</p>
 <p>14.生成文件系统表</p>
-<pre><code class="bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></pre>
+<pre><code class="language-bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre>
 <p>15检查文件系统表有没有问题</p>
-<pre><code class="bash">cat  /mnt/etc/fstab</code></pre>
+<pre><code class="language-bash">cat  /mnt/etc/fstab
+</code></pre>
 <p>16.切换根目录</p>
-<pre><code class="bash">arch-chroot /mnt</code></pre>
+<pre><code class="language-bash">arch-chroot /mnt
+</code></pre>
 <p>17.设置时区</p>
-<pre><code class="bash">ln -sf /usr/share/zoneinfo$(tzselect) /etc/localtime</code></pre>
+<pre><code class="language-bash">ln -sf /usr/share/zoneinfo$(tzselect) /etc/localtime
+</code></pre>
 <blockquote>
 <p>4 &gt;&gt;9&gt;&gt;1&gt;&gt;1</p>
 </blockquote>
 <p>18.设置时间漂移</p>
-<pre><code class="bash">hwclock --systohc --utc</code></pre>
+<pre><code class="language-bash">hwclock --systohc --utc
+</code></pre>
 <p>19.配置locale</p>
-<pre><code class="bash">nano /etc/locale.gen</code></pre>
+<pre><code class="language-bash">nano /etc/locale.gen
+</code></pre>
 <blockquote>
-<p>   19.1终端显示 bash: nano:command not found(bash: nano:命令未找到)</p>
+<p>19.1终端显示 bash: nano:command not found(bash: nano:命令未找到)</p>
 <p>​      19.1.1下载nano pacman -S nano</p>
 </blockquote>
 <p>20.生成locale文件</p>
-<pre><code class="bash">locale-gen</code></pre>
+<pre><code class="language-bash">locale-gen
+</code></pre>
 <p>21.设置语言（tty中文乱码）</p>
-<pre><code class="bash">echo LANG=en_US.UTF-8 &gt; /etc/locale.conf</code></pre>
+<pre><code class="language-bash">echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+</code></pre>
 <p>22.设置主机名</p>
-<pre><code class="bash">echo kiss &gt; /etc/hostname</code></pre>
+<pre><code class="language-bash">echo kiss &gt; /etc/hostname
+</code></pre>
 <p>23.配置hosts文件<span class="exturl"><a class="exturl__link" href="https://wiki.archlinux.org/index.php/Network_configuration_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E6%9C%AC%E5%9C%B0%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%A7%A3%E6%9E%90" target="_blank" rel="noopener">ArchWiki配置</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <p>nano  /etc/hostname</p>
 <blockquote>
-<p>127.0.0.1        localhost<br>::1              localhost<br>127.0.1.1        myhostname.localdomain        myhostname </p>
+<p>127.0.0.1        localhost<br>
+::1              localhost<br>
+127.0.1.1        myhostname.localdomain        myhostname</p>
 </blockquote>
 <p>24.安装DHCP</p>
-<pre><code class="bash">pacman -S dhcpcd</code></pre>
+<pre><code class="language-bash">pacman -S dhcpcd
+</code></pre>
 <p>25.启动dhcp服务</p>
-<pre><code class="bash">systemctl enable dhcpcd.service</code></pre>
+<pre><code class="language-bash">systemctl enable dhcpcd.service
+</code></pre>
 <p>26.设置root密码</p>
-<pre><code class="bash">passwd</code></pre>
+<pre><code class="language-bash">passwd
+</code></pre>
 <p>27.创建普通用户</p>
-<pre><code class="bash">useradd -m -G wheel -s /bin/bash xxx</code></pre>
-<p> 27.1设置密码 用户名</p>
-<pre><code class="ba">passwd xxx</code></pre>
+<pre><code class="language-bash">useradd -m -G wheel -s /bin/bash xxx
+</code></pre>
+<p>27.1设置密码 用户名</p>
+<pre><code class="language-ba">passwd xxx
+</code></pre>
 <p>28.安装vim sudo</p>
-<pre><code class="bash">pacman -S vim sudo</code></pre>
+<pre><code class="language-bash">pacman -S vim sudo
+</code></pre>
 <p>29.赋予用户sudo权限</p>
-<pre><code class="bash">visudo 
-去掉%wheel ALL=(ALL)ALL的#</code></pre>
+<pre><code class="language-bash">visudo 
+去掉%wheel ALL=(ALL)ALL的#
+</code></pre>
 <p>30.安装引导</p>
-<pre><code class="bash">pacman -s grub efibootmgr 
-多系统安装os-prober</code></pre>
+<pre><code class="language-bash">pacman -s grub efibootmgr 
+多系统安装os-prober
+</code></pre>
 <p>31.grub安装</p>
-<pre><code class="bash">grub-install --target=x86_64-efi --efi-directory=/boot/EFI</code></pre>
+<pre><code class="language-bash">grub-install --target=x86_64-efi --efi-directory=/boot/EFI
+</code></pre>
 <p>32.生成配置文件</p>
-<pre><code class="bash">grub-mkconfig -o /boot/grub/grub.cfg</code></pre>
+<pre><code class="language-bash">grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
 <p>33.退出重启</p>
-<pre><code class="bash">exit 
-reboot</code></pre>
+<pre><code class="language-bash">exit 
+reboot
+</code></pre>
 <hr>
 <p>34.查看显示设备</p>
-<pre><code class="bash">lspci | grep vga</code></pre>
+<pre><code class="language-bash">lspci | grep vga
+</code></pre>
 <p>35.安装通用的显示驱动</p>
-<pre><code class="bash">pacman -S xf86-video-vesa</code></pre>
+<pre><code class="language-bash">pacman -S xf86-video-vesa
+</code></pre>
 <p>36.安装xorg</p>
-<pre><code class="bash">pacman -S xorg</code></pre>
+<pre><code class="language-bash">pacman -S xorg
+</code></pre>
 <p>38.安装字体</p>
-<pre><code class="bash">pacman -S ttf-dejavu wqy-microhei</code></pre>
+<pre><code class="language-bash">pacman -S ttf-dejavu wqy-microhei
+</code></pre>
 <p>39.安装kde桌面环境和应用</p>
-<pre><code class="bash">pacman -S plasma kde-applications</code></pre>
+<pre><code class="language-bash">pacman -S plasma kde-applications
+</code></pre>
 <p>40启用显示管理服务</p>
-<pre><code class="bash">systemctl enable sddm</code></pre>
-<p>41启用网络管理器 </p>
-<pre><code class="bash">systemctl  enable NetworkManager</code></pre>
+<pre><code class="language-bash">systemctl enable sddm
+</code></pre>
+<p>41启用网络管理器</p>
+<pre><code class="language-bash">systemctl  enable NetworkManager
+</code></pre>
 <p>42.重启</p>
-<pre><code class="bash">reboot</code></pre>
+<pre><code class="language-bash">reboot
+</code></pre>
 <p>43.更改中文</p>
 <p>略</p>
 <p>44.根据网址设置更新镜像  写入签名key</p>

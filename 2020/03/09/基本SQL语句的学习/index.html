@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="– SELECT 和 FROM 是 SQL 中的关键字，因此被高亮了 – SELECT * FROM users – 只查询 id 和 username 两列 – 列之间使用英文的 , 进行分隔 – SELECT id, username FROM users – 向 users 表中插入一条新数据 – insert into users (？, ？) values (‘？’, ‘？’)– sel">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="– SELECT 和 FROM 是 SQL 中的关键字，因此被高亮了 – SELECT * FROM users – 只查询 id 和 username 两列 – 列之间使用英文的 , 进行分隔 – SELECT id, username FROM users – 向 users 表中插入一条新数据 – insert into users (？, ？) values (‘？’, ‘？’) – se">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基本SQL语句的学习">
 <meta property="og:url" content="http://kisskisso.com/2020/03/09/%E5%9F%BA%E6%9C%ACSQL%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="– SELECT 和 FROM 是 SQL 中的关键字，因此被高亮了 – SELECT * FROM users – 只查询 id 和 username 两列 – 列之间使用英文的 , 进行分隔 – SELECT id, username FROM users – 向 users 表中插入一条新数据 – insert into users (？, ？) values (‘？’, ‘？’)– sel">
+<meta property="og:description" content="– SELECT 和 FROM 是 SQL 中的关键字，因此被高亮了 – SELECT * FROM users – 只查询 id 和 username 两列 – 列之间使用英文的 , 进行分隔 – SELECT id, username FROM users – 向 users 表中插入一条新数据 – insert into users (？, ？) values (‘？’, ‘？’) – se">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-09T23:33:04.000Z">
 <meta property="article:modified_time" content="2021-01-26T10:07:12.000Z">
@@ -40,13 +40,15 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>– 列之间使用英文的 , 进行分隔</p>
 <p>– SELECT id, username FROM users</p>
 <p>– 向 users 表中插入一条新数据</p>
-<p>– insert into users (？, ？) values (‘？’, ‘？’)<br>– select * from users <a id="more"></a></p>
+<p>– insert into users (？, ？) values (‘？’, ‘？’)<br>
+– select * from users <a id="more"></a></p>
 <p>– 把 id 为 1 的这个用户的密码，更新为 888888</p>
 <p>– 注意：在使用 update 更新数据的时候，千万要记得添加 where 条件，否则整张表的数据都会被更新</p>
 <p>– update users set ？ where id=？</p>
 <p>– 需求：更新 id 为 2 这个用户，把密码更新成 admin123 同时把status更新为 1</p>
-<p>– update users set password=’admin123’, status=1 where id=2</p>
-<p>– 删除 id 为 4 的这条用户数据<br>– delete from users where id=4</p>
+<p>– update users set password=‘admin123’, status=1 where id=2</p>
+<p>– 删除 id 为 4 的这条用户数据<br>
+– delete from users where id=4</p>
 <p>– 总结：</p>
 <p>– select   insert into    update    delete</p>
 <p>– 演示常用的 WHERE 子句运算符</p>
@@ -63,12 +65,13 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>– 查询 status 为 0 且 id 小于 10 的用户</p>
 <p>– select * from users where status=0 and id&lt;10</p>
 <p>– 查询status为1或username为zs的用户列表</p>
-<p>– select * from users where status=1 or username=’zs’</p>
+<p>– select * from users where status=1 or username=‘zs’</p>
 <p>– order by 用来根据指定的列进行排序</p>
 
         <h2 id="–-desc-代表降序排序">
-          <a href="#–-desc-代表降序排序" class="heading-link"><i class="fas fa-link"></i></a><a href="#–-desc-代表降序排序" class="headerlink" title="– desc 代表降序排序"></a>– desc 代表降序排序</h2>
-      <ul>
+          <a href="#–-desc-代表降序排序" class="heading-link"><i class="fas fa-link"></i></a>– desc 代表降序排序</h2>
+      
+<ul>
 <li>asc  代表升序排序</li>
 <li>– 按照 status 对结果进行降序排序</li>
 <li>– select * from users order by status desc</li>

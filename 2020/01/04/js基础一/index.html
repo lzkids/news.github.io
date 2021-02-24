@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="1.argment:在函数中获取参数的信息———-[个数、值]   (注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数      *全局变量: * 局部变量: 作用域链    可以在任何作用域使用 可以用return返回值(达到全局) 连接两个作用域链   获取对象中的值:  1.对象名.属性名  2.对象名[‘属性名’]">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="**1.argment:**在函数中获取参数的信息----------[个数、值] (注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数    **全局变量: ** 局部变量: 作用域链     可以在任何作用域使用 可以用return返回值(达到全局) 连接两个作用域链    获取对象中的值: 1.对象名.属性名 2.对象名[‘属性名’]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js基础(argment)">
 <meta property="og:url" content="http://kisskisso.com/2020/01/04/js%E5%9F%BA%E7%A1%80%E4%B8%80/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="1.argment:在函数中获取参数的信息———-[个数、值]   (注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数      *全局变量: * 局部变量: 作用域链    可以在任何作用域使用 可以用return返回值(达到全局) 连接两个作用域链   获取对象中的值:  1.对象名.属性名  2.对象名[‘属性名’]">
+<meta property="og:description" content="**1.argment:**在函数中获取参数的信息----------[个数、值] (注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数    **全局变量: ** 局部变量: 作用域链     可以在任何作用域使用 可以用return返回值(达到全局) 连接两个作用域链    获取对象中的值: 1.对象名.属性名 2.对象名[‘属性名’]">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-04T23:12:02.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:18:12.000Z">
@@ -34,61 +34,68 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">js基础(argment)</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-04</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">370</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">2分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><strong>1.argment:</strong>在函数中获取参数的信息———-[个数、值]  </p>
-<p>(注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数  </p>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">js基础(argment)</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-04</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">370</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">2分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>**1.argment:**在函数中获取参数的信息----------[个数、值]</p>
+<p>(注:无法确定用argment,明确用形参(ps:缩写)      ps: 本质上是个函数</p>
 <div class="table-container"><table>
 <thead>
 <tr>
-<th>*<em>全局变量: *</em></th>
+<th>**全局变量: **</th>
 <th><strong>局部变量:</strong></th>
 <th><strong>作用域链</strong></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>可以在任何作用域使用</td>
 <td>可以用return返回值(达到全局)</td>
 <td>连接两个作用域链</td>
 </tr>
-</tbody></table></div>
-<p><strong>获取对象中的值:</strong> </p>
-<p>1.对象名.属性名 </p>
+</tbody>
+</table></div>
+<p><strong>获取对象中的值:</strong></p>
+<p>1.对象名.属性名</p>
 <p>2.对象名[‘属性名’]     <a id="more"></a></p>
 <p><strong>执行对象方法:</strong></p>
-<p> 1.对象名.方法名 </p>
-<p>2.对相名 [‘ ‘] ()</p>
+<p>1.对象名.方法名</p>
+<p>2.对相名 [’ '] ()</p>
 <p><strong>new关键字:</strong></p>
 <p>new就是调用构造函数,创建对象.</p>
 <p><strong>代码的预读:</strong></p>
-<p> 变量提升 和 函数提升(不包含调用函数). </p>
-<p>  [注:预解析后:先提升函数在提升变量]</p>
+<p>变量提升 和 函数提升(不包含调用函数).</p>
+<p>[注:预解析后:先提升函数在提升变量]</p>
 
         <h3 id="4种创造对象的方式">
-          <a href="#4种创造对象的方式" class="heading-link"><i class="fas fa-link"></i></a><a href="#4种创造对象的方式" class="headerlink" title="4种创造对象的方式"></a>4种创造对象的方式</h3>
-      <p>Object:对象 ——–操作对象(取值、赋值)对象是个容器.                                           </p>
-<p> <strong>组成:</strong></p>
-<p> 1.属性 2.方法                                             </p>
-<p> <strong>☞ 字面量</strong>—创造单个 </p>
-<pre><code class="js"> var 对象名 = { 
+          <a href="#4种创造对象的方式" class="heading-link"><i class="fas fa-link"></i></a>4种创造对象的方式</h3>
+      
+<p>Object:对象 --------操作对象(取值、赋值)对象是个容器.</p>
+<p><strong>组成:</strong></p>
+<p>1.属性 2.方法</p>
+<p><strong>☞ 字面量</strong>—创造单个</p>
+<pre><code class="language-js"> var 对象名 = { 
  属性 : 值 , (最后一个值不加逗号.) 
  方法 : 自定义 : function()
  {
  ('_')
  } 
-    }   </code></pre>
-<p>  <strong>☞ js内置的构造函数</strong>— 创造单个    </p>
-<pre><code class="js"> var 对象名 = new Object();           
-[注:Object():js中内置好的函数]     </code></pre>
-<p><strong>☞ 工厂方式</strong>— 适用于批量创建 </p>
-<pre><code class="js">function fn(name) {  
+    }   
+</code></pre>
+<p><strong>☞ js内置的构造函数</strong>— 创造单个</p>
+<pre><code class="language-js"> var 对象名 = new Object();           
+[注:Object():js中内置好的函数]     
+</code></pre>
+<p><strong>☞ 工厂方式</strong>— 适用于批量创建</p>
+<pre><code class="language-js">function fn(name) {  
     var 对象名 = new Object(); 
     对象名.属性;  return  对象名
-} </code></pre>
-<p>​             </p>
-<p><strong>☞ 自定义构造函数创造</strong>—-批量创建 </p>
-<pre><code class="js">    function fn () {
+} 
+</code></pre>
+<p>​</p>
+<p><strong>☞ 自定义构造函数创造</strong>----批量创建</p>
+<pre><code class="language-js">    function fn () {
         this.属性名= 值
     }   
-[注:首字母大写]</code></pre>
+[注:首字母大写]
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -107,7 +114,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
-      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/2020/01/04/js%E5%9F%BA%E7%A1%80%E4%B8%80/">http://kisskisso.com/2020/01/04/js%E5%9F%BA%E7%A1%80%E4%B8%80/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/argment/">argment</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/01/06/WebAPI%E6%A1%88%E4%BE%8B/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">WebPAI案例(一)</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/01/04/DOM%E6%A8%A1%E5%9E%8B/"><span class="paginator-prev__text">DOM模型</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#4种创造对象的方式"><span class="toc-number">1.</span> <span class="toc-text">
+      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/2020/01/04/js%E5%9F%BA%E7%A1%80%E4%B8%80/">http://kisskisso.com/2020/01/04/js%E5%9F%BA%E7%A1%80%E4%B8%80/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/argment/">argment</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/01/06/WebAPI%E6%A1%88%E4%BE%8B/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">WebPAI案例(一)</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/01/04/CSS%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/"><span class="paginator-prev__text">CSS高级用法</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#4种创造对象的方式"><span class="toc-number">1.</span> <span class="toc-text">
           4种创造对象的方式</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">246</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">106</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';

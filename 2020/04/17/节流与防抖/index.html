@@ -38,23 +38,23 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p><code>思路：</code>当函数被调用时，不立即执行，而是延迟10秒执行。</p>
 <p>如果在这10秒内再次调用了这个函数，则从当前被调用的时间开始计算</p>
 <a id="more"></a>
-
-<pre><code class="js">hSearch () {
- if (this.timer) {
-    cleraTimeout(this.timer)
- } 
-  this.timer = setTimeout(async () =&gt; {
-     if (!this.keyword) {
-      return
+<pre><code class="language-js">hSearch () {
+if (this.timer) {
+   cleraTimeout(this.timer)
+} 
+ this.timer = setTimeout(async () =&gt; {
+    if (!this.keyword) {
+     return
 }
-   const result = await getSearchSuggestions(this.keyword)
+  const result = await getSearchSuggestions(this.keyword)
 this.searchSuggestions = result.data.data.options
 }, 0.3 * 1000)
-}</code></pre>
+}
+</code></pre>
 <p><code>节流：</code>低频率发送请求</p>
-<p><code>思路：</code>如果这个函数距离上一次被调用的时间之间相隔不到10秒，则本次调用，不执行代码</p>
+<p><code> 思路：</code>如果这个函数距离上一次被调用的时间之间相隔不到10秒，则本次调用，不执行代码</p>
 <p>两次有效调用时间，并且至少相隔10秒</p>
-<pre><code class="js">hSearch () {
+<pre><code class="language-js">hSearch () {
 // 只有this.timer是null，才会开启下一个定时器
  if (!this.timer) {
 // 只要setTimeout一执行，this.timer就有值了
@@ -66,7 +66,8 @@ this.searchSuggestions = result.data.data.options
   const result = await getSearchSuggestions(this.word)
 }, 0.3 * 1000)
 }
-}</code></pre>
+}
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

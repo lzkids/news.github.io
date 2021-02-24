@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="修改元素内容和属性                           原生html属性操作：       取值：console.log（xx元素.src） 赋值：xx元素.alt &#x3D; ‘abc’;    js不带单位                     自定义属性       设置一个属性的值 ​    xx元素.setAttribite(‘属性名’，’属性名’)">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="修改元素内容和属性                            原生html属性操作：        取值：console.log（xx元素.src） 赋值：xx元素.alt &#x3D; ‘abc’;    js不带单位                     自定义属性        设置一个属性的值 ​    xx元素.setAttribite(‘属性名’，‘属性名’)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="修改元素内容和属性">
 <meta property="og:url" content="http://kisskisso.com/2020/01/06/%E5%AE%B9%E5%99%A8%E5%85%83%E7%B4%A0/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="修改元素内容和属性                           原生html属性操作：       取值：console.log（xx元素.src） 赋值：xx元素.alt &#x3D; ‘abc’;    js不带单位                     自定义属性       设置一个属性的值 ​    xx元素.setAttribite(‘属性名’，’属性名’)">
+<meta property="og:description" content="修改元素内容和属性                            原生html属性操作：        取值：console.log（xx元素.src） 赋值：xx元素.alt &#x3D; ‘abc’;    js不带单位                     自定义属性        设置一个属性的值 ​    xx元素.setAttribite(‘属性名’，‘属性名’)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-06T11:12:16.000Z">
 <meta property="article:modified_time" content="2021-01-26T10:21:08.000Z">
@@ -35,49 +35,57 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">修改元素内容和属性</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">492</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="修改元素内容和属性">
-          <a href="#修改元素内容和属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#修改元素内容和属性" class="headerlink" title="修改元素内容和属性"></a>修改元素内容和属性</h2>
+          <a href="#修改元素内容和属性" class="heading-link"><i class="fas fa-link"></i></a>修改元素内容和属性</h2>
       
+
         <h3 id="原生html属性操作：">
-          <a href="#原生html属性操作：" class="heading-link"><i class="fas fa-link"></i></a><a href="#原生html属性操作：" class="headerlink" title="原生html属性操作："></a>原生html属性操作：</h3>
-      <p>取值：console.log（xx元素.src）</p>
+          <a href="#原生html属性操作：" class="heading-link"><i class="fas fa-link"></i></a>原生html属性操作：</h3>
+      
+<p>取值：console.log（xx元素.src）</p>
 <p>赋值：xx元素.alt = ‘abc’;    js不带单位</p>
 
         <h3 id="自定义属性">
-          <a href="#自定义属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h3>
-      <p><strong>设置一个属性的值</strong></p>
-<p>​    xx元素.setAttribite(‘属性名’，’属性名’)   <a id="more"></a></p>
+          <a href="#自定义属性" class="heading-link"><i class="fas fa-link"></i></a>自定义属性</h3>
+      
+<p><strong>设置一个属性的值</strong></p>
+<p>​    xx元素.setAttribite(‘属性名’，‘属性名’)   <a id="more"></a></p>
 <p><strong>获取给定属性的值</strong></p>
 <p>​    xx元素.getAttribute(‘属性名’)</p>
 <p><strong>移除一个属性</strong></p>
 <p>​    xx元素.removeAttribute(‘属性名’)</p>
 
         <h3 id="html特殊属性">
-          <a href="#html特殊属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#html特殊属性" class="headerlink" title="html特殊属性"></a><strong>html特殊属性</strong></h3>
-      <p><strong>布尔值</strong></p>
+          <a href="#html特殊属性" class="heading-link"><i class="fas fa-link"></i></a><strong>html特殊属性</strong></h3>
+      
+<p><strong>布尔值</strong></p>
 <p>1.checked属性  用于单选或多选    true（选中） false</p>
 <p>2.selected属性 下拉框</p>
-<p>3.disable属性 禁用    </p>
+<p>3.disable属性 禁用</p>
 
         <h3 id="容器盒子的内容属性">
-          <a href="#容器盒子的内容属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#容器盒子的内容属性" class="headerlink" title="容器盒子的内容属性"></a>容器盒子的内容属性</h3>
-      <p> 1.innerHTML  2.innerText</p>
+          <a href="#容器盒子的内容属性" class="heading-link"><i class="fas fa-link"></i></a>容器盒子的内容属性</h3>
+      
+<p>1.innerHTML  2.innerText</p>
 
         <h3 id="style操作样式属性">
-          <a href="#style操作样式属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#style操作样式属性" class="headerlink" title="style操作样式属性"></a>style操作样式属性</h3>
-      <p>局限性：</p>
+          <a href="#style操作样式属性" class="heading-link"><i class="fas fa-link"></i></a>style操作样式属性</h3>
+      
+<p>局限性：</p>
 <p>样式值都是字符串类型的值</p>
 <p>通过style读取和设置的都只能是行内样式。</p>
 <p>样式属性名的写法跟css有所出入，必须使用“小驼峰”命名法，类似这样：xxxYyyZzz</p>
 
         <h3 id="className操作属性">
-          <a href="#className操作属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#className操作属性" class="headerlink" title="className操作属性"></a>className操作属性</h3>
-      <p>js读取———–var v1 = xx元素.className</p>
-<p>js中设置 ———- xx元素.—–=‘类名’</p>
-<p><strong>注：</strong>如果元素有多个类名，则用空格隔开进行赋值</p>
+          <a href="#className操作属性" class="heading-link"><i class="fas fa-link"></i></a>className操作属性</h3>
+      
+<p>js读取-----------var v1 = xx元素.className</p>
+<p>js中设置 ---------- xx元素.-----=‘类名’</p>
+<p>**注：**如果元素有多个类名，则用空格隔开进行赋值</p>
 
         <h3 id="classList-操作class属性">
-          <a href="#classList-操作class属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#classList-操作class属性" class="headerlink" title="classList 操作class属性"></a>classList 操作class属性</h3>
-      <p>1.添加一个类（class）：</p>
+          <a href="#classList-操作class属性" class="heading-link"><i class="fas fa-link"></i></a>classList 操作class属性</h3>
+      
+<p>1.添加一个类（class）：</p>
 <p>xx元素.classList.add（‘类名’）</p>
 <p>2.移除一个类（class）：</p>
 <p>xx元素.classList.remove( ‘类名’ )</p>
@@ -86,15 +94,17 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>注： 切换的意思是： 有就移除，没有就添加。</p>
 
         <h4 id="通过className来操作类，和通过classList来操作类，有什么区别？">
-          <a href="#通过className来操作类，和通过classList来操作类，有什么区别？" class="heading-link"><i class="fas fa-link"></i></a><a href="#通过className来操作类，和通过classList来操作类，有什么区别？" class="headerlink" title="通过className来操作类，和通过classList来操作类，有什么区别？"></a>通过className来操作类，和通过classList来操作类，有什么区别？</h4>
-      <p>1.className设置的类，是会完整覆盖一个元素的calss属性的值</p>
+          <a href="#通过className来操作类，和通过classList来操作类，有什么区别？" class="heading-link"><i class="fas fa-link"></i></a>通过className来操作类，和通过classList来操作类，有什么区别？</h4>
+      
+<p>1.className设置的类，是会完整覆盖一个元素的calss属性的值</p>
 <p>2.classList.add（）设置的类，会保留原来的class，并且加上新的这个</p>
 
         <h3 id="获取非行内样式的值">
-          <a href="#获取非行内样式的值" class="heading-link"><i class="fas fa-link"></i></a><a href="#获取非行内样式的值" class="headerlink" title="获取非行内样式的值"></a>获取非行内样式的值</h3>
-      <p>1.使用xx元素.style.样式名 只能获取行内样式的值</p>
-<p>2.getcomputedstyle（xx元素）可以获取到一个元素的所有style样式，结果是一个对象 </p>
-<p> var style = getcomputedstyle（xx元素）【兼容性】</p>
+          <a href="#获取非行内样式的值" class="heading-link"><i class="fas fa-link"></i></a>获取非行内样式的值</h3>
+      
+<p>1.使用xx元素.style.样式名 只能获取行内样式的值</p>
+<p>2.getcomputedstyle（xx元素）可以获取到一个元素的所有style样式，结果是一个对象</p>
+<p>var style = getcomputedstyle（xx元素）【兼容性】</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -113,7 +123,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
             });
             document.body.appendChild(img);
           });
-      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/2020/01/06/%E5%AE%B9%E5%99%A8%E5%85%83%E7%B4%A0/">http://kisskisso.com/2020/01/06/%E5%AE%B9%E5%99%A8%E5%85%83%E7%B4%A0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/api%EF%BC%88%E4%BA%8C%EF%BC%89/">api（二）</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/01/06/%E7%A7%BB%E5%8A%A8%E5%9B%9E%E9%A1%BE/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">移动回顾</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/01/06/WebAPI%E6%A1%88%E4%BE%8B/"><span class="paginator-prev__text">WebPAI案例(一)</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#修改元素内容和属性"><span class="toc-number">1.</span> <span class="toc-text">
+      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/2020/01/06/%E5%AE%B9%E5%99%A8%E5%85%83%E7%B4%A0/">http://kisskisso.com/2020/01/06/%E5%AE%B9%E5%99%A8%E5%85%83%E7%B4%A0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/api%EF%BC%88%E4%BA%8C%EF%BC%89/">api（二）</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2020/01/06/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%AC%94%E8%AE%B0/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">流式布局</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2020/01/06/WebAPI%E6%A1%88%E4%BE%8B/"><span class="paginator-prev__text">WebPAI案例(一)</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#修改元素内容和属性"><span class="toc-number">1.</span> <span class="toc-text">
           修改元素内容和属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原生html属性操作："><span class="toc-number">1.1.</span> <span class="toc-text">
           原生html属性操作：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义属性"><span class="toc-number">1.2.</span> <span class="toc-text">
           自定义属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html特殊属性"><span class="toc-number">1.3.</span> <span class="toc-text">

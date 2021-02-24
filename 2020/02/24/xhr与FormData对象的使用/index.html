@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="xhr的timeout和ontimeout和onload：       timeout和ontimeout： 注①：-send()方法用于发送http请求，如果是异步请求（默认）则此方法会在请求后立即返回；如果是同步请求，则此方法直到响应到达后才会返回  -语法：XMLHttpRequest.send()              【xhr.send()】">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="xhr的timeout和ontimeout和onload：        timeout和ontimeout： 注①：-send()方法用于发送http请求，如果是异步请求（默认）则此方法会在请求后立即返回；如果是同步请求，则此方法直到响应到达后才会返回 -语法：XMLHttpRequest.send()              【xhr.send()】">
 <meta property="og:type" content="article">
 <meta property="og:title" content="xhr与FormData对象的使用">
 <meta property="og:url" content="http://kisskisso.com/2020/02/24/xhr%E4%B8%8EFormData%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="xhr的timeout和ontimeout和onload：       timeout和ontimeout： 注①：-send()方法用于发送http请求，如果是异步请求（默认）则此方法会在请求后立即返回；如果是同步请求，则此方法直到响应到达后才会返回  -语法：XMLHttpRequest.send()              【xhr.send()】">
+<meta property="og:description" content="xhr的timeout和ontimeout和onload：        timeout和ontimeout： 注①：-send()方法用于发送http请求，如果是异步请求（默认）则此方法会在请求后立即返回；如果是同步请求，则此方法直到响应到达后才会返回 -语法：XMLHttpRequest.send()              【xhr.send()】">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-24T20:39:47.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:47:56.000Z">
@@ -35,13 +35,13 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">xhr与FormData对象的使用</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-02-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">1.3k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">11分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="xhr的timeout和ontimeout和onload：">
-          <a href="#xhr的timeout和ontimeout和onload：" class="heading-link"><i class="fas fa-link"></i></a><a href="#xhr的timeout和ontimeout和onload：" class="headerlink" title="xhr的timeout和ontimeout和onload："></a><strong>xhr的timeout和ontimeout和onload：</strong></h2>
-      <p><strong>timeout和ontimeout：</strong></p>
+          <a href="#xhr的timeout和ontimeout和onload：" class="heading-link"><i class="fas fa-link"></i></a><strong>xhr的timeout和ontimeout和onload：</strong></h2>
+      
+<p><strong>timeout和ontimeout：</strong></p>
 <p>注①：-send()方法用于发送http请求，如果是异步请求（默认）则此方法会在请求后立即返回；如果是同步请求，则此方法直到响应到达后才会返回</p>
-<p> -语法：XMLHttpRequest.send()              【xhr.send()】</p>
+<p>-语法：XMLHttpRequest.send()              【xhr.send()】</p>
  <a id="more"></a>
-
-<pre><code class="js"> 发送一个get请求
+<pre><code class="language-js"> 发送一个get请求
  var xhr =new XMLHttpRequest();
    xhr.open('get','接口')；
    设置请求超时时间（毫秒单位）
@@ -57,9 +57,10 @@ xhr.onreadystatechange = function () {
     if(xhr.readyState === 4 &amp; xhr.status === 200) {
         console.log(xhr.responseText);
     }
-};</code></pre>
+};
+</code></pre>
 <p><strong>onload:</strong></p>
-<pre><code class="js">发送请求
+<pre><code class="language-js">发送请求
 var xhr = new XMLHttpRequest();
  xhr.open('get','接口')；
  xhr.send();
@@ -70,12 +71,14 @@ xhr.onload = function () {
     if (xhr.status === 200){
         console.log(xhr.responseText);
     }
-};</code></pre>
+};
+</code></pre>
 
         <h2 id="FormData对象的使用">
-          <a href="#FormData对象的使用" class="heading-link"><i class="fas fa-link"></i></a><a href="#FormData对象的使用" class="headerlink" title="FormData对象的使用"></a><strong>FormData对象的使用</strong></h2>
-      <p>使用FormData模拟表单进行自定义数据上传</p>
-<pre><code class="js">1创建一个空的FormData对象
+          <a href="#FormData对象的使用" class="heading-link"><i class="fas fa-link"></i></a><strong>FormData对象的使用</strong></h2>
+      
+<p>使用FormData模拟表单进行自定义数据上传</p>
+<pre><code class="language-js">1创建一个空的FormData对象
   var fd = new FormData();
 
 2给fd添加数据，使用fd的append()
@@ -92,12 +95,14 @@ fd.append('age',18);
   var xhr = new XMLHttpRequest();
   xhr.open('post','端口');
     -直接将FormData对象放入到send()参数中即可，也不需要设置requestHeader
-  xhr.send(fd);</code></pre>
+  xhr.send(fd);
+</code></pre>
 
         <h3 id="使用FormData对表单数据进行处理：">
-          <a href="#使用FormData对表单数据进行处理：" class="heading-link"><i class="fas fa-link"></i></a><a href="#使用FormData对表单数据进行处理：" class="headerlink" title="使用FormData对表单数据进行处理："></a><strong>使用FormData对表单数据进行处理：</strong></h3>
-      <p><strong>html结构：</strong></p>
-<pre><code class="js"> &lt;form id="myForm"&gt;
+          <a href="#使用FormData对表单数据进行处理：" class="heading-link"><i class="fas fa-link"></i></a><strong>使用FormData对表单数据进行处理：</strong></h3>
+      
+<p><strong>html结构：</strong></p>
+<pre><code class="language-js"> &lt;form id="myForm"&gt;
     用户名: &lt;input type="text" name="username"&gt;
     &lt;br&gt;
     密码: &lt;input type="password" name="psw"&gt;
@@ -108,9 +113,10 @@ fd.append('age',18);
     &lt;br&gt;
     &lt;!-- 为了不产生表单提交效果，将按钮修改为普通按钮即可 --&gt;
     &lt;button id="btn" type="button"&gt;提交&lt;/button&gt;
-  &lt;/form&gt;</code></pre>
+  &lt;/form&gt;
+</code></pre>
 <p><strong>js部分：</strong></p>
-<pre><code class="js">var myForm = document.qureySelector("#myForm");
+<pre><code class="language-js">var myForm = document.qureySelector("#myForm");
 1进行按钮操作
 document.getElementById('btn').onclick = function () {
     2通过FormData对象获取表单所有数据
@@ -121,17 +127,19 @@ document.getElementById('btn').onclick = function () {
     fd.append('girlFriend','rose');
        -delete()删除某天数据
        fd.delete('***')
-
+    
     3通过ajax发送
      var xhr = new XMLHttpRequest();
       xhr.open('post', '接口');
       xhr.send(fd);
 
-}</code></pre>
+}
+</code></pre>
 
         <h3 id="文件的上传1：【有form】">
-          <a href="#文件的上传1：【有form】" class="heading-link"><i class="fas fa-link"></i></a><a href="#文件的上传1：【有form】" class="headerlink" title="文件的上传1：【有form】"></a><strong>文件的上传1：【有form】</strong></h3>
-      <pre><code class="html">&lt;form id="myForm"&gt;
+          <a href="#文件的上传1：【有form】" class="heading-link"><i class="fas fa-link"></i></a><strong>文件的上传1：【有form】</strong></h3>
+      
+<pre><code class="language-html">&lt;form id="myForm"&gt;
     &lt;input type="text" name="username"&gt;
     &lt;input type="password" name="pws"&gt;
     &lt;textarea name="txt"&gt;&lt;/textarea&gt;
@@ -143,7 +151,7 @@ document.getElementById('btn').onclick = function () {
   &lt;/form&gt;
   &lt;!-- 这个img用于显示上传后的线上图片 --&gt;
   &lt;img src="" alt="" id="pic"&gt;
-
+      
 &lt;script&gt;
     // 1 按钮点击事件
     var btn = document.getElementById('btn');
@@ -169,11 +177,13 @@ document.getElementById('btn').onclick = function () {
       }
     };
   &lt;/script&gt;
+
 </code></pre>
 
         <h3 id="文件上传2：【无form】">
-          <a href="#文件上传2：【无form】" class="heading-link"><i class="fas fa-link"></i></a><a href="#文件上传2：【无form】" class="headerlink" title="文件上传2：【无form】"></a><strong>文件上传2：【无form】</strong></h3>
-      <pre><code class="html">&lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;
+          <a href="#文件上传2：【无form】" class="heading-link"><i class="fas fa-link"></i></a><strong>文件上传2：【无form】</strong></h3>
+      
+<pre><code class="language-html">&lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;
   &lt;input type="file" id="ipt"&gt;
   &lt;!-- 由于没有form，button就不存在提交的问题 --&gt;
   &lt;button id="btn"&gt;提交&lt;/button&gt;
@@ -208,11 +218,13 @@ document.getElementById('btn').onclick = function () {
           pic.src = '接口' + JSON.parse(xhr.responseText).url;
         }
       }
-    };</code></pre>
+    };
+</code></pre>
 
         <h3 id="JQuery发送FormData的方式：">
-          <a href="#JQuery发送FormData的方式：" class="heading-link"><i class="fas fa-link"></i></a><a href="#JQuery发送FormData的方式：" class="headerlink" title="JQuery发送FormData的方式："></a><strong>JQuery发送FormData的方式：</strong></h3>
-      <pre><code class="html"> &lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;
+          <a href="#JQuery发送FormData的方式：" class="heading-link"><i class="fas fa-link"></i></a><strong>JQuery发送FormData的方式：</strong></h3>
+      
+<pre><code class="language-html"> &lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;
   &lt;input type="file" id="ipt"&gt;
   &lt;!-- 操作按钮 --&gt;
   &lt;button id="btn"&gt;提交&lt;/button&gt;
@@ -252,7 +264,8 @@ document.getElementById('btn').onclick = function () {
         }
       });
     });
-  &lt;/script&gt;</code></pre>
+  &lt;/script&gt;
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

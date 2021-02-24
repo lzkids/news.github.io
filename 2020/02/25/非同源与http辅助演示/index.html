@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="非同源地址进行跨域请求演示：  var xhr &#x3D; new XMLHttpRequest(); xhr.open(&#39;get&#39;, &#39;接口&#39;);     xhr.send();                      http辅助演示文件：                           http的get请求的请求报文组成演示：       ​      第一行为请求行  GET &#x2F;api&#x2F;">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="非同源地址进行跨域请求演示：  var xhr &#x3D; new XMLHttpRequest(); xhr.open(&#39;get&#39;, &#39;接口&#39;);     xhr.send();                       http辅助演示文件：                            http的get请求的请求报文组成演示：        ​      第一行为请求行 GET &#x2F;api&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="非同源与http辅助演示">
 <meta property="og:url" content="http://kisskisso.com/2020/02/25/%E9%9D%9E%E5%90%8C%E6%BA%90%E4%B8%8Ehttp%E8%BE%85%E5%8A%A9%E6%BC%94%E7%A4%BA/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="非同源地址进行跨域请求演示：  var xhr &#x3D; new XMLHttpRequest(); xhr.open(&#39;get&#39;, &#39;接口&#39;);     xhr.send();                      http辅助演示文件：                           http的get请求的请求报文组成演示：       ​      第一行为请求行  GET &#x2F;api&#x2F;">
+<meta property="og:description" content="非同源地址进行跨域请求演示：  var xhr &#x3D; new XMLHttpRequest(); xhr.open(&#39;get&#39;, &#39;接口&#39;);     xhr.send();                       http辅助演示文件：                            http的get请求的请求报文组成演示：        ​      第一行为请求行 GET &#x2F;api&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-25T21:10:14.000Z">
 <meta property="article:modified_time" content="2021-01-26T09:59:12.000Z">
@@ -34,27 +34,33 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">非同源与http辅助演示</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-02-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">507</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">4分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>  非同源地址进行跨域请求演示：</p>
-<pre><code class="js"> var xhr = new XMLHttpRequest();
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">非同源与http辅助演示</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-02-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">507</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">4分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>非同源地址进行跨域请求演示：</p>
+<pre><code class="language-js"> var xhr = new XMLHttpRequest();
 xhr.open('get', '接口');
     xhr.send();
+
 </code></pre>
 
         <h3 id="http辅助演示文件：">
-          <a href="#http辅助演示文件：" class="heading-link"><i class="fas fa-link"></i></a><a href="#http辅助演示文件：" class="headerlink" title="http辅助演示文件："></a><strong>http辅助演示文件：</strong></h3>
+          <a href="#http辅助演示文件：" class="heading-link"><i class="fas fa-link"></i></a><strong>http辅助演示文件：</strong></h3>
       
+
         <h4 id="http的get请求的请求报文组成演示：">
-          <a href="#http的get请求的请求报文组成演示：" class="heading-link"><i class="fas fa-link"></i></a><a href="#http的get请求的请求报文组成演示：" class="headerlink" title="http的get请求的请求报文组成演示："></a><strong>http的get请求的请求报文组成演示：</strong></h4>
-      <p>​      <strong>第一行为请求行</strong></p>
-<p> GET /api/getbooksid=1&amp;bookname=%E8%A5%BF%E6%B8%B8%E8%AE%B0 HTTP/1.1         <a id="more"></a></p>
+          <a href="#http的get请求的请求报文组成演示：" class="heading-link"><i class="fas fa-link"></i></a><strong>http的get请求的请求报文组成演示：</strong></h4>
+      
+<p>​      <strong>第一行为请求行</strong></p>
+<p>GET /api/getbooksid=1&amp;bookname=%E8%A5%BF%E6%B8%B8%E8%AE%B0 HTTP/1.1         <a id="more"></a></p>
 <p><strong>后面的部分为请求头</strong></p>
 <ul>
-<li><p>请求头是本次请求的相关信息</p>
+<li>
+<p>请求头是本次请求的相关信息</p>
 </li>
-<li><p>这些信息大部分都是浏览器自动设置的</p>
-<p> 我们自己设置过一些： Content-Type</p>
+<li>
+<p>这些信息大部分都是浏览器自动设置的</p>
+<p>我们自己设置过一些： Content-Type</p>
 </li>
-<li><p>Host: 接口</p>
+<li>
+<p>Host: 接口</p>
 <p>Connection: keep-alive</p>
 <p>Accept: <em>/</em></p>
 <p>User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)</p>
@@ -63,41 +69,43 @@ xhr.open('get', '接口');
 <p>Accept-Encoding: gzip, deflate</p>
 <p>Accept-Language: zh-CN,zh;q=0.9,en;q=0.8</p>
 <p>If-None-Match: W/“91-hlrWKV2QmzU6DUa8qes2AyEeCbs”</p>
-<p><strong><u>注：请求体是用来保存请求发送的数据使用的，get请求的请求参数都在url中发送，请求体为空</u></strong> </p>
 </li>
 </ul>
+<p><strong><u>注：请求体是用来保存请求发送的数据使用的，get请求的请求参数都在url中发送，请求体为空</u></strong></p>
 
         <h4 id="http的post请求的请求报文组成演示：">
-          <a href="#http的post请求的请求报文组成演示：" class="heading-link"><i class="fas fa-link"></i></a><a href="#http的post请求的请求报文组成演示：" class="headerlink" title="http的post请求的请求报文组成演示："></a><strong>http的post请求的请求报文组成演示：</strong></h4>
-      <p>   <strong>—-请求行—-</strong></p>
-<p> POST /api/addbook HTTP/1.1</p>
-<p><strong>—-请求头—-</strong></p>
-<p> Host: 接口</p>
-<p> Connection: keep-alive</p>
-<p> Content-Length: 112</p>
-<p> Accept: <em>/</em></p>
-<p> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79</p>
-<p> Safari/537.36</p>
-<p> Content-Type: application/x-www-form-urlencoded; charset=UTF-8</p>
-<p> Origin: null</p>
-<p> Accept-Encoding: gzip, deflate</p>
-<p> Accept-Language: zh-CN,zh;q=0.9,en;q=0.8</p>
-<p> <u><strong>注：<em>post的请求参数是在请求体中发送的</em></strong></u></p>
+          <a href="#http的post请求的请求报文组成演示：" class="heading-link"><i class="fas fa-link"></i></a><strong>http的post请求的请求报文组成演示：</strong></h4>
+      
+<p><strong>----请求行----</strong></p>
+<p>POST /api/addbook HTTP/1.1</p>
+<p><strong>----请求头----</strong></p>
+<p>Host: 接口</p>
+<p>Connection: keep-alive</p>
+<p>Content-Length: 112</p>
+<p>Accept: <em>/</em></p>
+<p>User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79</p>
+<p>Safari/537.36</p>
+<p>Content-Type: application/x-www-form-urlencoded; charset=UTF-8</p>
+<p>Origin: null</p>
+<p>Accept-Encoding: gzip, deflate</p>
+<p>Accept-Language: zh-CN,zh;q=0.9,en;q=0.8</p>
+<p><u><strong>注：<em>post的请求参数是在请求体中发送的</em></strong></u></p>
 <p><u><strong>之前在请求头中设置的Content-Type是用来指定请求体的内容类型的</strong></u></p>
 
         <h3 id="响应报文演示：">
-          <a href="#响应报文演示：" class="heading-link"><i class="fas fa-link"></i></a><a href="#响应报文演示：" class="headerlink" title="响应报文演示："></a><strong>响应报文演示：</strong></h3>
-      <p><strong>—-状态行—–</strong></p>
+          <a href="#响应报文演示：" class="heading-link"><i class="fas fa-link"></i></a><strong>响应报文演示：</strong></h3>
+      
+<p><strong>----状态行-----</strong></p>
 <p>HTTP/1.1 200 OK</p>
-<p><strong>—-响应头信息—-</strong></p>
-<p>   响应头保存的是响应的相关信息</p>
-<p> X-Powered-By: Express</p>
-<p> Access-Control-Allow-Origin: </p>
-<p> Date: Mon, 24 Feb 2020 08:59:57 GMT</p>
+<p><strong>----响应头信息----</strong></p>
+<p>响应头保存的是响应的相关信息</p>
+<p>X-Powered-By: Express</p>
+<p>Access-Control-Allow-Origin:</p>
+<p>Date: Mon, 24 Feb 2020 08:59:57 GMT</p>
 <p><strong>—响应报文中的Content-Type指的是响应的数据的内容类型—</strong></p>
-<p> Content-Type: application/json; charset=utf-8</p>
-<p> Content-Length: 145</p>
-<p> ETag: W/“91-hlrWKV2QmzU6DUa8qes2AyEeCbs”</p>
+<p>Content-Type: application/json; charset=utf-8</p>
+<p>Content-Length: 145</p>
+<p>ETag: W/“91-hlrWKV2QmzU6DUa8qes2AyEeCbs”</p>
 <p><strong><u>注：响应体指的是服务器响应给客户端的数据，其实就是我们一直使用的res</u></strong></p>
 <script>
         document.querySelectorAll('.github-emoji')

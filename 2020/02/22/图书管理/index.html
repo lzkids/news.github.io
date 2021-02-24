@@ -36,116 +36,117 @@ var CONFIG = {
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">图书管理</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-02-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">606</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><strong>html部分：</strong></p>
 <p>只是一段代码没注释也不是很多</p>
-<p>enter编码13  </p>
+<p>enter编码13</p>
  <a id="more"></a>
+<pre><code class="language-html">&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+		&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+		&lt;link rel="stylesheet" href="./lib/bootstrap.css" /&gt;
+	&lt;/head&gt;
 
-<pre><code class="html">&lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-        &lt;title&gt;Document&lt;/title&gt;
-        &lt;link rel="stylesheet" href="./lib/bootstrap.css" /&gt;
-    &lt;/head&gt;
+	&lt;body style="padding: 15px;"&gt;
+		&lt;!-- 添加图书的Panel面板 --&gt;
+		&lt;div class="panel panel-primary"&gt;
+			&lt;div class="panel-heading"&gt;
+				&lt;h3 class="panel-title"&gt;添加新图书&lt;/h3&gt;
+			&lt;/div&gt;
+			&lt;div class="panel-body form-inline"&gt;
+				&lt;!-- 顶部进行图书新增的结构部分 --&gt;
+				&lt;div class="input-group"&gt;
+					&lt;div class="input-group-addon"&gt;书名&lt;/div&gt;
+					&lt;input type="text" class="form-control" id="iptBookname" placeholder="请输入书名"&gt;
+				&lt;/div&gt;
 
-    &lt;body style="padding: 15px;"&gt;
-        &lt;!-- 添加图书的Panel面板 --&gt;
-        &lt;div class="panel panel-primary"&gt;
-            &lt;div class="panel-heading"&gt;
-                &lt;h3 class="panel-title"&gt;添加新图书&lt;/h3&gt;
-            &lt;/div&gt;
-            &lt;div class="panel-body form-inline"&gt;
-                &lt;!-- 顶部进行图书新增的结构部分 --&gt;
-                &lt;div class="input-group"&gt;
-                    &lt;div class="input-group-addon"&gt;书名&lt;/div&gt;
-                    &lt;input type="text" class="form-control" id="iptBookname" placeholder="请输入书名"&gt;
-                &lt;/div&gt;
+				&lt;div class="input-group"&gt;
+					&lt;div class="input-group-addon"&gt;作者&lt;/div&gt;
+					&lt;input type="text" class="form-control" id="iptAuthor" placeholder="请输入作者"&gt;
+				&lt;/div&gt;
 
-                &lt;div class="input-group"&gt;
-                    &lt;div class="input-group-addon"&gt;作者&lt;/div&gt;
-                    &lt;input type="text" class="form-control" id="iptAuthor" placeholder="请输入作者"&gt;
-                &lt;/div&gt;
+				&lt;div class="input-group"&gt;
+					&lt;div class="input-group-addon"&gt;出版社&lt;/div&gt;
+					&lt;input type="text" class="form-control" id="iptPublisher" placeholder="请输入出版社"&gt;
+				&lt;/div&gt;
+				&lt;!-- 点击添加新图书 --&gt;
+				&lt;button id="btnAdd" class="btn btn-primary"&gt;添加&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- 图书的表格 --&gt;
+		&lt;table class="table table-bordered table-hover"&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th&gt;Id&lt;/th&gt;
+					&lt;th&gt;书名&lt;/th&gt;
+					&lt;th&gt;作者&lt;/th&gt;
+					&lt;th&gt;出版社&lt;/th&gt;
+					&lt;th&gt;操作&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;tbody id="tb"&gt;
+				&lt;!-- 用于放置图书信息的tbody标签 --&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/body&gt;
 
-                &lt;div class="input-group"&gt;
-                    &lt;div class="input-group-addon"&gt;出版社&lt;/div&gt;
-                    &lt;input type="text" class="form-control" id="iptPublisher" placeholder="请输入出版社"&gt;
-                &lt;/div&gt;
-                &lt;!-- 点击添加新图书 --&gt;
-                &lt;button id="btnAdd" class="btn btn-primary"&gt;添加&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!-- 图书的表格 --&gt;
-        &lt;table class="table table-bordered table-hover"&gt;
-            &lt;thead&gt;
-                &lt;tr&gt;
-                    &lt;th&gt;Id&lt;/th&gt;
-                    &lt;th&gt;书名&lt;/th&gt;
-                    &lt;th&gt;作者&lt;/th&gt;
-                    &lt;th&gt;出版社&lt;/th&gt;
-                    &lt;th&gt;操作&lt;/th&gt;
-                &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody id="tb"&gt;
-                &lt;!-- 用于放置图书信息的tbody标签 --&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/body&gt;
 </code></pre>
 <p><strong>js部分：</strong></p>
-<pre><code class="js">
-        &lt;script src="./lib/jquery.js"&gt;&lt;/script&gt;
-        &lt;script&gt;
-            renderBook();
-            $('#btnAdd').on('click', function() {
-                var val1 = $('#iptBookname').val().trim();
-                var val2 = $('#iptAuthor').val().trim();
-                var val3 = $('#iptPublisher').val().trim();
+<pre><code class="language-js">
+		&lt;script src="./lib/jquery.js"&gt;&lt;/script&gt;
+		&lt;script&gt;
+			renderBook();
+			$('#btnAdd').on('click', function() {
+				var val1 = $('#iptBookname').val().trim();
+				var val2 = $('#iptAuthor').val().trim();
+				var val3 = $('#iptPublisher').val().trim();
 
-                if (val1 === '' || val2 === '' || val3 === '') {
-                    alert('请输入完整的数据');
-                    return;
-                }
+				if (val1 === '' || val2 === '' || val3 === '') {
+					alert('请输入完整的数据');
+					return;
+				}
 
-                var kids = '添加书的接口addbooks';
-                $.post(kids, {
-                    bookname: val1,
-                    author: val2,
-                    publisher: val3
-                }, function(res) {
-                    if (res.status === 201) {
-                        renderBook();
-                        $('#bookname').val();
-                        $('#author').val();
-                        $('#publisher').val();
-                    }
-                })
-            });
+				var kids = '添加书的接口addbooks';
+				$.post(kids, {
+					bookname: val1,
+					author: val2,
+					publisher: val3
+				}, function(res) {
+					if (res.status === 201) {
+						renderBook();
+						$('#bookname').val();
+						$('#author').val();
+						$('#publisher').val();
+					}
+				})
+			});
 
-            function renderBook() {
-                var kid = '获取书的接口getbooks';
-                $.get(kid, function(res) {
+			function renderBook() {
+				var kid = '获取书的接口getbooks';
+				$.get(kid, function(res) {
 
-                    if (res.status !== 200) {
-                        return;
-                    };
-                    var data = res.data;
-                    console.log(data)
-                    var str = '';
-                    $.each(data, function(k, r) {
-                        str +=
-                            ' &lt;tr&gt;\
-                            &lt;td&gt;' + r.id + '&lt;/td&gt;\
-                            &lt;td&gt;' + r.bookname +
-                            '&lt;/td&gt;\
-                            &lt;td&gt;' + r.author + '&lt;/td&gt;\
-                            &lt;td&gt;' + r.publisher +
-                            '&lt;/td&gt;\
-                            &lt;td&gt;&lt;a href="javascript:;"&gt;删除                                                           &lt;/a&gt;&lt;td&gt;\
-                        &lt;/tr&gt;; '
-                    });
-                    $('#tb').html(str);
-                });
-            }
-        &lt;/script&gt;</code></pre>
+					if (res.status !== 200) {
+						return;
+					};
+					var data = res.data;
+					console.log(data)
+					var str = '';
+					$.each(data, function(k, r) {
+						str +=
+							' &lt;tr&gt;\
+				            &lt;td&gt;' + r.id + '&lt;/td&gt;\
+				            &lt;td&gt;' + r.bookname +
+							'&lt;/td&gt;\
+				            &lt;td&gt;' + r.author + '&lt;/td&gt;\
+				            &lt;td&gt;' + r.publisher +
+							'&lt;/td&gt;\
+				            &lt;td&gt;&lt;a href="javascript:;"&gt;删除                                                           &lt;/a&gt;&lt;td&gt;\
+				        &lt;/tr&gt;; '
+					});
+					$('#tb').html(str);
+				});
+			}
+		&lt;/script&gt;
+</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

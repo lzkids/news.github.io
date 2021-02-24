@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="Cygwin是：  GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。  提供实质性POSIX API功能的DLL（cygwin1.dll）。">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="Cygwin是：   GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。   提供实质性POSIX API功能的DLL（cygwin1.dll）。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cygwin安装配置">
 <meta property="og:url" content="http://kisskisso.com/2020/08/09/Cygwin%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="Cygwin是：  GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。  提供实质性POSIX API功能的DLL（cygwin1.dll）。">
+<meta property="og:description" content="Cygwin是：   GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。   提供实质性POSIX API功能的DLL（cygwin1.dll）。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%8B%E8%BD%BDCygwin.png">
 <meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%8B%E4%B8%80%E6%AD%A5.png">
@@ -55,83 +55,89 @@ var CONFIG = {
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Cygwin安装配置</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-08-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">718</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">5分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><a href="https://www.cygwin.com/" target="_blank" rel="noopener">Cygwin</a>是：</p>
 <ul>
-<li><p>GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。</p>
+<li>
+<p>GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。</p>
 </li>
-<li><p>提供实质性POSIX API功能的DLL（cygwin1.dll）。<a id="more"></a></p>
+<li>
+<p>提供实质性POSIX API功能的DLL（cygwin1.dll）。<a id="more"></a></p>
 
         <h2 id="安装">
-          <a href="#安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装" class="headerlink" title="安装"></a>安装</h2>
+          <a href="#安装" class="heading-link"><i class="fas fa-link"></i></a>安装</h2>
       
-        <h3 id="1-下载Cygwin">
-          <a href="#1-下载Cygwin" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-下载Cygwin" class="headerlink" title="1.下载Cygwin"></a>1.下载Cygwin</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下载Cygwin.png" style="zoom: 50%;">
 
+        <h3 id="1-下载Cygwin">
+          <a href="#1-下载Cygwin" class="heading-link"><i class="fas fa-link"></i></a>1.下载Cygwin</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下载Cygwin.png" style="zoom: 50%;">
 </li>
 </ul>
 
         <h3 id="2-打开安装包">
-          <a href="#2-打开安装包" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-打开安装包" class="headerlink" title="2.打开安装包"></a>2.打开安装包</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下一步.png" style="zoom: 67%;">
-
+          <a href="#2-打开安装包" class="heading-link"><i class="fas fa-link"></i></a>2.打开安装包</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下一步.png" style="zoom: 67%;">
 
         <h3 id="3-按需选择">
-          <a href="#3-按需选择" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-按需选择" class="headerlink" title="3.按需选择"></a>3.按需选择</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/选择.png" style="zoom:67%;">
-
+          <a href="#3-按需选择" class="heading-link"><i class="fas fa-link"></i></a>3.按需选择</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/选择.png" style="zoom:67%;">
 
         <h3 id="4-选择安装目录">
-          <a href="#4-选择安装目录" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-选择安装目录" class="headerlink" title="4.选择安装目录"></a>4.选择安装目录</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/安装目录.png" style="zoom: 80%;">
-
+          <a href="#4-选择安装目录" class="heading-link"><i class="fas fa-link"></i></a>4.选择安装目录</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/安装目录.png" style="zoom: 80%;">
 
         <h3 id="5-选择本地目录（里面文件可以删除）">
-          <a href="#5-选择本地目录（里面文件可以删除）" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-选择本地目录（里面文件可以删除）" class="headerlink" title="5.选择本地目录（里面文件可以删除）"></a>5.选择本地目录（里面文件可以删除）</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/创建本地目录.png" style="zoom: 80%;">
-
+          <a href="#5-选择本地目录（里面文件可以删除）" class="heading-link"><i class="fas fa-link"></i></a>5.选择本地目录（里面文件可以删除）</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/创建本地目录.png" style="zoom: 80%;">
 
         <h3 id="6-设置代理">
-          <a href="#6-设置代理" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-设置代理" class="headerlink" title="6.设置代理"></a>6.设置代理</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/设置代理png.png" style="zoom:80%;">
-
+          <a href="#6-设置代理" class="heading-link"><i class="fas fa-link"></i></a>6.设置代理</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/设置代理png.png" style="zoom:80%;">
 
         <h3 id="7-选择镜像源">
-          <a href="#7-选择镜像源" class="heading-link"><i class="fas fa-link"></i></a><a href="#7-选择镜像源" class="headerlink" title="7.选择镜像源"></a>7.选择镜像源</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/镜像源的选择.png" style="zoom:80%;">
-
+          <a href="#7-选择镜像源" class="heading-link"><i class="fas fa-link"></i></a>7.选择镜像源</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/镜像源的选择.png" style="zoom:80%;">
 
         <h3 id="8-下一步">
-          <a href="#8-下一步" class="heading-link"><i class="fas fa-link"></i></a><a href="#8-下一步" class="headerlink" title="8.下一步"></a>8.下一步</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/弹出框.png" style="zoom: 50%;">
-
+          <a href="#8-下一步" class="heading-link"><i class="fas fa-link"></i></a>8.下一步</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/弹出框.png" style="zoom: 50%;">
 
         <h3 id="9-下一步">
-          <a href="#9-下一步" class="heading-link"><i class="fas fa-link"></i></a><a href="#9-下一步" class="headerlink" title="9.下一步"></a>9.下一步</h3>
+          <a href="#9-下一步" class="heading-link"><i class="fas fa-link"></i></a>9.下一步</h3>
       
-        <h3 id="10-完成">
-          <a href="#10-完成" class="heading-link"><i class="fas fa-link"></i></a><a href="#10-完成" class="headerlink" title="10.完成"></a>10.完成</h3>
-      
-        <h2 id="配置-需要安装（dos2unix、wget、lynx）">
-          <a href="#配置-需要安装（dos2unix、wget、lynx）" class="heading-link"><i class="fas fa-link"></i></a><a href="#配置-需要安装（dos2unix、wget、lynx）" class="headerlink" title="配置 需要安装（dos2unix、wget、lynx）"></a>配置 需要安装（dos2unix、wget、lynx）</h2>
-      
-        <h3 id="还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！">
-          <a href="#还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！" class="heading-link"><i class="fas fa-link"></i></a><a href="#还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！" class="headerlink" title="还是打开安装程序按照安装过程到第8步(先不要关闭！！！先不要关闭！！！先不要关闭！！！)"></a>还是打开安装程序按照安装过程到第8步(先不要关闭！！！先不要关闭！！！先不要关闭！！！)</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/full.png" style="zoom:67%;">
 
-<p>先从github克隆<a href="https://github.com/transcode-open/apt-cyg" target="_blank" rel="noopener">apt-cyg</a>  [git clone <span class="exturl"><a class="exturl__link" href="https://github.com/transcode-open/apt-cyg]" target="_blank" rel="noopener">https://github.com/transcode-open/apt-cyg]</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>   <font color="#c91627" size="5">PS：在Cygwin上克隆</font></p>
+        <h3 id="10-完成">
+          <a href="#10-完成" class="heading-link"><i class="fas fa-link"></i></a>10.完成</h3>
+      
+
+        <h2 id="配置-需要安装（dos2unix、wget、lynx）">
+          <a href="#配置-需要安装（dos2unix、wget、lynx）" class="heading-link"><i class="fas fa-link"></i></a>配置 需要安装（dos2unix、wget、lynx）</h2>
+      
+
+        <h3 id="还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！">
+          <a href="#还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！" class="heading-link"><i class="fas fa-link"></i></a>还是打开安装程序按照安装过程到第8步(先不要关闭！！！先不要关闭！！！先不要关闭！！！)</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/full.png" style="zoom:67%;">
+<p>先从github克隆<a href="https://github.com/transcode-open/apt-cyg" target="_blank" rel="noopener">apt-cyg</a>  [git clone <span class="exturl"><a class="exturl__link" href="https://github.com/transcode-open/apt-cyg" target="_blank" rel="noopener">https://github.com/transcode-open/apt-cyg</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>]   <font color="#c91627" size="5">PS：在Cygwin上克隆</font></p>
 <p>cd apt-cyg   【进入apt-cyg目录】</p>
 <p>install  apt-cyg   /bin    【将apt-cyg安装到/bin目录下】</p>
 <p>下载东西【例如：apt-cyg install vim】，如果不出意外会出报错</p>
 <blockquote>
-<p>/usr/bin/apt-cyg:行25: $’\r’: 未找到命令 </p>
+<p>/usr/bin/apt-cyg:行25: $‘\r’: 未找到命令</p>
 <p>/usr/bin/apt-cyg:行121: 未预期的符号 <code>$'{\r'' 附近有语法错误</code></p>
-<p> <code>'usr/bin/apt-cyg:行121:</code>function wget {</p>
+<p><code>'usr/bin/apt-cyg:行121:</code>function wget {</p>
 </blockquote>
 
         <h3 id="需要下载dos2unix">
-          <a href="#需要下载dos2unix" class="heading-link"><i class="fas fa-link"></i></a><a href="#需要下载dos2unix" class="headerlink" title="需要下载dos2unix"></a>需要下载dos2unix</h3>
-      <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dos2unix.png" style="zoom:67%;">
-
-<p><strong>1.在终端输入cd ../..  &amp;&amp; ls</strong></p>
+          <a href="#需要下载dos2unix" class="heading-link"><i class="fas fa-link"></i></a>需要下载dos2unix</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dos2unix.png" style="zoom:67%;">
+<p><strong>1.在终端输入cd …/…  &amp;&amp; ls</strong></p>
 <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91.png" alt=""></p>
 <ol start="2">
 <li><strong>cd usr/bin/</strong></li>
@@ -144,66 +150,76 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>之后下一步下一步</p>
 
         <h2 id="QAQ">
-          <a href="#QAQ" class="heading-link"><i class="fas fa-link"></i></a><a href="#QAQ" class="headerlink" title="QAQ:"></a>QAQ:</h2>
+          <a href="#QAQ" class="heading-link"><i class="fas fa-link"></i></a>QAQ:</h2>
       
+
         <h3 id="1-如何切换zsh？">
-          <a href="#1-如何切换zsh？" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-如何切换zsh？" class="headerlink" title="1.如何切换zsh？"></a>1.如何切换zsh？</h3>
-      <p> vim  .bash_profile</p>
+          <a href="#1-如何切换zsh？" class="heading-link"><i class="fas fa-link"></i></a>1.如何切换zsh？</h3>
+      
+<p>vim  .bash_profile</p>
 <p>在最后一行加入exec zsh 保存退出</p>
 <p>【ps： 按i  最后一行输入exec zsh  按Esc  按:输入wq 按enter】</p>
 <p>重新打开</p>
 
         <h3 id="2-切换zsh重新打开乱码？">
-          <a href="#2-切换zsh重新打开乱码？" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-切换zsh重新打开乱码？" class="headerlink" title="2.切换zsh重新打开乱码？"></a>2.切换zsh重新打开乱码？</h3>
-      <p>需要安装oh-my-zsh</p>
+          <a href="#2-切换zsh重新打开乱码？" class="heading-link"><i class="fas fa-link"></i></a>2.切换zsh重新打开乱码？</h3>
+      
+<p>需要安装oh-my-zsh</p>
 <p><a href="https://ohmyz.sh/" target="_blank" rel="noopener">官网</a>或者</p>
-<p>链接：<span class="exturl"><a class="exturl__link" href="https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>提取码：obva   </p>
+<p>链接：<span class="exturl"><a class="exturl__link" href="https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>
+提取码：obva</p>
 <p>注：百度盘不一定是最新的(但可以更新到最新)</p>
 
         <h3 id="3-如何更新oh-my-zsh？">
-          <a href="#3-如何更新oh-my-zsh？" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-如何更新oh-my-zsh？" class="headerlink" title="3.如何更新oh-my-zsh？"></a>3.如何更新oh-my-zsh？</h3>
-      <p>omz update</p>
+          <a href="#3-如何更新oh-my-zsh？" class="heading-link"><i class="fas fa-link"></i></a>3.如何更新oh-my-zsh？</h3>
+      
+<p>omz update</p>
 
         <h3 id="4-如何查看oh-my-zsh安装成功？">
-          <a href="#4-如何查看oh-my-zsh安装成功？" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-如何查看oh-my-zsh安装成功？" class="headerlink" title="4.如何查看oh-my-zsh安装成功？"></a>4.如何查看oh-my-zsh安装成功？</h3>
-      <p>如下图显示就安装成功了</p>
+          <a href="#4-如何查看oh-my-zsh安装成功？" class="heading-link"><i class="fas fa-link"></i></a>4.如何查看oh-my-zsh安装成功？</h3>
+      
+<p>如下图显示就安装成功了</p>
 <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/oh-my-zsh.png" alt=""></p>
 <p>失败请安装git 【apt-cyg install git】</p>
 
         <h3 id="5-主题如何获取？">
-          <a href="#5-主题如何获取？" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-主题如何获取？" class="headerlink" title="5.主题如何获取？"></a>5.主题如何获取？</h3>
-      <p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题地址</a></p>
+          <a href="#5-主题如何获取？" class="heading-link"><i class="fas fa-link"></i></a>5.主题如何获取？</h3>
+      
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题地址</a></p>
 
         <h3 id="6-如何更改zsh主题？">
-          <a href="#6-如何更改zsh主题？" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-如何更改zsh主题？" class="headerlink" title="6.如何更改zsh主题？"></a>6.如何更改zsh主题？</h3>
-      <p>终端输入vim  .zshrc</p>
+          <a href="#6-如何更改zsh主题？" class="heading-link"><i class="fas fa-link"></i></a>6.如何更改zsh主题？</h3>
+      
+<p>终端输入vim  .zshrc</p>
 <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%BB%E9%A2%98%E5%90%8D%E7%A7%B0.png" alt=""></p>
 <p>箭头处更改主题名称</p>
 
         <h3 id="7-为什么不能输入-如何保存退出？">
-          <a href="#7-为什么不能输入-如何保存退出？" class="heading-link"><i class="fas fa-link"></i></a><a href="#7-为什么不能输入-如何保存退出？" class="headerlink" title="7.为什么不能输入/如何保存退出？"></a>7.为什么不能输入/如何保存退出？</h3>
-      <p>按 i 进入编辑   更改完成后 按 ESC   然后按 :  输入wq 按Enter 重新启动</p>
+          <a href="#7-为什么不能输入-如何保存退出？" class="heading-link"><i class="fas fa-link"></i></a>7.为什么不能输入/如何保存退出？</h3>
+      
+<p>按 i 进入编辑   更改完成后 按 ESC   然后按 :  输入wq 按Enter 重新启动</p>
 <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/i.png" alt=""></p>
 <p>ps：别忘了按ESC</p>
 <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/wq.png" alt=""></p>
 
         <h3 id="8-如何更改Cygwin语言设置？">
-          <a href="#8-如何更改Cygwin语言设置？" class="heading-link"><i class="fas fa-link"></i></a><a href="#8-如何更改Cygwin语言设置？" class="headerlink" title="8.如何更改Cygwin语言设置？"></a>8.如何更改Cygwin语言设置？</h3>
-      <p>终端任意位置点击鼠标右键</p>
+          <a href="#8-如何更改Cygwin语言设置？" class="heading-link"><i class="fas fa-link"></i></a>8.如何更改Cygwin语言设置？</h3>
+      
+<p>终端任意位置点击鼠标右键</p>
 <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/设置.png" style="zoom: 55%;">
-
-<p>点击Options （看图UI language选择语言） </p>
+<p>点击Options （看图UI language选择语言）</p>
 <img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/语言.png">
-
 <p>选择（zh_CN）完之后点击Apply</p>
 
         <h3 id="9-如何调整窗口大小（不是关闭恢复原状）？">
-          <a href="#9-如何调整窗口大小（不是关闭恢复原状）？" class="heading-link"><i class="fas fa-link"></i></a><a href="#9-如何调整窗口大小（不是关闭恢复原状）？" class="headerlink" title="9.如何调整窗口大小（不是关闭恢复原状）？"></a>9.如何调整窗口大小（不是关闭恢复原状）？</h3>
-      <p>设置 -窗口（调整窗口到合适大小）-点击当前大小—然后应用</p>
+          <a href="#9-如何调整窗口大小（不是关闭恢复原状）？" class="heading-link"><i class="fas fa-link"></i></a>9.如何调整窗口大小（不是关闭恢复原状）？</h3>
+      
+<p>设置 -窗口（调整窗口到合适大小）-点击当前大小—然后应用</p>
 
         <h3 id="10-如何打开Windows中的文件-文件夹？">
-          <a href="#10-如何打开Windows中的文件-文件夹？" class="heading-link"><i class="fas fa-link"></i></a><a href="#10-如何打开Windows中的文件-文件夹？" class="headerlink" title="10.如何打开Windows中的文件/文件夹？"></a>10.如何打开Windows中的文件/文件夹？</h3>
-      <p><em>cygstart</em>  xxx</p>
+          <a href="#10-如何打开Windows中的文件-文件夹？" class="heading-link"><i class="fas fa-link"></i></a>10.如何打开Windows中的文件/文件夹？</h3>
+      
+<p><em>cygstart</em>  xxx</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

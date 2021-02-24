@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="回顾       1.事件的三要素 2.BOM核心【window对象】 xx元素.onxx事件&#x3D;function（）｛….｝                     增    删    查    改       xx元素.addEventListener(’xx事件‘，function（）｛｝) 1.可以多次绑定 2.可以设定冒泡或捕获【基本用不到】两种形式的事件。">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="回顾        1.事件的三要素 2.BOM核心【window对象】 xx元素.onxx事件&#x3D;function（）｛…｝                     增    删    查    改        xx元素.addEventListener(’xx事件‘，function（）｛｝) 1.可以多次绑定 2.可以设定冒泡或捕获【基本用不到】两种形式的事件。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回顾知识点">
 <meta property="og:url" content="http://kisskisso.com/2020/01/11/%E6%A0%B8%E5%BF%83%E7%82%B9/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="回顾       1.事件的三要素 2.BOM核心【window对象】 xx元素.onxx事件&#x3D;function（）｛….｝                     增    删    查    改       xx元素.addEventListener(’xx事件‘，function（）｛｝) 1.可以多次绑定 2.可以设定冒泡或捕获【基本用不到】两种形式的事件。">
+<meta property="og:description" content="回顾        1.事件的三要素 2.BOM核心【window对象】 xx元素.onxx事件&#x3D;function（）｛…｝                     增    删    查    改        xx元素.addEventListener(’xx事件‘，function（）｛｝) 1.可以多次绑定 2.可以设定冒泡或捕获【基本用不到】两种形式的事件。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-11T21:15:26.000Z">
 <meta property="article:modified_time" content="2021-01-26T10:02:22.000Z">
@@ -35,14 +35,16 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
 </head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">回顾知识点</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">249</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">1分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="回顾">
-          <a href="#回顾" class="heading-link"><i class="fas fa-link"></i></a><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h2>
-      <p>1.事件的三要素</p>
+          <a href="#回顾" class="heading-link"><i class="fas fa-link"></i></a>回顾</h2>
+      
+<p>1.事件的三要素</p>
 <p>2.BOM核心【window对象】</p>
-<p>xx元素.onxx事件=function（）｛….｝</p>
+<p>xx元素.onxx事件=function（）｛…｝</p>
 
         <h3 id="增-删-查-改">
-          <a href="#增-删-查-改" class="heading-link"><i class="fas fa-link"></i></a><a href="#增-删-查-改" class="headerlink" title="增    删    查    改"></a>增    删    查    改</h3>
-      <p>xx元素.addEventListener(’xx事件‘，function（）｛｝)</p>
+          <a href="#增-删-查-改" class="heading-link"><i class="fas fa-link"></i></a>增    删    查    改</h3>
+      
+<p>xx元素.addEventListener(’xx事件‘，function（）｛｝)</p>
 <p>1.可以多次绑定</p>
 <p>2.可以设定冒泡或捕获【基本用不到】两种形式的事件。<a id="more"></a></p>
 <p>this绑定【形式】元素的本身</p>
@@ -56,8 +58,9 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>2.可以对页面初始不存在的元素去设定事件绑定</p>
 
         <h3 id="遗留的问题：">
-          <a href="#遗留的问题：" class="heading-link"><i class="fas fa-link"></i></a><a href="#遗留的问题：" class="headerlink" title="遗留的问题："></a>遗留的问题：</h3>
-      <p>1.排他思想</p>
+          <a href="#遗留的问题：" class="heading-link"><i class="fas fa-link"></i></a>遗留的问题：</h3>
+      
+<p>1.排他思想</p>
 <p>2、window.alert() .confirm() .prompt()?</p>
 <p>3.如何解决定时器会反复创建的问题？</p>
 <script>

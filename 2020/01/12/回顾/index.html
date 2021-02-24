@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="回顾       xx元素.style.left  &#x3D;   -   200 * i  +   ‘px’ xx元素.style.left&#x3D;’translateX(  - ‘  +  24*i  + ‘  % )’ 定时器设置全局变量以防反复创建 assign（url）  localStorage.setlten对象sessionStorage对象">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="回顾        xx元素.style.left  &#x3D;   -   200 * i  +   ‘px’ xx元素.style.left&#x3D;‘translateX(  - ’  +  24*i  + ’  % )’ 定时器设置全局变量以防反复创建 assign（url）  localStorage.setlten对象  sessionStorage对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回顾 + BOM模型最后一部分">
 <meta property="og:url" content="http://kisskisso.com/2020/01/12/%E5%9B%9E%E9%A1%BE/index.html">
 <meta property="og:site_name" content="My Life">
-<meta property="og:description" content="回顾       xx元素.style.left  &#x3D;   -   200 * i  +   ‘px’ xx元素.style.left&#x3D;’translateX(  - ‘  +  24*i  + ‘  % )’ 定时器设置全局变量以防反复创建 assign（url）  localStorage.setlten对象sessionStorage对象">
+<meta property="og:description" content="回顾        xx元素.style.left  &#x3D;   -   200 * i  +   ‘px’ xx元素.style.left&#x3D;‘translateX(  - ’  +  24*i  + ’  % )’ 定时器设置全局变量以防反复创建 assign（url）  localStorage.setlten对象  sessionStorage对象">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-12T22:11:00.000Z">
 <meta property="article:modified_time" content="2021-01-26T10:06:18.000Z">
@@ -34,13 +34,16 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="My Life" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">回顾 + BOM模型最后一部分</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">577</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="回顾">
-          <a href="#回顾" class="heading-link"><i class="fas fa-link"></i></a><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h2>
-      <p>xx元素.style.left  =   -   200 * i  +   ‘px’</p>
-<p>xx元素.style.left=’translateX(  - ‘  +  24*i  + ‘  % )’</p>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">My Life</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">回顾 + BOM模型最后一部分</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-01-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">578</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">3分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="回顾">
+          <a href="#回顾" class="heading-link"><i class="fas fa-link"></i></a>回顾</h2>
+      
+<p>xx元素.style.left  =   -   200 * i  +   ‘px’</p>
+<p>xx元素.style.left=‘translateX(  - ’  +  24*i  + ’  % )’</p>
 <p>定时器设置全局变量以防反复创建</p>
 <p>assign（url）</p>
-<pre><code> localStorage.setlten对象</code></pre><p>sessionStorage对象<a id="more"></a></p>
+<pre><code> localStorage.setlten对象
+</code></pre>
+<p>sessionStorage对象<a id="more"></a></p>
 <div class="table-container"><table>
 <thead>
 <tr>
@@ -49,7 +52,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>history.back:后退一步</td>
 <td></td>
 <td></td>
@@ -64,51 +68,61 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <td></td>
 <td></td>
 </tr>
-</tbody></table></div>
+</tbody>
+</table></div>
 <div class="table-container"><table>
 <thead>
 <tr>
 <th>navigator对象：  【了解：浏览器的名字版本号。。。。。】</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>使用：navigator.userAgent：获取到浏览器的信息（字符串）</td>
 </tr>
-</tbody></table></div>
+</tbody>
+</table></div>
 
         <h3 id="ocalStorage对象">
-          <a href="#ocalStorage对象" class="heading-link"><i class="fas fa-link"></i></a><a href="#ocalStorage对象" class="headerlink" title="ocalStorage对象"></a><strong>ocalStorage对象</strong></h3>
-      <div class="table-container"><table>
+          <a href="#ocalStorage对象" class="heading-link"><i class="fas fa-link"></i></a><strong>ocalStorage对象</strong></h3>
+      
+<div class="table-container"><table>
 <thead>
 <tr>
 <th>localStorage.setItem( ‘key名称’, ‘值’ )以给定的键（key）存储一个数据【只能存字符串】</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>localStorage.getItem( ‘key名称’ )获取指定键（key）对应的数据</strong></td>
 </tr>
 <tr>
 <td><strong>localStorage.removeItem( ‘key名称’ )删除（key）对应的数据</strong></td>
 </tr>
-</tbody></table></div>
+</tbody>
+</table></div>
 
         <h3 id="client系列：（不属于html属性？div？）">
-          <a href="#client系列：（不属于html属性？div？）" class="heading-link"><i class="fas fa-link"></i></a><a href="#client系列：（不属于html属性？div？）" class="headerlink" title="client系列：（不属于html属性？div？）"></a><strong>client系列：</strong>（不属于html属性？div？）</h3>
-      <p>除了：scrollTop 和scrollLeft——只读不可修改</p>
+          <a href="#client系列：（不属于html属性？div？）" class="heading-link"><i class="fas fa-link"></i></a><strong>client系列：</strong>（不属于html属性？div？）</h3>
+      
+<p>除了：scrollTop 和scrollLeft------只读不可修改</p>
 <p>xx元素.clientWidth:  盒子padding范围（含padding）的宽度</p>
 <p>xx元素.clientHeight:盒子padding范围（含padding）的高度</p>
 <p>xx元素.clientLeft:</p>
 
         <h3 id="offset系列：（不可修改？）">
-          <a href="#offset系列：（不可修改？）" class="heading-link"><i class="fas fa-link"></i></a><a href="#offset系列：（不可修改？）" class="headerlink" title="offset系列：（不可修改？）"></a><strong>offset系列：</strong>（不可修改？）</h3>
+          <a href="#offset系列：（不可修改？）" class="heading-link"><i class="fas fa-link"></i></a><strong>offset系列：</strong>（不可修改？）</h3>
       
+
         <h3 id="scroll系列：">
-          <a href="#scroll系列：" class="heading-link"><i class="fas fa-link"></i></a><a href="#scroll系列：" class="headerlink" title="scroll系列："></a><strong>scroll系列：</strong></h3>
-      <p>top（有用，定位用。滑块位置没有单位）</p>
+          <a href="#scroll系列：" class="heading-link"><i class="fas fa-link"></i></a><strong>scroll系列：</strong></h3>
+      
+<p>top（有用，定位用。滑块位置没有单位）</p>
 
         <h3 id="移动端">
-          <a href="#移动端" class="heading-link"><i class="fas fa-link"></i></a><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3>
-      <p>原生：</p>
+          <a href="#移动端" class="heading-link"><i class="fas fa-link"></i></a>移动端</h3>
+      
+<p>原生：</p>
 <p>touchstart： 触摸开始事件</p>
 <p>touchmove： 触摸移动事件</p>
 <p>touchend： 触摸结束事件</p>
@@ -119,30 +133,34 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><lin
 <p>事件处理函数传入参数（event）event.触摸点[i]【是个伪数组】</p>
 
         <h3 id="三个触摸集合：">
-          <a href="#三个触摸集合：" class="heading-link"><i class="fas fa-link"></i></a><a href="#三个触摸集合：" class="headerlink" title="三个触摸集合："></a><strong>三个触摸集合：</strong></h3>
-      <p>e.touches:代表所有触摸点，是一个集合</p>
+          <a href="#三个触摸集合：" class="heading-link"><i class="fas fa-link"></i></a><strong>三个触摸集合：</strong></h3>
+      
+<p>e.touches:代表所有触摸点，是一个集合</p>
 <p>e.targetTouches:代表当前绑定事件的某个元素（对象）上的所有触摸点，是一个集合。</p>
 <p>e.changedTouches: 代表当前变换了的触摸点</p>
 <p>总结：</p>
 <p>关于移动端获取事件的信息的基本对象层级结构：</p>
-<p> event对象》》触摸点集合》》触摸点》》触摸点属性</p>
+<p>event对象》》触摸点集合》》触摸点》》触摸点属性</p>
 
         <h3 id="封装tap事件">
-          <a href="#封装tap事件" class="heading-link"><i class="fas fa-link"></i></a><a href="#封装tap事件" class="headerlink" title="封装tap事件"></a>封装tap事件</h3>
-      <p><strong>tap事件的特征是：</strong>x坐标和y坐标的差值，都足够小</p>
+          <a href="#封装tap事件" class="heading-link"><i class="fas fa-link"></i></a>封装tap事件</h3>
+      
+<p>**tap事件的特征是：**x坐标和y坐标的差值，都足够小</p>
 <p><strong>左划事件:</strong>  x    y 差值，&lt; - 15;</p>
-<p><strong>右划事件：</strong>x    y 差值    &gt; 15;</p>
+<p>**右划事件：**x    y 差值    &gt; 15;</p>
 <p>触摸开始</p>
 <p>触摸接触</p>
 
         <h3 id="transitionend（过渡完成）事件：">
-          <a href="#transitionend（过渡完成）事件：" class="heading-link"><i class="fas fa-link"></i></a><a href="#transitionend（过渡完成）事件：" class="headerlink" title="transitionend（过渡完成）事件："></a>transitionend（过渡完成）事件：</h3>
-      <p>过渡：表示过渡效果执行完成的那个时刻。</p>
+          <a href="#transitionend（过渡完成）事件：" class="heading-link"><i class="fas fa-link"></i></a>transitionend（过渡完成）事件：</h3>
+      
+<p>过渡：表示过渡效果执行完成的那个时刻。</p>
 <p>xx元素.children.length图片个数长度</p>
 
         <h3 id="swiper轮播插件：">
-          <a href="#swiper轮播插件：" class="heading-link"><i class="fas fa-link"></i></a><a href="#swiper轮播插件：" class="headerlink" title="swiper轮播插件："></a>swiper轮播插件：</h3>
-      <p> <span class="exturl"><a class="exturl__link" href="https://www.swiper.com.cn" target="_blank" rel="noopener">https://www.swiper.com.cn</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+          <a href="#swiper轮播插件：" class="heading-link"><i class="fas fa-link"></i></a>swiper轮播插件：</h3>
+      
+<p><span class="exturl"><a class="exturl__link" href="https://www.swiper.com.cn" target="_blank" rel="noopener">https://www.swiper.com.cn</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

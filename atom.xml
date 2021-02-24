@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-02-23T13:02:38.000Z</updated>
+  <updated>2021-02-23T16:03:38.000Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -17,13 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>安装fcitx5與配置</title>
+    <title>nvm的安裝與配置</title>
+    <link href="http://kisskisso.com/2021/02/24/nvm%E7%9A%84%E5%AE%89%E8%A3%9D%E8%88%87%E9%85%8D%E7%BD%AE/"/>
+    <id>http://kisskisso.com/2021/02/24/nvm%E7%9A%84%E5%AE%89%E8%A3%9D%E8%88%87%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-02-24T00:03:38.000Z</published>
+    <updated>2021-02-23T16:03:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>fcitx5的安裝與配置</title>
     <link href="http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/"/>
     <id>http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/</id>
     <published>2021-02-23T18:52:23.000Z</published>
-    <updated>2021-02-23T13:02:38.000Z</updated>
+    <updated>2021-02-23T16:06:34.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>安装fcitx5</strong></p><pre><code class="bash">sudo pacman -S fcitx5sudo pacman -S  fcitx5-rime</code></pre><blockquote><p>打开fcitx5配置报错说你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p></blockquote><p>需要安装：</p><pre><code class="bash">sudo pacman -S fcitx5-configtool</code></pre><p>配置編輯<code>etc/profile</code>文件，末尾寫入</p><pre><code class="bash"># Fcitxexport GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitxexport XMODIFIERS="@im=fcitx"</code></pre><p>如果還不支持請嘗試運行<code>sudo pacman -S fcitx5-im</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p><strong>安装fcitx5</strong></p><pre><code class="bash">sudo pacman -S fcitx5sudo pacman -S  fcitx5-rime</code></pre><blockquote><p>打开fcitx5配置报错说你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p></blockquote><p>需要安装：</p><pre><code class="bash">sudo pacman -S fcitx5-configtool</code></pre><p>配置編輯<code>etc/profile</code>文件，末尾寫入</p><blockquote><p>#Fcitx</p><p>export GTK_IM_MODULE=fcitx<br>export QT_IM_MODULE=fcitx<br>export XMODIFIERS=”@im=fcitx”</p></blockquote><p>如果還不支持請嘗試運行<code>sudo pacman -S fcitx5-im</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
@@ -542,31 +568,6 @@ sudo pacman -S  fcitx5-rime&lt;/code&gt;&lt;/pre&gt;
     
     
       <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>GoodSync同步备份</title>
-    <link href="http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/"/>
-    <id>http://kisskisso.com/2021/01/30/GoodSync%E5%90%8C%E6%AD%A5%E5%A4%87%E4%BB%BD/</id>
-    <published>2021-01-30T01:00:43.000Z</published>
-    <updated>2021-01-30T01:09:38.375Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png" alt=""></p><p> <span class="exturl"><a class="exturl__link" href="https://www.goodsync.com/cn" target="_blank" rel="noopener">GoodSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款备份和文件同步程序。它用于在一台计算机上的两个目录之间，或计算机与另一个存储设备（如另一台计算机、可移动磁盘、闪存驱动器或智能手机）之间，或计算机与远程计算机或服务器之间同步文件。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/GoodSync_2021-01-30_09-05-56.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt; &lt;span class=&quot;exturl&quot;&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
   </entry>

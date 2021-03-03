@@ -52,18 +52,14 @@
     <title>好用的浏览器插件推荐</title>
     <link href="http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
-    <published>2021-03-01T17:49:01.000Z</published>
-    <updated>2021-03-01T11:22:14.000Z</updated>
+    <published>2021-03-01T09:49:01.000Z</published>
+    <updated>2021-03-03T07:08:01.711Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前沿">          <a href="#前沿" class="heading-link"><i class="fas fa-link"></i></a>前沿</h3>      <p>浏览器是绝大多数人必备的软件，当然也就少不了必备的插件。好用的插件不仅可以帮你更好更快的完成工作，还能节省时间。</p><p>以下是我自用的浏览器插件，实测好用——以下排名不分先后</p><hr><p>No1.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">AdGuard AdBlocker</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>   <a id="more"></a></p><p>屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/adguard_2021-03-01_18-19-35.png" alt=""></p><p>No2.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">Cookie AutoDelete</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>当一个标签页关闭时，任何未被使用的cookies都会被自动删除。将信任的cookie列入白名单，同时删除其余的cookie。支持容器标签。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/cookieAutodelete_2021-03-01_18-27-18.png" alt=""><br>No3.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/onetab/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=collection" target="_blank" rel="noopener">OneTab</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>将标签页转换为列表，减少浏览器内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OneTab_2021-03-01_18-41-24.png" alt=""><br>No4.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/darkreader/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">Dark Reader</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>这款护眼扩展可以实现夜间模式，Dark Reader将明亮的颜色反转，使其具有高对比度，易于在夜间阅读。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dark_2021-03-01_18-50-33.png" alt=""><br>No5.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">uBlock Origin</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>一个高效的广谱内容拦截器。占用极少的CPU和内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ub_2021-03-01_18-50-05.png" alt=""></p><p>以上是火狐浏览器插件</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>以下是我自用的浏览器插件，实测好用——以下排名不分先后</p><hr><p>No1.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">AdGuard AdBlocker</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>   <a id="more"></a></p><p>屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/adguard_2021-03-01_18-19-35.png" alt=""></p><p>No2.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">Cookie AutoDelete</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>当一个标签页关闭时，任何未被使用的cookies都会被自动删除。将信任的cookie列入白名单，同时删除其余的cookie。支持容器标签。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/cookieAutodelete_2021-03-01_18-27-18.png" alt=""><br>No3.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/onetab/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=collection" target="_blank" rel="noopener">OneTab</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>将标签页转换为列表，减少浏览器内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OneTab_2021-03-01_18-41-24.png" alt=""><br>No4.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/darkreader/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">Dark Reader</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>这款护眼扩展可以实现夜间模式，Dark Reader将明亮的颜色反转，使其具有高对比度，易于在夜间阅读。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dark_2021-03-01_18-50-33.png" alt=""><br>No5.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">uBlock Origin</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>一个高效的广谱内容拦截器。占用极少的CPU和内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ub_2021-03-01_18-50-05.png" alt=""></p><p>以上是火狐浏览器插件</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;前沿&quot;&gt;
-          &lt;a href=&quot;#前沿&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;前沿&lt;/h3&gt;
-      
-&lt;p&gt;浏览器是绝大多数人必备的软件，当然也就少不了必备的插件。好用的插件不仅可以帮你更好更快的完成工作，还能节省时间。&lt;/p&gt;
-&lt;p&gt;以下是我自用的浏览器插件，实测好用——以下排名不分先后&lt;/p&gt;
+      &lt;p&gt;以下是我自用的浏览器插件，实测好用——以下排名不分先后&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;No1.&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;amp;utm_medium=referral&amp;amp;utm_content=search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AdGuard AdBlocker&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
     
@@ -131,8 +127,8 @@
   
   <entry>
     <title>虚拟机安装开源增强工具</title>
-    <link href="http://kisskisso.com/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
-    <id>http://kisskisso.com/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</id>
+    <link href="http://kisskisso.com/2021/02/24/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>http://kisskisso.com/2021/02/24/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</id>
     <published>2021-02-23T18:57:17.000Z</published>
     <updated>2021-03-01T06:50:59.000Z</updated>
     
@@ -156,8 +152,8 @@
   
   <entry>
     <title>fcitx5的安裝與配置</title>
-    <link href="http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/"/>
-    <id>http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/</id>
+    <link href="http://kisskisso.com/2021/02/24/%E5%AE%89%E8%A3%85fcitx5/"/>
+    <id>http://kisskisso.com/2021/02/24/%E5%AE%89%E8%A3%85fcitx5/</id>
     <published>2021-02-23T18:52:23.000Z</published>
     <updated>2021-02-26T09:40:20.000Z</updated>
     
@@ -181,8 +177,8 @@
   
   <entry>
     <title>Arch删除卸载命令</title>
-    <link href="http://kisskisso.com/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/"/>
-    <id>http://kisskisso.com/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/</id>
+    <link href="http://kisskisso.com/2021/02/24/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/"/>
+    <id>http://kisskisso.com/2021/02/24/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/</id>
     <published>2021-02-23T18:44:11.000Z</published>
     <updated>2021-03-01T06:59:05.000Z</updated>
     
@@ -491,8 +487,8 @@
   
   <entry>
     <title>Linux安装配置</title>
-    <link href="http://kisskisso.com/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-    <id>http://kisskisso.com/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://kisskisso.com/2021/02/02/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>http://kisskisso.com/2021/02/02/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
     <published>2021-02-01T20:51:30.000Z</published>
     <updated>2021-03-01T05:04:40.000Z</updated>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-03-01T11:22:14.000Z</updated>
+  <updated>2021-03-03T05:27:35.000Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RealTimeSync自动化任务</title>
+    <link href="http://kisskisso.com/2021/03/03/RealTimeSync%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://kisskisso.com/2021/03/03/RealTimeSync%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%BB%E5%8A%A1/</id>
+    <published>2021-03-03T12:56:27.000Z</published>
+    <updated>2021-03-03T05:27:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一步：选择需要同步的文件夹。">          <a href="#第一步：选择需要同步的文件夹。" class="heading-link"><i class="fas fa-link"></i></a>第一步：选择需要同步的文件夹。</h3>      <p>打开FreeFileSync,点击左侧的“浏览”，选择你想要进行镜像的其中一个文件夹。同样的操作，在右侧添加第二个文件夹 。这样，后面需要进行操作的两个主体就已经设置好了。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9_2021-03-03_13-11-32.png" alt=""></p>        <h3 id="第二步：设置同步规则">          <a href="#第二步：设置同步规则" class="heading-link"><i class="fas fa-link"></i></a>第二步：设置同步规则</h3>      <p>点击右上角的绿色 “设置” 符号，选择我们需要的同步配置，点击确定</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F_2021-03-03_13-10-12.png" alt=""></p><p>选择合适的同步规则</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E8%A7%84%E5%88%99_2021-03-03_13-15-03.png" alt=""></p><p>之后，点击 “另存为批处理作业” 图标</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%85%8D%E7%BD%AE_2021-03-03_13-17-25.png" alt=""></p><p>勾选 “以最小化运行” 和“自动关闭”两项，这样所有操作都是在后台运行，不会打扰我们的工作，否则成功后会有弹窗提示！然后点击“另存为”，将这个批处理任务存储到你能找得到的地方</p>        <h3 id="第三步：建立同步任务">          <a href="#第三步：建立同步任务" class="heading-link"><i class="fas fa-link"></i></a>第三步：建立同步任务</h3>      <p>这里很简单，打开RealTimeSync，直接将刚才存储的批处理文件拖到命令行。</p><p>然后点击开始</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;第一步：选择需要同步的文件夹。&quot;&gt;
+          &lt;a href=&quot;#第一步：选择需要同步的文件夹。&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第一步：选择需要同步的文件夹。&lt;/h3&gt;
+    
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>好用的浏览器插件推荐</title>
@@ -554,33 +580,6 @@
         &lt;p&gt;自动更新----进入博客根目录运行&lt;code&gt;npm update&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;手动更新----进入博客根目录运行&lt;code&gt;npm outdated&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;运行后查看Hexo和插件的最新版本然后修改根目录下的&lt;code&gt;package
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vim下方向键无法移动光标</title>
-    <link href="http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/"/>
-    <id>http://kisskisso.com/2021/01/31/vim%E4%B8%8B%E6%96%B9%E5%90%91%E9%94%AE%E6%97%A0%E6%B3%95%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87/</id>
-    <published>2021-01-31T09:54:08.000Z</published>
-    <updated>2021-01-31T10:00:23.740Z</updated>
-    
-    <content type="html"><![CDATA[<p>方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改</p><p>方式二：下载vim自动的vim是精简版<code>sudo apt-get install vim</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;方式一：可以使用【H左】【K上】【J下】【L右】移动光标修改&lt;/p&gt;
-&lt;p&gt;方式二：下载vim自动的vim是精简版&lt;code&gt;sudo apt-get install vim&lt;/code&gt;&lt;/p&gt;
-&lt;script&gt;
-        document.querySelecto
       
     
     </summary>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kisskisso.com/"/>
-  <updated>2021-03-03T05:35:33.000Z</updated>
+  <updated>2021-03-05T10:30:20.000Z</updated>
   <id>http://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欢乐好声音合集</title>
+    <link href="http://kisskisso.com/2021/03/05/%E6%AC%A2%E4%B9%90%E5%A5%BD%E5%A3%B0%E9%9F%B3%E5%90%88%E9%9B%86/"/>
+    <id>http://kisskisso.com/2021/03/05/%E6%AC%A2%E4%B9%90%E5%A5%BD%E5%A3%B0%E9%9F%B3%E5%90%88%E9%9B%86/</id>
+    <published>2021-03-05T18:05:51.000Z</published>
+    <updated>2021-03-05T10:30:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>NO.1 《Hallelujah》 Leonard Cohen 《欢乐好声音》中的大象米娜</p><p>NO.2 《Wake Me Up Before You Go Go》Wham!  富二代绵羊的手机铃声。</p><p>NO.3 《Under Pressure》 David Bowie/Queen 考拉老板Buster Moon重新振作并决定和小伙伴们再大干一票的背景音乐</p><p>NO.4 《Stay with me》Sam Smith 《欢乐好声音》里面，猩猩强尼演唱</p><p>NO.5 《Firework》Katy Perry “猪妈妈”威瑟斯彭演唱了Katy Perry的《Firework》。</p><p>NO. 6 《All of me》John Legend   由塔伦·埃格顿（猩猩）演唱</p><p>NO.7 《I’m Still Standing》 Elton John  演唱这首歌的猩猩Johnn</p><p>NO.8 《My Way》Frank Sinatra   老鼠麦克  <a id="more"></a></p><p>NO.9 《Don’t You Worry 'Bout A Thing》Stevie Wonder  大象米娜</p><p>NO.10 《True Colors》Cyndi Lauper  猪妈妈</p><p>NO.11 《Kiss From A Rose》 Seal  绵羊试音</p><p>NO.12 《Anaconda》Nicki Minaj  浴袍的兔子</p><p>NO.13 《Call Me Maybe》Carly Rae Jepsen  艾希</p><p>NO.14 《Kira Kira Killer》Kearny Pamyu Pamyu  小熊猫</p><p>NO.15 《Shake It Off》Taylor Swift  猪妈妈和猪先生</p><p>NO.16 《Golden Slumbers》The Beatles   嗓门Jennifer Hudson演唱</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;NO.1 《Hallelujah》 Leonard Cohen 《欢乐好声音》中的大象米娜&lt;/p&gt;
+&lt;p&gt;NO.2 《Wake Me Up Before You Go Go》Wham!  富二代绵羊的手机铃声。&lt;/p&gt;
+&lt;p&gt;NO.3 《Under Pressure》 David Bowie/Queen 考拉老板Buster Moon重新振作并决定和小伙伴们再大干一票的背景音乐&lt;/p&gt;
+&lt;p&gt;NO.4 《Stay with me》Sam Smith 《欢乐好声音》里面，猩猩强尼演唱&lt;/p&gt;
+&lt;p&gt;NO.5 《Firework》Katy Perry “猪妈妈”威瑟斯彭演唱了Katy Perry的《Firework》。&lt;/p&gt;
+&lt;p&gt;NO. 6 《All of me》John Legend   由塔伦·埃格顿（猩猩）演唱&lt;/p&gt;
+&lt;p&gt;NO.7 《I’m Still Standing》 Elton John  演唱这首歌的猩猩Johnn&lt;/p&gt;
+&lt;p&gt;NO.8 《My Way》Frank Sinatra   老鼠麦克&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>RealTimeSync自动化任务</title>
@@ -52,16 +80,17 @@
     <title>好用的浏览器插件推荐</title>
     <link href="http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
-    <published>2021-03-01T09:49:01.000Z</published>
-    <updated>2021-03-03T07:08:01.711Z</updated>
+    <published>2021-03-01T17:49:01.000Z</published>
+    <updated>2021-03-05T10:31:57.000Z</updated>
     
-    <content type="html"><![CDATA[<p>以下是我自用的浏览器插件，实测好用——以下排名不分先后</p><hr><p>No1.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">AdGuard AdBlocker</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>   <a id="more"></a></p><p>屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/adguard_2021-03-01_18-19-35.png" alt=""></p><p>No2.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">Cookie AutoDelete</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>当一个标签页关闭时，任何未被使用的cookies都会被自动删除。将信任的cookie列入白名单，同时删除其余的cookie。支持容器标签。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/cookieAutodelete_2021-03-01_18-27-18.png" alt=""><br>No3.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/onetab/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=collection" target="_blank" rel="noopener">OneTab</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>将标签页转换为列表，减少浏览器内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OneTab_2021-03-01_18-41-24.png" alt=""><br>No4.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/darkreader/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">Dark Reader</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>这款护眼扩展可以实现夜间模式，Dark Reader将明亮的颜色反转，使其具有高对比度，易于在夜间阅读。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dark_2021-03-01_18-50-33.png" alt=""><br>No5.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">uBlock Origin</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>一个高效的广谱内容拦截器。占用极少的CPU和内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ub_2021-03-01_18-50-05.png" alt=""></p><p>以上是火狐浏览器插件</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>以下是我自用的浏览器插件，实测好用——以下排名不分先后</p><hr><p>No1.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">AdGuard AdBlocker</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。</p><a id="more"></a><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/adguard_2021-03-01_18-19-35.png" alt=""></p><p>No2.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">Cookie AutoDelete</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>当一个标签页关闭时，任何未被使用的cookies都会被自动删除。将信任的cookie列入白名单，同时删除其余的cookie。支持容器标签。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/cookieAutodelete_2021-03-01_18-27-18.png" alt=""><br>No3.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/onetab/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=collection" target="_blank" rel="noopener">OneTab</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>将标签页转换为列表，减少浏览器内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OneTab_2021-03-01_18-41-24.png" alt=""><br>No4.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/darkreader/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">Dark Reader</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>这款护眼扩展可以实现夜间模式，Dark Reader将明亮的颜色反转，使其具有高对比度，易于在夜间阅读。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dark_2021-03-01_18-50-33.png" alt=""><br>No5.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">uBlock Origin</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>一个高效的广谱内容拦截器。占用极少的CPU和内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ub_2021-03-01_18-50-05.png" alt=""></p><p>以上是火狐浏览器插件</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;以下是我自用的浏览器插件，实测好用——以下排名不分先后&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;No1.&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;amp;utm_medium=referral&amp;amp;utm_content=search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AdGuard AdBlocker&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。&lt;/p&gt;
     
     </summary>
     
@@ -556,32 +585,6 @@
         document.querySelectorAll(&#39;.github-emoji&#39;)
           .forEach(el =&gt; {
       
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何更新hexo和插件版本</title>
-    <link href="http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/"/>
-    <id>http://kisskisso.com/2021/01/31/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0hexo%E5%92%8C%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC/</id>
-    <published>2021-01-31T12:15:32.000Z</published>
-    <updated>2021-01-31T12:46:01.538Z</updated>
-    
-    <content type="html"><![CDATA[<p>自动更新----进入博客根目录运行<code>npm update</code></p><p>手动更新----进入博客根目录运行<code>npm outdated</code></p><p>运行后查看Hexo和插件的最新版本然后修改根目录下的<code>package.json</code>将对应的插件名和Hexo对应的版本号更新为要更新的版本号</p><p>开始更新----<code>npm install --save</code></p><p>查看版本号----<code>hexo version</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;自动更新----进入博客根目录运行&lt;code&gt;npm update&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;手动更新----进入博客根目录运行&lt;code&gt;npm outdated&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;运行后查看Hexo和插件的最新版本然后修改根目录下的&lt;code&gt;package
       
     
     </summary>

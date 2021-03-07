@@ -70,28 +70,24 @@
   </entry>
   
   <entry>
-    <title>RealTimeSync自动化任务</title>
+    <title>FreeFileSync同步软件</title>
     <link href="http://kisskisso.com/2021/03/03/RealTimeSync%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%BB%E5%8A%A1/"/>
     <id>http://kisskisso.com/2021/03/03/RealTimeSync%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%BB%E5%8A%A1/</id>
     <published>2021-03-03T12:56:27.000Z</published>
-    <updated>2021-03-03T05:35:33.000Z</updated>
+    <updated>2021-03-07T06:22:43.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="第一步：选择需要同步的文件夹。">          <a href="#第一步：选择需要同步的文件夹。" class="heading-link"><i class="fas fa-link"></i></a>第一步：选择需要同步的文件夹。</h3>      <p>打开FreeFileSync,点击左侧的“浏览”，选择你想要进行镜像的其中一个文件夹。同样的操作，在右侧添加第二个文件夹 。这样，后面需要进行操作的两个主体就已经设置好了。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9_2021-03-03_13-11-32.png" alt=""></p>        <h3 id="第二步：设置同步规则">          <a href="#第二步：设置同步规则" class="heading-link"><i class="fas fa-link"></i></a>第二步：设置同步规则</h3>      <p>点击右上角的绿色 “设置” 符号，选择我们需要的同步配置，点击确定</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F_2021-03-03_13-10-12.png" alt=""></p><p>选择合适的同步规则 <a id="more"></a></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E8%A7%84%E5%88%99_2021-03-03_13-15-03.png" alt=""></p><p>之后，点击 “另存为批处理作业” 图标</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%85%8D%E7%BD%AE_2021-03-03_13-17-25.png" alt=""></p><p>勾选 “以最小化运行” 和“自动关闭”两项，这样所有操作都是在后台运行，不会打扰我们的工作，否则成功后会有弹窗提示！然后点击“另存为”，将这个批处理任务存储到你能找得到的地方</p>        <h3 id="第三步：建立同步任务">          <a href="#第三步：建立同步任务" class="heading-link"><i class="fas fa-link"></i></a>第三步：建立同步任务</h3>      <p>这里很简单，打开RealTimeSync，直接将刚才存储的批处理文件拖到命令行。</p><p>然后点击开始</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p><span class="exturl"><a class="exturl__link" href="https://freefilesync.org/" target="_blank" rel="noopener">FreeFileSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款文件夹对比和同步软件，它可以创建和管理所有重要文件的备份副本。FreeFileSync不需要每次都复制每个文件，而是确定源文件夹和目标文件夹之间的差异，并只传输所需的最低数据量。FreeFileSync是一款开源软件，适用于Windows、macOS和Linux。</p><p>安装完FreeFileSync后桌面会有两个快捷软件</p><p>绿色的FreeFileSync是主体软件</p><p>红色的RealTimeSync是自动化，但需要配合主体软件使用</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Snipaste_2021-03-07_13-10-45.png" alt=""></p>        <h3 id="第一步：选择需要同步的文件夹。-more">          <a href="#第一步：选择需要同步的文件夹。-more" class="heading-link"><i class="fas fa-link"></i></a>第一步：选择需要同步的文件夹。<a id="more"></a></h3>      <p>打开FreeFileSync,点击左侧的“浏览”，选择你想要进行镜像的其中一个文件夹。同样的操作，在右侧添加第二个文件夹 。这样，后面需要进行操作的两个主体就已经设置好了。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9_2021-03-03_13-11-32.png" alt=""></p>        <h3 id="第二步：设置同步规则">          <a href="#第二步：设置同步规则" class="heading-link"><i class="fas fa-link"></i></a>第二步：设置同步规则</h3>      <p>点击右上角的绿色 “设置” 符号，选择我们需要的同步配置，点击确定</p>    <div class="note-plugin success">      <span class="note-plugin__icon note-plugin__icon--success">              <i class="fas fa-check-circle"></i>            </span>      <p>删除文件:回收站（不推荐）永久 (删除)    历史版本（推荐）可以单独放在其它文件夹里最好是新建一个文件夹</p>    </div>  <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F_2021-03-03_13-10-12.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E8%A7%84%E5%88%99_2021-03-03_13-15-03.png" alt=""></p>        <h3 id="第三步：设置比较规则">          <a href="#第三步：设置比较规则" class="heading-link"><i class="fas fa-link"></i></a>第三步：设置比较规则</h3>      <p>点击左上角的蓝色 “设置” 符号，选择我们需要的比较配置，点击确定</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%AF%94%E8%BE%83_2021-03-07_13-39-48.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%AF%94%E8%BE%83%E8%A7%84%E5%88%99_2021-03-07_13-40-28.png" alt=""></p>        <h3 id="第四步：点击-“另存为批处理作业”-图标">          <a href="#第四步：点击-“另存为批处理作业”-图标" class="heading-link"><i class="fas fa-link"></i></a>第四步：点击 “另存为批处理作业” 图标</h3>      <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%85%8D%E7%BD%AE_2021-03-03_13-17-25.png" alt=""></p><p>勾选 “以最小化运行” 和“自动关闭”两项，这样所有操作都是在后台运行，不会打扰我们的工作，否则成功后会有弹窗提示！然后点击“另存为”，将这个批处理任务存储到你能找得到的地方</p>        <h3 id="第五步：建立自动同步任务">          <a href="#第五步：建立自动同步任务" class="heading-link"><i class="fas fa-link"></i></a>第五步：建立自动同步任务</h3>      <p>这里很简单，打开RealTimeSync，直接将刚才存储的批处理文件拖到命令行。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E7%BA%A2%E8%89%B2%E8%BD%AF%E4%BB%B6_2021-03-07_13-51-09.png" alt=""></p><p>然后点击开始</p><hr><p>手动同步</p><p>只需要按 <code>Ctrl + s</code>保存到你能找得到的地方</p><p>点击右上角的同步就可以手动同步</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%89%8B%E5%8A%A8%E5%90%8C%E6%AD%A5_2021-03-07_14-13-45.png" alt=""></p><hr>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p><strong>注意事项</strong></p><p>1.备份最好选择一个单独的文件夹，不要直接选择盘符下</p><p>2.自动同步重启电脑后需要重新手动打开红色软件RealTimeSync</p><p>3.重启之后需要把存储的自动同步(.ffs_batch)的文件重新拖到命令行中</p><p>4.自动同步文件是.ffs_batch</p><p>5.手动同步文件是.ffs_gui</p>    </div>  <script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;第一步：选择需要同步的文件夹。&quot;&gt;
-          &lt;a href=&quot;#第一步：选择需要同步的文件夹。&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第一步：选择需要同步的文件夹。&lt;/h3&gt;
-      
-&lt;p&gt;打开FreeFileSync,点击左侧的“浏览”，选择你想要进行镜像的其中一个文件夹。同样的操作，在右侧添加第二个文件夹 。这样，后面需要进行操作的两个主体就已经设置好了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9_2021-03-03_13-11-32.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://freefilesync.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FreeFileSync&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;是一款文件夹对比和同步软件，它可以创建和管理所有重要文件的备份副本。FreeFileSync不需要每次都复制每个文件，而是确定源文件夹和目标文件夹之间的差异，并只传输所需的最低数据量。FreeFileSync是一款开源软件，适用于Windows、macOS和Linux。&lt;/p&gt;
+&lt;p&gt;安装完FreeFileSync后桌面会有两个快捷软件&lt;/p&gt;
+&lt;p&gt;绿色的FreeFileSync是主体软件&lt;/p&gt;
+&lt;p&gt;红色的RealTimeSync是自动化，但需要配合主体软件使用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Snipaste_2021-03-07_13-10-45.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-        &lt;h3 id=&quot;第二步：设置同步规则&quot;&gt;
-          &lt;a href=&quot;#第二步：设置同步规则&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第二步：设置同步规则&lt;/h3&gt;
-      
-&lt;p&gt;点击右上角的绿色 “设置” 符号，选择我们需要的同步配置，点击确定&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F_2021-03-03_13-10-12.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;选择合适的同步规则&lt;/p&gt;
+        &lt;h3 id=&quot;第一步：选择需要同步的文件夹。-more&quot;&gt;
+          &lt;a href=&quot;#第一步：选择需要同步的文件夹。-more&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第一步：选择需要同步的文件夹。&lt;/h3&gt;
     
     </summary>
     
@@ -103,8 +99,8 @@
   
   <entry>
     <title>好用的浏览器插件推荐</title>
-    <link href="http://kisskisso.com/2021/03/02/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://kisskisso.com/2021/03/02/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
+    <link href="http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://kisskisso.com/2021/03/01/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
     <published>2021-03-01T17:49:01.000Z</published>
     <updated>2021-03-05T10:31:57.000Z</updated>
     
@@ -181,8 +177,8 @@
   
   <entry>
     <title>虚拟机安装开源增强工具</title>
-    <link href="http://kisskisso.com/2021/02/24/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
-    <id>http://kisskisso.com/2021/02/24/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</id>
+    <link href="http://kisskisso.com/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>http://kisskisso.com/2021/02/23/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%BC%80%E6%BA%90%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</id>
     <published>2021-02-23T18:57:17.000Z</published>
     <updated>2021-03-01T06:50:59.000Z</updated>
     
@@ -206,8 +202,8 @@
   
   <entry>
     <title>fcitx5的安裝與配置</title>
-    <link href="http://kisskisso.com/2021/02/24/%E5%AE%89%E8%A3%85fcitx5/"/>
-    <id>http://kisskisso.com/2021/02/24/%E5%AE%89%E8%A3%85fcitx5/</id>
+    <link href="http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/"/>
+    <id>http://kisskisso.com/2021/02/23/%E5%AE%89%E8%A3%85fcitx5/</id>
     <published>2021-02-23T18:52:23.000Z</published>
     <updated>2021-02-26T09:40:20.000Z</updated>
     
@@ -231,8 +227,8 @@
   
   <entry>
     <title>Arch删除卸载命令</title>
-    <link href="http://kisskisso.com/2021/02/24/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/"/>
-    <id>http://kisskisso.com/2021/02/24/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/</id>
+    <link href="http://kisskisso.com/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/"/>
+    <id>http://kisskisso.com/2021/02/23/Arch%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4/</id>
     <published>2021-02-23T18:44:11.000Z</published>
     <updated>2021-03-01T06:59:05.000Z</updated>
     
@@ -541,8 +537,8 @@
   
   <entry>
     <title>Linux安装配置</title>
-    <link href="http://kisskisso.com/2021/02/02/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-    <id>http://kisskisso.com/2021/02/02/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://kisskisso.com/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>http://kisskisso.com/2021/02/01/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
     <published>2021-02-01T20:51:30.000Z</published>
     <updated>2021-03-01T05:04:40.000Z</updated>
     

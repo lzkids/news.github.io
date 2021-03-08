@@ -1,0 +1,627 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon.ico?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="Cygwin是：   GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。   提供实质性POSIX API功能的DLL（cygwin1.dll）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cygwin安装配置">
+<meta property="og:url" content="http://kisskisso.com/35930/index.html">
+<meta property="og:site_name" content="可好！可好？">
+<meta property="og:description" content="Cygwin是：   GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。   提供实质性POSIX API功能的DLL（cygwin1.dll）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%8B%E8%BD%BDCygwin.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%8B%E4%B8%80%E6%AD%A5.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%80%89%E6%8B%A9.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86png.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F%E6%BA%90%E7%9A%84%E9%80%89%E6%8B%A9.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%BC%B9%E5%87%BA%E6%A1%86.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/full.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dos2unix.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/wget.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/oh-my-zsh.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%BB%E9%A2%98%E5%90%8D%E7%A7%B0.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/i.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/wq.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E8%AF%AD%E8%A8%80.png">
+<meta property="article:published_time" content="2020-08-09T09:35:50.000Z">
+<meta property="article:modified_time" content="2021-01-26T08:53:50.000Z">
+<meta property="article:author" content="唯獨少了個字">
+<meta property="article:tag" content="Cygwin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%8B%E8%BD%BDCygwin.png"><title>Cygwin安装配置 | 可好！可好？</title><link ref="canonical" href="http://kisskisso.com/35930/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":true},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"simple","highlight":"ocean","wordWrap":true},
+  reward: true,
+  fancybox: true,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: {"avoidBanner":true},
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: {"switchPost":true},
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="可好！可好？" type="application/atom+xml">
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">可好！可好？</div><div class="header-banner-info__subtitle"></div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Cygwin安装配置</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="发表时间" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2020-08-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="修改时间" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2021-01-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon" data-popover="字数统计" data-popover-pos="up"><i class="far fa-file-word"></i></span><span class="post-meta-item__value">718</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon" data-popover="阅读时间" data-popover-pos="up"><i class="far fa-clock"></i></span><span class="post-meta-item__value">5分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="阅读次数" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p><a href="https://www.cygwin.com/" target="_blank" rel="noopener">Cygwin</a>是：</p>
+<ul>
+<li>
+<p>GNU和开放源代码工具的大量集合，它们提供的功能类似于 Windows上的 Linux发行版。</p>
+</li>
+<li>
+<p>提供实质性POSIX API功能的DLL（cygwin1.dll）。<a id="more"></a></p>
+
+        <h2 id="安装">
+          <a href="#安装" class="heading-link"><i class="fas fa-link"></i></a>安装</h2>
+      
+
+        <h3 id="1-下载Cygwin">
+          <a href="#1-下载Cygwin" class="heading-link"><i class="fas fa-link"></i></a>1.下载Cygwin</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下载Cygwin.png" style="zoom: 50%;">
+</li>
+</ul>
+
+        <h3 id="2-打开安装包">
+          <a href="#2-打开安装包" class="heading-link"><i class="fas fa-link"></i></a>2.打开安装包</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/下一步.png" style="zoom: 67%;">
+
+        <h3 id="3-按需选择">
+          <a href="#3-按需选择" class="heading-link"><i class="fas fa-link"></i></a>3.按需选择</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/选择.png" style="zoom:67%;">
+
+        <h3 id="4-选择安装目录">
+          <a href="#4-选择安装目录" class="heading-link"><i class="fas fa-link"></i></a>4.选择安装目录</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/安装目录.png" style="zoom: 80%;">
+
+        <h3 id="5-选择本地目录（里面文件可以删除）">
+          <a href="#5-选择本地目录（里面文件可以删除）" class="heading-link"><i class="fas fa-link"></i></a>5.选择本地目录（里面文件可以删除）</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/创建本地目录.png" style="zoom: 80%;">
+
+        <h3 id="6-设置代理">
+          <a href="#6-设置代理" class="heading-link"><i class="fas fa-link"></i></a>6.设置代理</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/设置代理png.png" style="zoom:80%;">
+
+        <h3 id="7-选择镜像源">
+          <a href="#7-选择镜像源" class="heading-link"><i class="fas fa-link"></i></a>7.选择镜像源</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/镜像源的选择.png" style="zoom:80%;">
+
+        <h3 id="8-下一步">
+          <a href="#8-下一步" class="heading-link"><i class="fas fa-link"></i></a>8.下一步</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/弹出框.png" style="zoom: 50%;">
+
+        <h3 id="9-下一步">
+          <a href="#9-下一步" class="heading-link"><i class="fas fa-link"></i></a>9.下一步</h3>
+      
+
+        <h3 id="10-完成">
+          <a href="#10-完成" class="heading-link"><i class="fas fa-link"></i></a>10.完成</h3>
+      
+
+        <h2 id="配置-需要安装（dos2unix、wget、lynx）">
+          <a href="#配置-需要安装（dos2unix、wget、lynx）" class="heading-link"><i class="fas fa-link"></i></a>配置 需要安装（dos2unix、wget、lynx）</h2>
+      
+
+        <h3 id="还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！">
+          <a href="#还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！" class="heading-link"><i class="fas fa-link"></i></a>还是打开安装程序按照安装过程到第8步(先不要关闭！！！先不要关闭！！！先不要关闭！！！)</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/full.png" style="zoom:67%;">
+<p>先从github克隆<a href="https://github.com/transcode-open/apt-cyg" target="_blank" rel="noopener">apt-cyg</a>  [git clone <span class="exturl"><a class="exturl__link" href="https://github.com/transcode-open/apt-cyg" target="_blank" rel="noopener">https://github.com/transcode-open/apt-cyg</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>]   <font color="#c91627" size="5">PS：在Cygwin上克隆</font></p>
+<p>cd apt-cyg   【进入apt-cyg目录】</p>
+<p>install  apt-cyg   /bin    【将apt-cyg安装到/bin目录下】</p>
+<p>下载东西【例如：apt-cyg install vim】，如果不出意外会出报错</p>
+<blockquote>
+<p>/usr/bin/apt-cyg:行25: $‘\r’: 未找到命令</p>
+<p>/usr/bin/apt-cyg:行121: 未预期的符号 <code>$'{\r'' 附近有语法错误</code></p>
+<p><code>'usr/bin/apt-cyg:行121:</code>function wget {</p>
+</blockquote>
+
+        <h3 id="需要下载dos2unix">
+          <a href="#需要下载dos2unix" class="heading-link"><i class="fas fa-link"></i></a>需要下载dos2unix</h3>
+      
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dos2unix.png" style="zoom:67%;">
+<p><strong>1.在终端输入cd …/…  &amp;&amp; ls</strong></p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91.png" alt=""></p>
+<ol start="2">
+<li><strong>cd usr/bin/</strong></li>
+</ol>
+<p>在终端输入 dos2unix apt-cyg会显示dos2unix: 正在转换文件 apt-cyg为Unix格式…，然后在运行apt-cyg install vim 就不会报上面的错误</p>
+<p>但是下载的时候会显示</p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/wget.png" alt=""></p>
+<p>或者  lynx: 未找到命令</p>
+<p>需要安装lynx和安装wget  和下载doswunix一样</p>
+<p>之后下一步下一步</p>
+
+        <h2 id="QAQ">
+          <a href="#QAQ" class="heading-link"><i class="fas fa-link"></i></a>QAQ:</h2>
+      
+
+        <h3 id="1-如何切换zsh？">
+          <a href="#1-如何切换zsh？" class="heading-link"><i class="fas fa-link"></i></a>1.如何切换zsh？</h3>
+      
+<p>vim  .bash_profile</p>
+<p>在最后一行加入exec zsh 保存退出</p>
+<p>【ps： 按i  最后一行输入exec zsh  按Esc  按:输入wq 按enter】</p>
+<p>重新打开</p>
+
+        <h3 id="2-切换zsh重新打开乱码？">
+          <a href="#2-切换zsh重新打开乱码？" class="heading-link"><i class="fas fa-link"></i></a>2.切换zsh重新打开乱码？</h3>
+      
+<p>需要安装oh-my-zsh</p>
+<p><a href="https://ohmyz.sh/" target="_blank" rel="noopener">官网</a>或者</p>
+<p>链接：<span class="exturl"><a class="exturl__link" href="https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1pKsMhbz1ahx1F9fWj57k_g</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>
+提取码：obva</p>
+<p>注：百度盘不一定是最新的(但可以更新到最新)</p>
+
+        <h3 id="3-如何更新oh-my-zsh？">
+          <a href="#3-如何更新oh-my-zsh？" class="heading-link"><i class="fas fa-link"></i></a>3.如何更新oh-my-zsh？</h3>
+      
+<p>omz update</p>
+
+        <h3 id="4-如何查看oh-my-zsh安装成功？">
+          <a href="#4-如何查看oh-my-zsh安装成功？" class="heading-link"><i class="fas fa-link"></i></a>4.如何查看oh-my-zsh安装成功？</h3>
+      
+<p>如下图显示就安装成功了</p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/oh-my-zsh.png" alt=""></p>
+<p>失败请安装git 【apt-cyg install git】</p>
+
+        <h3 id="5-主题如何获取？">
+          <a href="#5-主题如何获取？" class="heading-link"><i class="fas fa-link"></i></a>5.主题如何获取？</h3>
+      
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener">主题地址</a></p>
+
+        <h3 id="6-如何更改zsh主题？">
+          <a href="#6-如何更改zsh主题？" class="heading-link"><i class="fas fa-link"></i></a>6.如何更改zsh主题？</h3>
+      
+<p>终端输入vim  .zshrc</p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E4%B8%BB%E9%A2%98%E5%90%8D%E7%A7%B0.png" alt=""></p>
+<p>箭头处更改主题名称</p>
+
+        <h3 id="7-为什么不能输入-如何保存退出？">
+          <a href="#7-为什么不能输入-如何保存退出？" class="heading-link"><i class="fas fa-link"></i></a>7.为什么不能输入/如何保存退出？</h3>
+      
+<p>按 i 进入编辑   更改完成后 按 ESC   然后按 :  输入wq 按Enter 重新启动</p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/i.png" alt=""></p>
+<p>ps：别忘了按ESC</p>
+<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/wq.png" alt=""></p>
+
+        <h3 id="8-如何更改Cygwin语言设置？">
+          <a href="#8-如何更改Cygwin语言设置？" class="heading-link"><i class="fas fa-link"></i></a>8.如何更改Cygwin语言设置？</h3>
+      
+<p>终端任意位置点击鼠标右键</p>
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/设置.png" style="zoom: 55%;">
+<p>点击Options （看图UI language选择语言）</p>
+<img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/语言.png">
+<p>选择（zh_CN）完之后点击Apply</p>
+
+        <h3 id="9-如何调整窗口大小（不是关闭恢复原状）？">
+          <a href="#9-如何调整窗口大小（不是关闭恢复原状）？" class="heading-link"><i class="fas fa-link"></i></a>9.如何调整窗口大小（不是关闭恢复原状）？</h3>
+      
+<p>设置 -窗口（调整窗口到合适大小）-点击当前大小—然后应用</p>
+
+        <h3 id="10-如何打开Windows中的文件-文件夹？">
+          <a href="#10-如何打开Windows中的文件-文件夹？" class="heading-link"><i class="fas fa-link"></i></a>10.如何打开Windows中的文件/文件夹？</h3>
+      
+<p><em>cygstart</em>  xxx</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://kisskisso.com">唯獨少了個字</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://kisskisso.com/35930/">http://kisskisso.com/35930/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://kisskisso.com/tags/Cygwin/">Cygwin</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194308.jpg"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/IMG_20210125_194619.jpg"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/27784/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">vuepress上手</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/5652/"><span class="paginator-prev__text">如何部署vuepress</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">
+          安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-下载Cygwin"><span class="toc-number">1.1.</span> <span class="toc-text">
+          1.下载Cygwin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-打开安装包"><span class="toc-number">1.2.</span> <span class="toc-text">
+          2.打开安装包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-按需选择"><span class="toc-number">1.3.</span> <span class="toc-text">
+          3.按需选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-选择安装目录"><span class="toc-number">1.4.</span> <span class="toc-text">
+          4.选择安装目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-选择本地目录（里面文件可以删除）"><span class="toc-number">1.5.</span> <span class="toc-text">
+          5.选择本地目录（里面文件可以删除）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-设置代理"><span class="toc-number">1.6.</span> <span class="toc-text">
+          6.设置代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-选择镜像源"><span class="toc-number">1.7.</span> <span class="toc-text">
+          7.选择镜像源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-下一步"><span class="toc-number">1.8.</span> <span class="toc-text">
+          8.下一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-下一步"><span class="toc-number">1.9.</span> <span class="toc-text">
+          9.下一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-完成"><span class="toc-number">1.10.</span> <span class="toc-text">
+          10.完成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-需要安装（dos2unix、wget、lynx）"><span class="toc-number">2.</span> <span class="toc-text">
+          配置 需要安装（dos2unix、wget、lynx）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#还是打开安装程序按照安装过程到第8步-先不要关闭！！！先不要关闭！！！先不要关闭！！！"><span class="toc-number">2.1.</span> <span class="toc-text">
+          还是打开安装程序按照安装过程到第8步(先不要关闭！！！先不要关闭！！！先不要关闭！！！)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#需要下载dos2unix"><span class="toc-number">2.2.</span> <span class="toc-text">
+          需要下载dos2unix</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#QAQ"><span class="toc-number">3.</span> <span class="toc-text">
+          QAQ:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-如何切换zsh？"><span class="toc-number">3.1.</span> <span class="toc-text">
+          1.如何切换zsh？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-切换zsh重新打开乱码？"><span class="toc-number">3.2.</span> <span class="toc-text">
+          2.切换zsh重新打开乱码？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-如何更新oh-my-zsh？"><span class="toc-number">3.3.</span> <span class="toc-text">
+          3.如何更新oh-my-zsh？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-如何查看oh-my-zsh安装成功？"><span class="toc-number">3.4.</span> <span class="toc-text">
+          4.如何查看oh-my-zsh安装成功？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-主题如何获取？"><span class="toc-number">3.5.</span> <span class="toc-text">
+          5.主题如何获取？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-如何更改zsh主题？"><span class="toc-number">3.6.</span> <span class="toc-text">
+          6.如何更改zsh主题？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-为什么不能输入-如何保存退出？"><span class="toc-number">3.7.</span> <span class="toc-text">
+          7.为什么不能输入&#x2F;如何保存退出？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-如何更改Cygwin语言设置？"><span class="toc-number">3.8.</span> <span class="toc-text">
+          8.如何更改Cygwin语言设置？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-如何调整窗口大小（不是关闭恢复原状）？"><span class="toc-number">3.9.</span> <span class="toc-text">
+          9.如何调整窗口大小（不是关闭恢复原状）？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-如何打开Windows中的文件-文件夹？"><span class="toc-number">3.10.</span> <span class="toc-text">
+          10.如何打开Windows中的文件&#x2F;文件夹？</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/223.png" alt="avatar"></div><p class="sidebar-ov-author__text">唯獨少了個字</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/lzkids" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">252</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">106</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>唯獨少了個字</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="访问人数"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="浏览总量"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div>我爱我的生活，更爱美好的事物。希望一切安好</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,0" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function initSearch() {
+  var isXML = true;
+  var search_path = 'search.json';
+
+  if (!search_path) {
+    search_path = 'search.xml';
+  } else if (/json$/i.test(search_path)) {
+    isXML = false;
+  }
+
+  var path = '/' + search_path;
+  $.ajax({
+    url: path,
+    dataType: isXML ? 'xml' : 'json',
+    async: true,
+    success: function (res) {
+      var datas = isXML ? $('entry', res).map(function () {
+        // 将 XML 转为 JSON
+        return {
+          title: $('title', this).text(),
+          content: $('content', this).text(),
+          url: $('url', this).text()
+        };
+      }).get() : res;
+      var $input = $('.search-input input');
+      var $result = $('.search-results');
+      // 搜索对象（标题、内容）的权重，影响显示顺序
+      var WEIGHT = { title: 100, content: 1 };
+      var searchPost = function () {
+        var searchText = $input.val().toLowerCase().trim();
+        // 根据空白字符分隔关键字
+        var keywords = searchText.split(/[\s]+/);
+        // 搜索结果
+        var matchPosts = [];
+
+        // 有多个关键字时，将原文字整个保存下来
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        // 防止未输入字符时搜索
+        if (searchText.length > 0) {
+          datas.forEach(function (data) {
+            var isMatch  = false;
+            // 没有标题的文章使用预设的 i18n 变量代替
+            var title = (data.title && data.title.trim()) || '[ 文章无标题 ]';
+            var titleLower = title && title.toLowerCase();
+            // 删除 HTML 标签 和 所有空白字符
+            var content = data.content && data.content.replace(/<[^>]+>/g, '');
+            var contentLower = content && content.toLowerCase();
+            // 删除重复的 /
+            var postURL = data.url && decodeURI(data.url).replace(/\/{2,}/g, '/');
+            // 标题中匹配到的关键词
+            var titleHitSlice = [];
+            // 内容中匹配到的关键词
+            var contentHitSlice = [];
+
+            keywords.forEach(function (keyword) {
+              /**
+              * 获取匹配的关键词的索引
+              * @param {String} keyword 要匹配的关键字
+              * @param {String} text 原文字
+              * @param {Boolean} caseSensitive 是否区分大小写
+              * @param {Number} weight 匹配对象的权重。权重大的优先显示
+              * @return {Array}
+              */
+              function getIndexByword (word, text, caseSensitive, weight) {
+                if (!word || !text) {
+                  return [];
+                };
+
+                var startIndex = 0; // 每次匹配的开始索引
+                var index = -1;     // 匹配到的索引值
+                var result = [];    // 匹配结果
+
+                if (!caseSensitive) {
+                  word = word.toLowerCase();
+                  text = text.toLowerCase();
+                }
+
+                while((index = text.indexOf(word, startIndex)) !== -1) {
+                  var hasMatch = false;
+                  // 索引位置相同的关键词，保留长度较长的
+                  titleHitSlice.forEach(function (hit) {
+                    if (hit.index === index && hit.word.length < word.length) {
+                      hit.word = word;
+                      hasMatch = true;
+                    }
+                  });
+                  startIndex = index + word.length;
+                  !hasMatch && result.push({ index: index, word: word, weight: weight });
+                }
+                return result;
+              }
+              titleHitSlice = titleHitSlice.concat(getIndexByword(keyword, titleLower, false, WEIGHT.title));
+              contentHitSlice = contentHitSlice.concat(getIndexByword(keyword, contentLower, false, WEIGHT.content));
+            });
+
+            var hitTitle = titleHitSlice.length;
+            var hitContent = contentHitSlice.length;
+
+            if (hitTitle > 0 || hitContent > 0) {
+              isMatch = true;
+            }
+            if (isMatch) {
+              ;[titleHitSlice, contentHitSlice].forEach(function (hit) {
+                // 按照匹配文字的索引的递增顺序排序
+                hit.sort(function (left, right) {
+                  return left.index - right.index;
+                });
+              });
+              /**
+              * 给文本中匹配到的关键词添加标记，从而进行高亮显示
+              * @param {String} text 原文本
+              * @param {Array} hitSlice 匹配项的索引信息
+              * @param {Number} start 开始索引
+              * @param {Number} end 结束索引
+              * @return {String}
+              */
+              function highlightKeyword (text, hitSlice, start, end) {
+                if (!text || !hitSlice || !hitSlice.length) {
+                  return;
+                }
+
+                var result = '';
+                var startIndex = start;
+                var endIndex = end;
+                hitSlice.forEach(function (hit) {
+                  if (hit.index < startIndex) {
+                    return;
+                  }
+
+                  var hitWordEnd = hit.index + hit.word.length;
+                  result += text.slice(startIndex, hit.index);
+                  result += '<b>' + text.slice(hit.index, hitWordEnd) + '</b>';
+                  startIndex = hitWordEnd;
+                });
+                result += text.slice(startIndex, endIndex);
+                return result;
+              }
+
+              var postData = {};
+              // 文章总的搜索权重
+              var postWeight = titleHitSlice.length * WEIGHT.title + contentHitSlice.length * WEIGHT.content;
+              // 标记匹配关键词后的标题
+              var postTitle = highlightKeyword(title, titleHitSlice, 0, title.length) || title;
+              // 标记匹配关键词后的内容
+              var postContent;
+              // 显示内容的长度
+              var SHOW_WORD_LENGTH = 200;
+              // 命中关键词前的字符显示长度
+              var SHOW_WORD_FRONT_LENGTH = 20;
+              var SHOW_WORD_END_LENGTH = SHOW_WORD_LENGTH - SHOW_WORD_FRONT_LENGTH;
+
+              // 截取匹配的第一个字符，前后共 200 个字符来显示
+              if (contentHitSlice.length > 0) {
+                var firstIndex = contentHitSlice[0].index;
+                var start = firstIndex > SHOW_WORD_FRONT_LENGTH ? firstIndex - SHOW_WORD_FRONT_LENGTH : 0;
+                var end = firstIndex + SHOW_WORD_END_LENGTH;
+                postContent = highlightKeyword(content, contentHitSlice, start, end);
+              } else { // 未匹配到内容，直接截取前 200 个字符来显示
+                postContent = content.slice(0, SHOW_WORD_LENGTH);
+              }
+              postData.title = postTitle;
+              postData.content = postContent;
+              postData.url = postURL;
+              postData.weight = postWeight;
+              matchPosts.push(postData);
+            }
+          });
+        }
+
+        var resultInnerHtml = '';
+        if (matchPosts.length) {
+          // 按权重递增的顺序排序，使权重大的优先显示
+          matchPosts.sort(function (left, right) {
+            return right.weight - left.weight;
+          });
+          resultInnerHtml += '<ul>';
+          matchPosts.forEach(function (post) {
+            resultInnerHtml += '<li><a class="search-results-title" href="' + post.url + '">';
+            resultInnerHtml += post.title;
+            resultInnerHtml += '</a><div class="search-results-content">';
+            resultInnerHtml += post.content;
+            resultInnerHtml += '</div></li>';
+          });
+          resultInnerHtml += '</ul>';
+        } else {
+          resultInnerHtml += '<div class="search-results-none"><i class="far fa-meh"></i></div>';
+        }
+        $result.html(resultInnerHtml);
+      };
+      $input.on('input', searchPost);
+      $input.on('keyup', function (e) {
+        if (e.keyCode === Stun.utils.codeToKeyCode('Enter')) {
+          searchPost();
+        }
+      });
+    }
+  });
+}
+
+function closeSearch () {
+  $('body').css({ overflow: 'auto' });
+  $('.search-popup').css({ display: 'none' });
+  $('.search-mask').css({ display: 'none' });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  Stun.utils.pjaxReloadLocalSearch = function () {
+    $('.header-nav-search').on('click', function (e) {
+      e.stopPropagation();
+      $('body').css('overflow', 'hidden');
+      $('.search-popup')
+        .velocity('stop')
+        .velocity('transition.expandIn', {
+          duration: 300,
+          complete: function () {
+            $('.search-popup input').focus();
+          }
+        });
+      $('.search-mask')
+        .velocity('stop')
+        .velocity('transition.fadeIn', {
+          duration: 300
+        });
+
+      initSearch();
+    });
+    $('.search-mask, .search-close').on('click', function () {
+      closeSearch();
+    });
+    $(document).on('keydown', function (e) {
+      // Escape <=> 27
+      if (e.keyCode === Stun.utils.codeToKeyCode('Escape')) {
+        closeSearch();
+      }
+    });
+  };
+
+  Stun.utils.pjaxReloadLocalSearch();
+}, false);
+
+function safeOpenUrl(url) {
+  var newTab = window.open();
+  newTab.opener = null;
+  newTab.location = url;
+}
+
+function extSearch(engine) {
+  var engines = {
+    google: 'https://www.google.com/search?q=',
+    bing: 'https://cn.bing.com/search?q=',
+    baidu: 'https://www.baidu.com/s?ie=UTF-8&wd=',
+  };
+  var host = window.location.host;
+  var query = $('.search-input input').val().toLowerCase().trim();
+  var uri = engines[engine] + query + ' site:' + host;
+
+  if (query) {
+    safeOpenUrl(uri);
+  } else {
+    Stun.utils.popAlert('warning', '请输入字符');
+  }
+}
+
+var assistSearchList = window.CONFIG.assistSearch;
+
+if (Array.isArray(assistSearchList)) {
+  assistSearchList.forEach(function (name) {
+    document.querySelector('.search-btns-item--' + name).addEventListener('click', function () {
+      extSearch(name);
+    }, false);
+  });
+}</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
+  // 加载进度条的计时器
+  var loadingTimer = null;
+
+  // 重置页面 Y 方向上的滚动偏移量
+  document.addEventListener('pjax:send', function () {
+    $('.header-nav-menu').removeClass('show');
+    if (CONFIG.pjax && CONFIG.pjax.avoidBanner) {
+      $('html').velocity('scroll', {
+        duration: 500,
+        offset: $('#header').height(),
+        easing: 'easeInOutCubic'
+      });
+    }
+
+    var loadingBarWidth = 20;
+    var MAX_LOADING_WIDTH = 95;
+
+    $('.loading-bar').addClass('loading');
+    $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    clearInterval(loadingTimer);
+    loadingTimer = setInterval(function () {
+      loadingBarWidth += 3;
+      if (loadingBarWidth > MAX_LOADING_WIDTH) {
+        loadingBarWidth = MAX_LOADING_WIDTH;
+      }
+      $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    }, 500);
+  }, false);
+
+  window.addEventListener('pjax:complete', function () {
+    clearInterval(loadingTimer);
+    $('.loading-bar__progress').css('width', '100%');
+    $('.loading-bar').removeClass('loading');
+    setTimeout(function () {
+      $('.loading-bar__progress').css('width', '0');
+    }, 400);
+    $('link[rel=prefetch], script[data-pjax-rm]').each(function () {
+      $(this).remove();
+    });
+    $('script[data-pjax], #pjax-reload script').each(function () {
+      $(this).parent().append($(this).remove());
+    });
+
+    if (Stun.utils.pjaxReloadBoot) {
+      Stun.utils.pjaxReloadBoot();
+    }
+    if (Stun.utils.pjaxReloadScroll) {
+      Stun.utils.pjaxReloadScroll();
+    }
+    if (Stun.utils.pjaxReloadSidebar) {
+      Stun.utils.pjaxReloadSidebar();
+    }
+    if (false) {
+      if (Stun.utils.pjaxReloadHeader) {
+        Stun.utils.pjaxReloadHeader();
+      }
+      if (Stun.utils.pjaxReloadScrollIcon) {
+        Stun.utils.pjaxReloadScrollIcon();
+      }
+      if (Stun.utils.pjaxReloadLocalSearch) {
+        Stun.utils.pjaxReloadLocalSearch();
+      }
+    }
+  }, false);
+}, false);</script><div id="pjax-reload"><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script></div><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js" data-pjax=""></script><script src="https://cdn.jsdelivr.net/npm/js-md5@latest/src/md5.min.js" data-pjax=""></script><script data-pjax="">function loadGitalk () {
+  if (!document.getElementById('gitalk-container')) {
+    return;
+  }
+
+  var gitalk = new Gitalk({
+    id: md5(window.location.pathname.slice(1)),
+    clientID: 'c37c9472be421ad20a04',
+    clientSecret: '9a4c40c3c8595ac7f383f89ef3b810d8a6a34e9f',
+    repo: 'MyCs',
+    owner: 'lzkids',
+    admin: ['lzkids'],
+    distractionFreeMode: 'true',
+    language: 'zh-CN'
+  });
+  gitalk.render('gitalk-container');
+}
+
+if (true) {
+  loadGitalk();
+} else {
+  window.addEventListener('DOMContentLoaded', loadGitalk, false);
+}</script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script><script type="application/json" src="/search.json"></script></body></html>

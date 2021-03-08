@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://kisskisso.com/"/>
-  <updated>2021-03-07T11:01:33.597Z</updated>
-  <id>http://kisskisso.com/</id>
+  <link href="https://kisskisso.com/"/>
+  <updated>2021-03-08T10:04:36.877Z</updated>
+  <id>https://kisskisso.com/</id>
   
   <author>
     <name>唯獨少了個字</name>
@@ -17,9 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>自动初始化Gitalk评论</title>
+    <link href="https://kisskisso.com/42664/"/>
+    <id>https://kisskisso.com/42664/</id>
+    <published>2021-03-08T09:31:50.000Z</published>
+    <updated>2021-03-08T10:04:36.877Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一步：创建js文件">          <a href="#第一步：创建js文件" class="heading-link"><i class="fas fa-link"></i></a>第一步：创建js文件</h3>      <p>在根目录下新建一个<code>gitalk.init.js</code>文件</p>    <div class="note-plugin default no-icon">            <p>如果名字感觉太长可以自己命名</p>    </div>          <h3 id="第二步：安装依赖包">          <a href="#第二步：安装依赖包" class="heading-link"><i class="fas fa-link"></i></a>第二步：安装依赖包</h3>      <figure class="highlight cmd"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install cheerio --save</span><br><span class="line">npm install request --save</span><br><span class="line">npm install xml-parser --save</span><br><span class="line">npm install yamljs --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin success no-icon">            <p><strong>一步到位</strong></p><p><code>npm  install  cheerio request xml-parser yamljs hexo-generator-sitemap  --save</code></p>    </div>  <a id="more"></a>        <h3 id="第三步：修改站点根目录下的-config-yml添加如下代码">          <a href="#第三步：修改站点根目录下的-config-yml添加如下代码" class="heading-link"><i class="fas fa-link"></i></a>第三步：修改站点根目录下的<code>_config.yml</code>添加如下代码</h3>      <figure class="highlight yaml"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo sitemap网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="attr">rel:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin danger no-icon">            <p>把_config.yml站点网址的url改成https</p>    </div>          <h3 id="第四步：复制代码">          <a href="#第四步：复制代码" class="heading-link"><i class="fas fa-link"></i></a>第四步：复制代码</h3>      <p>根据需求修改<font color="red">config</font>里的内容</p><figure class="highlight js"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="keyword">const</span> xmlParser = <span class="built_in">require</span>(<span class="string">"xml-parser"</span>);</span><br><span class="line"><span class="keyword">const</span> YAML = <span class="built_in">require</span>(<span class="string">"yamljs"</span>);</span><br><span class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</span><br><span class="line"><span class="keyword">const</span> crypto = <span class="built_in">require</span>(<span class="string">'crypto'</span>);</span><br><span class="line"><span class="comment">// 根据自己的情况进行配置</span></span><br><span class="line"><span class="keyword">const</span> config = {</span><br><span class="line">    username: <span class="string">"name"</span>, <span class="comment">// GitHub 用户名</span></span><br><span class="line">    token: <span class="string">"token"</span>,  <span class="comment">// GitHub Token</span></span><br><span class="line">    repo: <span class="string">"blogtalk"</span>,  <span class="comment">// 存放 issues的git仓库</span></span><br><span class="line">    <span class="comment">// sitemap.xml的路径，gitalk.init.js放置在根目录下，无需修改，其他情况自行处理</span></span><br><span class="line">    sitemapUrl: path.resolve(__dirname, <span class="string">"./public/sitemap.xml"</span>),</span><br><span class="line">    kind: <span class="string">"Gitalk"</span>,  <span class="comment">// "Gitalk" or "Gitment"</span></span><br><span class="line">};</span><br><span class="line"><span class="keyword">let</span> issuesUrl = <span class="string">`https://api.github.com/repos/<span class="subst">${config.username}</span>/<span class="subst">${config.repo}</span>/issues?access_token=<span class="subst">${config.token}</span>`</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> requestGetOpt = {</span><br><span class="line">    url: <span class="string">`<span class="subst">${issuesUrl}</span>&amp;page=1&amp;per_page=1000`</span>,</span><br><span class="line">    json: <span class="literal">true</span>,</span><br><span class="line">    headers: {</span><br><span class="line">        <span class="string">"User-Agent"</span>: <span class="string">"github-user"</span></span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line"><span class="keyword">let</span> requestPostOpt = {</span><br><span class="line">    ...requestGetOpt,</span><br><span class="line">    url:issuesUrl,</span><br><span class="line">    method: <span class="string">"POST"</span>,</span><br><span class="line">    form: <span class="string">""</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"开始初始化评论..."</span>);</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"开始检索链接，请稍等..."</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">try</span> {</span><br><span class="line">        <span class="keyword">let</span> websiteConfig = YAML.parse(fs.readFileSync(path.resolve(__dirname, <span class="string">"./_config.yml"</span>), <span class="string">"utf8"</span>));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> urls = sitemapXmlReader(config.sitemapUrl);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`共检索到<span class="subst">${urls.length<span class="number">-1</span>}</span>个链接`</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"开始获取已经初始化的issues:"</span>);</span><br><span class="line">        <span class="keyword">let</span> issues = <span class="keyword">await</span> send(requestGetOpt);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`已经存在<span class="subst">${issues.length}</span>个issues`</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> notInitIssueLinks = urls.filter(<span class="function">(<span class="params">link</span>) =&gt;</span> {</span><br><span class="line">            <span class="keyword">return</span> !issues.find(<span class="function">(<span class="params">item</span>) =&gt;</span> {</span><br><span class="line">                link = removeProtocol(link);</span><br><span class="line">                <span class="keyword">return</span> item.body.includes(link);</span><br><span class="line">            });</span><br><span class="line">        });</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;notInitIssueLinks.length;i++)</span><br><span class="line">        {</span><br><span class="line">            <span class="keyword">if</span>(notInitIssueLinks[i].endsWith(<span class="string">"tags/index.html"</span>))</span><br><span class="line">            {</span><br><span class="line">                notInitIssueLinks.splice(i,<span class="number">1</span>);</span><br><span class="line">                i--;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (notInitIssueLinks.length &gt; <span class="number">0</span>) {</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">`本次有<span class="subst">${notInitIssueLinks.length}</span>个链接需要初始化issue：`</span>);</span><br><span class="line">            <span class="built_in">console</span>.log(notInitIssueLinks);</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"开始提交初始化请求, 大约需要40秒..."</span>);</span><br><span class="line">            <span class="comment">/**</span></span><br><span class="line"><span class="comment">             * 部署好网站后，直接执行start，新增文章并不会生成评论</span></span><br><span class="line"><span class="comment">             * 经测试，最少需要等待40秒，才可以正确生成， 怀疑跟github的api有关系，没有找到实锤</span></span><br><span class="line"><span class="comment">             */</span></span><br><span class="line">            setTimeout(<span class="keyword">async</span> ()=&gt;{</span><br><span class="line">                <span class="keyword">let</span> initRet = <span class="keyword">await</span> notInitIssueLinks.map(<span class="keyword">async</span> (item) =&gt; {</span><br><span class="line">                    <span class="keyword">let</span> html = <span class="keyword">await</span> send({ ...requestGetOpt, <span class="attr">url</span>: item });</span><br><span class="line">                    <span class="keyword">let</span> title = cheerio.load(html)(<span class="string">"title"</span>).text();</span><br><span class="line">                    <span class="keyword">let</span> desc = item + <span class="string">"\n\n"</span> + cheerio.load(html)(<span class="string">"meta[name='description']"</span>).attr(<span class="string">"content"</span>);</span><br><span class="line">                    <span class="keyword">let</span> pathLabel = url.parse(item).path;</span><br><span class="line">                    <span class="keyword">let</span> label = crypto.createHash(<span class="string">'md5'</span>).update(pathLabel,<span class="string">'utf-8'</span>).digest(<span class="string">'hex'</span>);</span><br><span class="line">                    <span class="keyword">let</span> form = <span class="built_in">JSON</span>.stringify({ <span class="string">"body"</span>: desc, <span class="string">"labels"</span>: [config.kind, label], <span class="string">"title"</span>: title });</span><br><span class="line">                    <span class="keyword">return</span> send({ ...requestPostOpt, form });</span><br><span class="line">                });</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">`已完成<span class="subst">${initRet.length}</span>个！`</span>);</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"可以愉快的发表评论了！"</span>);</span><br><span class="line">            },<span class="number">40000</span>);</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"本次发布无新增页面，无需初始化issue!!"</span>);</span><br><span class="line">        }</span><br><span class="line">    } <span class="keyword">catch</span> (e) {</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`初始化issue出错，错误如下：`</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(e);</span><br><span class="line">    } <span class="keyword">finally</span> {</span><br><span class="line">    </span><br><span class="line">    }</span><br><span class="line">})();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sitemapXmlReader</span>(<span class="params">file</span>) </span>{</span><br><span class="line">    <span class="keyword">let</span> data = fs.readFileSync(file, <span class="string">"utf8"</span>);</span><br><span class="line">    <span class="keyword">let</span> sitemap = xmlParser(data);</span><br><span class="line">    <span class="keyword">return</span> sitemap.root.children.map(<span class="function"><span class="keyword">function</span> (<span class="params">url</span>) </span>{</span><br><span class="line">        <span class="keyword">let</span> loc = url.children.filter(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>{</span><br><span class="line">            <span class="keyword">return</span> item.name === <span class="string">"loc"</span>;</span><br><span class="line">        })[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">return</span> loc.content;</span><br><span class="line">    });</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeProtocol</span>(<span class="params">url</span>) </span>{</span><br><span class="line">    <span class="keyword">return</span> url.substr(url.indexOf(<span class="string">":"</span>));</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">send</span>(<span class="params">options</span>) </span>{</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>{</span><br><span class="line">        request(options, <span class="function"><span class="keyword">function</span> (<span class="params">error, response, body</span>) </span>{</span><br><span class="line">            <span class="keyword">if</span> (!error) {</span><br><span class="line">                resolve(body);</span><br><span class="line">            } <span class="keyword">else</span> {</span><br><span class="line">                reject(error);</span><br><span class="line">            }</span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></div></figure>        <h3 id="第五步-执行命令">          <a href="#第五步-执行命令" class="heading-link"><i class="fas fa-link"></i></a>第五步:执行命令</h3>      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">node ./gitalk.init.js</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;第一步：创建js文件&quot;&gt;
+          &lt;a href=&quot;#第一步：创建js文件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第一步：创建js文件&lt;/h3&gt;
+      
+&lt;p&gt;在根目录下新建一个&lt;code&gt;gitalk.init.js&lt;/code&gt;文件&lt;/p&gt;
+
+    &lt;div class=&quot;note-plugin default no-icon&quot;&gt;
+      
+      &lt;p&gt;如果名字感觉太长可以自己命名&lt;/p&gt;
+    &lt;/div&gt;
+  
+
+        &lt;h3 id=&quot;第二步：安装依赖包&quot;&gt;
+          &lt;a href=&quot;#第二步：安装依赖包&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第二步：安装依赖包&lt;/h3&gt;
+      
+&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install cheerio --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install request --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install xml-parser --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install yamljs --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+    &lt;div class=&quot;note-plugin success no-icon&quot;&gt;
+      
+      &lt;p&gt;&lt;strong&gt;一步到位&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;code&gt;npm  install  cheerio request xml-parser yamljs hexo-generator-sitemap  --save&lt;/code&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Gitalk" scheme="https://kisskisso.com/tags/Gitalk/"/>
+    
+  </entry>
+  
+  <entry>
     <title>刷新DNS缓存命令</title>
-    <link href="http://kisskisso.com/14940/"/>
-    <id>http://kisskisso.com/14940/</id>
+    <link href="https://kisskisso.com/14940/"/>
+    <id>https://kisskisso.com/14940/</id>
     <published>2021-03-07T10:58:34.000Z</published>
     <updated>2021-03-07T11:01:33.597Z</updated>
     
@@ -36,15 +78,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Windows访问Linux子系统文件夹</title>
-    <link href="http://kisskisso.com/27102/"/>
-    <id>http://kisskisso.com/27102/</id>
+    <link href="https://kisskisso.com/27102/"/>
+    <id>https://kisskisso.com/27102/</id>
     <published>2021-03-07T09:31:01.000Z</published>
     <updated>2021-03-07T10:09:45.476Z</updated>
     
@@ -62,15 +104,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Vscode中好看的主题</title>
-    <link href="http://kisskisso.com/35300/"/>
-    <id>http://kisskisso.com/35300/</id>
+    <link href="https://kisskisso.com/35300/"/>
+    <id>https://kisskisso.com/35300/</id>
     <published>2021-03-06T01:52:39.000Z</published>
     <updated>2021-03-06T02:05:09.486Z</updated>
     
@@ -87,15 +129,15 @@
     </summary>
     
     
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+      <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>欢乐好声音合集</title>
-    <link href="http://kisskisso.com/28541/"/>
-    <id>http://kisskisso.com/28541/</id>
+    <link href="https://kisskisso.com/28541/"/>
+    <id>https://kisskisso.com/28541/</id>
     <published>2021-03-05T10:05:51.000Z</published>
     <updated>2021-03-05T10:32:53.762Z</updated>
     
@@ -115,15 +157,15 @@
     </summary>
     
     
-      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
     
   </entry>
   
   <entry>
     <title>FreeFileSync同步软件</title>
-    <link href="http://kisskisso.com/18537/"/>
-    <id>http://kisskisso.com/18537/</id>
+    <link href="https://kisskisso.com/18537/"/>
+    <id>https://kisskisso.com/18537/</id>
     <published>2021-03-03T04:56:27.000Z</published>
     <updated>2021-03-07T06:39:37.665Z</updated>
     
@@ -140,15 +182,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>好用的浏览器插件推荐</title>
-    <link href="http://kisskisso.com/62702/"/>
-    <id>http://kisskisso.com/62702/</id>
+    <link href="https://kisskisso.com/62702/"/>
+    <id>https://kisskisso.com/62702/</id>
     <published>2021-03-01T09:49:01.000Z</published>
     <updated>2021-03-05T10:31:57.651Z</updated>
     
@@ -164,15 +206,15 @@
     </summary>
     
     
-      <category term="应用与插件" scheme="http://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+      <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>查看共享文件与终端</title>
-    <link href="http://kisskisso.com/50465/"/>
-    <id>http://kisskisso.com/50465/</id>
+    <link href="https://kisskisso.com/50465/"/>
+    <id>https://kisskisso.com/50465/</id>
     <published>2021-02-24T08:33:04.000Z</published>
     <updated>2021-02-24T09:03:53.077Z</updated>
     
@@ -189,15 +231,15 @@
     </summary>
     
     
-      <category term="语言与Linux" scheme="http://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+      <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
     
     
   </entry>
   
   <entry>
     <title>nvm的安裝與配置</title>
-    <link href="http://kisskisso.com/34859/"/>
-    <id>http://kisskisso.com/34859/</id>
+    <link href="https://kisskisso.com/34859/"/>
+    <id>https://kisskisso.com/34859/</id>
     <published>2021-02-23T16:03:38.000Z</published>
     <updated>2021-03-01T04:51:01.986Z</updated>
     
@@ -218,15 +260,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>虚拟机配置共享文件</title>
-    <link href="http://kisskisso.com/58206/"/>
-    <id>http://kisskisso.com/58206/</id>
+    <link href="https://kisskisso.com/58206/"/>
+    <id>https://kisskisso.com/58206/</id>
     <published>2021-02-23T11:08:11.000Z</published>
     <updated>2021-02-23T11:22:04.514Z</updated>
     
@@ -247,15 +289,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>虚拟机安装开源增强工具</title>
-    <link href="http://kisskisso.com/13898/"/>
-    <id>http://kisskisso.com/13898/</id>
+    <link href="https://kisskisso.com/13898/"/>
+    <id>https://kisskisso.com/13898/</id>
     <published>2021-02-23T10:57:17.000Z</published>
     <updated>2021-03-01T06:50:59.143Z</updated>
     
@@ -272,15 +314,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>fcitx5的安裝與配置</title>
-    <link href="http://kisskisso.com/8493/"/>
-    <id>http://kisskisso.com/8493/</id>
+    <link href="https://kisskisso.com/8493/"/>
+    <id>https://kisskisso.com/8493/</id>
     <published>2021-02-23T10:52:23.000Z</published>
     <updated>2021-02-26T09:40:20.349Z</updated>
     
@@ -297,15 +339,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Arch删除卸载命令</title>
-    <link href="http://kisskisso.com/16277/"/>
-    <id>http://kisskisso.com/16277/</id>
+    <link href="https://kisskisso.com/16277/"/>
+    <id>https://kisskisso.com/16277/</id>
     <published>2021-02-23T10:44:11.000Z</published>
     <updated>2021-03-01T06:59:05.128Z</updated>
     
@@ -332,17 +374,17 @@
     </summary>
     
     
-      <category term="语言与Linux" scheme="http://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+      <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
     
     
-      <category term="Linux命令" scheme="http://kisskisso.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+      <category term="Linux命令" scheme="https://kisskisso.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
   <entry>
     <title>VMware切换大小写作用失效</title>
-    <link href="http://kisskisso.com/14384/"/>
-    <id>http://kisskisso.com/14384/</id>
+    <link href="https://kisskisso.com/14384/"/>
+    <id>https://kisskisso.com/14384/</id>
     <published>2021-02-22T06:36:55.000Z</published>
     <updated>2021-02-22T06:59:50.194Z</updated>
     
@@ -359,15 +401,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>ArchLinux安装</title>
-    <link href="http://kisskisso.com/54936/"/>
-    <id>http://kisskisso.com/54936/</id>
+    <link href="https://kisskisso.com/54936/"/>
+    <id>https://kisskisso.com/54936/</id>
     <published>2021-02-21T12:17:02.000Z</published>
     <updated>2021-02-25T06:27:45.950Z</updated>
     
@@ -392,15 +434,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>如何在Firefox中禁用WebRTC补充</title>
-    <link href="http://kisskisso.com/6032/"/>
-    <id>http://kisskisso.com/6032/</id>
+    <link href="https://kisskisso.com/6032/"/>
+    <id>https://kisskisso.com/6032/</id>
     <published>2021-02-15T08:10:28.000Z</published>
     <updated>2021-02-15T09:40:52.147Z</updated>
     
@@ -441,17 +483,17 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="WebRTC" scheme="http://kisskisso.com/tags/WebRTC/"/>
+      <category term="WebRTC" scheme="https://kisskisso.com/tags/WebRTC/"/>
     
   </entry>
   
   <entry>
     <title>如何在Firefox中禁用WebRTC</title>
-    <link href="http://kisskisso.com/51087/"/>
-    <id>http://kisskisso.com/51087/</id>
+    <link href="https://kisskisso.com/51087/"/>
+    <id>https://kisskisso.com/51087/</id>
     <published>2021-02-10T08:30:30.000Z</published>
     <updated>2021-02-10T09:07:14.208Z</updated>
     
@@ -468,15 +510,15 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>向你而生</title>
-    <link href="http://kisskisso.com/21015/"/>
-    <id>http://kisskisso.com/21015/</id>
+    <link href="https://kisskisso.com/21015/"/>
+    <id>https://kisskisso.com/21015/</id>
     <published>2021-02-09T12:22:48.000Z</published>
     <updated>2021-02-09T12:26:25.566Z</updated>
     
@@ -494,17 +536,17 @@
     </summary>
     
     
-      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
     
-      <category term="話" scheme="http://kisskisso.com/tags/%E8%A9%B1/"/>
+      <category term="話" scheme="https://kisskisso.com/tags/%E8%A9%B1/"/>
     
   </entry>
   
   <entry>
     <title>小學生水平</title>
-    <link href="http://kisskisso.com/51349/"/>
-    <id>http://kisskisso.com/51349/</id>
+    <link href="https://kisskisso.com/51349/"/>
+    <id>https://kisskisso.com/51349/</id>
     <published>2021-02-07T13:38:37.000Z</published>
     <updated>2021-02-07T14:22:04.746Z</updated>
     
@@ -522,17 +564,17 @@
     </summary>
     
     
-      <category term="生活与话" scheme="http://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
     
-      <category term="画" scheme="http://kisskisso.com/tags/%E7%94%BB/"/>
+      <category term="画" scheme="https://kisskisso.com/tags/%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>hexo报错</title>
-    <link href="http://kisskisso.com/51550/"/>
-    <id>http://kisskisso.com/51550/</id>
+    <link href="https://kisskisso.com/51550/"/>
+    <id>https://kisskisso.com/51550/</id>
     <published>2021-02-02T07:29:29.000Z</published>
     <updated>2021-02-02T07:33:34.794Z</updated>
     
@@ -550,36 +592,10 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="hexo" scheme="http://kisskisso.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VirtualBox共享文件设置</title>
-    <link href="http://kisskisso.com/32245/"/>
-    <id>http://kisskisso.com/32245/</id>
-    <published>2021-02-02T07:19:16.000Z</published>
-    <updated>2021-02-02T07:33:34.773Z</updated>
-    
-    <content type="html"><![CDATA[<p>在 VirtualBox 中选择<code>设置/共享文件夹</code>，添加想要共享文件夹；设置共享文件夹的名称，选择 <code>固定分配</code>；确认 <code>OK</code>。</p><p>进入 Linux系统，选择一个文件夹作为共享文件夹</p><p>打开终端，写入 <code>$ sudo mount -t vboxsf 共享文件夹的名 在Linux建立的共享文件夹名</code></p><p>ps：</p><ul><li>重启后，已设置的共享文件夹将会消失，需要再次执行挂载命令。</li><li>在Linux建立的文件夹需要<code>sudo chmod 777 [文件夹名] </code></li><li>可是设置<code>自动挂载</code></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在 VirtualBox 中选择&lt;code&gt;设置/共享文件夹&lt;/code&gt;，添加想要共享文件夹；设置共享文件夹的名称，选择 &lt;code&gt;固定分配&lt;/code&gt;；确认 &lt;code&gt;OK&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;进入 Linux系统，选择一个文件夹作为共享文件夹&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
+      <category term="hexo" scheme="https://kisskisso.com/tags/hexo/"/>
     
   </entry>
   

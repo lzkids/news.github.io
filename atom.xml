@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-03-09T04:50:32.943Z</updated>
+  <updated>2021-03-10T09:42:10.713Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>语言学习网站推荐</title>
+    <title>Book &amp; Data</title>
     <link href="https://kisskisso.com/45178/"/>
     <id>https://kisskisso.com/45178/</id>
     <published>2021-03-09T03:27:43.000Z</published>
-    <updated>2021-03-09T04:50:32.943Z</updated>
+    <updated>2021-03-10T09:42:10.713Z</updated>
     
     <content type="html"><![CDATA[<div class="table-container"><table class="table-plugin"><thead><tr><th>时间</th><th>书籍</th><th>网址</th></tr></thead><tbody><tr style="text-align: center;"><td>2021-3-9</td><td>Python简明教程</td><td>https://learnku.com/docs/byte-of-python/2018</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>笨办法学Python</td><td>https://wizardforcel.gitbooks.io/lpthw/content/</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>Rust程序设计语言</td><td>https://rust-lang.tw/book-tw/title-page.html</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>ECMAScript 6 入门教程</td><td>https://es6.ruanyifeng.com/#README</td></tr></tbody></table></div><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     

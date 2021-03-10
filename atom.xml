@@ -3,10 +3,10 @@
   <title>可好！可好？</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-03-10T09:42:10.713Z</updated>
+  <updated>2021-03-10T12:19:42.166Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -17,6 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>npm包推荐</title>
+    <link href="https://kisskisso.com/51904/"/>
+    <id>https://kisskisso.com/51904/</id>
+    <published>2021-03-10T11:47:23.000Z</published>
+    <updated>2021-03-10T12:19:42.166Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table class="table-plugin"><thead><tr><th>名字</th><th>描述</th><th>地址</th><th>下载</th></tr></thead><tbody><tr style="text-align: center;"><td>npm-check-updates</td><td>检查更新.json依赖项</td><td>https://github.com/raineorshine/npm-check-updates</td><td>npm install -g npm-check-updates</td></tr><tr style="text-align: center;"><td>hexo</td><td>博客框架</td><td>https://hexo.io/zh-cn/index.html</td><td>npm install hexo -g</td></tr><tr style="text-align: center;"><td>hexo-cli</td><td>博客框架</td><td>https://hexo.io/zh-cn/index.html</td><td>npm install hexo-cli -g</td></tr></tbody></table></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;table-container&quot;&gt;&lt;table class=&quot;table-plugin&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;名字&lt;/th&gt;&lt;th&gt;描述&lt;/th&gt;&lt;th&gt;地址&lt;/th&gt;&lt;th&gt;下载&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr styl</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="npm" scheme="https://kisskisso.com/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Book &amp; Data</title>
     <link href="https://kisskisso.com/45178/"/>
     <id>https://kisskisso.com/45178/</id>
@@ -25,17 +49,15 @@
     
     <content type="html"><![CDATA[<div class="table-container"><table class="table-plugin"><thead><tr><th>时间</th><th>书籍</th><th>网址</th></tr></thead><tbody><tr style="text-align: center;"><td>2021-3-9</td><td>Python简明教程</td><td>https://learnku.com/docs/byte-of-python/2018</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>笨办法学Python</td><td>https://wizardforcel.gitbooks.io/lpthw/content/</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>Rust程序设计语言</td><td>https://rust-lang.tw/book-tw/title-page.html</td></tr><tr style="text-align: center;"><td>2021-3-9</td><td>ECMAScript 6 入门教程</td><td>https://es6.ruanyifeng.com/#README</td></tr></tbody></table></div><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;div class=&quot;table-container&quot;&gt;&lt;table class=&quot;table-plugin&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;书籍&lt;/th&gt;&lt;th&gt;网址&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style=&quot;text-ali
+    <summary type="html">&lt;div class=&quot;table-container&quot;&gt;&lt;table class=&quot;table-plugin&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;书籍&lt;/th&gt;&lt;th&gt;网址&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style=&quot;text-ali</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -49,9 +71,8 @@
     
     <content type="html"><![CDATA[<h3 id="第一步：创建js文件">          <a href="#第一步：创建js文件" class="heading-link"><i class="fas fa-link"></i></a>第一步：创建js文件</h3>      <p>在根目录下新建一个<code>gitalk.init.js</code>文件</p>    <div class="note-plugin default no-icon">            <p>如果名字感觉太长可以自己命名</p>    </div>          <h3 id="第二步：安装依赖包">          <a href="#第二步：安装依赖包" class="heading-link"><i class="fas fa-link"></i></a>第二步：安装依赖包</h3>      <figure class="highlight cmd"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install cheerio --save</span><br><span class="line">npm install request --save</span><br><span class="line">npm install xml-parser --save</span><br><span class="line">npm install yamljs --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin success no-icon">            <p><strong>一步到位</strong></p><p>npm  install  cheerio request xml-parser yamljs hexo-generator-sitemap  --save</p>    </div>  <a id="more"></a>        <h3 id="第三步：修改站点根目录下的-config-yml添加如下代码">          <a href="#第三步：修改站点根目录下的-config-yml添加如下代码" class="heading-link"><i class="fas fa-link"></i></a>第三步：修改站点根目录下的<code>_config.yml</code>添加如下代码</h3>      <figure class="highlight yaml"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo sitemap网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="attr">rel:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin danger no-icon">            <p>把_config.yml站点网址的url改成https</p>    </div>          <h3 id="第四步：复制代码">          <a href="#第四步：复制代码" class="heading-link"><i class="fas fa-link"></i></a>第四步：复制代码</h3>      <p>根据需求修改<font color="red">config</font>里的内容</p><figure class="highlight js"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="keyword">const</span> xmlParser = <span class="built_in">require</span>(<span class="string">"xml-parser"</span>);</span><br><span class="line"><span class="keyword">const</span> YAML = <span class="built_in">require</span>(<span class="string">"yamljs"</span>);</span><br><span class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</span><br><span class="line"><span class="keyword">const</span> crypto = <span class="built_in">require</span>(<span class="string">'crypto'</span>);</span><br><span class="line"><span class="comment">// 根据自己的情况进行配置</span></span><br><span class="line"><span class="keyword">const</span> config = {</span><br><span class="line">    username: <span class="string">"name"</span>, <span class="comment">// GitHub 用户名</span></span><br><span class="line">    token: <span class="string">"token"</span>,  <span class="comment">// GitHub Token</span></span><br><span class="line">    repo: <span class="string">"blogtalk"</span>,  <span class="comment">// 存放 issues的git仓库</span></span><br><span class="line">    <span class="comment">// sitemap.xml的路径，gitalk.init.js放置在根目录下，无需修改，其他情况自行处理</span></span><br><span class="line">    sitemapUrl: path.resolve(__dirname, <span class="string">"./public/sitemap.xml"</span>),</span><br><span class="line">    kind: <span class="string">"Gitalk"</span>,  <span class="comment">// "Gitalk" or "Gitment"</span></span><br><span class="line">};</span><br><span class="line"><span class="keyword">let</span> issuesUrl = <span class="string">`https://api.github.com/repos/<span class="subst">${config.username}</span>/<span class="subst">${config.repo}</span>/issues?access_token=<span class="subst">${config.token}</span>`</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> requestGetOpt = {</span><br><span class="line">    url: <span class="string">`<span class="subst">${issuesUrl}</span>&amp;page=1&amp;per_page=1000`</span>,</span><br><span class="line">    json: <span class="literal">true</span>,</span><br><span class="line">    headers: {</span><br><span class="line">        <span class="string">"User-Agent"</span>: <span class="string">"github-user"</span></span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line"><span class="keyword">let</span> requestPostOpt = {</span><br><span class="line">    ...requestGetOpt,</span><br><span class="line">    url:issuesUrl,</span><br><span class="line">    method: <span class="string">"POST"</span>,</span><br><span class="line">    form: <span class="string">""</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"开始初始化评论..."</span>);</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"开始检索链接，请稍等..."</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">try</span> {</span><br><span class="line">        <span class="keyword">let</span> websiteConfig = YAML.parse(fs.readFileSync(path.resolve(__dirname, <span class="string">"./_config.yml"</span>), <span class="string">"utf8"</span>));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> urls = sitemapXmlReader(config.sitemapUrl);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`共检索到<span class="subst">${urls.length<span class="number">-1</span>}</span>个链接`</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"开始获取已经初始化的issues:"</span>);</span><br><span class="line">        <span class="keyword">let</span> issues = <span class="keyword">await</span> send(requestGetOpt);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`已经存在<span class="subst">${issues.length}</span>个issues`</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> notInitIssueLinks = urls.filter(<span class="function">(<span class="params">link</span>) =&gt;</span> {</span><br><span class="line">            <span class="keyword">return</span> !issues.find(<span class="function">(<span class="params">item</span>) =&gt;</span> {</span><br><span class="line">                link = removeProtocol(link);</span><br><span class="line">                <span class="keyword">return</span> item.body.includes(link);</span><br><span class="line">            });</span><br><span class="line">        });</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;notInitIssueLinks.length;i++)</span><br><span class="line">        {</span><br><span class="line">            <span class="keyword">if</span>(notInitIssueLinks[i].endsWith(<span class="string">"tags/index.html"</span>))</span><br><span class="line">            {</span><br><span class="line">                notInitIssueLinks.splice(i,<span class="number">1</span>);</span><br><span class="line">                i--;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (notInitIssueLinks.length &gt; <span class="number">0</span>) {</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">`本次有<span class="subst">${notInitIssueLinks.length}</span>个链接需要初始化issue：`</span>);</span><br><span class="line">            <span class="built_in">console</span>.log(notInitIssueLinks);</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"开始提交初始化请求, 大约需要40秒..."</span>);</span><br><span class="line">            <span class="comment">/**</span></span><br><span class="line"><span class="comment">             * 部署好网站后，直接执行start，新增文章并不会生成评论</span></span><br><span class="line"><span class="comment">             * 经测试，最少需要等待40秒，才可以正确生成， 怀疑跟github的api有关系，没有找到实锤</span></span><br><span class="line"><span class="comment">             */</span></span><br><span class="line">            setTimeout(<span class="keyword">async</span> ()=&gt;{</span><br><span class="line">                <span class="keyword">let</span> initRet = <span class="keyword">await</span> notInitIssueLinks.map(<span class="keyword">async</span> (item) =&gt; {</span><br><span class="line">                    <span class="keyword">let</span> html = <span class="keyword">await</span> send({ ...requestGetOpt, <span class="attr">url</span>: item });</span><br><span class="line">                    <span class="keyword">let</span> title = cheerio.load(html)(<span class="string">"title"</span>).text();</span><br><span class="line">                    <span class="keyword">let</span> desc = item + <span class="string">"\n\n"</span> + cheerio.load(html)(<span class="string">"meta[name='description']"</span>).attr(<span class="string">"content"</span>);</span><br><span class="line">                    <span class="keyword">let</span> pathLabel = url.parse(item).path;</span><br><span class="line">                    <span class="keyword">let</span> label = crypto.createHash(<span class="string">'md5'</span>).update(pathLabel,<span class="string">'utf-8'</span>).digest(<span class="string">'hex'</span>);</span><br><span class="line">                    <span class="keyword">let</span> form = <span class="built_in">JSON</span>.stringify({ <span class="string">"body"</span>: desc, <span class="string">"labels"</span>: [config.kind, label], <span class="string">"title"</span>: title });</span><br><span class="line">                    <span class="keyword">return</span> send({ ...requestPostOpt, form });</span><br><span class="line">                });</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">`已完成<span class="subst">${initRet.length}</span>个！`</span>);</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"可以愉快的发表评论了！"</span>);</span><br><span class="line">            },<span class="number">40000</span>);</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"本次发布无新增页面，无需初始化issue!!"</span>);</span><br><span class="line">        }</span><br><span class="line">    } <span class="keyword">catch</span> (e) {</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`初始化issue出错，错误如下：`</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(e);</span><br><span class="line">    } <span class="keyword">finally</span> {</span><br><span class="line">    </span><br><span class="line">    }</span><br><span class="line">})();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sitemapXmlReader</span>(<span class="params">file</span>) </span>{</span><br><span class="line">    <span class="keyword">let</span> data = fs.readFileSync(file, <span class="string">"utf8"</span>);</span><br><span class="line">    <span class="keyword">let</span> sitemap = xmlParser(data);</span><br><span class="line">    <span class="keyword">return</span> sitemap.root.children.map(<span class="function"><span class="keyword">function</span> (<span class="params">url</span>) </span>{</span><br><span class="line">        <span class="keyword">let</span> loc = url.children.filter(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>{</span><br><span class="line">            <span class="keyword">return</span> item.name === <span class="string">"loc"</span>;</span><br><span class="line">        })[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">return</span> loc.content;</span><br><span class="line">    });</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeProtocol</span>(<span class="params">url</span>) </span>{</span><br><span class="line">    <span class="keyword">return</span> url.substr(url.indexOf(<span class="string">":"</span>));</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">send</span>(<span class="params">options</span>) </span>{</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>{</span><br><span class="line">        request(options, <span class="function"><span class="keyword">function</span> (<span class="params">error, response, body</span>) </span>{</span><br><span class="line">            <span class="keyword">if</span> (!error) {</span><br><span class="line">                resolve(body);</span><br><span class="line">            } <span class="keyword">else</span> {</span><br><span class="line">                reject(error);</span><br><span class="line">            }</span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></div></figure>        <h3 id="第五步-执行命令">          <a href="#第五步-执行命令" class="heading-link"><i class="fas fa-link"></i></a>第五步:执行命令</h3>      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">node ./gitalk.init.js</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;h3 id=&quot;第一步：创建js文件&quot;&gt;
+    <summary type="html">&lt;h3 id=&quot;第一步：创建js文件&quot;&gt;
           &lt;a href=&quot;#第一步：创建js文件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;第一步：创建js文件&lt;/h3&gt;
       
 &lt;p&gt;在根目录下新建一个&lt;code&gt;gitalk.init.js&lt;/code&gt;文件&lt;/p&gt;
@@ -70,15 +91,14 @@
     &lt;div class=&quot;note-plugin success no-icon&quot;&gt;
       
       &lt;p&gt;&lt;strong&gt;一步到位&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;npm  install  cheerio request xml-parser yamljs hexo-generator-sitemap  --save&lt;/p&gt;
-    &lt;/div&gt;
-    
-    </summary>
+    &lt;/div&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Gitalk" scheme="https://kisskisso.com/tags/Gitalk/"/>
+    <category term="Gitalk" scheme="https://kisskisso.com/tags/Gitalk/"/>
     
   </entry>
   
@@ -91,18 +111,16 @@
     
     <content type="html"><![CDATA[<p>在终端输入 ipconfig/flushdns ，按下回车键确认即可</p><p>如果系统提示<code>已成功刷新缓存</code>或者<code>Successfully flushed the DNS Resolver Cache</code>，则说明清除DNS缓存成功。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;在终端输入 ipconfig/flushdns ，按下回车键确认即可&lt;/p&gt;
-&lt;p&gt;如果系统提示&lt;code&gt;已成功刷新缓存&lt;/code&gt;或者&lt;code&gt;Successfully flushed the DNS Resolver Cache&lt;/code&gt;，则说明清除DNS缓存
+    <summary type="html">&lt;p&gt;在终端输入 ipconfig/flushdns ，按下回车键确认即可&lt;/p&gt;
+&lt;p&gt;如果系统提示&lt;code&gt;已成功刷新缓存&lt;/code&gt;或者&lt;code&gt;Successfully flushed the DNS Resolver Cache&lt;/code&gt;，则说明清除DNS缓存</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -116,19 +134,17 @@
     
     <content type="html"><![CDATA[<p>当我们处于 Linux 子系统的命令行窗口时，只需输入并执行下面这行命令，我们即可以在 Windows 文件资源管理器中访问和管理 Linux 子系统中我们当前所处的文件路径下的文件：</p><p><code>explorer.exe .</code></p><p>提示：在输入和执行以上命令时，请注意，<code>explorer.exe </code>和.<code> </code>之间有个空格。</p><p><font color="#CE0000">修改文件需要先修改文件权限</font></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;当我们处于 Linux 子系统的命令行窗口时，只需输入并执行下面这行命令，我们即可以在 Windows 文件资源管理器中访问和管理 Linux 子系统中我们当前所处的文件路径下的文件：&lt;/p&gt;
+    <summary type="html">&lt;p&gt;当我们处于 Linux 子系统的命令行窗口时，只需输入并执行下面这行命令，我们即可以在 Windows 文件资源管理器中访问和管理 Linux 子系统中我们当前所处的文件路径下的文件：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;explorer.exe .&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;提示
+&lt;p&gt;提示</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -142,18 +158,16 @@
     
     <content type="html"><![CDATA[<h3 id="1-Github-Light">          <a href="#1-Github-Light" class="heading-link"><i class="fas fa-link"></i></a>1.<strong>Github Light</strong></h3>      <p>主题有两种形式：一个是纯白色背景，一个是灰色背景。</p>        <h3 id="2-Brackets-Light-Pro">          <a href="#2-Brackets-Light-Pro" class="heading-link"><i class="fas fa-link"></i></a>2.<strong>Brackets Light Pro</strong></h3>      <p>主题的外观非常简洁</p>        <h3 id="3-Hop-Light">          <a href="#3-Hop-Light" class="heading-link"><i class="fas fa-link"></i></a>3.<strong>Hop Light</strong></h3>      <p>具有友好颜色的主题</p>        <h3 id="4-Snazzy-Light">          <a href="#4-Snazzy-Light" class="heading-link"><i class="fas fa-link"></i></a>4.<strong>Snazzy Light</strong></h3>      <p>明亮的环境光条件下表现出清晰鲜明的色彩</p>        <h3 id="5-Monokai-Light">          <a href="#5-Monokai-Light" class="heading-link"><i class="fas fa-link"></i></a>5.<strong>Monokai Light</strong></h3>      <p>主题具有鲜艳的色彩</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;h3 id=&quot;1-Github-Light&quot;&gt;
-          &lt;a href=&quot;#1-Github-Light&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;1.&lt;strong&gt;Github Light&lt;/str
+    <summary type="html">&lt;h3 id=&quot;1-Github-Light&quot;&gt;
+          &lt;a href=&quot;#1-Github-Light&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;1.&lt;strong&gt;Github Light&lt;/str</summary>
       
     
-    </summary>
     
     
-      <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
   </entry>
@@ -167,21 +181,19 @@
     
     <content type="html"><![CDATA[<p>NO.1 《Hallelujah》 Leonard Cohen 《欢乐好声音》中的大象米娜</p><p>NO.2 《Wake Me Up Before You Go Go》Wham!  富二代绵羊的手机铃声。</p><p>NO.3 《Under Pressure》 David Bowie/Queen 考拉老板Buster Moon重新振作并决定和小伙伴们再大干一票的背景音乐</p><p>NO.4 《Stay with me》Sam Smith 《欢乐好声音》里面，猩猩强尼演唱</p><p>NO.5 《Firework》Katy Perry “猪妈妈”威瑟斯彭演唱了Katy Perry的《Firework》。</p><p>NO. 6 《All of me》John Legend   由塔伦·埃格顿（猩猩）演唱</p><p>NO.7 《I’m Still Standing》 Elton John  演唱这首歌的猩猩Johnn</p><p>NO.8 《My Way》Frank Sinatra   老鼠麦克  <a id="more"></a></p><p>NO.9 《Don’t You Worry 'Bout A Thing》Stevie Wonder  大象米娜</p><p>NO.10 《True Colors》Cyndi Lauper  猪妈妈</p><p>NO.11 《Kiss From A Rose》 Seal  绵羊试音</p><p>NO.12 《Anaconda》Nicki Minaj  浴袍的兔子</p><p>NO.13 《Call Me Maybe》Carly Rae Jepsen  艾希</p><p>NO.14 《Kira Kira Killer》Kearny Pamyu Pamyu  小熊猫</p><p>NO.15 《Shake It Off》Taylor Swift  猪妈妈和猪先生</p><p>NO.16 《Golden Slumbers》The Beatles   嗓门Jennifer Hudson演唱</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;NO.1 《Hallelujah》 Leonard Cohen 《欢乐好声音》中的大象米娜&lt;/p&gt;
+    <summary type="html">&lt;p&gt;NO.1 《Hallelujah》 Leonard Cohen 《欢乐好声音》中的大象米娜&lt;/p&gt;
 &lt;p&gt;NO.2 《Wake Me Up Before You Go Go》Wham!  富二代绵羊的手机铃声。&lt;/p&gt;
 &lt;p&gt;NO.3 《Under Pressure》 David Bowie/Queen 考拉老板Buster Moon重新振作并决定和小伙伴们再大干一票的背景音乐&lt;/p&gt;
 &lt;p&gt;NO.4 《Stay with me》Sam Smith 《欢乐好声音》里面，猩猩强尼演唱&lt;/p&gt;
 &lt;p&gt;NO.5 《Firework》Katy Perry “猪妈妈”威瑟斯彭演唱了Katy Perry的《Firework》。&lt;/p&gt;
 &lt;p&gt;NO. 6 《All of me》John Legend   由塔伦·埃格顿（猩猩）演唱&lt;/p&gt;
 &lt;p&gt;NO.7 《I’m Still Standing》 Elton John  演唱这首歌的猩猩Johnn&lt;/p&gt;
-&lt;p&gt;NO.8 《My Way》Frank Sinatra   老鼠麦克&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;NO.8 《My Way》Frank Sinatra   老鼠麦克&lt;/p&gt;</summary>
     
     
-      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    
+    <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
     
   </entry>
@@ -195,18 +207,16 @@
     
     <content type="html"><![CDATA[<p><span class="exturl"><a class="exturl__link" href="https://freefilesync.org/" target="_blank" rel="noopener">FreeFileSync</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>是一款文件夹对比和同步软件，它可以创建和管理所有重要文件的备份副本。FreeFileSync不需要每次都复制每个文件，而是确定源文件夹和目标文件夹之间的差异，并只传输所需的最低数据量。FreeFileSync是一款开源软件，适用于Windows、macOS和Linux。</p><p>安装完FreeFileSync后桌面会有两个快捷软件</p><p>FreeFileSync是主体软件</p><p>RealTimeSync是自动化，但需要配合主体软件使用</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Snipaste_2021-03-07_13-10-45.png" alt=""></p><a id="more"></a>        <h3 id="第一步：选择需要同步的文件夹。">          <a href="#第一步：选择需要同步的文件夹。" class="heading-link"><i class="fas fa-link"></i></a>第一步：选择需要同步的文件夹。</h3>      <p>打开FreeFileSync,点击左侧的“浏览”，选择你想要进行镜像的其中一个文件夹。同样的操作，在右侧添加第二个文件夹 。这样，后面需要进行操作的两个主体就已经设置好了。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9_2021-03-03_13-11-32.png" alt=""></p>        <h3 id="第二步：设置同步规则">          <a href="#第二步：设置同步规则" class="heading-link"><i class="fas fa-link"></i></a>第二步：设置同步规则</h3>      <p>点击右上角的绿色 “设置” 符号，选择我们需要的同步配置，点击确定</p>    <div class="note-plugin success">      <span class="note-plugin__icon note-plugin__icon--success">              <i class="fas fa-check-circle"></i>            </span>      <p><strong>删除文件</strong></p><p>回收站（不推荐）</p><p>永久 (删除)</p><p>历史版本（推荐）可以单独放在其它文件夹里最好是新建一个文件夹</p>    </div>  <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%95%9C%E5%83%8F_2021-03-03_13-10-12.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%90%8C%E6%AD%A5%E8%A7%84%E5%88%99_2021-03-03_13-15-03.png" alt=""></p>        <h3 id="第三步：设置比较规则">          <a href="#第三步：设置比较规则" class="heading-link"><i class="fas fa-link"></i></a>第三步：设置比较规则</h3>      <p>点击左上角的蓝色 “设置” 符号，选择我们需要的比较配置，点击确定</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%AF%94%E8%BE%83_2021-03-07_13-39-48.png" alt=""></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%AF%94%E8%BE%83%E8%A7%84%E5%88%99_2021-03-07_13-40-28.png" alt=""></p>        <h3 id="第四步：点击-“另存为批处理作业”-图标">          <a href="#第四步：点击-“另存为批处理作业”-图标" class="heading-link"><i class="fas fa-link"></i></a>第四步：点击 “另存为批处理作业” 图标</h3>      <p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E9%85%8D%E7%BD%AE_2021-03-03_13-17-25.png" alt=""></p><p>勾选 “以最小化运行” 和“自动关闭”两项，这样所有操作都是在后台运行，不会打扰我们的工作，否则成功后会有弹窗提示！然后点击“另存为”，将这个批处理任务存储到你能找得到的地方</p>        <h3 id="第五步：建立自动同步任务">          <a href="#第五步：建立自动同步任务" class="heading-link"><i class="fas fa-link"></i></a>第五步：建立自动同步任务</h3>      <p>这里很简单，打开RealTimeSync，直接将刚才存储的批处理文件拖到命令行。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E7%BA%A2%E8%89%B2%E8%BD%AF%E4%BB%B6_2021-03-07_13-51-09.png" alt=""></p><p>然后点击开始</p><hr><p>手动同步</p><p>只需要按 <code>Ctrl + s</code>保存到你能找得到的地方</p><p>点击右上角的同步就可以手动同步</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%89%8B%E5%8A%A8%E5%90%8C%E6%AD%A5_2021-03-07_14-13-45.png" alt=""></p><hr>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p><strong>注意事项</strong></p><p>1.备份最好选择一个单独的文件夹，不要直接选择盘符下</p><p>2.自动同步重启电脑后需要重新手动打开RealTimeSync</p><p>3.重启之后需要把存储的自动同步(.ffs_batch)的文件重新拖到命令行中</p><p>4.自动同步文件是.ffs_batch</p><p>5.手动同步文件是.ffs_gui</p>    </div>  <script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://freefilesync.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FreeFileSync&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;是一款文件夹对比和同步软件，它可以创建和管理所有重要文件的备份副本。FreeFileSync不需要每次都复制每个文件，而是确定源文件夹和目标文件夹之间的差异，并只传输所需的最低数据量。FreeFileSync是一款开源软件，适用于Windows、macOS和Linux。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://freefilesync.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FreeFileSync&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;是一款文件夹对比和同步软件，它可以创建和管理所有重要文件的备份副本。FreeFileSync不需要每次都复制每个文件，而是确定源文件夹和目标文件夹之间的差异，并只传输所需的最低数据量。FreeFileSync是一款开源软件，适用于Windows、macOS和Linux。&lt;/p&gt;
 &lt;p&gt;安装完FreeFileSync后桌面会有两个快捷软件&lt;/p&gt;
 &lt;p&gt;FreeFileSync是主体软件&lt;/p&gt;
 &lt;p&gt;RealTimeSync是自动化，但需要配合主体软件使用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Snipaste_2021-03-07_13-10-45.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Snipaste_2021-03-07_13-10-45.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -220,17 +230,15 @@
     
     <content type="html"><![CDATA[<p>以下是我自用的浏览器插件，实测好用——以下排名不分先后</p><hr><p>No1.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">AdGuard AdBlocker</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。</p><a id="more"></a><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/adguard_2021-03-01_18-19-35.png" alt=""></p><p>No2.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search" target="_blank" rel="noopener">Cookie AutoDelete</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>当一个标签页关闭时，任何未被使用的cookies都会被自动删除。将信任的cookie列入白名单，同时删除其余的cookie。支持容器标签。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/cookieAutodelete_2021-03-01_18-27-18.png" alt=""><br>No3.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/onetab/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=collection" target="_blank" rel="noopener">OneTab</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>将标签页转换为列表，减少浏览器内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/OneTab_2021-03-01_18-41-24.png" alt=""><br>No4.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/darkreader/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">Dark Reader</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>这款护眼扩展可以实现夜间模式，Dark Reader将明亮的颜色反转，使其具有高对比度，易于在夜间阅读。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/dark_2021-03-01_18-50-33.png" alt=""><br>No5.<span class="exturl"><a class="exturl__link" href="https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=featured" target="_blank" rel="noopener">uBlock Origin</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>一个高效的广谱内容拦截器。占用极少的CPU和内存。<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ub_2021-03-01_18-50-05.png" alt=""></p><p>以上是火狐浏览器插件</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;以下是我自用的浏览器插件，实测好用——以下排名不分先后&lt;/p&gt;
+    <summary type="html">&lt;p&gt;以下是我自用的浏览器插件，实测好用——以下排名不分先后&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;No1.&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://addons.mozilla.org/en-GB/firefox/addon/adguard-adblocker/?utm_source=addons.mozilla.org&amp;amp;utm_medium=referral&amp;amp;utm_content=search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AdGuard AdBlocker&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;屏蔽所有广告：视频广告（包括YouTube视频广告）、富媒体广告、不需要的弹窗、横幅和文本广告（包括Facebook广告）。加快页面加载速度，节省带宽，由于缺少广告和弹出窗口。阻止许多间谍软件、广告软件和拨号器安装程序。屏蔽常见的第三方追踪系统，保护你的隐私。保护你免受恶意软件和网络钓鱼的侵害。&lt;/p&gt;</summary>
     
     
-      <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
   </entry>
@@ -244,18 +252,16 @@
     
     <content type="html"><![CDATA[<p>查看共享文件夹</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vmware-hgfsclient</span><br></pre></td></tr></tbody></table></div></figure><p>查看终端命令</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/shells</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;查看共享文件夹&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/s
+    <summary type="html">&lt;p&gt;查看共享文件夹&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/s</summary>
       
     
-    </summary>
     
     
-      <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+    <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
     
     
   </entry>
@@ -269,9 +275,8 @@
     
     <content type="html"><![CDATA[<h3 id="如何安装nvm">          <a href="#如何安装nvm" class="heading-link"><i class="fas fa-link"></i></a>如何安装nvm</h3>      <p><span class="exturl"><a class="exturl__link" href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">nvm</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是用于管理多个活动的nodejs版本</p><p>要安装或更新 nvm，你应该运行安装脚本。要做到这一点，你可以<span class="exturl"><a class="exturl__link" href="https://github.com/nvm-sh/nvm/blob/v0.37.2/install.sh" target="_blank" rel="noopener">手动下载</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>并运行该脚本，或者使用下面的cURL或Wget命令:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl  -o-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |  bash</span><br></pre></td></tr></tbody></table></div></figure><p>or</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget  -qO-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |   bash</span><br></pre></td></tr></tbody></table></div></figure><p>运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到<code>~/.nvm</code>，并尝试将下面代码段中的源码行添加到正确的配置文件中(<code>~/.bash_profile</code>or<code>~/.zshrc</code>or<code>~/.profile</code>or<code>~/.bashrc</code>)  <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#This loads nvm</span></span><br><span class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$([ -z "${XDG_CONFIG_HOME-}" ] &amp;&amp; printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")</span>"</span></span><br><span class="line">[ -s <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; \. <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p>在Linux上，运行安装脚本后，如果在输入命令<code>command -v nvm </code>后，得到nvm: command not found或终端没有反馈，只需关闭当前终端，打开一个新的终端，再尝试验证。</p>    </div>  <p>配置镜像源可以提高nodejs的下载速度，尝试将下面的代码段配置上面提到的配置文件中去(不用全部配置)</p>        <h3 id="nvm-镜像源">          <a href="#nvm-镜像源" class="heading-link"><i class="fas fa-link"></i></a><strong>nvm 镜像源</strong></h3>      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#node官方</span></span><br><span class="line"><span class="built_in">export</span>  NVM_NODEJS_ORG_MIRROR=<span class="string">"https://nodejs.org/dist"</span> </span><br><span class="line">or</span><br><span class="line"><span class="comment">#淘宝镜像源</span></span><br><span class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=<span class="string">"https://mirrors.aliyun.com/nodejs-release/"</span> </span><br><span class="line">or</span><br><span class="line"><span class="comment">#清华大学镜像源</span></span><br><span class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=<span class="string">"https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/"</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin danger no-icon">            <p><font color="red" size="2">注意：如果更换的是这个镜像源export&nbsp; NVM_NODEJS_ORG_MIRROR="<span class="exturl"><a class="exturl__link" href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/node</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>"的话下载nodejs会显示url404,至少我是这样</font></p>    </div>          <h3 id="使用方法">          <a href="#使用方法" class="heading-link"><i class="fas fa-link"></i></a>使用方法</h3>      <p>要下载、编译并安装最新版本的node，请这样做:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># "node" is an alias for the latest version</span></span><br><span class="line">nvm install node</span><br></pre></td></tr></tbody></table></div></figure><p>要安装特定版本的node:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install 12.20.2 <span class="comment"># or 14.16.0</span></span><br></pre></td></tr></tbody></table></div></figure><p>使用ls-remote列出可用的版本:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls-remote</span><br></pre></td></tr></tbody></table></div></figure><p>然后在任何新的shell中只需使用已安装的版本:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm use node  </span><br><span class="line">or  </span><br><span class="line">nvm use 12.20.2 <span class="comment">#or 14.16.0</span></span><br></pre></td></tr></tbody></table></div></figure><p>查看安装了哪些版本：</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;h3 id=&quot;如何安装nvm&quot;&gt;
+    <summary type="html">&lt;h3 id=&quot;如何安装nvm&quot;&gt;
           &lt;a href=&quot;#如何安装nvm&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;如何安装nvm&lt;/h3&gt;
       
 &lt;p&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://github.com/nvm-sh/nvm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;nvm&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 是用于管理多个活动的nodejs版本&lt;/p&gt;
@@ -279,12 +284,11 @@
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl  -o-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |  bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;or&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget  -qO-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |   bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到&lt;code&gt;~/.nvm&lt;/code&gt;，并尝试将下面代码段中的源码行添加到正确的配置文件中(&lt;code&gt;~/.bash_profile&lt;/code&gt;or&lt;code&gt;~/.zshrc&lt;/code&gt;or&lt;code&gt;~/.profile&lt;/code&gt;or&lt;code&gt;~/.bashrc&lt;/code&gt;)&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到&lt;code&gt;~/.nvm&lt;/code&gt;，并尝试将下面代码段中的源码行添加到正确的配置文件中(&lt;code&gt;~/.bash_profile&lt;/code&gt;or&lt;code&gt;~/.zshrc&lt;/code&gt;or&lt;code&gt;~/.profile&lt;/code&gt;or&lt;code&gt;~/.bashrc&lt;/code&gt;)&lt;/p&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -298,9 +302,8 @@
     
     <content type="html"><![CDATA[<p>在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vmware-hgfsclient</span><br></pre></td></tr></tbody></table></div></figure><p>进入/etc/systemd/system目录</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/systemd/system</span><br></pre></td></tr></tbody></table></div></figure><p>创建一个文件</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>用vim或者其它喜欢的软件打开</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下 <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"></span><br><span class="line">Description=Load VMware shared folders</span><br><span class="line"></span><br><span class="line">Requires=vmware-vmblock-fuse.service</span><br><span class="line"></span><br><span class="line">After=vmware-vmblock-fuse.service</span><br><span class="line"></span><br><span class="line">ConditionPathExists=.host:/</span><br><span class="line"></span><br><span class="line">ConditionVirtualization=vmware</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"></span><br><span class="line">Type=oneshot</span><br><span class="line"></span><br><span class="line">RemainAfterExit=yes</span><br><span class="line"></span><br><span class="line">ExecStart=</span><br><span class="line"></span><br><span class="line">ExecStart=/usr/bin/vmhgfs-fuse -o allow_other -o auto_unmount .host:/ /mnt/hgfs</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"></span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></tbody></table></div></figure><p>保存后，用systemctl命令使能这个service</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>查看/mnt里有没有hgfs文件夹</p><p>如果没有创建hgfs文件夹，需要创建<code>mkdir hgfs</code></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /mnt/hgfs</span><br></pre></td></tr></tbody></table></div></figure><p>重启后检查共享目录是否已经挂载到/mnt/hgfs目录下了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名&lt;/p&gt;
+    <summary type="html">&lt;p&gt;在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vmware-hgfsclient&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;进入/etc/systemd/system目录&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /etc/systemd/system&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
@@ -308,12 +311,11 @@
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;touch xxx.xxx.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;用vim或者其它喜欢的软件打开&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vim xxx.xxx.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下&lt;/p&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -327,18 +329,16 @@
     
     <content type="html"><![CDATA[<p>安装open-vm-tools增强工具</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S open-vm-tools</span><br></pre></td></tr></tbody></table></div></figure><p>开机<span class="exturl"><a class="exturl__link" href="https://wiki.archlinux.org/index.php/Systemd_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" target="_blank" rel="noopener">启动服务</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span>  vmtoolsd.service</span><br><span class="line">systemctl <span class="built_in">enable</span>   vmware-vmblock-fuse.service</span><br></pre></td></tr></tbody></table></div></figure><p>安装gtkmm3</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S gtkmm3</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;安装open-vm-tools增强工具&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class
+    <summary type="html">&lt;p&gt;安装open-vm-tools增强工具&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -352,18 +352,16 @@
     
     <content type="html"><![CDATA[<p><strong>安装fcitx5</strong></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx5</span><br><span class="line">sudo pacman -S  fcitx5-rime</span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p>打开fcitx5配置报错:你正在运行kde，但是fcitx找不到KCModule未被找到，此KCModule的软件包名通常为kcm-fcitx 或kde-config-fcitx.现在将打开配置目录</p>    </div>  <p>需要安装：</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx5-configtool</span><br></pre></td></tr></tbody></table></div></figure><p>配置編輯<code>etc/profile</code>文件，末尾寫入</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Fcitx</span></span><br><span class="line"><span class="built_in">export</span> GTK_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> QT_IM_MODULE=fcitx</span><br><span class="line"><span class="built_in">export</span> XMODIFIERS=<span class="string">"@im=fcitx"</span></span><br></pre></td></tr></tbody></table></div></figure><p>如果還不支持請嘗試運行<code>sudo pacman -S fcitx5-im</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;安装fcitx5&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+    <summary type="html">&lt;p&gt;&lt;strong&gt;安装fcitx5&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -377,9 +375,8 @@
     
     <content type="html"><![CDATA[<p>删除单个软件包，保留其全部已经安装的依赖关系</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -R package_name</span><br></pre></td></tr></tbody></table></div></figure><p>删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系：</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Rs package_name  <span class="comment">#推荐命令</span></span><br></pre></td></tr></tbody></table></div></figure><p>要删除软件包和所有依赖这个软件包的程序:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Rsc package_name</span><br></pre></td></tr></tbody></table></div></figure>     <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p>警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。</p>    </div>  <p>要删除软件包，但是不删除依赖这个软件包的其他程序： <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Rdd package_name pacman</span><br></pre></td></tr></tbody></table></div></figure><p>删除某些程序时会备份重要配置文件，在其后面加上*.pacsave扩展名。-n 选项可以删除这些文件：</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -Rn package_name </span><br><span class="line">pacman -Rsn package_name</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;删除单个软件包，保留其全部已经安装的依赖关系&lt;/p&gt;
+    <summary type="html">&lt;p&gt;删除单个软件包，保留其全部已经安装的依赖关系&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pacman -R package_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系：&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pacman -Rs package_name  &lt;span class=&quot;comment&quot;&gt;#推荐命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
@@ -393,15 +390,14 @@
       &lt;p&gt;警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。&lt;/p&gt;
     &lt;/div&gt;
   
-&lt;p&gt;要删除软件包，但是不删除依赖这个软件包的其他程序：&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;要删除软件包，但是不删除依赖这个软件包的其他程序：&lt;/p&gt;</summary>
     
     
-      <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+    
+    <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
     
     
-      <category term="Linux命令" scheme="https://kisskisso.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    <category term="Linux命令" scheme="https://kisskisso.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -414,18 +410,16 @@
     
     <content type="html"><![CDATA[<h3 id="VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法">          <a href="#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法" class="heading-link"><i class="fas fa-link"></i></a><strong>VMware(Caps Lock键)切换大小写作用失效的Bug的解决办法</strong></h3>      <p>1.用shift + 要大写的字母</p><p><s>2.首先停止运行中的虚拟机，打开虚拟机镜像安装的位置找到<code>.vmx</code>在vscode打开在最后添加<code>mks.win32.useInjectedMagic = "FALSE"</code></s></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;h3 id=&quot;VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot;&gt;
-          &lt;a href=&quot;#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas 
+    <summary type="html">&lt;h3 id=&quot;VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot;&gt;
+          &lt;a href=&quot;#VMware-Caps-Lock键-切换大小写作用失效的Bug的解决办法&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas </summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -439,9 +433,8 @@
     
     <content type="html"><![CDATA[<h3 id="如何在虚拟机安装Arch-Linux？">          <a href="#如何在虚拟机安装Arch-Linux？" class="heading-link"><i class="fas fa-link"></i></a><strong>如何在虚拟机安装Arch Linux？</strong></h3>      <p>1.新建一个虚拟机。下载Arch ios</p>    <div class="note-plugin success no-icon">            <p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">清华大学开源软件镜像站</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> <font size="4">OR</font> <span class="exturl"><a class="exturl__link" href="https://developer.aliyun.com/mirror/" target="_blank" rel="noopener">阿里巴巴开源镜像站</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>    </div>  <p>2.虚拟机设置—选项—高级—选择uefi</p><p>3.开机</p><p>4.配置网络 <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dhcpcd</span><br></pre></td></tr></tbody></table></div></figure><p>5.wifi-menu</p>    <div class="note-plugin danger">      <span class="note-plugin__icon note-plugin__icon--danger">              <i class="fas fa-minus-circle"></i>            </span>      <p>会显示zsh: command not found: wifi-memu</p>    </div>  <p>6.配置镜像源</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/pacman.d/mirrorlist</span><br></pre></td></tr></tbody></table></div></figure><p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/" target="_blank" rel="noopener">清华大学镜像源</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>ctrl + x 然后输入y按回车</p><p>7.磁盘分区</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cfdisk /dev/sda</span><br></pre></td></tr></tbody></table></div></figure><p>创建300m EFI分区 剩余空间创建根分区</p><p>new 回车 300m（第二个同理指剩余的空间）</p><p>选择write回车输入yes</p><p>quit退出</p><p>8.把根分区格式化为ext4</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/sda2</span><br></pre></td></tr></tbody></table></div></figure><p>9.把EFI分区格式化为fat32</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.fat -F32 /dev/sda1</span><br></pre></td></tr></tbody></table></div></figure><p>10.挂在根分区</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda2 /mnt</span><br></pre></td></tr></tbody></table></div></figure><p>11.创建EFI分区挂载点</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/boot  mkdir /mnt/boot/EFI</span><br></pre></td></tr></tbody></table></div></figure><p>12.挂在EFI分区</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda1 /mnt/boot/EFI</span><br></pre></td></tr></tbody></table></div></figure><p>13.安装基础包</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap -i /mnt base base-devel linux linux-firmware</span><br></pre></td></tr></tbody></table></div></figure><p>注：需要按两下回车 然后yes</p><p>14.生成文件系统表</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span><br></pre></td></tr></tbody></table></div></figure><p>15检查文件系统表有没有问题</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat  /mnt/etc/fstab</span><br></pre></td></tr></tbody></table></div></figure><p>16.切换根目录</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arch-chroot /mnt</span><br></pre></td></tr></tbody></table></div></figure><p>17.设置时区</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -sf /usr/share/zoneinfo$(tzselect) /etc/localtime</span><br></pre></td></tr></tbody></table></div></figure><blockquote><p>4 &gt;&gt;9&gt;&gt;1&gt;&gt;1</p></blockquote><p>18.设置时间漂移</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hwclock --systohc --utc</span><br></pre></td></tr></tbody></table></div></figure><p>19.配置locale</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/locale.gen</span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p>终端显示 bash: nano:command not found(bash: nano:命令未找到)<br>下载nano pacman -S nano</p>    </div>  <p>20.生成locale文件</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale-gen</span><br></pre></td></tr></tbody></table></div></figure><p>21.设置语言（tty中文乱码）</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> LANG=en_US.UTF-8 &gt; /etc/locale.conf</span><br></pre></td></tr></tbody></table></div></figure><p>22.设置主机名</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> kiss &gt; /etc/hostname</span><br></pre></td></tr></tbody></table></div></figure><p>23.配置hosts文件<span class="exturl"><a class="exturl__link" href="https://wiki.archlinux.org/index.php/Network_configuration_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E6%9C%AC%E5%9C%B0%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%A7%A3%E6%9E%90" target="_blank" rel="noopener">ArchWiki配置</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>nano  /etc/hostname</p><figure class="highlight vim"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">127.0</span>.<span class="number">0.1</span>        localhost</span><br><span class="line">::<span class="number">1</span>              localhost</span><br><span class="line"><span class="number">127.0</span>.<span class="number">1.1</span>        myhostname.localdomain        myhostname</span><br></pre></td></tr></tbody></table></div></figure><p>24.安装DHCP</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S dhcpcd</span><br></pre></td></tr></tbody></table></div></figure><p>25.启动dhcp服务</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> dhcpcd.service</span><br></pre></td></tr></tbody></table></div></figure><p>26.设置root密码</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd</span><br></pre></td></tr></tbody></table></div></figure><p>27.创建普通用户</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -m -G wheel -s /bin/bash xxx</span><br></pre></td></tr></tbody></table></div></figure><p>27.1设置密码 用户名</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd xxx <span class="comment">#xxx是你的用户名不是密码</span></span><br></pre></td></tr></tbody></table></div></figure><p>28.安装vim sudo</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S vim sudo</span><br></pre></td></tr></tbody></table></div></figure><p>29.赋予用户sudo权限</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">visudo </span><br><span class="line">去掉%wheel ALL=(ALL)ALL的<span class="comment">#</span></span><br></pre></td></tr></tbody></table></div></figure><p>30.安装引导</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -s grub efibootmgr </span><br><span class="line">多系统安装os-prober</span><br></pre></td></tr></tbody></table></div></figure><p>31.grub安装</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/EFI</span><br></pre></td></tr></tbody></table></div></figure><p>32.生成配置文件</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></div></figure><p>33.退出重启</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span> </span><br><span class="line">reboot</span><br></pre></td></tr></tbody></table></div></figure><hr><p>34.查看显示设备</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lspci | grep vga</span><br></pre></td></tr></tbody></table></div></figure><p>35.安装通用的显示驱动</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S xf86-video-vesa</span><br></pre></td></tr></tbody></table></div></figure><p>36.安装xorg</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S xorg</span><br></pre></td></tr></tbody></table></div></figure><p>38.安装字体</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S ttf-dejavu wqy-microhei</span><br></pre></td></tr></tbody></table></div></figure><p>39.安装kde桌面环境和应用</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S plasma kde-applications</span><br></pre></td></tr></tbody></table></div></figure><p>40启用显示管理服务</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> sddm</span><br></pre></td></tr></tbody></table></div></figure><p>41启用网络管理器</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl  <span class="built_in">enable</span> NetworkManager</span><br></pre></td></tr></tbody></table></div></figure><p>42.重启</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></tbody></table></div></figure><p>43.更改中文</p><p>略</p><p>44.根据网址设置更新镜像  写入签名key</p><p><span class="exturl"><a class="exturl__link" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/" target="_blank" rel="noopener">ArchlinuxCN</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;h3 id=&quot;如何在虚拟机安装Arch-Linux？&quot;&gt;
+    <summary type="html">&lt;h3 id=&quot;如何在虚拟机安装Arch-Linux？&quot;&gt;
           &lt;a href=&quot;#如何在虚拟机安装Arch-Linux？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;strong&gt;如何在虚拟机安装Arch Linux？&lt;/strong&gt;&lt;/h3&gt;
       
 &lt;p&gt;1.新建一个虚拟机。下载Arch ios&lt;/p&gt;
@@ -453,12 +446,11 @@
   
 &lt;p&gt;2.虚拟机设置—选项—高级—选择uefi&lt;/p&gt;
 &lt;p&gt;3.开机&lt;/p&gt;
-&lt;p&gt;4.配置网络&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;4.配置网络&lt;/p&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -472,9 +464,8 @@
     
     <content type="html"><![CDATA[<h2 id="FireFox-about-config-的隐私设置调整">          <a href="#FireFox-about-config-的隐私设置调整" class="heading-link"><i class="fas fa-link"></i></a>FireFox: "about:config"的隐私设置调整</h2>              <h3 id="准备：">          <a href="#准备：" class="heading-link"><i class="fas fa-link"></i></a>准备：</h3>      <p>1.在浏览器的网址列输入 “about:config” 并点击 enter 键</p><p>2.点击"I’ll be careful, I promise!"按钮<br>3.依照下方的指示操作…</p>        <h3 id="开始动手：">          <a href="#开始动手：" class="heading-link"><i class="fas fa-link"></i></a>开始动手：</h3>      <ol><li><p>privacy.firstparty.isolate = true</p><ul><li><span class="exturl"><a class="exturl__link" href="https://wiki.mozilla.org/Security/Tor_Uplift" target="_blank" rel="noopener">Tor Uplift</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>效用的结果，它可隔绝主要访问网域中所有浏览器辨识器来源（如 cookies），并期能可阻挡跨域名的追踪。（如果已使用扩展 “Cookie AutoDelete”，请不要打开此功能。）</li></ul></li><li><p>privacy.resistFingerprinting = true</p><ul><li><span class="exturl"><a class="exturl__link" href="https://wiki.mozilla.org/Security/Tor_Uplift" target="_blank" rel="noopener">Tor Uplift</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 效用的结果, 此偏好可让 Firefox 更能抵抗指纹辨识。</li></ul></li><li><p>privacy.trackingprotection.enabled = true  <a id="more"></a></p><ul><li>Mozilla 新內建的追踪保护功能，其利用 <span class="exturl"><a class="exturl__link" href="http://Disconnect.me" target="_blank" rel="noopener">Disconnect.me</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 过滤名单，但如果你已使用其它第三方的屏滤器如 uBlock Origin，其效能就会重复多余，因此你可以将之设为关闭。</li></ul></li><li><p>browser.cache.offline.enable = false</p><ul><li>取消离线的缓存快取资料</li></ul></li><li><p>browser.safebrowsing.malware = false</p><ul><li>取消 Google 安全浏览的恶意软件检查。这会有安全上的风险，但可改善隐私。</li></ul></li><li><p>browser.safebrowsing.phishing.enabled = false</p><ul><li>取消Google安全浏览与防钓鱼保护。这会有安全上的风险，但可改善隐私。</li></ul></li><li><p>browser.send_pings = false</p><ul><li>这个性能可让网站追踪访客的点击情況。</li></ul></li><li><p>browser.sessionstore.max_tabs_undo = 0</p><ul><li>尽管 Firefox 设定为不记录浏览资讯，但在用户关闭浏览器分页之前，这些资讯仍会暂存在选单 -&gt; 浏览历史 -&gt; 近期关闭的分页 底下</li></ul></li><li><p>browser.urlbar.speculativeConnect.enabled = false</p><ul><li>关闭自动完成的 URLs 预载， 当用户在网址列输入资讯时，Firefox 会自行预载，有人担心这些浏览器自动建议的网址并非是用户想要连上的网站。</li></ul></li><li><p>dom.battery.enabled = false</p></li></ol><ul><li>网站主人可以追踪用户上网设备的电池状况。</li></ul><ol start="11"><li>dom.event.clipboardevents.enabled = false</li></ol><ul><li>取消让网站在让你从某网页中复制、贴上是剪下任何内容時，会发出通知。这会让他们知道网页的哪一部份被挑选。</li></ul><ol start="12"><li>geo.enabled = false</li></ol><ul><li>取消地理定位资料</li></ul><ol start="13"><li>media.navigator.enabled = false</li></ol><ul><li>网站可以跟踪用户上网设备里的麦克风和摄影机状态</li></ul><ol start="14"><li><p>network.cookie.cookieBehavior = 1</p><ul><li>取消cookies</li><li>0 = Accept all cookies by default （默认接受所有cookies）</li><li>1 = Only accept from the originating site (block third party cookies) (只接受来自原网站的Cookies（阻止第三方Cookies）。)</li><li>2 = Block all cookies by default ( 默认情况下禁止所有cookies)</li></ul></li><li><p>network.cookie.lifetimePolicy = 2</p><ul><li>cookies 在期间结束后会被刪除</li><li>0 = Accept cookies normally (正常接受cookies)</li><li>1 = Prompt for each cookie (每个cookie的提示)</li><li>2 = Accept for current session only (只接受当前会议)</li><li>3 = Accept for N days (接受N天)</li></ul></li><li><p>network.http.referer.trimmingPolicy = 2</p><ul><li>Send only the scheme, host, and port in the <code>Referer</code> header  (只发送Referer标头中的方案、主机和端口。)</li><li>0 = Send the full URL in the <code>Referer</code> header (在Referer header中发送完整的URL。)</li><li>1 = Send the URL without its query string in the <code>Referer</code> header (发送不含查询字符串的URL的Referer header)</li><li>2 = Send only the scheme, host, and port in the <code>Referer</code> header</li></ul></li><li><p>network.http.referer.XOriginPolicy = 2</p><ul><li>Only send <code>Referer</code> header when the full hostnames match. (Note: if you notice significant breakage, you might try <code>1</code> combined with an <code>XOriginTrimmingPolicy</code> tweak below.)</li><li>0 = Send <code>Referer</code> in all cases</li><li>1 = Send <code>Referer</code> to same eTLD sites</li><li>2 = Send <code>Referer</code> only when the full hostnames match</li></ul></li><li><p>network.http.referer.XOriginTrimmingPolicy = 2</p><ul><li>When sending <code>Referer</code> across origins, only send scheme, host, and port in the <code>Referer</code> header of cross-origin requests.</li><li>0 = Send full url in <code>Referer</code></li><li>1 = Send url without query string in <code>Referer</code></li><li>2 = Only send scheme, host, and port in <code>Referer</code></li></ul></li><li><p>webgl.disabled = true</p></li></ol><ul><li>WebGL 有潜在的安全风险</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;FireFox-about-config-的隐私设置调整&quot;&gt;
+    <summary type="html">&lt;h2 id=&quot;FireFox-about-config-的隐私设置调整&quot;&gt;
           &lt;a href=&quot;#FireFox-about-config-的隐私设置调整&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;FireFox: &quot;about:config&quot;的隐私设置调整&lt;/h2&gt;
       
 
@@ -502,15 +493,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;privacy.trackingprotection.enabled = true&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
-    
-    </summary>
+&lt;p&gt;privacy.trackingprotection.enabled = true&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="WebRTC" scheme="https://kisskisso.com/tags/WebRTC/"/>
+    <category term="WebRTC" scheme="https://kisskisso.com/tags/WebRTC/"/>
     
   </entry>
   
@@ -523,18 +513,16 @@
     
     <content type="html"><![CDATA[<h3 id="如何在Firefox中禁用WebRTC？">          <a href="#如何在Firefox中禁用WebRTC？" class="heading-link"><i class="fas fa-link"></i></a>如何在Firefox中禁用WebRTC？</h3>      <p>简而言之：在 <code>about:config</code> 中设置 <code>media.peerconnection.enabled </code>为 <code>false</code>。<br>解释一下:<br>在firefox地址栏输入 "about:config "然后按回车键。<br>按 "我会小心的，我保证！"按钮。<br>搜索 “media.peerconnection.enabled”<br>双击该条目，"Value "列现在应该是 “false”<br>完成。再做一次<span class="exturl"><a class="exturl__link" href="https://ipleak.net/" target="_blank" rel="noopener">WebRTC泄漏测试</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>如果你想确保每一个与WebRTC相关的设置真的被禁用，请更改这些设置。<br>1.media.peerconnection.turn.disable = true。<br>2.media.peerconnection.use_document_iceservers = false<br>3.media.peerconnection.video.enabled = false<br>4.media.peerconnection.identity.timeout = 1<br>现在你可以100%确定WebRTC被禁用。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;h3 id=&quot;如何在Firefox中禁用WebRTC？&quot;&gt;
-          &lt;a href=&quot;#如何在Firefox中禁用WebRTC？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;如何在Firefox中禁用We
+    <summary type="html">&lt;h3 id=&quot;如何在Firefox中禁用WebRTC？&quot;&gt;
+          &lt;a href=&quot;#如何在Firefox中禁用WebRTC？&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;如何在Firefox中禁用We</summary>
       
     
-    </summary>
     
     
-      <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -548,50 +536,20 @@
     
     <content type="html"><![CDATA[<p>“反抗将自身价值给予人生，贯穿人生的始末，恢复人生的伟大对眼光开阔的人而言，最美的景观莫过于智力与超过人的现实之间的搏斗。”-----走出自卑陰影，在更高､更遠的地方找到生命的補償</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;“反抗将自身价值给予人生，贯穿人生的始末，恢复人生的伟大对眼光开阔的人而言，最美的景观莫过于智力与超过人的现实之间的搏斗。”-----走出自卑陰影，在更高､更遠的地方找到生命的補償&lt;/p&gt;
+    <summary type="html">&lt;p&gt;“反抗将自身价值给予人生，贯穿人生的始末，恢复人生的伟大对眼光开阔的人而言，最美的景观莫过于智力与超过人的现实之间的搏斗。”-----走出自卑陰影，在更高､更遠的地方找到生命的補償&lt;/p&gt;
 &lt;script&gt;
-        document.querySelectorAll
+        document.querySelectorAll</summary>
       
     
-    </summary>
     
     
-      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
+    <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
     
     
-      <category term="話" scheme="https://kisskisso.com/tags/%E8%A9%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小學生水平</title>
-    <link href="https://kisskisso.com/51349/"/>
-    <id>https://kisskisso.com/51349/</id>
-    <published>2021-02-07T13:38:37.000Z</published>
-    <updated>2021-02-07T14:22:04.746Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%84%9B%E9%BA%97%E7%B5%B22.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%84%9B%E9%BA%97%E7%B5%B22.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-        document
-      
-    
-    </summary>
-    
-    
-      <category term="生活与话" scheme="https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/"/>
-    
-    
-      <category term="画" scheme="https://kisskisso.com/tags/%E7%94%BB/"/>
+    <category term="話" scheme="https://kisskisso.com/tags/%E8%A9%B1/"/>
     
   </entry>
   

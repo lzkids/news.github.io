@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-03-12T07:00:46.791Z</updated>
+  <updated>2021-03-12T07:22:56.963Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>5种停止厌恶任务列表的方法</title>
+    <link href="https://kisskisso.com/NR9XAW/"/>
+    <id>https://kisskisso.com/NR9XAW/</id>
+    <published>2021-03-12T07:20:41.000Z</published>
+    <updated>2021-03-12T07:22:56.963Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.学习像Candy Crush一样珍视您的任务列表<br>这个任务列表项目中的第一步是沉迷于写下您的任务后大脑清晰的舒适感。<br>2.为未来懒惰的您自己写下任务列表<br>好的任务列表是详细的。您的大脑会容易过滤相对概括的内容，比如“食品”或者“兽医”，因为您根本不知道从何做起。<span id="more"></span><br>3.任务没有感情，尽管厚此薄彼<br>您的列表应该呈现一个阶级架构，您可以将事情按必须要做和如果有时间会想去做来划分。<br>4.你写下它，但是您也可以更改它<br>给您自己更多空间来从容应对，这样您才可以让自己一直保持动力，无论发生了什么。<br>5.像奖杯一样对待您的任务列表<br>已完成的任务列表可以为您铺垫前往重大成功的道路，或者仅仅是帮助您对当天的效率感到满意。<br>一封来自todolist 的邮件</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1.学习像Candy Crush一样珍视您的任务列表&lt;br&gt;
+这个任务列表项目中的第一步是沉迷于写下您的任务后大脑清晰的舒适感。&lt;br&gt;
+2.为未来懒惰的您自己写下任务列表&lt;br&gt;
+好的任务列表是详细的。您的大脑会容易过滤相对概括的内容，比如“食品”或者“兽医”，因为您根本不知道从何做起。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>科学心理开端</title>
@@ -462,33 +484,6 @@
 &lt;p&gt;or&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget  -qO-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |   bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到&lt;code&gt;~/.nvm&lt;/code&gt;，并尝试将下面代码段中的源码行添加到正确的配置文件中(&lt;code&gt;~/.bash_profile&lt;/code&gt;or&lt;code&gt;~/.zshrc&lt;/code&gt;or&lt;code&gt;~/.profile&lt;/code&gt;or&lt;code&gt;~/.bashrc&lt;/code&gt;)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>虚拟机配置共享文件</title>
-    <link href="https://kisskisso.com/58206/"/>
-    <id>https://kisskisso.com/58206/</id>
-    <published>2021-02-23T11:08:11.000Z</published>
-    <updated>2021-02-23T11:22:04.514Z</updated>
-    
-    <content type="html"><![CDATA[<p>在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vmware-hgfsclient</span><br></pre></td></tr></tbody></table></div></figure><p>进入/etc/systemd/system目录</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/systemd/system</span><br></pre></td></tr></tbody></table></div></figure><p>创建一个文件</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>用vim或者其它喜欢的软件打开</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下 <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"></span><br><span class="line">Description=Load VMware shared folders</span><br><span class="line"></span><br><span class="line">Requires=vmware-vmblock-fuse.service</span><br><span class="line"></span><br><span class="line">After=vmware-vmblock-fuse.service</span><br><span class="line"></span><br><span class="line">ConditionPathExists=.host:/</span><br><span class="line"></span><br><span class="line">ConditionVirtualization=vmware</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"></span><br><span class="line">Type=oneshot</span><br><span class="line"></span><br><span class="line">RemainAfterExit=yes</span><br><span class="line"></span><br><span class="line">ExecStart=</span><br><span class="line"></span><br><span class="line">ExecStart=/usr/bin/vmhgfs-fuse -o allow_other -o auto_unmount .host:/ /mnt/hgfs</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"></span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></tbody></table></div></figure><p>保存后，用systemctl命令使能这个service</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> xxx.xxx.service</span><br></pre></td></tr></tbody></table></div></figure><p>查看/mnt里有没有hgfs文件夹</p><p>如果没有创建hgfs文件夹，需要创建<code>mkdir hgfs</code></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /mnt/hgfs</span><br></pre></td></tr></tbody></table></div></figure><p>重启后检查共享目录是否已经挂载到/mnt/hgfs目录下了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;在VMware虚拟机上设置共享文件夹，现在通过下面的命令就可以看到已经设置好的共享文件夹名&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vmware-hgfsclient&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;进入/etc/systemd/system目录&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /etc/systemd/system&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;创建一个文件&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;touch xxx.xxx.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;用vim或者其它喜欢的软件打开&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vim xxx.xxx.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;填入下面的内容，为了方便，就不单独配置各个共享文件夹了，直接将所有共享文件夹mount到一个目录下&lt;/p&gt;</summary>
     
     
     

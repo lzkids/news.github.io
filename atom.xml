@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-03-12T07:22:56.963Z</updated>
+  <updated>2021-03-13T04:03:06.141Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>心理学20世纪后期的发展</title>
+    <link href="https://kisskisso.com/36WR13N/"/>
+    <id>https://kisskisso.com/36WR13N/</id>
+    <published>2021-03-13T02:04:25.000Z</published>
+    <updated>2021-03-13T04:03:06.141Z</updated>
+    
+    <content type="html"><![CDATA[<p>二战后人们对心理学的兴趣日增，加借以进性研究的复杂工具和电子设备的发展，使更多问题可被检验，证明早期的理论取向太受限制。此观点在50年代计算机发展后被强化。</p><p>50年代末，西蒙（HerbertSimon）和同事发表一系列优良的研究，并指出心理现象可以利用计算机加以仿真（simulated）。<span id="more"></span></p><p>许多旧的心理学议题以<strong>信息处理模式</strong>（information-processing models）重新出现。这使得人类可以被视为一个信息处理器，提供一个比行为论更具动力性的心理学取向。而且使得某些格式塔心理学与心理分析理念，能得到跟精确的陈述。</p><p>早期有关心理本质的观念，可以被具体化并以实际数据验证。Eg：可将记忆的运作现象成类似计算机存取信息的过程。</p><p>另一个影响心理学观点的因素式近代语言学的发展——“了解及说一种语言”的心理结构理论化。而这个研究的先驱是乔姆斯基（Noam Chomsky）1957年出版的《句法结构》提供了第一个重要的语言心理分析，并促进了语言心理学（psycholinguistics）领域的快速发展。</p><p><strong>神经心理学</strong>有许多关于脑以及神经系统的发现提示了生物神经事件和心理历程间有明确的关联。而<strong>生物药物技术</strong>的进步加速了对这种关系的研究。**<u>斯佩里（Roger Sperry）</u>**的研究显示了脑部某些区域和特定的思考及行为历程的关联性，在1981年获得诺贝尔奖</p><p>信息处理模式、语言心理学、神经心理学的发展，为心理学提供了一种高度认知取向的研究方法。主要关心的是对心理历程和心理结构的科学分析，认知心理学并不局限于思考和知识。（它【认知心理学】扩展到心理学的所有领域，包括知觉、动机、情绪、临床心理学、人格和社会心理学）</p><p>20世纪，心理学的关注焦点形成一种循环：<strong>在排拒意识经验，认为他是一种不当的科学研究而转向行为的研究后，心理学家再次建构心灵的理论（强有力的新工具）</strong></p><p>小结：</p><div class="spoiler collapsed">    <div class="spoiler-title">        小结    </div>    <div class="spoiler-content">        <p>1.心理学的根源可追溯到公元前上四百年。有关人类心理学最早的争论之一即聚焦于 “人类的能力是天生的还是通过经验而获得的”这个问题上（就是所谓先天与后天的争论）</p><p>2.科学心理学诞生于19世纪末，当时主张心灵与行为可作为科学分析的主题，而心理学的第一间科学实验室即由冯特（Wilhelm Wundt）在1879年创设于莱比锡大学。</p><p>3.20世纪心理学的早期学派有结构主义、功能主义、行为主义、格式塔心理学及心理分析</p><p>4.20世纪心理学后期的发展：包括信息处理论、心理语言学以及神经心理学。</p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;二战后人们对心理学的兴趣日增，加借以进性研究的复杂工具和电子设备的发展，使更多问题可被检验，证明早期的理论取向太受限制。此观点在50年代计算机发展后被强化。&lt;/p&gt;
+&lt;p&gt;50年代末，西蒙（HerbertSimon）和同事发表一系列优良的研究，并指出心理现象可以利用计算机加以仿真（simulated）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>5种停止厌恶任务列表的方法</title>
@@ -461,33 +483,6 @@
     
     
     <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nvm的安裝與配置</title>
-    <link href="https://kisskisso.com/34859/"/>
-    <id>https://kisskisso.com/34859/</id>
-    <published>2021-02-23T16:03:38.000Z</published>
-    <updated>2021-03-01T04:51:01.986Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="如何安装nvm">          <a href="#如何安装nvm" class="heading-link"><i class="fas fa-link"></i></a>如何安装nvm</h3>      <p><span class="exturl"><a class="exturl__link" href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">nvm</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 是用于管理多个活动的nodejs版本</p><p>要安装或更新 nvm，你应该运行安装脚本。要做到这一点，你可以<span class="exturl"><a class="exturl__link" href="https://github.com/nvm-sh/nvm/blob/v0.37.2/install.sh" target="_blank" rel="noopener">手动下载</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>并运行该脚本，或者使用下面的cURL或Wget命令:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl  -o-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |  bash</span><br></pre></td></tr></tbody></table></div></figure><p>or</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget  -qO-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |   bash</span><br></pre></td></tr></tbody></table></div></figure><p>运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到<code>~/.nvm</code>，并尝试将下面代码段中的源码行添加到正确的配置文件中(<code>~/.bash_profile</code>or<code>~/.zshrc</code>or<code>~/.profile</code>or<code>~/.bashrc</code>)  <a id="more"></a></p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#This loads nvm</span></span><br><span class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$([ -z "${XDG_CONFIG_HOME-}" ] &amp;&amp; printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")</span>"</span></span><br><span class="line">[ -s <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; \. <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin warning">      <span class="note-plugin__icon note-plugin__icon--warning">              <i class="fas fa-exclamation-circle"></i>            </span>      <p>在Linux上，运行安装脚本后，如果在输入命令<code>command -v nvm </code>后，得到nvm: command not found或终端没有反馈，只需关闭当前终端，打开一个新的终端，再尝试验证。</p>    </div>  <p>配置镜像源可以提高nodejs的下载速度，尝试将下面的代码段配置上面提到的配置文件中去(不用全部配置)</p>        <h3 id="nvm-镜像源">          <a href="#nvm-镜像源" class="heading-link"><i class="fas fa-link"></i></a><strong>nvm 镜像源</strong></h3>      <figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#node官方</span></span><br><span class="line"><span class="built_in">export</span>  NVM_NODEJS_ORG_MIRROR=<span class="string">"https://nodejs.org/dist"</span> </span><br><span class="line">or</span><br><span class="line"><span class="comment">#淘宝镜像源</span></span><br><span class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=<span class="string">"https://mirrors.aliyun.com/nodejs-release/"</span> </span><br><span class="line">or</span><br><span class="line"><span class="comment">#清华大学镜像源</span></span><br><span class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=<span class="string">"https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/"</span></span><br></pre></td></tr></tbody></table></div></figure>    <div class="note-plugin danger no-icon">            <p><font color="red" size="2">注意：如果更换的是这个镜像源export&nbsp; NVM_NODEJS_ORG_MIRROR="<span class="exturl"><a class="exturl__link" href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/node</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>"的话下载nodejs会显示url404,至少我是这样</font></p>    </div>          <h3 id="使用方法">          <a href="#使用方法" class="heading-link"><i class="fas fa-link"></i></a>使用方法</h3>      <p>要下载、编译并安装最新版本的node，请这样做:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># "node" is an alias for the latest version</span></span><br><span class="line">nvm install node</span><br></pre></td></tr></tbody></table></div></figure><p>要安装特定版本的node:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install 12.20.2 <span class="comment"># or 14.16.0</span></span><br></pre></td></tr></tbody></table></div></figure><p>使用ls-remote列出可用的版本:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls-remote</span><br></pre></td></tr></tbody></table></div></figure><p>然后在任何新的shell中只需使用已安装的版本:</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm use node  </span><br><span class="line">or  </span><br><span class="line">nvm use 12.20.2 <span class="comment">#or 14.16.0</span></span><br></pre></td></tr></tbody></table></div></figure><p>查看安装了哪些版本：</p><figure class="highlight bash"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls</span><br></pre></td></tr></tbody></table></div></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;如何安装nvm&quot;&gt;
-          &lt;a href=&quot;#如何安装nvm&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;如何安装nvm&lt;/h3&gt;
-      
-&lt;p&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://github.com/nvm-sh/nvm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;nvm&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 是用于管理多个活动的nodejs版本&lt;/p&gt;
-&lt;p&gt;要安装或更新 nvm，你应该运行安装脚本。要做到这一点，你可以&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot; href=&quot;https://github.com/nvm-sh/nvm/blob/v0.37.2/install.sh&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;手动下载&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;并运行该脚本，或者使用下面的cURL或Wget命令:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl  -o-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |  bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget  -qO-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh   |   bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;运行上述任何一个命令都会下载一个脚本并运行它。脚本会将nvm资源库克隆到&lt;code&gt;~/.nvm&lt;/code&gt;，并尝试将下面代码段中的源码行添加到正确的配置文件中(&lt;code&gt;~/.bash_profile&lt;/code&gt;or&lt;code&gt;~/.zshrc&lt;/code&gt;or&lt;code&gt;~/.profile&lt;/code&gt;or&lt;code&gt;~/.bashrc&lt;/code&gt;)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kisskisso.com/49548/</loc>
+    
+    <lastmod>2021-03-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kisskisso.com/2H1FVGE/</loc>
     
     <lastmod>2021-03-24</lastmod>
@@ -612,13 +619,6 @@
   
   <url>
     <loc>https://kisskisso.com/34653/</loc>
-    
-    <lastmod>2021-03-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kisskisso.com/49548/</loc>
     
     <lastmod>2021-03-17</lastmod>
     
@@ -1936,13 +1936,6 @@
 
   
   <url>
-    <loc>https://kisskisso.com/tags/ajax/</loc>
-    <lastmod>2021-03-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://kisskisso.com/tags/Linux/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
@@ -1950,7 +1943,7 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/js/</loc>
+    <loc>https://kisskisso.com/tags/ajax/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1964,7 +1957,7 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/WSL/</loc>
+    <loc>https://kisskisso.com/tags/Atom/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1972,6 +1965,13 @@
   
   <url>
     <loc>https://kisskisso.com/tags/CSS/</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/js/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1992,7 +1992,7 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/Atom/</loc>
+    <loc>https://kisskisso.com/tags/WSL/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2027,14 +2027,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/json/</loc>
+    <loc>https://kisskisso.com/tags/JSON/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/JSON/</loc>
+    <loc>https://kisskisso.com/tags/json/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2048,14 +2048,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://kisskisso.com/tags/node/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/node/</loc>
+    <loc>https://kisskisso.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2069,14 +2069,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/less/</loc>
+    <loc>https://kisskisso.com/tags/npm/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/npm/</loc>
+    <loc>https://kisskisso.com/tags/less/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2111,13 +2111,6 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/python/</loc>
-    <lastmod>2021-03-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://kisskisso.com/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
@@ -2126,6 +2119,13 @@
   
   <url>
     <loc>https://kisskisso.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/python/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2146,7 +2146,7 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/css/</loc>
+    <loc>https://kisskisso.com/tags/SQL/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2154,13 +2154,6 @@
   
   <url>
     <loc>https://kisskisso.com/tags/WebRTC/</loc>
-    <lastmod>2021-03-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kisskisso.com/tags/SQL/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2181,6 +2174,13 @@
   </url>
   
   <url>
+    <loc>https://kisskisso.com/tags/css/</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kisskisso.com/tags/%E7%94%BB/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
@@ -2188,14 +2188,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/%E9%94%99%E8%AF%AF/</loc>
+    <loc>https://kisskisso.com/tags/1-1/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/tags/1-1/</loc>
+    <loc>https://kisskisso.com/tags/%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2239,14 +2239,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/categories/Web%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://kisskisso.com/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2267,14 +2267,14 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <loc>https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kisskisso.com/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E8%AF%9D/</loc>
+    <loc>https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
     <lastmod>2021-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-03-25T05:52:55.758Z</updated>
+  <updated>2021-03-25T09:27:03.437Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo无法生成index.html文件</title>
+    <link href="https://kisskisso.com/3YD1C7C/"/>
+    <id>https://kisskisso.com/3YD1C7C/</id>
+    <published>2021-03-25T08:13:25.000Z</published>
+    <updated>2021-03-25T09:27:03.437Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在修改完博客后，执行hexo g的时候生成了一些文件但是没有生成静态的index.html文件。在网页搜索答案是缺少依赖项，我按照其它博客的解决办法运行了<code>npm ls --depth 0</code>发现没有报错。之后对了下之前备份的pacage.json发现少了markdown生成的网页的插件。<span id="more"></span></p><p>1.查看npm安装各hexo插件的情况</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ls --depth 0</span><br></pre></td></tr></tbody></table></figure><p>如果显示npm ERR！一类的需要安装相应的插件</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install ...</span><br></pre></td></tr></tbody></table></figure><p>2.使用<code>npm ls --depth 0</code>没有报错先去hexo根目录下的<code>package.json</code>查看有没有<code>hexo-renderer-markdown-it</code>如果没有需要下载</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-markdown-it</span><br><span class="line">or</span><br><span class="line">npm install hexo-renderer-markdown-it-plus</span><br></pre></td></tr></tbody></table></figure><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今天在修改完博客后，执行hexo g的时候生成了一些文件但是没有生成静态的index.html文件。在网页搜索答案是缺少依赖项，我按照其它博客的解决办法运行了&lt;code&gt;npm ls --depth 0&lt;/code&gt;发现没有报错。之后对了下之前备份的pacage.json发现少了markdown生成的网页的插件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="错误" scheme="https://kisskisso.com/tags/%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>本章摘要</title>
@@ -524,27 +545,6 @@ experimental paychologists&lt;/p&gt;
     
     
     <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>升级与更新包</title>
-    <link href="https://kisskisso.com/30109/"/>
-    <id>https://kisskisso.com/30109/</id>
-    <published>2021-03-10T12:33:45.000Z</published>
-    <updated>2021-03-24T10:22:33.351Z</updated>
-    
-    <content type="html"><![CDATA[<p>随着hexo5.0的发布，打着尝试最新功能的心，准备升级看看。之前尝试过升级，但都已失败告终。废话不多说直奔主题。</p><p>首先推荐一个npm包——<code>npm-check-updates</code>。<br>它是查找比你的package.json所允许的更新版本的软件包依赖关系。<span id="more"></span></p><h3 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> <strong>安装</strong></h3><p><code>npm install -g npm-check-updates</code></p><h3 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> <strong>使用方法</strong></h3><p><strong>显示当前目录下项目的任何新的依赖关系。</strong></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ ncu</span><br><span class="line">Checking package.json</span><br><span class="line">[====================] 5/5 100%</span><br><span class="line"></span><br><span class="line"> express           4.12.x  →   4.13.x</span><br><span class="line"> multer            ^0.1.8  →   ^1.0.1</span><br><span class="line"> react-bootstrap  ^0.22.6  →  ^0.24.0</span><br><span class="line"> react-a11y        ^0.1.1  →   ^0.2.6</span><br><span class="line"> webpack          ~1.9.10  →  ~1.10.5</span><br><span class="line"></span><br><span class="line">Run ncu -u to upgrade package.json</span><br></pre></td></tr></tbody></table></figure><p>!!! info “”<br><font color="red">红色</font>=主要升级(和所有<a href="https://semver.org/#spec-item-4">主要的零版本</a>)<br><font color="cyan">青色</font>=小规模升级<br><font color="green">绿色</font>=补丁升级</p><p><strong>升级一个项目的包文件:</strong></p><div class="admonition error"><p>确保你的包文件处于版本控制中，并且所有的修改都已经提交。这将覆盖你的包文件。</p></div><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ncu -u</span><br><span class="line">Upgrading package.json</span><br><span class="line">[====================] 1/1 100%</span><br><span class="line"></span><br><span class="line"> express           4.12.x  →   4.13.x</span><br><span class="line"></span><br><span class="line">Run npm install to install new versions.</span><br><span class="line"></span><br><span class="line">$ npm install      <span class="comment"># update installed packages and package-lock.json</span></span><br></pre></td></tr></tbody></table></figure><p><strong>检查全局包:</strong></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ncu -g</span><br></pre></td></tr></tbody></table></figure><h3 id="注意事项"><a class="markdownIt-Anchor" href="#注意事项"></a> <strong>注意事项：</strong></h3><p>hexo如果是4.x版本升级会报以下错误，需要修改<code>_config.yml</code></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">WARN  Deprecated config detected: <span class="string">"use_date_for_updated"</span> is deprecated, please use <span class="string">"updated_option"</span> instead. See https://hexo.io/docs/configuration <span class="keyword">for</span> more details.</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure><p>修改如下：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"><span class="comment"># Deprecated</span></span><br><span class="line">external_link: <span class="literal">true</span>|<span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># New option</span></span><br><span class="line">external_link:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>|<span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deprecated</span></span><br><span class="line">use_date_for_updated: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># New option</span></span><br><span class="line"><span class="comment"># https://hexo.io/docs/configuration#Date-Time-format</span></span><br><span class="line">updated_option: date</span><br></pre></td></tr></tbody></table></figure><p>了解更多hexo5.0版本的改动请参考<a href="https://hexo.io/news/2020/07/29/hexo-5-released/">hexo发布的新闻</a></p><p>了解更多的npm-check-updates请访问<a href="https://github.com/raineorshine/npm-check-updates">Github</a>或者<a href="https://www.npmjs.com/package/npm-check-updates">npm</a></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;随着hexo5.0的发布，打着尝试最新功能的心，准备升级看看。之前尝试过升级，但都已失败告终。废话不多说直奔主题。&lt;/p&gt;
-&lt;p&gt;首先推荐一个npm包——&lt;code&gt;npm-check-updates&lt;/code&gt;。&lt;br&gt;
-它是查找比你的package.json所允许的更新版本的软件包依赖关系。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
     
   </entry>
   

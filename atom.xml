@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-04-01T03:24:56.129Z</updated>
+  <updated>2021-04-05T09:32:16.435Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用hexo-admonition插件</title>
+    <link href="https://kisskisso.com/1K6F5E2/"/>
+    <id>https://kisskisso.com/1K6F5E2/</id>
+    <published>2021-04-05T09:13:14.000Z</published>
+    <updated>2021-04-05T09:32:16.435Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a href="https://github.com/lxl80/hexo-admonition">hexo-admonition</a>为博客添加如提示、警告、错误等块式内容。</p><div class="admonition warning"><p>这是一条不带标题的警告信息</p></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxl80/hexo</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="软件" scheme="https://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>windows优化和关闭遥测</title>
@@ -492,31 +516,6 @@
     <summary type="html">&lt;p&gt;学习理论中的一条基本原则：做出某种行为后得到酬赏，则该行为会被强化。&lt;/p&gt;
 &lt;p&gt;酬赏具有强大影响力的原则被称为&lt;strong&gt;效果律&lt;/strong&gt;（law of effect）&lt;/p&gt;
 &lt;p&gt;在解释个人行为时，过于强调显见的情境原因反而忽略个人成因称作&lt;strong&gt;过度辩护效应（overjustification）&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>西尔格德心理学导论大纲</title>
-    <link href="https://kisskisso.com/55288/"/>
-    <id>https://kisskisso.com/55288/</id>
-    <published>2021-03-11T05:05:45.000Z</published>
-    <updated>2021-03-24T10:25:38.862Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>贯穿全书的三个观点：</strong>（生物学、进化、文化）<br>1、加强行为的生物学基础<br>2、在心理学研究中增加进化观点。<br>3、强调文化影响及其多样性<br>并在不同学派的增加“主观论者的观点”。 <span id="more"></span></p><hr><div class="markmap-container" style="height:400px;"><svg class="markmap-svg">{"t":"heading","d":1,"v":"西尔格德心理学导论大纲","c":[{"t":"heading","d":2,"v":"基础部分","c":[{"t":"heading","d":3,"v":"心理学的本质"},{"t":"heading","d":3,"v":"心理学的生物基础"},{"t":"heading","d":3,"v":"心理学的发展","c":[{"t":"heading","d":4,"v":"增加儿童心理学基础上有关认知论发展"},{"t":"heading","d":4,"v":"扩展和更新青春期发展的范围"},{"t":"heading","d":4,"v":"增加遗传对气质影响信息"}]}]},{"t":"heading","d":2,"v":"基本心里活动","c":[{"t":"heading","d":3,"v":"感觉过程","c":[{"t":"heading","d":4,"v":"对光和心理物理的研究扩展"},{"t":"heading","d":4,"v":"增加信号检测论"}]},{"t":"heading","d":3,"v":"知觉","c":[{"t":"heading","d":4,"v":"用生态学的观点解释知觉的作用，将错觉并入知觉的恒常性研究"},{"t":"heading","d":4,"v":"注意研究被扩展为独立部分"}]},{"t":"heading","d":3,"v":"意识","c":[{"t":"heading","d":4,"v":"以分心或失去意识的情景来对意识进行解释，认为它是对自己内外环境和各种行为活动的监控，并由当时的知觉、思维和情感构成"},{"t":"heading","d":4,"v":"酗酒的产生、其它文化差异和性别差异"}]},{"t":"heading","d":3,"v":"学习与条件反射作用","c":[{"t":"heading","d":4,"v":"抑制性条件反射③"}]},{"t":"heading","d":3,"v":"记忆","c":[{"t":"heading","d":4,"v":"三个阶段与三个储存区分与解释是①","c":[{"t":"heading","d":5,"v":"三个存储系统","c":[{"t":"heading","d":6,"v":"编码","c":[{"t":"list_item","d":7,"v":"指对来自外部的信息进行最初加工，在脑海里形成深刻印象；"}]},{"t":"heading","d":6,"v":"存储","c":[{"t":"list_item","d":7,"v":"指信息被你编码后，会在你脑海里保存一段时间；"}]},{"t":"heading","d":6,"v":"提取","c":[{"t":"list_item","d":7,"v":"指从记忆这个大仓库里，将你需要使用的特定信息提取出来。"}]}]},{"t":"heading","d":5,"v":"三个阶段","c":[{"t":"heading","d":6,"v":"瞬时记忆（感觉记忆）","c":[{"t":"list_item","d":7,"v":"指外界刺激以极短的时间一次呈现后，信息在感觉通道内迅速被登记并保留一瞬间的记忆。"}]},{"t":"heading","d":6,"v":"短时记忆","c":[{"t":"list_item","d":7,"v":"指外界刺激以极短的时间一次呈现后，保持时间在1分钟以内的记忆。"}]},{"t":"heading","d":6,"v":"长时记忆","c":[{"t":"list_item","d":7,"v":"指外界刺激以极短的时间一次呈现后，保持时间在1分钟以上的记忆。"}]}]}]},{"t":"heading","d":4,"v":"记忆的建构性及对实际生活的影响"}]},{"t":"heading","d":3,"v":"语言和思考","c":[{"t":"heading","d":4,"v":"增加神经基础"},{"t":"heading","d":4,"v":"在推理和决策中指出表象的作用"},{"t":"heading","d":4,"v":"在演绎与归纳的解释中用脑内的神经机制加以区分"}]}]},{"t":"heading","d":2,"v":"社会心理","c":[{"t":"heading","d":3,"v":"社会影响","c":[{"t":"heading","d":4,"v":"以情境起重要作用的观点，对社会助长作用、旁观者效应、顺从等几个方面做现代化解释"},{"t":"heading","d":4,"v":"增加包含不和谐理论与自我知觉理论的“自我辩护②（self-justification）”"}]},{"t":"heading","d":3,"v":"社会认知","c":[{"t":"heading","d":4,"v":"依据思维的双进程模型的观点，阐述印象的形成、态度和人际吸引等问题","c":[{"t":"heading","d":5,"v":"自主思维"},{"t":"heading","d":5,"v":"控制思维"}]},{"t":"heading","d":4,"v":"解释刻板印象的形成及其文化印象"},{"t":"heading","d":4,"v":"增加对偏见与刻板印象的控制"},{"t":"heading","d":4,"v":"团体思维中保持团体多样性的积极意义"}]}]},{"t":"heading","d":2,"v":"心理特征","c":[{"t":"heading","d":3,"v":"动机","c":[{"t":"heading","d":4,"v":"一种是行为加强并给以方向的心理状态，保持体内平衡是其主要的内在原因"},{"t":"heading","d":4,"v":"并以“想要与喜爱区分”"},{"t":"heading","d":4,"v":"增加与性别有关的过度节食与过胖等健康问题心理学解释"}]},{"t":"heading","d":3,"v":"情绪（从认知评价开始）","c":[{"t":"heading","d":4,"v":"主观体验、内部躯体变化等多种成分构成"},{"t":"heading","d":4,"v":"讨论情绪与心境的区分"},{"t":"heading","d":4,"v":"强调积极情绪和面部表情在生活交往中的作用"},{"t":"heading","d":4,"v":"增加有关情绪调整及性别与文化差异部分"}]},{"t":"heading","d":3,"v":"智力","c":[{"t":"heading","d":4,"v":"智力测验的历史发展和当代智力理论"},{"t":"heading","d":4,"v":"讨论智力测验编制中的偏向性问题"},{"t":"heading","d":4,"v":"有关智力理论中文化问题的讨论"}]},{"t":"heading","d":3,"v":"人格","c":[{"t":"heading","d":4,"v":"增加人格的进化理论并讨论了人格的遗传问题"},{"t":"heading","d":4,"v":"人格评估"}]}]},{"t":"heading","d":2,"v":"心理健康与心理障碍","c":[{"t":"heading","d":3,"v":"压力、健康及应对","c":[{"t":"heading","d":4,"v":"各种压力事件的产生，到应激反应生理和心理因素及应对技巧（以文化问题讨论）"}]},{"t":"heading","d":3,"v":"心理疾病","c":[{"t":"heading","d":4,"v":"以一个变态心理实例，在焦虑障碍、心理障碍和精神分裂症部分强调脑成像研究"},{"t":"heading","d":4,"v":"在界定“变态性”时需要强调不同文化下的常模讨论"}]},{"t":"heading","d":3,"v":"心理异常的治疗","c":[{"t":"heading","d":4,"v":"以一个精神分裂症患者从多种治疗方法中获益说明治疗的作用"},{"t":"heading","d":4,"v":"药物治疗对心理障碍的作用（草药的治疗及文化差异）"}]}]}]}</svg></div><hr><p><strong>注：</strong><br>①记忆过程的三个步骤，并不是相互独立的，通常在为新信息编码时，需要提取存储在脑海里的旧信息<br>②生活中的自我辩解</p><div class="spoiler collapsed">    <div class="spoiler-title">        生活中的自我辩解    </div>    <div class="spoiler-content">        <p>关键词：自我辩护、认知失调，印象管理、自我认知、自尊、自我概念<br><strong>自我辩护的心理机制</strong><br><font color="#00868B"><u><strong>认知失调理论</strong>——指个体认识到自己的态度之间、或者态度与行为之间存在着矛盾。</u></font>通常人们减少认知失调的方法有三种：<br>1.<strong>改变认知</strong>。如果两个认知相互矛盾我们便简简单单的改变其中的一个认知，使他和另一个认知相一致<br>2.<strong>增加认知</strong>。如果两个不一致的认知导致了失调，那么失调程度可能有增加一个或更多的协调性认知来减少。<br>3.<strong>改变重要性</strong>。因为一致和不一致的认知必须根据它们的重要性来加权，因此可以通过该变认知的重要性来减少失调。<br><font color="#00868B">作为行动者，我们往往会把自己的行为归因于外在的或情景的因素，也即做<strong>外在归因</strong>。</font>这是一种归因偏差，而如果一个人不能理性正确的看待自己的认知与行为的正确性，就会找各种理由来进行自我辩护，有时候明显自己的行为是错误的，也坚持自己是正确的，把原因推到其他人或物的身上，这样的话就很容易造成生活中的麻烦。</p>    </div></div><p>③什么是抑制性条件反射？（第七章）<br>④什么是“双面论证”？（seeing both sides）<br>陈述自己观点时，将利弊得失两面同时谈及，加以比较，突出有利一面，让对方再思考权衡<br>⑤歇斯底里发作（ataque de nervios）—常见于拉丁文化、近似焦虑症症状<br>⑥创伤后应激障碍（PTSD）<br>⑦弗罗伊德理论<br>⑧记忆</p><div class="spoiler collapsed">    <div class="spoiler-title">        记忆的三个系统及其特点    </div>    <div class="spoiler-content">        <p>如果把记忆看作是人脑对输入的信息进行编码、储存和提取的过程，那么可以把信息的编码、储存和提取的方式的不同，以及信息储存时间长短的不同，可以将记忆分作<font color="＃40826D">瞬时记忆</font>、<font color="fuchsine">短时记忆</font>和<font color="＃43b3ae">长时记忆</font>三个系统。</p><p><strong>(一)瞬时记忆：</strong></p><p><font color="#8B3A3A">瞬时记忆的概念：美国心理学家斯波林的实验证明，刚看完时能记住的比较多，但保持的时间比较短，斯波林将刚看完卡片能保持很短时间的记忆叫瞬时记忆。</font><br>　瞬时记忆又叫感觉记忆或感觉登记，是指外界刺激以极短的时间一次呈现后，信息在感觉通道内迅速被登记并保留一瞬间的记忆。一般又把视觉的瞬时记忆叫图象记忆，把听觉的瞬时记忆叫声象记忆。</p><p><strong>瞬时记忆的特点：</strong></p><p>1、瞬时记忆的编码方式，即瞬时记忆记住信息的方式，是外界刺激物的形象。所以具有鲜明的形象性。</p><p>2、瞬时记忆的容量很大，但保留的时间很短。容量为9-20比特，时间4秒以内。图象记忆0.25-1秒，声象记忆可以超过1秒,不会长于4秒。如果对瞬时记忆中的信息加以注意，或者说当意识到瞬时记忆的信息时，信息就被转入短时记忆了，否则，没有注意到的信息过1秒钟便会消失，也就是遗忘了。</p><p><strong>(二)短时记忆：</strong></p><p><font color="#8B3A3A">短时记忆的概念：指外界刺激以极短的时间一次呈现后，保持时间在1分钟以内的记忆。</font></p><p><strong>短时记忆的特点：</strong></p><p>1、短时记忆的容量有限，一般为7±2，即5-9个项目，这也就是平常我们所说的记忆广度。心理咨询师为扩大短时记忆的容量，可采用组块的方法。</p><p>2、语言文字的材料在短时记忆中多为听觉编码，即容易记住的是语言文字的声音而不是它们的形象，非语言文字的材料主要是形象的记忆，而且视觉记忆的形象占有更重要的地位，此外，也有少量的语义记忆。</p><p>3、短时记忆中的信息是当前正在加工的信息，因而是可以被意识到的。短时记忆中既有从瞬时记忆中转来的信息，也有从长时记忆中提取出来的信息，它们都是当前正在加工的信息，所以短时记忆又叫工作记忆。</p><p>4、短时记忆的信息经过复述可能转入长时记忆系统。</p><p><strong>(三)长时记忆：</strong><br><font color="#8B3A3A">长时记忆的概念：指外界刺激以极短的时间一次呈现后，保持时间在1分钟以上的记忆。</font></p><p><strong>长时记忆特点：</strong></p><p>1、长时记忆的容量无论是信息的各类或数量都是无限的。</p><p>2、长时记忆的编码有语义编码和形象编码两类。</p><p>3、长时记忆中储存的信息如果不是有意回忆的话，人们是不会意识到的。只有当人们需要借助已有的知识和经验时，长时记忆储存的信息再被提取到短时记忆中，才能被人们意识到。</p><p>4、长时记忆的遗忘或因自然的衰退，或因干扰造成。干扰又分为前摄抑制和倒摄抑制两种。前摄抑制是指先前学习的材料，对识记和回忆后学习材料的干扰作用。倒摄抑制是指后学习的材料，对识记和回忆先前学习材料的干扰作用。系列位置效应是干扰对记忆效果造成影响的非常明显的例子。<br>　系列位置效应是记忆材料在系列中所处的位置对记忆效果发生的影响。系列两头比系列中间的材料记忆效果好，这就是系列位置效应。系列开头比系列中间的材料记得好又叫首因效应或首位效应。培训系列末尾比系列中间的材料记得好又叫近因效应或新近效应。在我们平时背资料时，对于资料内容的开头和结尾记忆深刻就是这个原因。</p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;贯穿全书的三个观点：&lt;/strong&gt;（生物学、进化、文化）&lt;br&gt;
-1、加强行为的生物学基础&lt;br&gt;
-2、在心理学研究中增加进化观点。&lt;br&gt;
-3、强调文化影响及其多样性&lt;br&gt;
-并在不同学派的增加“主观论者的观点”。&lt;/p&gt;</summary>
     
     
     

@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-04-05T10:18:12.987Z</updated>
+  <updated>2021-04-10T02:15:20.721Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>配置Windows Terminal终端</title>
+    <link href="https://kisskisso.com/CDKB3M/"/>
+    <id>https://kisskisso.com/CDKB3M/</id>
+    <published>2021-04-10T01:43:13.000Z</published>
+    <updated>2021-04-10T02:15:20.721Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Windows Terminal是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。<span id="more"></span></p><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置默认终端 </span></span><br><span class="line">"defaultprofile": "{}", </span><br><span class="line"><span class="comment">// 隐藏标题栏</span></span><br><span class="line">"showTabsInTitlebar" : true,</span><br><span class="line"><span class="comment">// 始终显示选项卡</span></span><br><span class="line">"alwaysShowTabs": false,</span><br><span class="line"><span class="comment">// 使用活动终端标题作为应用程序标题</span></span><br><span class="line">"showTerminalTitleInTitlebar": false,</span><br><span class="line"><span class="comment">// 始终处于顶部模式</span></span><br><span class="line">"alwaysOnTop": false,</span><br><span class="line"><span class="comment">// 选项卡宽度模式 "equal" | "titleLength" | "compact"</span></span><br><span class="line">"tabWidthMode": "compact",</span><br><span class="line"><span class="comment">// 禁用窗格动画</span></span><br><span class="line">"disableAnimations":false,</span><br><span class="line"><span class="comment">// 显示关闭所有选项卡弹出窗口</span></span><br><span class="line">"confirmCloseAllTabs": true,</span><br><span class="line">"backgroundImageStretchMode" : "uniformToFill",</span><br><span class="line"><span class="comment">// 光标的形状 bar | empytBox | filledBox | vintage </span></span><br><span class="line">"cursorShape" : "vintage",</span><br><span class="line"><span class="comment">// 毛玻璃特效</span></span><br><span class="line">"useAcrylic": false</span><br></pre></td></tr></tbody></table></figure><p>分屏快捷键：<br>左右分屏: Alt+Shift+=<br>上下分屏:Alt+Shift±<br>取消分屏:Ctrl+Shift+w</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Windows Terminal是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用hexo-admonition插件</title>
@@ -493,29 +514,6 @@
 &lt;p&gt;五种代表性问题：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;面部伤害和面孔辨识&lt;/strong&gt;（brain damage and face recognition）&lt;/p&gt;
 &lt;p&gt;某些脑部区域受到伤害，会失去某些能力，但其它区域却正常；面部辨识能力的丧失被称为&lt;strong&gt;面部辨识困难症&lt;/strong&gt;（prosopagnosia）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>引子</title>
-    <link href="https://kisskisso.com/10503/"/>
-    <id>https://kisskisso.com/10503/</id>
-    <published>2021-03-11T09:03:53.000Z</published>
-    <updated>2021-03-11T09:54:27.598Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学习理论中的一条基本原则：做出某种行为后得到酬赏，则该行为会被强化。</p><p>酬赏具有强大影响力的原则被称为<strong>效果律</strong>（law of effect）</p><p>在解释个人行为时，过于强调显见的情境原因反而忽略个人成因称作<strong>过度辩护效应（overjustification）</strong> <span id="more"></span></p><p><strong>分辨主张的真伪：</strong></p><p><strong>1.知道那些心理事实已确证的事实相互矛盾，如果有矛盾之处，那就必要加以审慎考虑</strong></p><p><strong>2.必须知道足以令人信服一项新主张或新发现所必备的证据类型，这样才能解决那些支持新主张的论点是否符合科学证据的一般标准，如果不符合同样就有必要保持怀疑态度。</strong></p><p>回顾心理学知识的现状。</p><p>检验研究的本质（检视心理学家如何设计研究程序以提供强而有力的证据，来支持或推翻一项假设，进而明白支持一项新主张所需要的证据类型）</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;学习理论中的一条基本原则：做出某种行为后得到酬赏，则该行为会被强化。&lt;/p&gt;
-&lt;p&gt;酬赏具有强大影响力的原则被称为&lt;strong&gt;效果律&lt;/strong&gt;（law of effect）&lt;/p&gt;
-&lt;p&gt;在解释个人行为时，过于强调显见的情境原因反而忽略个人成因称作&lt;strong&gt;过度辩护效应（overjustification）&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
     

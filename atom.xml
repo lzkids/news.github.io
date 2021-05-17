@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-05-16T11:45:00.515Z</updated>
+  <updated>2021-05-17T00:14:34.200Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -21,15 +21,13 @@
     <link href="https://kisskisso.com/8JVKD8/"/>
     <id>https://kisskisso.com/8JVKD8/</id>
     <published>2021-05-16T11:07:51.000Z</published>
-    <updated>2021-05-16T11:45:00.515Z</updated>
+    <updated>2021-05-17T00:14:34.200Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天向GitHub page的repository里更新了一篇文章，发现网站并没有更新，而且网站还时不时的打不开。网上搜了一下资料，<s>解决了这个问题</s><br>一般来说，只要你的GitHub page repository有新的提交，隔一段时间你的静态网站就会更新。如果更新出错，页面不会更新；同时，GitHub会发送一封提醒邮件，大致如下内容:</p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The page build failed for the 'master' branch with the following error:</span><br><span class="line">Unable to build page. Please try again later.</span><br></pre></td></tr></tbody></table></figure><p>解决办法我整合了两种:<br>1.检查GitHub page服务有没有挂掉；查看这个<a href="https://www.githubstatus.com/">网址</a>.<br>1.1如果服务器运行良好，则提交的内容有错误，需要在本地构建网页检查有没有错误。</p><p>2.在根目录下新建<code>.nojekyll</code>文件</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">touch .nojekyll <span class="comment">#.nojekyll无需任何内容</span></span><br><span class="line">git add .nojekyll</span><br><span class="line">git commit -m <span class="string">'add .nojekyll'</span></span><br><span class="line">git push</span><br></pre></td></tr></tbody></table></figure><div class="admonition danger"><p></p><p>注：我写这篇文章的时候正好和GitHub page服务显示Degraded的时候。等服务正常之后在重新更新文章</p></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天向GitHub page的repository里更新了一篇文章，发现网站并没有更新，而且网站还时不时的打不开。网上找了一下问题的解决方案，一个说是GitHub page服务挂掉还有个答案是nojekyll的问题。<br>一般来说，只要你的GitHub page repository有新的提交，隔一段时间你的静态网站就会更新。如果更新出错，页面不会更新；同时，GitHub会发送一封提醒邮件，大致如下内容: <span id="more"></span></p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The page build failed for the 'master' branch with the following error:</span><br><span class="line">Unable to build page. Please try again later.</span><br></pre></td></tr></tbody></table></figure><p>解决办法我整合了两种:<br>1.检查GitHub page服务有没有挂掉；查看这个<a href="https://www.githubstatus.com/">网址</a>.<br>1.1如果服务器运行良好，则提交的内容有错误，需要在本地构建网页检查有没有错误。<br>1.2如果服务器先前Degraded，之后变为Normal。page还是显示构筑失败需要重新设置page一遍(只需设置<code>Source</code>就可以了)</p><div class="admonition onte"><p></p><p>Source的选项的/(root)切换成/docs,保存。然后在切回来保存就可以了</p></div><p>2.在根目录下新建<code>.nojekyll</code>文件</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">touch .nojekyll <span class="comment">#.nojekyll无需任何内容</span></span><br><span class="line">git add .nojekyll</span><br><span class="line">git commit -m <span class="string">'add .nojekyll'</span></span><br><span class="line">git pushh</span><br></pre></td></tr></tbody></table></figure><p>参考链接：</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.community/t/your-site-is-having-problems-building-unable-to-build-page-please-try-again-later/173131<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.community/t/github-pages-builds-fail/10710<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;今天向GitHub page的repository里更新了一篇文章，发现网站</summary>
-      
+    <summary type="html">&lt;p&gt;今天向GitHub page的repository里更新了一篇文章，发现网站并没有更新，而且网站还时不时的打不开。网上找了一下问题的解决方案，一个说是GitHub page服务挂掉还有个答案是nojekyll的问题。&lt;br&gt;
+一般来说，只要你的GitHub page repository有新的提交，隔一段时间你的静态网站就会更新。如果更新出错，页面不会更新；同时，GitHub会发送一封提醒邮件，大致如下内容:&lt;/p&gt;</summary>
     
     
     

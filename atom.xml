@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-05-21T08:29:48.223Z</updated>
+  <updated>2021-05-22T00:36:21.049Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录日常使用de功能</title>
+    <link href="https://kisskisso.com/27ATM2E/"/>
+    <id>https://kisskisso.com/27ATM2E/</id>
+    <published>2021-05-21T14:42:45.000Z</published>
+    <updated>2021-05-22T00:36:21.049Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>记录日常使用de功能<span id="more"></span></p><h2 id="打开实验性功能"><a class="markdownIt-Anchor" href="#打开实验性功能"></a> 打开实验性功能</h2><p>Firefox: <code>about:config</code><br>Chrome:<code>chrome://flags/</code><br>Edge:<code>edge://flags/</code></p><h2 id="浏览器隐藏de功能"><a class="markdownIt-Anchor" href="#浏览器隐藏de功能"></a> 浏览器隐藏de功能</h2><h3 id="打开标签组功能可折叠和自动创建标签组"><a class="markdownIt-Anchor" href="#打开标签组功能可折叠和自动创建标签组"></a> 打开标签组功能:可折叠和自动创建标签组</h3><p>Edge：<br>在浏览器输入<code>edge://flags/</code>,然后在搜索标志依次搜索:</p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Tab Groups  # 允许用户将标签组织成视觉上不同的组，例如，将与不同任务相关的标签分开。</span><br><span class="line">Tab Groups Auto Create # 如果标签组被启用，则自动为用户创建组。</span><br><span class="line">Tab Groups Collapse # 如果标签组被启用，允许标签组可折叠和可扩展。</span><br></pre></td></tr></tbody></table></figure><p>选择<code>Enabled</code>然后重启浏览器</p><p>Chrome:<br>在浏览器输入<code>chrome://flags/</code>,然后在搜索标志依次搜索:</p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Tab Groups Auto Create  # 如果标签组被启用，则自动为用户创建组。</span><br><span class="line">Tab Groups Collapse Freezing # 实验性地在折叠标签组时冻结了标签。（可选）</span><br><span class="line">Tab Groups 'New' Badge Promo  #导致 "新建 "徽章出现在标签上下文菜单中创建标签组的入口点上。</span><br></pre></td></tr></tbody></table></figure><p>选择<code>Enabled</code>然后重启浏览器</p><p>Firefox: 暂没找到</p><h3 id="打开tsl-13"><a class="markdownIt-Anchor" href="#打开tsl-13"></a> 打开TSL 1.3</h3><p>1.按Windows键+R打开一个运行框，输入control并按回车。<br>2.找到Internet 选项并打开对话。<br>3.在 "高级 "标签上，向下滚动到安全部分，选择TLS 1.2和TLS 1.3。其他协议（SSL 3.0、TLS 1.0和TLS 1.1）不应该被选中。</p><p><a href="https://kinsta.com/knowledgebase/tls-vs-ssl/">TSL和SSL的扩展知识</a></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;记录日常使用de功能&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>如何学习心理学</title>
@@ -480,29 +499,6 @@
     
     <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>科学心理开端</title>
-    <link href="https://kisskisso.com/140WZGJ/"/>
-    <id>https://kisskisso.com/140WZGJ/</id>
-    <published>2021-03-12T06:54:20.000Z</published>
-    <updated>2021-03-12T07:00:46.791Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>所谓的科学心理则通常被认为创立于19世纪末，即冯特（Wihelm Wundt）与1879年在德国莱比锡大学创设第一座心理实验室。创立心里实验室的信念：心理与行为，一如行星、化学物质或人类器官，可以称为科学分析的主题。</p><p>冯特个人主要研究与感觉相关，尤其是视觉方面，也研究</p><p><strong>内省法</strong>（introspection）指观察记录自己的知觉、思想与感受的本质。内省法源自哲学。<u>而冯特在此感念上添加了新的维度（内容）：单纯的自我观察是不够的，必须再辅以实验。</u><span id="more"></span></p><p>冯特是实验是有系统的变动刺激的一些物理维度（强度），然后运用内省法来确定，物理改变如何影响被式所意识到的刺激经验的改变。</p><p>内省法的研究在某些心理事件是行不通的，即使经过密集的训练，在感觉经验上仍有相当不一致的内省结果，从这些差异很难得到结论。因此内省法已非当前认知观点的主流。</p><p><strong>结构主义与功能主义</strong> 19世纪研究者以分析复杂组合物（分子）为其元素（原子）的方法，在化学和物理学上有很大的进步。而这些成就鼓舞了心理学者探索由更复杂经验所组成的心理元素。其中在美国的主要支持者<u><strong>铁钦纳（E.B Titchener）</strong></u> 一个在康奈尔大学接受冯特训练的心理学家，由于其目标是阐明心理结构，铁钦纳便使用<strong>结构主义</strong>（structuralism）一词来描绘此派心理学。</p><p>但由于结构主义纯粹分析特征激起很强烈的反对声，哈弗大学的心理学家詹姆士（William James）【<strong>研究心灵如何运作，使得有机体可以适应其环境称功能主义（functionalism）</strong>】认为强调分析意识元素应少些，应多加强调了解它的动态、流向和个人特质。</p><p><font color="red">19世纪的心理学家主要兴趣来源于达尔文的进化论所引起的议题。</font></p><p>两者均认为心理学是一门有关意识经验的科学。但到了20年代二者被三种新兴学派取代：行为主义、格式塔心理学和心理分析。</p><p><strong>行为主义</strong>   而三种新学派中，<strong>行为主义学派</strong>对北美的科学心理影响最大。其建立者华生（John B. Watson），对其时代以意识经验作为心理学的中枢的传统进行抗争。为了使心理学成为一门科学，认为心理学的数据必须能够公开检验。</p><p>🌀（行为主义学者）认为几乎所有的行为都是条件作用的结果，而环境借由强化特殊的习惯，塑造成我们的行为</p><p>【俄国的巴普洛夫（Ivan Pavlov）在条件作用反应上的研究被认为是行为主义重要的研究领域。但是在行为主义兴起前，美国对条件作用反应研究方法很有限，华生对后续的发展由重大贡献】</p><p>行为主义倾向于刺激与反应来探讨心理学现象（刺激-反应（S-R）注：S-R本身并非一种理论或观点。一组用来沟通心理学信息用语（术语））</p><p><strong>格式塔主义</strong>   1912年在德国出现。格式塔（Cestalt）在德语单词中的意思是形式（form）或构图（configruation），是指韦特海默（Max Wertheimer）和考夫卡（Kurt Koffka）与柯勒（Wolfgan K o hler）所采取的研究取向</p><p>而格式塔学派主要研究兴趣是（运动的、颜色、大小等）知觉（以知觉为中心诠释有关学习、记忆与问题解决等现象的研究）。他们认为（知觉经验决定于刺激所形成的组型以及经验的组织。）【并为认知心理学研究奠定了良好的基础】</p><p>【相对于背景所呈现的物体形象，也是整体刺激组型中的一部分。整体并非部分的总合，因为整体式依各部分间的关系而定】</p><p>注意：1946年的阿希将格式塔理念延伸到人的知觉上认为人们是整体的知觉而非只看到各自独立的部分。（勒温[Kurt Lewein]、阿希[Solomon Asch]、海德[Fritz Heider]）——&gt; 赋予输入刺激的意义与结构的，是一中自动化、且意识觉知之外的历程。</p><p><strong>心理分析</strong>   大约在世纪交替到20世纪由弗洛伊德首创的即使人格也是心理治疗方法的一种理论。而核心是<strong>无意识</strong>概念 ——指我们无法察觉的思想、态度、冲动、欲望、情绪与动机。弗洛伊德会根据<strong>自由联想</strong>的方法，请被试说出闪现在心里的任何事物，借此将意识的欲望带到觉知状态。</p><p>弗洛伊德理论中，隐藏的无意识欲望大多涉及性与攻击。但并未获得广泛的接受，当代也并未全然接受这个理论，而是倾向于同意，人们的想法、目标与动机有时是在意识觉知之外运作的。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;所谓的科学心理则通常被认为创立于19世纪末，即冯特（Wihelm Wundt）与1879年在德国莱比锡大学创设第一座心理实验室。创立心里实验室的信念：心理与行为，一如行星、化学物质或人类器官，可以称为科学分析的主题。&lt;/p&gt;
-&lt;p&gt;冯特个人主要研究与感觉相关，尤其是视觉方面，也研究&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;内省法&lt;/strong&gt;（introspection）指观察记录自己的知觉、思想与感受的本质。内省法源自哲学。&lt;u&gt;而冯特在此感念上添加了新的维度（内容）：单纯的自我观察是不够的，必须再辅以实验。&lt;/u&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
     
   </entry>
   

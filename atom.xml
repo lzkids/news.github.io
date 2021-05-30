@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-05-25T13:51:19.719Z</updated>
+  <updated>2021-05-30T06:09:53.511Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何更新PowerShell帮助</title>
+    <link href="https://kisskisso.com/1YPDA17/"/>
+    <id>https://kisskisso.com/1YPDA17/</id>
+    <published>2021-05-30T00:53:07.000Z</published>
+    <updated>2021-05-30T06:09:53.511Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>更新Power Shell运行<code>update-help</code>会进行更新但是会报以下错误：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span> : 无法更新带有 UI 区域性 {zh<span class="literal">-CN</span>} 的模块“ConfigDefender, HostNetworkingService, PSReadline”帮助: 在 HelpInfo XML 文件中检索不到 UI 区域性 zh<span class="literal">-CN</span>。确保模块清单中的 HelpInfoUri 属性有效·或检查网络连接是否正常，然后重试该命令。</span><br></pre></td></tr></tbody></table></figure><p>通常你去网页上搜索答案都是让你运行以下两条命令：<span id="more"></span></p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span> <span class="literal">-ErrorAction</span> SilentlyContinue</span><br><span class="line">or</span><br><span class="line"><span class="built_in">Update-Help</span> <span class="literal">-Verbose</span> <span class="literal">-Force</span> <span class="literal">-ErrorAction</span> SilentlyContinue</span><br></pre></td></tr></tbody></table></figure><p>但是此两条命令的默认功能是“不向我显示错误，只需跳过它们”，特别是对新用户来说，因为它导致了错误的做法。而在power shell 7中则会让你尝试运行<code>Update-Help -UICulture en-US</code>但是她还是会报错：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span>: Failed to update Help <span class="keyword">for</span> the module(s) <span class="string">'PSReadline'</span> with UI culture(s) {en<span class="literal">-US</span>} : One or more errors occurred. (Response status code does not indicate success: <span class="number">404</span> (The specified blob does not exist.).).</span><br><span class="line">English<span class="literal">-US</span> help content is available and can be installed using: <span class="built_in">Update-Help</span> <span class="literal">-UICulture</span> en<span class="literal">-US</span>.</span><br></pre></td></tr></tbody></table></figure><p>这个错误的来源与在 PowerShell 6 及更高版本中，<strong>PSReadLine</strong>模块用大写<code>L</code>字符拼写。但是错误消息使用的是小写字母。可以使用以下步骤来解决这个问题，并更新帮助：</p><ol><li>关闭所有powerhell.exe进程。然后将PSReadline模块的文件夹名称重命名为PSReadLine。</li><li>在管理员权限下打开一个powershell.exe会话。</li><li>运行Remove-Module PSReadline来删除自动加载的PSReadline模块。</li><li>运行Import-Module PSReadLine（使用PSReadLine，大写字母L）。</li><li>然后运行Update-Help -Module PSReadLine -Force。</li></ol><p>扩展：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">help 要查询命令 <span class="literal">-full</span> <span class="comment">#查询某个命令的所有帮助文档</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-detailed</span>  <span class="comment">#查询某个命令的所有帮助文档，但是要简化参数部分的解释</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-examples</span> <span class="comment"># 查询某个命令的使用示例</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-online</span> <span class="comment"># 在网页中查看命令帮助，使用命令</span></span><br></pre></td></tr></tbody></table></figure><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;更新Power Shell运行&lt;code&gt;update-help&lt;/code&gt;会进行更新但是会报以下错误：&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Update-Help&lt;/span&gt; : 无法更新带有 UI 区域性 {zh&lt;span class=&quot;literal&quot;&gt;-CN&lt;/span&gt;} 的模块“ConfigDefender, HostNetworkingService, PSReadline”帮助: 在 HelpInfo XML 文件中检索不到 UI 区域性 zh&lt;span class=&quot;literal&quot;&gt;-CN&lt;/span&gt;。确保模块清单中的 HelpInfoUri 属性有效·或检查网络连接是否正常，然后重试该命令。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;通常你去网页上搜索答案都是让你运行以下两条命令：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="powershell" scheme="https://kisskisso.com/tags/powershell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何用命令重置组策略</title>
+    <link href="https://kisskisso.com/293V77D/"/>
+    <id>https://kisskisso.com/293V77D/</id>
+    <published>2021-05-30T00:00:11.000Z</published>
+    <updated>2021-05-30T00:00:11.631Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/markmap</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>经过研究检验的六种更好的学习方法</title>
@@ -431,68 +474,6 @@
 &lt;p&gt;&lt;strong&gt;生物观点&lt;/strong&gt;&lt;br&gt;
 心理现象：原则上都以某种方式与脑部及神经系统的活动相对应。&lt;br&gt;
 &lt;strong&gt;生物取向&lt;/strong&gt;(biological perspective)的研究意义，在于区辨出行为和心理现象下的生物神经过程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关键思考问题二</title>
-    <link href="https://kisskisso.com/2P9J50X/"/>
-    <id>https://kisskisso.com/2P9J50X/</id>
-    <published>2021-03-13T04:46:24.000Z</published>
-    <updated>2021-03-13T06:19:06.301Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1.过去各种心理学研究取向对人性的假设是什么？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>从一开始的<strong>先天与后天</strong>（）到观察记录自己的知觉、思想与感受的本质的<strong>内省法</strong>再到<strong>结构主义</strong>的心理结构（构成）与<strong>功能主义</strong>（如何运作，使得有机体可以适应其环境）了解心理动态、流向和个人特质。接着就是<strong>行为主义</strong>（所认为的所有的行为都是条件作用的结果，而环境借由强化特殊习惯塑造成我们的行为）。<strong>格式塔主义</strong>的知觉以及<strong>心理分析</strong>的无意识概念。</p>    </div></div><p>2.这些基本假设中，哪些研究取向间是兼容的？哪些又是相左的？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>内省法和格式塔主义、功能主义相兼容。先天和后天相左。（不确定）</p>    </div></div><span id="more"></span><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;1.过去各种心理学研究取向对人性的假设是什么？&lt;/p&gt;
-&lt;div class=&quot;spoiler collapsed&quot;&gt;
-    &lt;div class=&quot;spoiler-title&quot;&gt;
-        答
-    &lt;/div&gt;
-    &lt;div class=&quot;spoiler-content&quot;&gt;
-        &lt;p&gt;从一开始的&lt;strong&gt;先天与后天&lt;/strong&gt;（）到观察记录自己的知觉、思想与感受的本质的&lt;strong&gt;内省法&lt;/strong&gt;再到&lt;strong&gt;结构主义&lt;/strong&gt;的心理结构（构成）与&lt;strong&gt;功能主义&lt;/strong&gt;（如何运作，使得有机体可以适应其环境）了解心理动态、流向和个人特质。接着就是&lt;strong&gt;行为主义&lt;/strong&gt;（所认为的所有的行为都是条件作用的结果，而环境借由强化特殊习惯塑造成我们的行为）。&lt;strong&gt;格式塔主义&lt;/strong&gt;的知觉以及&lt;strong&gt;心理分析&lt;/strong&gt;的无意识概念。&lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;2.这些基本假设中，哪些研究取向间是兼容的？哪些又是相左的？&lt;/p&gt;
-&lt;div class=&quot;spoiler collapsed&quot;&gt;
-    &lt;div class=&quot;spoiler-title&quot;&gt;
-        答
-    &lt;/div&gt;
-    &lt;div class=&quot;spoiler-content&quot;&gt;
-        &lt;p&gt;内省法和格式塔主义、功能主义相兼容。先天和后天相左。（不确定）&lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>心理学20世纪后期的发展</title>
-    <link href="https://kisskisso.com/36WR13N/"/>
-    <id>https://kisskisso.com/36WR13N/</id>
-    <published>2021-03-13T02:04:25.000Z</published>
-    <updated>2021-03-13T06:20:13.191Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>二战后人们对心理学的兴趣日增，加借以进性研究的复杂工具和电子设备的发展，使更多问题可被检验，证明早期的理论取向太受限制。此观点在50年代计算机发展后被强化。</p><p>50年代末，西蒙（HerbertSimon）和同事发表一系列优良的研究，并指出心理现象可以利用计算机加以仿真（simulated）。<span id="more"></span></p><p>许多旧的心理学议题以<strong>信息处理模式</strong>（information-processing models）重新出现。这使得人类可以被视为一个信息处理器，提供一个比行为论更具动力性的心理学取向。而且使得某些格式塔心理学与心理分析理念，能得到跟精确的陈述。</p><p>早期有关心理本质的观念，可以被具体化并以实际数据验证。Eg：可将记忆的运作现象成类似计算机存取信息的过程。</p><p>另一个影响心理学观点的因素式近代语言学的发展——“了解及说一种语言”的心理结构理论化。而这个研究的先驱是乔姆斯基（Noam Chomsky）1957年出版的《句法结构》提供了第一个重要的语言心理分析，并促进了语言心理学（psycholinguistics）领域的快速发展。</p><p><strong>神经心理学</strong>有许多关于脑以及神经系统的发现提示了生物神经事件和心理历程间有明确的关联。而<strong>生物药物技术</strong>的进步加速了对这种关系的研究。<u><strong>斯佩里（Roger Sperry）</strong></u>的研究显示了脑部某些区域和特定的思考及行为历程的关联性，在1981年获得诺贝尔奖</p><p>信息处理模式、语言心理学、神经心理学的发展，为心理学提供了一种高度认知取向的研究方法。主要关心的是对心理历程和心理结构的科学分析，认知心理学并不局限于思考和知识。（它【认知心理学】扩展到心理学的所有领域，包括知觉、动机、情绪、临床心理学、人格和社会心理学）</p><p>20世纪，心理学的关注焦点形成一种循环：<strong>在排拒意识经验，认为他是一种不当的科学研究而转向行为的研究后，心理学家再次建构心灵的理论（强有力的新工具）</strong></p><p>小结：</p><div class="spoiler collapsed">    <div class="spoiler-title">        小结    </div>    <div class="spoiler-content">        <p>1.心理学的根源可追溯到公元前上四百年。有关人类心理学最早的争论之一即聚焦于 “人类的能力是天生的还是通过经验而获得的”这个问题上（就是所谓先天与后天的争论）</p><p>2.科学心理学诞生于19世纪末，当时主张心灵与行为可作为科学分析的主题，而心理学的第一间科学实验室即由冯特（Wilhelm Wundt）在1879年创设于莱比锡大学。</p><p>3.20世纪心理学的早期学派有结构主义、功能主义、行为主义、格式塔心理学及心理分析</p><p>4.20世纪心理学后期的发展：包括信息处理论、心理语言学以及神经心理学。</p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;二战后人们对心理学的兴趣日增，加借以进性研究的复杂工具和电子设备的发展，使更多问题可被检验，证明早期的理论取向太受限制。此观点在50年代计算机发展后被强化。&lt;/p&gt;
-&lt;p&gt;50年代末，西蒙（HerbertSimon）和同事发表一系列优良的研究，并指出心理现象可以利用计算机加以仿真（simulated）。&lt;/p&gt;</summary>
     
     
     

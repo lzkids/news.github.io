@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-05-30T06:09:53.511Z</updated>
+  <updated>2021-06-24T04:25:06.037Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>非root卸载手机内置App软件</title>
+    <link href="https://kisskisso.com/1EFZC2H/"/>
+    <id>https://kisskisso.com/1EFZC2H/</id>
+    <published>2021-06-24T02:58:38.000Z</published>
+    <updated>2021-06-24T04:25:06.037Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>2021年我才刚刚找到不用root就能卸载掉内置无用的App软件的方法，虽然获取信息慢了点但也是知晓不是。root也可以卸载但是太麻烦了，当然root不止可以卸载内置的App也可以刷包，以及定制其它功能等等。这里说的卸载内置App的方法是——通过adb的方式连接手机，卸载手机内置app：<span id="more"></span></p><h2 id="需要的工具"><a class="markdownIt-Anchor" href="#需要的工具"></a> 需要的工具</h2><p>因为电脑上有安装的Android Studio软件，有自带的<code>adb.exe</code>。如果不需要Android Studio软件则需要下载独立的Android SDK平台工具软件包，可以在<a href="https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn">官网下载</a></p><h2 id="手机端步骤"><a class="markdownIt-Anchor" href="#手机端步骤"></a> 手机端步骤</h2><ol><li>用数据线将电脑和手机连接。</li><li>激活开发者模式，一般情况下找到关于手机(or我的设备)——&gt;多次点击版本号，直到提示点击7下打开开发者选项</li><li>进入开发者选项（一般在<code>更多设置</code>里）打开开发者选项和USB调试</li></ol><h2 id="电脑端步骤"><a class="markdownIt-Anchor" href="#电脑端步骤"></a> 电脑端步骤</h2><p>1.在官网下载的独立工具软件包，解压到你喜欢的磁盘中。</p><p>2.找到刚刚解压的文件夹，用你喜欢的终端（CMD、PowerShell、Windows Terminal等）打开文件夹：</p><ol><li>按住shift+鼠标右键（Windows）</li><li><code>cd Android/Sdk/platform-tools &amp;&amp; ls</code>(Linux)</li></ol><p>3.输入<code>adb.exe devices</code></p><div class="admonition note"><p></p><p>如果是win10的话，打完adb记得再按一下tab键，就会自动提示成 <code>.\adb.exe</code>,然后补齐上方命令</p></div><p>如果显示以下：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* daemon not running; starting now at tcp:<span class="number">5037</span></span><br><span class="line">* daemon started successfully</span><br><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx       unauthorized</span><br></pre></td></tr></tbody></table></figure><p>代表连接手机完成，但是<code>unauthorized</code>表示手机并没有授权，如果此时手机提示授权，一定要同意。<br>4.授权后再次输入<code>.\adb.exe devices</code>  显示以下：表示成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx        device</span><br></pre></td></tr></tbody></table></figure><h2 id="开始卸载"><a class="markdownIt-Anchor" href="#开始卸载"></a> 开始卸载</h2><div class="admonition error"><p></p><p>卸载内置App软件要想好在卸载，一旦执行卸载则无法恢复。卸载要慎重！！！有些内置App卸载之后会出现其它应用无法使用的情况。请按需卸载…切记！！切记</p></div><p>1.执行<code>.\adb.exe shell</code>，进入交互模式。显示以下：表示成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx:/ <span class="variable">$</span>   <span class="comment"># 根据手机设备的不同xxx显示的名称不同</span></span><br></pre></td></tr></tbody></table></figure><p>2.<font color="red">卸载命令</font></p><p>pm uninstall -k --user 0 软件包名</p><p>如何获得软件包名（PS：不是安装软件的名字，<a href="http://xn--com-p18dp91iesb893gnmqqlk.xxx.xxx">一般来说都是com.xxx.xxx</a>），找到<code>应用设置——&gt;应用管理</code>找到想要卸载的软件，运行以上命令</p><div class="admonition note"><p></p><p>PS：在某些设备上，“应用详情”所在的位置或名称可能有所不同。</p></div><p>如果显示以下：代表卸载成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xxx:/ <span class="variable">$</span> pm uninstall <span class="literal">-k</span> -<span class="literal">-user</span> <span class="number">0</span> com.baidu.input_heisha    <span class="comment"># 这个卸载的黑鲨手机系统自带输入法</span></span><br><span class="line">Success   <span class="comment"># 显示这个就卸载成功</span></span><br></pre></td></tr></tbody></table></figure><p>因为是黑鲨手机（小米手机应该也可以）可以在点击应用详情的右上角来查看应用包名</p><p>其它手机如果没找到可能需要下载第三方文件管理器来进行查看</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;2021年我才刚刚找到不用root就能卸载掉内置无用的App软件的方法，虽然获取信息慢了点但也是知晓不是。root也可以卸载但是太麻烦了，当然root不止可以卸载内置的App也可以刷包，以及定制其它功能等等。这里说的卸载内置App的方法是——通过adb的方式连接手机，卸载手机内置app：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="内置App" scheme="https://kisskisso.com/tags/%E5%86%85%E7%BD%AEApp/"/>
+    
+  </entry>
   
   <entry>
     <title>如何更新PowerShell帮助</title>
@@ -440,40 +461,6 @@
     
     <summary type="html">&lt;p&gt;行为观点、认知观点、心理分析观点和主观观点都依赖于纯粹心理学概念（知觉、无意识和归因等）&lt;br&gt;
 而这些观点会对相同现象提出不同的解释，却一致同意这些解释应位于心理学层次。但生物观点不同，除了引用心理学概念之外，生物观点也采用生物学和其它生物支派的概念（神经传导物质①、荷尔蒙②）。但是两者之间仍有一种直接联系的方式。就是尝试以生物学中与生理学相似的情况来解释心理学概念和原则。【心理学的研究发现、概念与原则可以指引生物学者的研究工作。】&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>当代心理与行为神经基础</title>
-    <link href="https://kisskisso.com/2N13CX5/"/>
-    <id>https://kisskisso.com/2N13CX5/</id>
-    <published>2021-03-13T05:20:42.000Z</published>
-    <updated>2021-03-24T08:40:47.854Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="spoiler collapsed">    <div class="spoiler-title">        当代心理学观点    </div>    <div class="spoiler-content">        <p>心理学观点：一种观察心理学议题的方式或取向。</p><p>任何心理学议题都可以根据不同的观点来加以研讨。</p><p>心理学许多议题，是需要综合多种观点，采取<strong>折中取向</strong>。</p>    </div></div><p><strong>生物观点</strong><br>心理现象：原则上都以某种方式与脑部及神经系统的活动相对应。<br><strong>生物取向</strong>(biological perspective)的研究意义，在于区辨出行为和心理现象下的生物神经过程。<span id="more"></span><br><strong>行为观点</strong> 聚焦于可以观察的刺激与反应上，并认为几乎所有的行为都是条件作用与强化作用的结果。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%BF%83%E7%90%86%E5%AD%A6%E8%A7%82%E7%82%B9%20(%E6%89%8B%E6%9C%BA).png" alt=""></p><p><strong>认知观点</strong> 部分系回归于心理学的认知基础，部分则是对行为论观   点倾向忽略人类复杂的活动（计划、做决定和沟通）的狭溢所作出响应。【现在的认知研究也关注（知觉、记忆、推理、决策、解决问题的心理过程）】</p><p><strong>现代认知研究不同于19世纪以内省法为基础的认知研究</strong>。而是在假设作为前提：</p><ol><li>唯有研究心智历程才能完全了解有机体的所作所为</li><li>心智历程的研究可着眼于对特殊行为的客观观察，但以内在心智历程的观点来加以解释。</li></ol><hr><div class="markmap-container" style="height:100px;"><svg class="markmap-svg">{"t":"heading","d":1,"v":"计算机(心灵比拟)处理方式","c":[{"t":"heading","d":2,"v":"选择"},{"t":"heading","d":2,"v":"比较"},{"t":"heading","d":2,"v":"与记忆中其他信息","c":[{"t":"list_item","d":3,"v":"结合"},{"t":"list_item","d":3,"v":"转换"},{"t":"list_item","d":3,"v":"重新排列"}]}]}</svg></div><hr><p><strong>心理分析观点</strong>  的基本假设是：大多数行为的产生来自无意识过程（unconscious process），即人们不自知但却可影响其行为的思想、恐惧和欲望等。必须以某种方式加以处理，禁止这些冲动，只是强迫让它们由意识进入无意识，但是它们不会消失，会以情绪问题、心理疾病症状或社会认可的艺术和文学活动方式表现出来。<br><font color="#6940A5">注：弗洛伊德认为人类与动物一样受到基本本能的驱使。此论点并未广为人类心理学者所接受，但是与某些生物学者以及研究动物攻击行为的心理学者的观点一致。</font><br><strong>主观论者的观点</strong> 是主张人类行为是他所知觉的世界，而非客观世界的函数。</p><p>与认知论同样都是源自格式塔的传统而对抗行为论的狭隘论点。虽于认知论同源，但主观论更普遍出现在社会与人格心理学领域中，并且认为，要了解人类的社会行为，必须紧紧扣住人们自己“对情境的定义”而这种定义会因文化、个人过去经历与当时的情绪状况而异。</p><p><font color="#D4710D">【这种观点（主观论）最为开放，会受到文化、个别差异，以及动机与情绪的影响】</font></p><p><u>主动构建自己主观现实的理念，有赖内省法。当然主观论者并非完全依赖主观的自我报告，因为假设人们 无法看到个人建构的主观现实。</u>而这就是——<br><strong>朴素的现实主义</strong>（naive realism）即是指人们会倾向于将自己构筑好的、主观的现实，理解为忠实地表现了客观世界。</p><div class="spoiler collapsed">    <div class="spoiler-title">        ①特质归因    </div>    <div class="spoiler-content">        <p>概念：<br>描绘人们在考察某些行为或后果的原因时高估倾向性因素（谴责或赞誉他人）、低估情景性因素（谴责或赞誉环境）的双重倾向。<br>基本归因错误或者基本归因偏差是指在对他人行为进行归因的时候，往往会倾向于把别人的行为归因为其内在因素，而低估了情境因素的影响</p><p>基本归因错误产生原因：<br>最主要的一个原因就是，与其他的环境因素相比，行为者的行为是最容易观察的信息。个人的一言一行、一举一动都很容易被注意到，而社会环境、社会角色、情境压力等外部条件则难以引起注意，于是，我们就忽视了这些外部因素的作用，而过多地强调个人自身的原因。<br>此外，还有一个可能的原因就是，我们有一种基本的信念，觉得个人应该对自己的行为负责，于是，在分析行为的原因时，我们就会追溯个人自身的原因。比如，我们倾向于认为一个人的生活状况与自己的努力奋斗有很大关系，所以，当我们看见一个人生活拮据时，可能会想：“为什么你不勤奋一点儿呢！”</p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;div class=&quot;spoiler collapsed&quot;&gt;
-    &lt;div class=&quot;spoiler-title&quot;&gt;
-        当代心理学观点
-    &lt;/div&gt;
-    &lt;div class=&quot;spoiler-content&quot;&gt;
-        &lt;p&gt;心理学观点：一种观察心理学议题的方式或取向。&lt;/p&gt;
-&lt;p&gt;任何心理学议题都可以根据不同的观点来加以研讨。&lt;/p&gt;
-&lt;p&gt;心理学许多议题，是需要综合多种观点，采取&lt;strong&gt;折中取向&lt;/strong&gt;。&lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;生物观点&lt;/strong&gt;&lt;br&gt;
-心理现象：原则上都以某种方式与脑部及神经系统的活动相对应。&lt;br&gt;
-&lt;strong&gt;生物取向&lt;/strong&gt;(biological perspective)的研究意义，在于区辨出行为和心理现象下的生物神经过程。&lt;/p&gt;</summary>
     
     
     

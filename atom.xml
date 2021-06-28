@@ -65,18 +65,19 @@
     <link href="https://kisskisso.com/293V77D/"/>
     <id>https://kisskisso.com/293V77D/</id>
     <published>2021-05-30T00:00:11.000Z</published>
-    <updated>2021-05-30T00:00:11.631Z</updated>
+    <updated>2021-06-28T09:42:21.620Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Windows安全中心显示阻止可能不需要的应用选项，无法关闭。显示此设置由管理员进行设置。因为是私人电脑所以判断是策略组设置的问题，但是设置太过久远。忘了设置哪个了所以才有了以下解决办法（虽然没试过）<span id="more"></span></p><p>专业版，可以尝试任务栏搜索框输入 cmd ，点击右侧的以管理员身份运行，输入：<br>RD /S /Q “%WinDir%\System32\GroupPolicyUsers”<br>回车<br>RD /S /Q “%WinDir%\System32\GroupPolicy”<br>回车<br>gpupdate /force<br>回车<br>重启电脑。</p><p>以上并没有试过。因为是重置全部的策略组，再重头开始设置很麻烦。所以就先这样吧。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/markmap</summary>
-      
+    <summary type="html">&lt;p&gt;Windows安全中心显示阻止可能不需要的应用选项，无法关闭。显示此设置由管理员进行设置。因为是私人电脑所以判断是策略组设置的问题，但是设置太过久远。忘了设置哪个了所以才有了以下解决办法（虽然没试过）&lt;/p&gt;</summary>
     
     
     
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="组策略" scheme="https://kisskisso.com/tags/%E7%BB%84%E7%AD%96%E7%95%A5/"/>
     
   </entry>
   

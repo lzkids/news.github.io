@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-06-25T07:12:33.706Z</updated>
+  <updated>2021-07-14T10:40:31.972Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自我归因与习得性无助</title>
+    <link href="https://kisskisso.com/2CB6A1H/"/>
+    <id>https://kisskisso.com/2CB6A1H/</id>
+    <published>2021-07-14T10:21:48.000Z</published>
+    <updated>2021-07-14T10:40:31.972Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote><p>归因是指我们对他人或自己的行为结果进行分析,指出其性质或推论其原因的过程。第一个提出归因理论者是德国社会心理学家弗里茨·海德，接著是美国心理学家哈罗德·凯利的“共变模式”（或称“三维归因理论”），对海德的理论提出更深入的解释</p></blockquote><p>指的是「对于事件的原因」的判断。归因主要就是对于自己（他人）的成功或者失败的归因。<span id="more"></span></p><h1 id="自我归因"><a class="markdownIt-Anchor" href="#自我归因"></a> 自我归因</h1><h2 id="两种分类"><a class="markdownIt-Anchor" href="#两种分类"></a> 两种分类</h2><ul><li><p>外部（情景）归因：将行为发生解释为情境（环境）因素；</p></li><li><p>内部（性格）归因：行为的原因在于行为人本身，也就是在于他的性格、信仰或其他持久的人格特征；</p></li></ul><blockquote><p>我们经常把行为归为内部归因，而很少归为外部归因。——李-罗斯的基本归因错误<br>描绘人们在考察某些行为或后果的原因时高估倾向性因素（谴责或赞誉他人）、低估情景性因素（谴责或赞誉环境）的双重倾向。</p></blockquote><h2 id="三维度六因素"><a class="markdownIt-Anchor" href="#三维度六因素"></a> 三维度六因素</h2><h3 id="三维度"><a class="markdownIt-Anchor" href="#三维度"></a> 三维度</h3><ol><li>地点/位置（内部与外部原因）</li><li>稳定性（稳定与可变原因）</li><li>可控性（可控与不可控的原因）</li></ol><h3 id="六因素"><a class="markdownIt-Anchor" href="#六因素"></a> 六因素</h3><p>1）能力，根据自己评估个人对该项工作是否胜任；</p><p>2）努力，个人反省检讨在工作过程中曾否尽力而为；</p><p>3）工作难度，凭个人经验判定该项工作的困难程度；</p><p>4）运气，个人自认为此次各种成败是否与运气有关；</p><p>5）身心状况，工作过程中个人当时身体及心情状况是否影响工作成效；</p><p>6）外界环境</p><h1 id="习得性无助"><a class="markdownIt-Anchor" href="#习得性无助"></a> 习得性无助</h1><blockquote><p>经常性的把失败归因于内部的、稳定的和不可控的因素会形成一种习得性无助的自我感觉。</p></blockquote><p>习得性无助是指受试者在忍受了他们无法控制的反复厌恶性刺激后表现出来的行为。</p><p>停止试图逃避或避免厌恶性刺激，即使这些替代方案被明确地提出。一旦表现出这种行为，被试者就被称为获得了<code>习得性无助感</code></p><p><em><strong>习得性无助会对健康造成影响：</strong></em></p><p>情绪混乱、表现出被动或攻击性，以及难以完成认知任务，（如解决问题）不健康的行为模式(饮食、锻炼和医疗)、抑郁症、较弱的免疫系统、恢复能力差等</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;归因是指我们对他人或自己的行为结果进行分析,指出其性质或推论其原因的过程。第一个提出归因理论者是德国社会心理学家弗里茨·海德，接著是美国心理学家哈罗德·凯利的“共变模式”（或称“三维归因理论”），对海德的理论提出更深入的解释&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;指的是「对于事件的原因」的判断。归因主要就是对于自己（他人）的成功或者失败的归因。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+    <category term="自我归因" scheme="https://kisskisso.com/tags/%E8%87%AA%E6%88%91%E5%BD%92%E5%9B%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>非root卸载手机内置App软件</title>
@@ -440,28 +464,6 @@
     
     <summary type="html">&lt;p&gt;心理学研究取向，而现阶段即有五种观点：生物观、行为观、认知观、心理分析观及主观观点。&lt;br&gt;
 生物观与其他观点不同之处在于其原则部分源自生物学。采取生物观点者常试图以生物学原理来解释心理学原则；此即所谓还原论。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>心理学与生物学观点间的关系</title>
-    <link href="https://kisskisso.com/M77C83/"/>
-    <id>https://kisskisso.com/M77C83/</id>
-    <published>2021-03-13T07:48:30.000Z</published>
-    <updated>2021-03-13T07:53:53.225Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行为观点、认知观点、心理分析观点和主观观点都依赖于纯粹心理学概念（知觉、无意识和归因等）<br>而这些观点会对相同现象提出不同的解释，却一致同意这些解释应位于心理学层次。但生物观点不同，除了引用心理学概念之外，生物观点也采用生物学和其它生物支派的概念（神经传导物质①、荷尔蒙②）。但是两者之间仍有一种直接联系的方式。就是尝试以生物学中与生理学相似的情况来解释心理学概念和原则。【心理学的研究发现、概念与原则可以指引生物学者的研究工作。】<span id="more"></span></p><p><strong>还原论</strong>  指将心理学概念简化为生物学概念。</p><p>以心理和生物两种层次来了解心理现象:</p><hr><div class="markmap-container" style="height:100px;"><svg class="markmap-svg">{"t":"heading","d":1,"v":"两者互补","c":[{"t":"heading","d":2,"v":"生物分析","c":[{"t":"list_item","d":3,"v":"透过生物分析知道心理学概念如何在脑中执行"}]},{"t":"heading","d":2,"v":"心理学","c":[{"t":"list_item","d":3,"v":"心理学研究发现可以指出生物学研究方向"}]}]}</svg></div><hr><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;行为观点、认知观点、心理分析观点和主观观点都依赖于纯粹心理学概念（知觉、无意识和归因等）&lt;br&gt;
-而这些观点会对相同现象提出不同的解释，却一致同意这些解释应位于心理学层次。但生物观点不同，除了引用心理学概念之外，生物观点也采用生物学和其它生物支派的概念（神经传导物质①、荷尔蒙②）。但是两者之间仍有一种直接联系的方式。就是尝试以生物学中与生理学相似的情况来解释心理学概念和原则。【心理学的研究发现、概念与原则可以指引生物学者的研究工作。】&lt;/p&gt;</summary>
     
     
     

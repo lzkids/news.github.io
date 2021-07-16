@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-07-14T11:01:55.244Z</updated>
+  <updated>2021-07-16T11:21:57.868Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓手机下配置与安装小狼毫输入法</title>
+    <link href="https://kisskisso.com/2H8H6JB/"/>
+    <id>https://kisskisso.com/2H8H6JB/</id>
+    <published>2021-07-16T08:19:35.000Z</published>
+    <updated>2021-07-16T11:21:57.868Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这里是关于手机端的配置和安装，手机端的小狼毫输入法叫同文输入法，附上<a href="https://github.com/osfans/trime/releases">下载地址</a>。安装完成之后并不能打出中文，还需要其它<a href="https://github.com/rime/plum/#Packages">配置文件</a>另外下载。一个是基础配置，还有就是其它输入法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="选择自己喜欢的输入法就可以不用全部下载部署">[1]</span></a></sup>（五笔画、双拼等等）以下是配置<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="更换默认主题，选择键盘选择同文风就可以了">[2]</span></a></sup>：<span id="more"></span></p><h2 id="基础配置文件"><a class="markdownIt-Anchor" href="#基础配置文件"></a> 基础配置文件</h2><ul><li><p><a href="https://github.com/rime/rime-prelude"><code>prelude</code></a>：基础配置–提供 <code>default.yaml</code> 及常用 Rime 组件的默认配置</p><ul><li>点击Code找到Download ZIP点击下载</li><li>解压之后把<code>default.yaml</code>、<code>symbols.yaml</code>放在rime文件下</li></ul></li><li><p><a href="https://github.com/rime/rime-essay"><code>essay</code></a>：基础配置–提供预设词汇表及语言模型</p><ul><li>点击Code找到Download ZIP点击下载</li><li>解压之后把<code>essay.txt</code>放在rime文件下</li></ul></li></ul><h2 id="输入法选择"><a class="markdownIt-Anchor" href="#输入法选择"></a> 输入法选择</h2><ul><li><p>℞ <a href="https://github.com/rime/rime-luna-pinyin"><code>luna-pinyin</code></a>: 朙月拼音 / Pinyin input method for Tranditional Chinese</p></li><li><p>℞ <a href="https://github.com/rime/rime-terra-pinyin"><code>terra-pinyin</code></a>: 地球拼音 / School-taught Pinyin, with tone marks</p></li><li><p>℞ <a href="https://github.com/rime/rime-bopomofo"><code>bopomofo</code></a>: 注音 / Zhuyin (aka. Bopomofo)</p></li><li><p>℞ <a href="https://github.com/rime/rime-pinyin-simp"><code>pinyin-simp</code></a>: 袖珍簡化字拼音</p></li><li><p>℞ <a href="https://github.com/rime/rime-double-pinyin"><code>double-pinyin</code></a>: 雙拼 / Double Pinyin (ZiRanMa, ABC, flyPY, MSPY, PYJJ variants)</p></li><li><p>℞ <a href="https://github.com/rime/rime-combo-pinyin"><code>combo-pinyin</code></a>: 宮保拼音 / <a href="https://github.com/rime/home/wiki/ComboPinyin">Combo Pinyin</a>, a chord-typing input method</p></li><li><p>℞ <a href="https://github.com/rime/rime-stenotype"><code>stenotype</code></a>: 打字速記法 / a stenographic system derived from ABC Easy Shorthand</p></li></ul><p>和上面一样，下载压缩包解压之后把后缀是<code>.yaml</code>放入rime下，然后打开安装的同文输入法点击部署等部署完之后点击选取软键盘选择同文输入法既可以使用了。</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">选择自己喜欢的输入法就可以不用全部下载部署<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">更换默认主题，选择键盘选择同文风就可以了<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里是关于手机端的配置和安装，手机端的小狼毫输入法叫同文输入法，附上&lt;a href=&quot;https://github.com/osfans/trime/releases&quot;&gt;下载地址&lt;/a&gt;。安装完成之后并不能打出中文，还需要其它&lt;a href=&quot;https://github.com/rime/plum/#Packages&quot;&gt;配置文件&lt;/a&gt;另外下载。一个是基础配置，还有就是其它输入法&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;选择自己喜欢的输入法就可以不用全部下载部署
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;（五笔画、双拼等等）以下是配置&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;更换默认主题，选择键盘选择同文风就可以了&quot;&gt;[2]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>自我归因与习得性无助</title>
@@ -442,28 +462,6 @@
 认知心理学提供了某特定认知能力——如面孔辨识——的假设，而神经科学则提出这些特定功能在脑部执行的可能过程。&lt;br&gt;
 认知神经科学以新技术研究正常被试（正好与脑部受损被试相反）在进行认知活动试的脑部。&lt;br&gt;
 心理学与神经科学间的联结并不仅限于认知心理学中。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小结与关键思考问题</title>
-    <link href="https://kisskisso.com/1AMHQBM/"/>
-    <id>https://kisskisso.com/1AMHQBM/</id>
-    <published>2021-03-14T07:30:30.000Z</published>
-    <updated>2021-03-14T07:35:14.504Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>心理学研究取向，而现阶段即有五种观点：生物观、行为观、认知观、心理分析观及主观观点。<br>生物观与其他观点不同之处在于其原则部分源自生物学。采取生物观点者常试图以生物学原理来解释心理学原则；此即所谓还原论。 <span id="more"></span><br>心理学的主要领域有：生物心理学、实验心理学、发展心理学、社会与人格心理学、临床与咨询心理学、学校与教育心理学，以及组织与工程心理学。<br>新近探索的领域，包括：认知神经科学（以及感情神经科学、社会认知神经科学）、进化心理学、文化心理学、积极心理学等，均触及传统的心理学各领域与科学的课题。</p><p>1.思考这个问题： “决定个人性取向的因素为何？” 本章所述各种观点将如何探讨此问题？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>长相？相处友好度？</p>    </div></div><p>2.21世纪的心理学有许多新的研究取向（见前沿研究栏内）整合了不同的观点或弥补了本领域的缺失。值此崭新世纪，心理学可能会有哪些新的进展？你预期还会出现哪些整合性的论点且补足哪些缺憾？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>暂时想不到。占空</p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;心理学研究取向，而现阶段即有五种观点：生物观、行为观、认知观、心理分析观及主观观点。&lt;br&gt;
-生物观与其他观点不同之处在于其原则部分源自生物学。采取生物观点者常试图以生物学原理来解释心理学原则；此即所谓还原论。&lt;/p&gt;</summary>
     
     
     

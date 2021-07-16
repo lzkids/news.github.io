@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>安卓手机下配置与安装小狼毫输入法</title>
+      <link href="/2H8H6JB/"/>
+      <url>/2H8H6JB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这里是关于手机端的配置和安装，手机端的小狼毫输入法叫同文输入法，附上<a href="https://github.com/osfans/trime/releases">下载地址</a>。安装完成之后并不能打出中文，还需要其它<a href="https://github.com/rime/plum/#Packages">配置文件</a>另外下载。一个是基础配置，还有就是其它输入法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="选择自己喜欢的输入法就可以不用全部下载部署">[1]</span></a></sup>（五笔画、双拼等等）以下是配置<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="更换默认主题，选择键盘选择同文风就可以了">[2]</span></a></sup>：<span id="more"></span></p><h2 id="基础配置文件"><a class="markdownIt-Anchor" href="#基础配置文件"></a> 基础配置文件</h2><ul><li><p><a href="https://github.com/rime/rime-prelude"><code>prelude</code></a>：基础配置–提供 <code>default.yaml</code> 及常用 Rime 组件的默认配置</p><ul><li>点击Code找到Download ZIP点击下载</li><li>解压之后把<code>default.yaml</code>、<code>symbols.yaml</code>放在rime文件下</li></ul></li><li><p><a href="https://github.com/rime/rime-essay"><code>essay</code></a>：基础配置–提供预设词汇表及语言模型</p><ul><li>点击Code找到Download ZIP点击下载</li><li>解压之后把<code>essay.txt</code>放在rime文件下</li></ul></li></ul><h2 id="输入法选择"><a class="markdownIt-Anchor" href="#输入法选择"></a> 输入法选择</h2><ul><li><p>℞ <a href="https://github.com/rime/rime-luna-pinyin"><code>luna-pinyin</code></a>: 朙月拼音 / Pinyin input method for Tranditional Chinese</p></li><li><p>℞ <a href="https://github.com/rime/rime-terra-pinyin"><code>terra-pinyin</code></a>: 地球拼音 / School-taught Pinyin, with tone marks</p></li><li><p>℞ <a href="https://github.com/rime/rime-bopomofo"><code>bopomofo</code></a>: 注音 / Zhuyin (aka. Bopomofo)</p></li><li><p>℞ <a href="https://github.com/rime/rime-pinyin-simp"><code>pinyin-simp</code></a>: 袖珍簡化字拼音</p></li><li><p>℞ <a href="https://github.com/rime/rime-double-pinyin"><code>double-pinyin</code></a>: 雙拼 / Double Pinyin (ZiRanMa, ABC, flyPY, MSPY, PYJJ variants)</p></li><li><p>℞ <a href="https://github.com/rime/rime-combo-pinyin"><code>combo-pinyin</code></a>: 宮保拼音 / <a href="https://github.com/rime/home/wiki/ComboPinyin">Combo Pinyin</a>, a chord-typing input method</p></li><li><p>℞ <a href="https://github.com/rime/rime-stenotype"><code>stenotype</code></a>: 打字速記法 / a stenographic system derived from ABC Easy Shorthand</p></li></ul><p>和上面一样，下载压缩包解压之后把后缀是<code>.yaml</code>放入rime下，然后打开安装的同文输入法点击部署等部署完之后点击选取软键盘选择同文输入法既可以使用了。</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">选择自己喜欢的输入法就可以不用全部下载部署<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">更换默认主题，选择键盘选择同文风就可以了<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自我归因与习得性无助</title>
       <link href="/2CB6A1H/"/>
       <url>/2CB6A1H/</url>

@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-07-16T11:21:57.868Z</updated>
+  <updated>2021-07-27T02:07:03.234Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>逼近真理的&quot;错误&quot;</title>
+    <link href="https://kisskisso.com/3DPM474/"/>
+    <id>https://kisskisso.com/3DPM474/</id>
+    <published>2021-07-26T10:42:01.000Z</published>
+    <updated>2021-07-27T02:07:03.234Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote><p>复杂的理论不必完全正确，但可以大体真确；信念也不必绝对为真，但可以逼近真理</p></blockquote><p>解释可证伪性原则的过程中，用一个简单的科学进步模型。首先提出理论，从中作出假设，然后使用各种技术来对假设进行检验。</p><p>科学知识是<em>尝试性</em>的，因为理论得出的假设可能是错误的，并不是会所什么都可以拿来检验一番——<code>公理</code>；关系被多次证实，或者不可能被推翻（像是地球不绕太阳运行等等之类）可以解释为<u>对未知事物而非已知事物</u> <span id="more"></span></p><p>应当考虑对不同理论的定量比较可能揭示信息；完善并检验现有知识的局限性。</p><p>科学使用的术语（错误、偏差、证伪）意味它<code>理论</code>是未完成的。</p><p>知识（理论？）是尝试性的、以被修正的时候，<u>“可能错误地认为真正的知识是不存在的”</u>。它（这种观点<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="“可能会错误地认为真正的知识是不存在的”。">[1]</span></a></sup>）忽略了将更确定的知识主张与不太确定的知识主张区分开来。</p><p><font color="#00868B">“绝对的”在科学中可能无法实现。</font></p><p><code>方法论</code>的怀疑主义不能对科学问题给出完全确定的答案<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="”原则上可被新证据推翻“">[2]</span></a></sup>，并不意味着知识是不存在的，而是说知识是暂时性的</p><p><u><strong>一个新理论替代了被证伪的旧理论时，并不是指要将先前用以建立旧的事实完全抛弃。相反，新理论必须能够解释旧理论解释的全部事实，再加上旧理论不能解释的新事物。</strong></u></p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">“可能会错误地认为真正的知识是不存在的”。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">”原则上可被新证据推翻“<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;复杂的理论不必完全正确，但可以大体真确；信念也不必绝对为真，但可以逼近真理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解释可证伪性原则的过程中，用一个简单的科学进步模型。首先提出理论，从中作出假设，然后使用各种技术来对假设进行检验。&lt;/p&gt;
+&lt;p&gt;科学知识是&lt;em&gt;尝试性&lt;/em&gt;的，因为理论得出的假设可能是错误的，并不是会所什么都可以拿来检验一番——&lt;code&gt;公理&lt;/code&gt;；关系被多次证实，或者不可能被推翻（像是地球不绕太阳运行等等之类）可以解释为&lt;u&gt;对未知事物而非已知事物&lt;/u&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>安卓手机下配置与安装小狼毫输入法</title>
@@ -437,31 +460,6 @@
     <summary type="html">&lt;p&gt;研究两个步骤：1产生科学假设 2 验证该假设&lt;br&gt;
 对感兴趣的主题&lt;strong&gt;产生假设&lt;/strong&gt;——一个可以加以验证的陈述。&lt;br&gt;
 科学性假设最主要的来源，通常在于科学理论，一组与某特定现象有关、彼此关联的命题。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前沿研究:21世纪的心理学</title>
-    <link href="https://kisskisso.com/1QSXSSQ/"/>
-    <id>https://kisskisso.com/1QSXSSQ/</id>
-    <published>2021-03-14T07:36:29.000Z</published>
-    <updated>2021-03-14T08:06:15.748Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最受瞩目的是认知神经科学、进化心理学、文化心理学与积极心理学</p><p><strong>认知神经科学</strong>（cognitive neuroscience）试图了解脑部如何执行心智活动。<br>认知心理学提供了某特定认知能力——如面孔辨识——的假设，而神经科学则提出这些特定功能在脑部执行的可能过程。<br>认知神经科学以新技术研究正常被试（正好与脑部受损被试相反）在进行认知活动试的脑部。<br>心理学与神经科学间的联结并不仅限于认知心理学中。 <span id="more"></span></p><p><strong>感情神经科学</strong>以探究脑部如何执行情绪现象，以及<strong>社会认知神经科学</strong>以探索脑部如何执行刻板印象、态度、人际知觉，以及自我知识。</p><p><strong>进化心理学</strong>关注心理机制的生物起源。</p><hr><div class="markmap-container" style="height:100px;"><svg class="markmap-svg">{"t":"heading","d":1,"v":"与进化心理学相关的学科","c":[{"t":"heading","d":2,"v":"心理学"},{"t":"heading","d":2,"v":"生物学"},{"t":"heading","d":2,"v":"分支","c":[{"t":"list_item","d":3,"v":"人类学"},{"t":"list_item","d":3,"v":"精神医学"}]}]}</svg></div><hr><p><strong>进化心理学</strong>的主要概念是，心理机制经过数百万年的自然选择过程。<br>若说心理学机制以自然选择方式进化，<u>即意味着它具有基因基础某些生存问题或增加繁殖机会十分有利。</u></p><p><strong>文化心理学</strong> (cultural psychology)关注一个人生活于其间的文化传统、语言和世界观——如何影响此人的心理表征和心理历程</p><p><strong>积极心理学</strong>   即为了平衡本领域对心理疾病繁复的科学性解说，转而对人类丰饶的一面提出同样繁复的科学性解说（2002）</p><p><strong>积极情绪</strong> 会扩展人们的心灵，鼓励人们去发现新的思想与行动路线。<br><font color="#596E99">积极心理学告诉我们的主要信息是：积极情绪值得我们培养的原因，不仅仅在于积极情绪本身即为我们意欲达到的目标状态，更因为它是激发心灵向心理成长与丰沛提升的途径</font></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;最受瞩目的是认知神经科学、进化心理学、文化心理学与积极心理学&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;认知神经科学&lt;/strong&gt;（cognitive neuroscience）试图了解脑部如何执行心智活动。&lt;br&gt;
-认知心理学提供了某特定认知能力——如面孔辨识——的假设，而神经科学则提出这些特定功能在脑部执行的可能过程。&lt;br&gt;
-认知神经科学以新技术研究正常被试（正好与脑部受损被试相反）在进行认知活动试的脑部。&lt;br&gt;
-心理学与神经科学间的联结并不仅限于认知心理学中。&lt;/p&gt;</summary>
     
     
     

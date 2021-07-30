@@ -670,10 +670,18 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> 生活与话 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 任务列表 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -909,15 +917,23 @@
       <link href="/14940/"/>
       <url>/14940/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在终端输入 ipconfig/flushdns ，按下回车键确认即可</p><p>如果系统提示<code>已成功刷新缓存</code>或者<code>Successfully flushed the DNS Resolver Cache</code>，则说明清除DNS缓存成功。<span id="more"></span></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在终端输入 ipconfig/flushdns ，按下回车键确认即可</p><p>如果系统提示<code>已成功刷新缓存</code>或者<code>Successfully flushed the DNS Resolver Cache</code>，则说明清除DNS缓存成功。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> 语言与Linux </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Windows命令 </tag>
+            
+            <tag> DNS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1166,7 +1182,7 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> 语言与Linux </category>
           
       </categories>
       
@@ -1174,6 +1190,10 @@
         <tags>
             
             <tag> Linux </tag>
+            
+            <tag> Arch </tag>
+            
+            <tag> 虚拟机 </tag>
             
         </tags>
       
@@ -1326,7 +1346,7 @@
     
     
     <entry>
-      <title>Linux安装配置</title>
+      <title>Linux配置</title>
       <link href="/42703/"/>
       <url>/42703/</url>
       
@@ -1335,7 +1355,7 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> 语言与Linux </category>
           
       </categories>
       

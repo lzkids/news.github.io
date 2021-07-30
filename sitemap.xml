@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kisskisso.com/18537/</loc>
+    
+    <lastmod>2021-07-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kisskisso.com/10295/</loc>
     
     <lastmod>2021-07-30</lastmod>
@@ -325,13 +332,6 @@
   
   <url>
     <loc>https://kisskisso.com/2N13CX5/</loc>
-    
-    <lastmod>2021-03-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kisskisso.com/18537/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -2427,6 +2427,13 @@
   
   <url>
     <loc>https://kisskisso.com/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2021-07-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/FreeFileSync/</loc>
     <lastmod>2021-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kisskisso.com/10295/</loc>
+    
+    <lastmod>2021-07-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kisskisso.com/14940/</loc>
     
     <lastmod>2021-07-30</lastmod>
@@ -1276,13 +1283,6 @@
   </url>
   
   <url>
-    <loc>https://kisskisso.com/10295/</loc>
-    
-    <lastmod>2021-01-26</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kisskisso.com/41380/</loc>
     
     <lastmod>2021-01-26</lastmod>
@@ -2420,6 +2420,13 @@
   
   <url>
     <loc>https://kisskisso.com/tags/DNS/</loc>
+    <lastmod>2021-07-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2021-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

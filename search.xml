@@ -1937,7 +1937,7 @@
     
     
     <entry>
-      <title>如何正确删除linux分区</title>
+      <title>如何正确删除Linux分区</title>
       <link href="/10295/"/>
       <url>/10295/</url>
       
@@ -1946,10 +1946,18 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> 语言与Linux </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 双系统 </tag>
+            
+        </tags>
       
     </entry>
     

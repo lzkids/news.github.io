@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>TiddlyWiki下载与汉化</title>
+      <link href="/2TB0JK2/"/>
+      <url>/2TB0JK2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a href="https://tiddlywiki.com/">TiddlyWiki</a> 是一个仅由单个HTML 文件组成的非网络应用的Wiki 程序。这个程序仅使用HTML、CSS 及  JavaScript  技术，完全不需要任何的数据库及动态编程语言。因此任何人皆可以自官方网站下载该程序页面后，即可开始使用。适合一般个人单机的使用和对个人电脑的管理工作。 <span id="more"></span></p><h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2><ul><li>进入<a href="https://tiddlywiki.com/">官网</a>然后找到并点击Download Empty，下载之后是个空白什么都没配置的HTML</li><li><a href="https://github.com/Jermolene/TiddlyDesktop/releases">下载桌面应用</a>找到适合自己电脑系统的zip，之后解压到自己喜欢的盘符中（或者移动硬盘、U盘）。<ul><li>进入解压的文件夹，打开nw.exe——点击Add wiki file添加刚刚下载的HTML<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="别忘了实时备份HTML">[1]</span></a></sup></li></ul></li></ul><h2 id="汉化tiddlywiki"><a class="markdownIt-Anchor" href="#汉化tiddlywiki"></a> 汉化TiddlyWiki</h2><ul><li>点击右边的齿轮</li><li>找到<code>plugins</code><ul><li>plugins显示的是当前已安装的插件</li></ul></li><li>点击获得更多的插件<ul><li>开启插件程序库</li></ul></li><li>点击Language<ul><li>找到zh-CN</li><li>点击右边的安装</li><li>点击右下角的关闭</li></ul></li><li>找到info<ul><li>往下拉找到Language改成中文</li><li>保存<code>Ctrl+s</code></li></ul></li><li>关闭然后重新打开HTML</li></ul><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">别忘了实时备份HTML<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TiddlyWiki </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>chmod命令</title>
       <link href="/230KGVB/"/>
       <url>/230KGVB/</url>

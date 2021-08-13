@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-07-29T00:28:37.979Z</updated>
+  <updated>2021-08-13T04:28:30.893Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TiddlyWiki下载与汉化</title>
+    <link href="https://kisskisso.com/2TB0JK2/"/>
+    <id>https://kisskisso.com/2TB0JK2/</id>
+    <published>2021-08-13T03:14:04.000Z</published>
+    <updated>2021-08-13T04:28:30.893Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a href="https://tiddlywiki.com/">TiddlyWiki</a> 是一个仅由单个HTML 文件组成的非网络应用的Wiki 程序。这个程序仅使用HTML、CSS 及  JavaScript  技术，完全不需要任何的数据库及动态编程语言。因此任何人皆可以自官方网站下载该程序页面后，即可开始使用。适合一般个人单机的使用和对个人电脑的管理工作。 <span id="more"></span></p><h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2><ul><li>进入<a href="https://tiddlywiki.com/">官网</a>然后找到并点击Download Empty，下载之后是个空白什么都没配置的HTML</li><li><a href="https://github.com/Jermolene/TiddlyDesktop/releases">下载桌面应用</a>找到适合自己电脑系统的zip，之后解压到自己喜欢的盘符中（或者移动硬盘、U盘）。<ul><li>进入解压的文件夹，打开nw.exe——点击Add wiki file添加刚刚下载的HTML<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="别忘了实时备份HTML">[1]</span></a></sup></li></ul></li></ul><h2 id="汉化tiddlywiki"><a class="markdownIt-Anchor" href="#汉化tiddlywiki"></a> 汉化TiddlyWiki</h2><ul><li>点击右边的齿轮</li><li>找到<code>plugins</code><ul><li>plugins显示的是当前已安装的插件</li></ul></li><li>点击获得更多的插件<ul><li>开启插件程序库</li></ul></li><li>点击Language<ul><li>找到zh-CN</li><li>点击右边的安装</li><li>点击右下角的关闭</li></ul></li><li>找到info<ul><li>往下拉找到Language改成中文</li><li>保存<code>Ctrl+s</code></li></ul></li><li>关闭然后重新打开HTML</li></ul><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">别忘了实时备份HTML<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://tiddlywiki.com/&quot;&gt;TiddlyWiki&lt;/a&gt; 是一个仅由单个HTML 文件组成的非网络应用的Wiki 程序。这个程序仅使用HTML、CSS 及  JavaScript  技术，完全不需要任何的数据库及动态编程语言。因此任何人皆可以自官方网站下载该程序页面后，即可开始使用。适合一般个人单机的使用和对个人电脑的管理工作。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TiddlyWiki" scheme="https://kisskisso.com/categories/TiddlyWiki/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>chmod命令</title>
@@ -425,46 +444,6 @@
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;我们天性是自私的&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;以纯生物观点来看，我们是自私的，之所以自私，就某些方面而言，是应基因的要求而尽可能自私，基因本身即经过许多世代优胜劣汰的过程而得以存活。主要是能存活到成熟的个体，他们才能继续在竞逐赖以为生的资源上获得胜利。依次观点，我们必须要自私，但是并不意味着我们从未如常人所预期的，会表现出不自私的行为。即常常协助他人以获得资源与逃避失败或危险。以生物观点而言，显然只在有利的条件下，才会如此。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关键思考问题四</title>
-    <link href="https://kisskisso.com/2H1FVGE/"/>
-    <id>https://kisskisso.com/2H1FVGE/</id>
-    <published>2021-03-21T10:55:44.000Z</published>
-    <updated>2021-03-24T11:08:44.673Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1.喜欢看暴力电视节目的9岁儿童与19岁时的攻击行为有关这一经典研究结果。为什么此研究未能证实观看暴力电视节目会使男童更具攻击性？要得到这种结论，需要提出那类证据？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>1.没有具体的实验数据或无有价值的信息2.不符合道德标准。直接证据(ps：或许)</p>    </div></div><p>2.假如学者发现某些饮食失调的症状与过于注重身体外表间有0.5的相关，这位学者能作何结论？有何解释可能说明此观察到的关系？你可由此形成一个因果假设吗？你该如何验证此假设？</p><div class="spoiler collapsed">    <div class="spoiler-title">        答    </div>    <div class="spoiler-content">        <p>越注重身体外表，饮食失调就越严重。相关法。越在意身体外表饮食就越失调。由饮食失调者挑出一组来与另一组正常饮食体重被试（ps:不确定）</p>    </div></div><span id="more"></span><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;1.喜欢看暴力电视节目的9岁儿童与19岁时的攻击行为有关这一经典研究结果。为什么此研究未能证实观看暴力电视节目会使男童更具攻击性？要得到这种结论，需要提出那类证据？&lt;/p&gt;
-&lt;div class=&quot;spoiler collapsed&quot;&gt;
-    &lt;div class=&quot;spoiler-title&quot;&gt;
-        答
-    &lt;/div&gt;
-    &lt;div class=&quot;spoiler-content&quot;&gt;
-        &lt;p&gt;1.没有具体的实验数据或无有价值的信息2.不符合道德标准。直接证据(ps：或许)&lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;2.假如学者发现某些饮食失调的症状与过于注重身体外表间有0.5的相关，这位学者能作何结论？有何解释可能说明此观察到的关系？你可由此形成一个因果假设吗？你该如何验证此假设？&lt;/p&gt;
-&lt;div class=&quot;spoiler collapsed&quot;&gt;
-    &lt;div class=&quot;spoiler-title&quot;&gt;
-        答
-    &lt;/div&gt;
-    &lt;div class=&quot;spoiler-content&quot;&gt;
-        &lt;p&gt;越注重身体外表，饮食失调就越严重。相关法。越在意身体外表饮食就越失调。由饮食失调者挑出一组来与另一组正常饮食体重被试（ps:不确定）&lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;</summary>
     
     
     

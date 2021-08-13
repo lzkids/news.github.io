@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>TiddlyWiki插件推荐</title>
+      <link href="/2QAKD7K/"/>
+      <url>/2QAKD7K/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>以下是我觉得用的不错的插件</p><table><thead><tr><th style="text-align:center">名字</th><th style="text-align:center">英文名</th><th style="text-align:right">来源</th></tr></thead><tbody><tr><td style="text-align:center">代码高亮</td><td style="text-align:center">Highlight</td><td style="text-align:right">官方</td></tr><tr><td style="text-align:center">数学公式</td><td style="text-align:center">KaTeX</td><td style="text-align:right">官方</td></tr><tr><td style="text-align:center">md文档语法</td><td style="text-align:center">Markdown</td><td style="text-align:right">官方</td></tr><tr><td style="text-align:center">标签栏</td><td style="text-align:center">storytabs</td><td style="text-align:right"><a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">第三方</a></td></tr><tr><td style="text-align:center">脑图</td><td style="text-align:center">TiddlyMap</td><td style="text-align:right"><a href="http://tiddlymap.org/">第三方</a></td></tr></tbody></table><p>更新中…</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TiddlyWiki </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TiddlyWiki条目与目录</title>
       <link href="/Q6G18M/"/>
       <url>/Q6G18M/</url>

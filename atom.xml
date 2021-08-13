@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-08-13T04:28:30.893Z</updated>
+  <updated>2021-08-13T09:54:47.417Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TiddlyWiki条目与目录</title>
+    <link href="https://kisskisso.com/Q6G18M/"/>
+    <id>https://kisskisso.com/Q6G18M/</id>
+    <published>2021-08-13T05:13:28.000Z</published>
+    <updated>2021-08-13T09:54:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>添加条目</strong>点击右边的“+”号就可以创建，标签可以做“链接使用”。内容类型可以选适合自己的内容。点击“+”号后如下：<span id="more"></span></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/2021-08-13_17-37-46.png" alt=""></p><p><strong>添加目录</strong> 空白版本侧边栏是不带目录的，所以要自己创建</p><ul><li><p>创建一个叫做TableOfContents的条目</p><ul><li>就是把标题栏写成TableOfContents</li></ul></li><li><p>给它添加标签$:/tags/SideBar</p></li><li><p>设置文本为</p><pre><code>&lt;div class="tc-table-of-contents"&gt; &lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt; &lt;/div&gt; </code></pre></li><li><p>添加一个 caption 字段，内容为 目录</p></li><li><p>添加一个 list-after 字段，内容为 $:/core/ui/SideBar/Open</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E7%9B%AE%E5%BD%95.png" alt=""></p></li></ul><p>然后右边多了个目录 。</p><p>如果想丰富完善这个目录，建立层级关系，就在创建条目的时候设置标签为这个目录的条目名，即TableOfContents。</p><p>如果想在条目下设置下一级，就在新建的条目中，标签设置为上一个条目的标题名，就是将上一个新建的条目名设置在下一级。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;添加条目&lt;/strong&gt;点击右边的“+”号就可以创建，标签可以做“链接使用”。内容类型可以选适合自己的内容。点击“+”号后如下：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TiddlyWiki" scheme="https://kisskisso.com/categories/TiddlyWiki/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>TiddlyWiki下载与汉化</title>
@@ -422,28 +441,6 @@
 &lt;li&gt;心理学可定义为对行为和心理过程的科学研究。&lt;/li&gt;
 &lt;li&gt;心理学的根源可溯自公元前第4和第5世纪。希腊哲学家苏格拉底、柏拉图和亚里士多德提出有关心灵的基本问题，而“医学之父”希波克拉底&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;前460年-前370年，为古希腊伯里克利时代的医师，被西方尊为“医学之父”，西方医学奠基人。
 &quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;则对脑部如何控制其他器官作了许多重要的观察。心理学最早的争论之一：人类的能力是天生(先天)还是从经验中学得的(后天)。&lt;/li&gt;&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="西尔格德心理学导论" scheme="https://kisskisso.com/tags/%E8%A5%BF%E5%B0%94%E6%A0%BC%E5%BE%B7%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>双面论证</title>
-    <link href="https://kisskisso.com/9FJJQR/"/>
-    <id>https://kisskisso.com/9FJJQR/</id>
-    <published>2021-03-21T11:10:56.000Z</published>
-    <updated>2021-03-24T03:29:30.686Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>我们天性是自私的</strong></p><p>以纯生物观点来看，我们是自私的，之所以自私，就某些方面而言，是应基因的要求而尽可能自私，基因本身即经过许多世代优胜劣汰的过程而得以存活。主要是能存活到成熟的个体，他们才能继续在竞逐赖以为生的资源上获得胜利。依次观点，我们必须要自私，但是并不意味着我们从未如常人所预期的，会表现出不自私的行为。即常常协助他人以获得资源与逃避失败或危险。以生物观点而言，显然只在有利的条件下，才会如此。<span id="more"></span></p><p><strong>我们天性不是自私的</strong></p><p>彼此照顾、相互安慰。依赖合作与仁慈。(暂…)</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;我们天性是自私的&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;以纯生物观点来看，我们是自私的，之所以自私，就某些方面而言，是应基因的要求而尽可能自私，基因本身即经过许多世代优胜劣汰的过程而得以存活。主要是能存活到成熟的个体，他们才能继续在竞逐赖以为生的资源上获得胜利。依次观点，我们必须要自私，但是并不意味着我们从未如常人所预期的，会表现出不自私的行为。即常常协助他人以获得资源与逃避失败或危险。以生物观点而言，显然只在有利的条件下，才会如此。&lt;/p&gt;</summary>
     
     
     

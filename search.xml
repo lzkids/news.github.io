@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>TiddlyWiki安装storytabs插件</title>
+      <link href="/1NFKRRJ/"/>
+      <url>/1NFKRRJ/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TiddlyWiki </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TiddlyWiki插件推荐</title>
       <link href="/2QAKD7K/"/>
       <url>/2QAKD7K/</url>

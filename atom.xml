@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-08-13T14:16:04.051Z</updated>
+  <updated>2021-08-14T02:01:38.240Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TiddlyWiki安装storytabs插件</title>
+    <link href="https://kisskisso.com/1NFKRRJ/"/>
+    <id>https://kisskisso.com/1NFKRRJ/</id>
+    <published>2021-08-14T01:03:40.000Z</published>
+    <updated>2021-08-14T02:01:38.240Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TiddlyWiki" scheme="https://kisskisso.com/categories/TiddlyWiki/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>TiddlyWiki插件推荐</title>
@@ -428,27 +448,6 @@
     
     <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>hexo无法生成index.html文件</title>
-    <link href="https://kisskisso.com/3YD1C7C/"/>
-    <id>https://kisskisso.com/3YD1C7C/</id>
-    <published>2021-03-25T08:13:25.000Z</published>
-    <updated>2021-03-25T09:27:03.437Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天在修改完博客后，执行hexo g的时候生成了一些文件但是没有生成静态的index.html文件。在网页搜索答案是缺少依赖项，我按照其它博客的解决办法运行了<code>npm ls --depth 0</code>发现没有报错。之后对了下之前备份的pacage.json发现少了markdown生成的网页的插件。<span id="more"></span></p><p>1.查看npm安装各hexo插件的情况</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ls --depth 0</span><br></pre></td></tr></tbody></table></figure><p>如果显示npm ERR！一类的需要安装相应的插件</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install ...</span><br></pre></td></tr></tbody></table></figure><p>2.使用<code>npm ls --depth 0</code>没有报错先去hexo根目录下的<code>package.json</code>查看有没有<code>hexo-renderer-markdown-it</code>如果没有需要下载</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-markdown-it</span><br><span class="line">or</span><br><span class="line">npm install hexo-renderer-markdown-it-plus</span><br></pre></td></tr></tbody></table></figure><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;今天在修改完博客后，执行hexo g的时候生成了一些文件但是没有生成静态的index.html文件。在网页搜索答案是缺少依赖项，我按照其它博客的解决办法运行了&lt;code&gt;npm ls --depth 0&lt;/code&gt;发现没有报错。之后对了下之前备份的pacage.json发现少了markdown生成的网页的插件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="错误" scheme="https://kisskisso.com/tags/%E9%94%99%E8%AF%AF/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-08-15T00:28:33.985Z</updated>
+  <updated>2021-08-15T01:00:56.955Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kisskisso.com/267M59J/"/>
     <id>https://kisskisso.com/267M59J/</id>
     <published>2021-08-14T23:56:10.000Z</published>
-    <updated>2021-08-15T00:28:33.985Z</updated>
+    <updated>2021-08-15T01:00:56.955Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在TiddlyWiki条目与目录中记到如何在右侧建立一个目录，这个是记一下如何在条目中建立树状目录以便更好的找到想要的内容。一般来说在层级多的情况下，点击第一个条目发现是空白，找起来会很麻烦。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%83.png" alt=""></p><p>建立很简单，如下：</p><p>是在第一个条目下加入一段代码就可以.  当然需要把XXX去换成想要显示树状目录的目录名</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tc-table-of-contents"</span>&gt;</span> &lt;<span class="tag">&lt;<span class="name">toc-selective-expandable</span> '<span class="attr">XXX</span>'&gt;</span>&gt; <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br></pre></td></tr></tbody></table></figure><p>加入之后就会显示如下</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%832.png" alt=""></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     

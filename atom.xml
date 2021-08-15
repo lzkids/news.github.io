@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-08-14T02:01:38.240Z</updated>
+  <updated>2021-08-15T00:28:33.985Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>TiddlyWiki如何在条目中加入树状目录</title>
+    <link href="https://kisskisso.com/267M59J/"/>
+    <id>https://kisskisso.com/267M59J/</id>
+    <published>2021-08-14T23:56:10.000Z</published>
+    <updated>2021-08-15T00:28:33.985Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在TiddlyWiki条目与目录中记到如何在右侧建立一个目录，这个是记一下如何在条目中建立树状目录以便更好的找到想要的内容。一般来说在层级多的情况下，点击第一个条目发现是空白，找起来会很麻烦。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%83.png" alt=""></p><p>建立很简单，如下：</p><p>是在第一个条目下加入一段代码就可以.  当然需要把XXX去换成想要显示树状目录的目录名</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tc-table-of-contents"</span>&gt;</span> &lt;<span class="tag">&lt;<span class="name">toc-selective-expandable</span> '<span class="attr">XXX</span>'&gt;</span>&gt; <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br></pre></td></tr></tbody></table></figure><p>加入之后就会显示如下</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%832.png" alt=""></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;在TiddlyWiki条目与目录中记到如何在右侧建立一个目录，这个是记一下如</summary>
+      
+    
+    
+    
+    <category term="TiddlyWiki" scheme="https://kisskisso.com/categories/TiddlyWiki/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>TiddlyWiki安装storytabs插件</title>
     <link href="https://kisskisso.com/1NFKRRJ/"/>
     <id>https://kisskisso.com/1NFKRRJ/</id>
     <published>2021-08-14T01:03:40.000Z</published>
-    <updated>2021-08-14T02:01:38.240Z</updated>
+    <updated>2021-08-14T23:47:35.215Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;视觉外观=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -427,27 +449,6 @@
     
     
     <category term="软件" scheme="https://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows优化和关闭遥测</title>
-    <link href="https://kisskisso.com/1XCPHRX/"/>
-    <id>https://kisskisso.com/1XCPHRX/</id>
-    <published>2021-04-01T01:49:20.000Z</published>
-    <updated>2021-04-01T03:24:56.129Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>关闭不需要的后台服务和计划任务以及微软的遥测服务<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="                                                                                                                                                                               可以根据事件管理诊断和使用情况信息的收集和传输，用于改进Windows平台的体验和质量">[1]</span></a></sup>开机自启应用。<br>搜索任务计划程序或者同时按Windows键+R键来启动运行窗口输入taskschd.msc回车。</p><span id="more"></span><div class="markmap-container" style="height:100px;"><svg class="markmap-svg">{"t":"heading","d":1,"v":"任务计划程序库","c":[{"t":"heading","d":2,"v":"Microsoft"},{"t":"heading","d":2,"v":"Windows"},{"t":"heading","d":2,"v":"Application Experience","c":[{"t":"list_item","d":3,"v":"选择Microsoft Compatibility Appraiser"},{"t":"list_item","d":3,"v":"右键选择禁用"}]}]}</svg></div> <p><strong>禁用服务</strong></p><p>Geolocation Service<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="此服务将监视系统的当前位置并管理地理围栏(具有关联事件的地理位置)">[2]</span></a></sup> 禁用  PS: 笔记本地位查找可能需要</p><p>Connected User Experiences and Telemetry<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="已连接的用户体验和遥测服务所启用的功能支持应用程序中用户体验和连接的用户体验。此外，如果在“反馈和诊断”下启用诊断和使用情况隐私选项设置，则此服务可以根据事件来管理诊断和使用情况信息的收集和传输(用于改进 Windows 平台的体验和质量)。">[3]</span></a></sup>禁用</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">可以根据事件管理诊断和使用情况信息的收集和传输，用于改进Windows平台的体验和质量<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">此服务将监视系统的当前位置并管理地理围栏(具有关联事件的地理位置)<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">已连接的用户体验和遥测服务所启用的功能支持应用程序中用户体验和连接的用户体验。此外，如果在“反馈和诊断”下启用诊断和使用情况隐私选项设置，则此服务可以根据事件来管理诊断和使用情况信息的收集和传输(用于改进 Windows 平台的体验和质量)。<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;关闭不需要的后台服务和计划任务以及微软的遥测服务&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;                                                                                                                                                                               可以根据事件管理诊断和使用情况信息的收集和传输，用于改进Windows平台的体验和质量
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;开机自启应用。&lt;br&gt;
-搜索任务计划程序或者同时按Windows键+R键来启动运行窗口输入taskschd.msc回车。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
     
   </entry>
   

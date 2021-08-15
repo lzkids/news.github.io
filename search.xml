@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>TiddlyWiki如何在条目中加入树状目录</title>
+      <link href="/267M59J/"/>
+      <url>/267M59J/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在TiddlyWiki条目与目录中记到如何在右侧建立一个目录，这个是记一下如何在条目中建立树状目录以便更好的找到想要的内容。一般来说在层级多的情况下，点击第一个条目发现是空白，找起来会很麻烦。</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%83.png" alt=""></p><p>建立很简单，如下：</p><p>是在第一个条目下加入一段代码就可以.  当然需要把XXX去换成想要显示树状目录的目录名</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tc-table-of-contents"</span>&gt;</span> &lt;<span class="tag">&lt;<span class="name">toc-selective-expandable</span> '<span class="attr">XXX</span>'&gt;</span>&gt; <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br></pre></td></tr></tbody></table></figure><p>加入之后就会显示如下</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E5%85%B6%E5%AE%832.png" alt=""></p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TiddlyWiki </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TiddlyWiki安装storytabs插件</title>
       <link href="/1NFKRRJ/"/>
       <url>/1NFKRRJ/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%A0%87%E7%AD%BE.png" alt=""></p><p>在 Tiddler 上方显示一条标签栏，使得定位已打开的 tab 变得容易。<span id="more"></span></p><p>插件来源于 <a href="http://bjtools.tiddlyspot.com/#%24%3A%2Fplugins%2Fbj%2Fstorytabs">BJ Tools</a>。</p><p><strong>安装方法</strong>：</p><ul><li>打开上述 BJ Tools 的链接，打开 Control Panel(设置)，打开 plugins tab（Plugins），定位到 story tabs 的插件</li><li>将其拉到你的 wiki 页面，即安装成功</li><li>保存html，然后打开刚刚保存的html</li></ul><p><strong>需要做的配置</strong>：</p><ul><li>在你的 Control Panel =&gt; Appearance =&gt; Story View，改为 zoomin<ul><li>设置=&gt;视觉外观=&gt;查看模式=&gt;改成zoomin</li></ul></li><li>在你的 Control Panel =&gt; Info =&gt; Basic，将 animation duartion 改为 0<ul><li>设置=&gt;信息=&gt;基本=&gt;动画持续时间=&gt;改为0</li></ul></li></ul><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       
       
       <categories>

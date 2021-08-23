@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-08-15T01:00:56.955Z</updated>
+  <updated>2021-08-23T11:15:59.169Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用户不在sudoers文件中</title>
+    <link href="https://kisskisso.com/3VFDSP/"/>
+    <id>https://kisskisso.com/3VFDSP/</id>
+    <published>2021-08-23T11:04:29.000Z</published>
+    <updated>2021-08-23T11:15:59.169Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在Linux中使用sudo显示用户不在 sudoers 文件中。此事将被报告。的解决办法，不用修改文件权限。首先进入在终端输入su进入root模式，然后在终端输入以下命令：<span id="more"></span></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"penguin  ALL=(ALL) ALL"</span> &gt;&gt; /etc/sudoers</span><br></pre></td></tr></tbody></table></figure><p>配置 <code>sudo</code>来使为非特权用户（例如用户 <code>penguin</code>）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="penguin处换成你想要获取特权用户">[1]</span></a></sup>只需输入用户密码而非 root 密码就能获得管理员权限。</p><p>另外，可以使用下列命令使非特权用户（例如用户 <code>penguin</code>）无需密码就获得管理员权限。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"penguin  ALL=(ALL) NOPASSWD:ALL"</span> &gt;&gt; /etc/sudoers</span><br></pre></td></tr></tbody></table></figure><p>此技巧只对你管理的单用户工作站中那个唯一的用户有用。</p><div class="admonition error"><p></p><p>⚠在多用户工作站中不要建立这样的普通用户账户，因为它会导致非常严重的系统安全问题。</p></div><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">penguin处换成你想要获取特权用户<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在Linux中使用sudo显示用户不在 sudoers 文件中。此事将被报告。的解决办法，不用修改文件权限。首先进入在终端输入su进入root模式，然后在终端输入以下命令：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="语言与Linux" scheme="https://kisskisso.com/categories/%E8%AF%AD%E8%A8%80%E4%B8%8ELinux/"/>
+    
+    
+    <category term="Linux" scheme="https://kisskisso.com/tags/Linux/"/>
+    
+    <category term="Linux命令" scheme="https://kisskisso.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>TiddlyWiki如何在条目中加入树状目录</title>
@@ -425,27 +448,6 @@
     
     
     <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="软件" scheme="https://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>配置Windows Terminal终端</title>
-    <link href="https://kisskisso.com/CDKB3M/"/>
-    <id>https://kisskisso.com/CDKB3M/</id>
-    <published>2021-04-10T01:43:13.000Z</published>
-    <updated>2021-04-15T09:25:02.392Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Windows Terminal是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。随着1.8.1032.0版本的发布已经不需要集中通过设置json文件,只需要在设置里更改即可。</p><span id="more"></span><p>分屏快捷键：<br>左右分屏: Alt+Shift+=<br>上下分屏:Alt+Shift±<br>取消分屏:Ctrl+Shift+w</p><div class="spoiler collapsed">    <div class="spoiler-title">        旧    </div>    <div class="spoiler-content">        <p><s>// 设置默认终端</s><br><s>“defaultprofile”: “{}”,</s><br><s>// 隐藏标题栏</s><br><s>“showTabsInTitlebar” : true,</s><br><s>// 始终显示选项卡</s><br><s>“alwaysShowTabs”: false,</s><br><s>// 使用活动终端标题作为应用程序标题</s><br><s>“showTerminalTitleInTitlebar”: false,</s><br><s>// 始终处于顶部模式</s><br><s>“alwaysOnTop”: false,</s><br><s>// 选项卡宽度模式 “equal” | “titleLength” | “compact”</s><br><s>“tabWidthMode”: “compact”,</s><br><s>// 禁用窗格动画</s><br><s>“disableAnimations”:false,</s><br><s>// 显示关闭所有选项卡弹出窗口</s><br><s>“confirmCloseAllTabs”: true,</s><br><s>“backgroundImageStretchMode” : “uniformToFill”,</s><br><s>// 光标的形状 bar | empytBox | filledBox | vintage</s><br><s>“cursorShape” : “vintage”,</s><br><s>// 毛玻璃特效</s><br><s>“useAcrylic”: false</s></p>    </div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Windows Terminal是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。随着1.8.1032.0版本的发布已经不需要集中通过设置json文件,只需要在设置里更改即可。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="应用与插件" scheme="https://kisskisso.com/categories/%E5%BA%94%E7%94%A8%E4%B8%8E%E6%8F%92%E4%BB%B6/"/>
     
     
     <category term="软件" scheme="https://kisskisso.com/tags/%E8%BD%AF%E4%BB%B6/"/>

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>用户不在sudoers文件中</title>
+      <link href="/3VFDSP/"/>
+      <url>/3VFDSP/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在Linux中使用sudo显示用户不在 sudoers 文件中。此事将被报告。的解决办法，不用修改文件权限。首先进入在终端输入su进入root模式，然后在终端输入以下命令：<span id="more"></span></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"penguin  ALL=(ALL) ALL"</span> &gt;&gt; /etc/sudoers</span><br></pre></td></tr></tbody></table></figure><p>配置 <code>sudo</code>来使为非特权用户（例如用户 <code>penguin</code>）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="penguin处换成你想要获取特权用户">[1]</span></a></sup>只需输入用户密码而非 root 密码就能获得管理员权限。</p><p>另外，可以使用下列命令使非特权用户（例如用户 <code>penguin</code>）无需密码就获得管理员权限。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"penguin  ALL=(ALL) NOPASSWD:ALL"</span> &gt;&gt; /etc/sudoers</span><br></pre></td></tr></tbody></table></figure><p>此技巧只对你管理的单用户工作站中那个唯一的用户有用。</p><div class="admonition error"><p></p><p>⚠在多用户工作站中不要建立这样的普通用户账户，因为它会导致非常严重的系统安全问题。</p></div><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">penguin处换成你想要获取特权用户<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 语言与Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Linux命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TiddlyWiki如何在条目中加入树状目录</title>
       <link href="/267M59J/"/>
       <url>/267M59J/</url>

@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2021-09-12T11:52:59.957Z</updated>
+  <updated>2021-10-13T04:32:30.389Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决火狐浏览器看A/B站视频卡顿问题</title>
+    <link href="https://kisskisso.com/2H7VA26/"/>
+    <id>https://kisskisso.com/2H7VA26/</id>
+    <published>2021-10-13T03:47:30.000Z</published>
+    <updated>2021-10-13T04:32:30.389Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近用火狐浏览器看A站/B站视频和直播，一卡一卡的，具体是画面不动，声音正常，每隔2~3秒卡一下。之前放弃了一段时间，用的Edge浏览器看。今天想想还是回火狐浏览器吧。下面就是我设置之后就不卡了： <span id="more"></span></p><p>一、浏览器设置</p><p>​<code>设置</code>→<code>常规</code>→<code>性能</code>      取消使用推荐的性能设置</p><p>二、系统设置</p><ul><li><p>找到控制面板</p></li><li><p>NVIDIA控制面板<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="没找到NVIDIA控制面板可以把查看方式改为大图标；">[1]</span></a></sup></p></li><li><p>管理3D设置</p><ul><li>关闭三重缓冲和垂直同步</li></ul></li></ul><p>三、重启火狐浏览器</p><hr><p><strong>可选</strong></p><p>因为电脑比较渣，并没有在图形设置中让火狐浏览器使用<code>高性能</code>(独显)。</p><p>如果按照上面设置还是卡，可以尝试以下方式：</p><p><strong>方法一</strong>：</p><ul><li><p>设置</p><ul><li>系统<ul><li>显示<ul><li>最下面找到图形设置</li><li>浏览添加火狐浏览器(Firefox)<ul><li>选项选择高性能</li></ul></li></ul></li></ul></li></ul></li><li><p>重启火狐浏览器</p></li></ul><p><strong>方法二</strong>：</p><ul><li><p>在NVIDIA控制面板</p><ul><li><p>管理3D设置</p><ul><li><p>程序设置</p></li><li><p>选择要自定义的程序/添加</p></li><li><p>为此程序选择首选图形处理器（选择高性能NVIDIA处理器）</p></li></ul></li></ul></li><li><p>关闭三重缓冲和垂直同步</p></li><li><p>重启火狐浏览器</p></li></ul> <!--可能有用。万能的办法就是换浏览器或者换电脑(^^ゞ--> <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">没找到NVIDIA控制面板可以把查看方式改为大图标；<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;最近用火狐浏览器看A站/B站视频和直播，一卡一卡的，具体是画面不动，声音正常，每隔2~3秒卡一下。之前放弃了一段时间，用的Edge浏览器看。今天想想还是回火狐浏览器吧。下面就是我设置之后就不卡了：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="A站" scheme="https://kisskisso.com/tags/A%E7%AB%99/"/>
+    
+    <category term="B站" scheme="https://kisskisso.com/tags/B%E7%AB%99/"/>
+    
+    <category term="火狐浏览器" scheme="https://kisskisso.com/tags/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>OneDrive消失</title>
@@ -435,26 +460,6 @@
     
     
     <category term="参考资料" scheme="https://kisskisso.com/tags/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决GitHub无法构建页面</title>
-    <link href="https://kisskisso.com/8JVKD8/"/>
-    <id>https://kisskisso.com/8JVKD8/</id>
-    <published>2021-05-16T11:07:51.000Z</published>
-    <updated>2021-05-17T00:14:34.200Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天向GitHub page的repository里更新了一篇文章，发现网站并没有更新，而且网站还时不时的打不开。网上找了一下问题的解决方案，一个说是GitHub page服务挂掉还有个答案是nojekyll的问题。<br>一般来说，只要你的GitHub page repository有新的提交，隔一段时间你的静态网站就会更新。如果更新出错，页面不会更新；同时，GitHub会发送一封提醒邮件，大致如下内容: <span id="more"></span></p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The page build failed for the 'master' branch with the following error:</span><br><span class="line">Unable to build page. Please try again later.</span><br></pre></td></tr></tbody></table></figure><p>解决办法我整合了两种:<br>1.检查GitHub page服务有没有挂掉；查看这个<a href="https://www.githubstatus.com/">网址</a>.<br>1.1如果服务器运行良好，则提交的内容有错误，需要在本地构建网页检查有没有错误。<br>1.2如果服务器先前Degraded，之后变为Normal。page还是显示构筑失败需要重新设置page一遍(只需设置<code>Source</code>就可以了)</p><div class="admonition onte"><p></p><p>Source的选项的/(root)切换成/docs,保存。然后在切回来保存就可以了</p></div><p>2.在根目录下新建<code>.nojekyll</code>文件</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">touch .nojekyll <span class="comment">#.nojekyll无需任何内容</span></span><br><span class="line">git add .nojekyll</span><br><span class="line">git commit -m <span class="string">'add .nojekyll'</span></span><br><span class="line">git pushh</span><br></pre></td></tr></tbody></table></figure><p>参考链接：</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.community/t/your-site-is-having-problems-building-unable-to-build-page-please-try-again-later/173131<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.community/t/github-pages-builds-fail/10710<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;今天向GitHub page的repository里更新了一篇文章，发现网站并没有更新，而且网站还时不时的打不开。网上找了一下问题的解决方案，一个说是GitHub page服务挂掉还有个答案是nojekyll的问题。&lt;br&gt;
-一般来说，只要你的GitHub page repository有新的提交，隔一段时间你的静态网站就会更新。如果更新出错，页面不会更新；同时，GitHub会发送一封提醒邮件，大致如下内容:&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
     
   </entry>
   

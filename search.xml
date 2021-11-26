@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>无主之地2存档转移方法</title>
+      <link href="/0EBKRY/"/>
+      <url>/0EBKRY/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Epic版的无主之地2、前传的存档和Steam版是一样的原理。都放在同样的的地方，但是具体文件夹名字有一点区别，存档通用，需要转移的话，手动操作复制就行。<br>注意游戏存档不在游戏安装目录里面!都是在<strong>文档</strong>里面：<br>无主之地2的存档在：文档——MyGamesBorderlands 2 ——WillowGame——SaveData<br>前传的存档在：文档——MyGamesBorderlands  The Pre-Sequel ——WillowGame——SaveData</p><pre><code>注意：里面还会有子文件夹，名字较*短*的是**steam**，名字较*长*的是**Epic**</code></pre><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 无主之地2 </tag>
+            
+            <tag> steam </tag>
+            
+            <tag> Epic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决火狐浏览器看A/B站视频卡顿问题</title>
       <link href="/2H7VA26/"/>
       <url>/2H7VA26/</url>

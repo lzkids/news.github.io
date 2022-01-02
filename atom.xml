@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2022-01-02T14:10:07.522Z</updated>
+  <updated>2022-01-02T15:05:47.882Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://kisskisso.com/71F8VQ/"/>
     <id>https://kisskisso.com/71F8VQ/</id>
     <published>2022-01-02T13:44:32.000Z</published>
-    <updated>2022-01-02T14:10:07.522Z</updated>
+    <updated>2022-01-02T15:05:47.882Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1234占位</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天查看博客的时候，发现评论失效了，从网页看显示地址错误如下：</p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Valine.png" alt=""></p><p>在网页转了一大圈终于解决了，首先问题所在是国际版的Leancloud通用域名下线，需要更改自己自定义服务器的URL以及CDN等等…<span id="more"></span><br>第一步：找到自定义服务器URL<sup>这里的x是自己服务器地址</sup><br>&nbsp;&nbsp;&nbsp;&nbsp;需要到Leancloud后台去查找设置-应用凭证-服务器地址下的REST API 服务器地址<code>https://xxxxxxxx.api.lncldglobal.com</code></p><p>第二步：需要更改主题的设置<br>&nbsp;&nbsp;&nbsp;&nbsp;在主题的<code>_config.yml</code>找到<code>valine</code>的<code>serverURLs</code>,设置为刚刚在REST API 服务器地址找到的<code>https://xxxxxxxx.api.lncldglobal.com</code></p><p>第三步：添加自定义URL的参数(可选)<br>&nbsp;&nbsp;&nbsp;&nbsp;如果自己的主题有serverURLs，就不用添加；如果没有就添加。在你的主题下找到<code>layout/_partial/xxxx</code>这里的x指的是Valine所放的地方。因为每个主题都不一样，但大多数Valine都放在<code>layout/_partial/</code>文件夹中。它可能是<code>valine.ejs</code>而我的Valine则是在<code>comments.pug</code>中。</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">el:<span class="string">'#vcomment'</span>,</span><br><span class="line">      notify:notify,</span><br><span class="line">      verify:verify,</span><br><span class="line">      appId:<span class="string">'#{theme.valine.appid}'</span>,</span><br><span class="line">      appKey:<span class="string">'#{theme.valine.appkey}'</span>,</span><br><span class="line">      placeholder:<span class="string">'#{theme.valine.placeholder}'</span>,</span><br><span class="line">      avatar:<span class="string">'#{theme.valine.avatar}'</span>,</span><br><span class="line">      guest_info:guest_info,</span><br><span class="line">      pageSize:<span class="string">'#{theme.valine.pageSize}'</span>,</span><br><span class="line">      serverURLs:<span class="string">'#{theme.valine.serverURLs}'</span> <span class="comment">// 加上这行</span></span><br><span class="line"><span class="comment">// 当然具体写法需要参照文件里的写法，就是照着“加上这行”的上面写法</span></span><br></pre></td></tr></tbody></table></figure><p>然后在你主题的<code>_config.yml</code>的<code>valine</code>添加自定义URL。</p><figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">serverURLs:</span> <span class="string">https://复制AppID的前8位.api.lncldglobal.com</span> <span class="comment"># 加上这一行</span></span><br></pre></td></tr></tbody></table></figure><p>第四步：更换Leancloud的CDN<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.leancloud.app/sdk_setup-js.html#hash-1109054503">How to Install the JavaScript SDK - LeanCloud Docs</a>往下滑找到CDN选项如下：<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/CDN.png" alt=""></p><p>最后重新<code>hexo g</code>和<code>hexo d</code>了</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;1234占位&lt;/p&gt;
-&lt;link rel=&quot;stylesheet&quot; href</summary>
-      
+    <summary type="html">&lt;p&gt;今天查看博客的时候，发现评论失效了，从网页看显示地址错误如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/Valine.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在网页转了一大圈终于解决了，首先问题所在是国际版的Leancloud通用域名下线，需要更改自己自定义服务器的URL以及CDN等等…&lt;/p&gt;</summary>
     
     
     

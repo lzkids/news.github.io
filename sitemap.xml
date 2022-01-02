@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kisskisso.com/71F8VQ/</loc>
+    
+    <lastmod>2022-01-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kisskisso.com/26WVE1K/</loc>
     
     <lastmod>2022-01-02</lastmod>
@@ -3194,6 +3203,20 @@
   
   <url>
     <loc>https://kisskisso.com/tags/%E6%AC%A7%E6%9C%8D/</loc>
+    <lastmod>2022-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/Valine/</loc>
+    <lastmod>2022-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kisskisso.com/tags/leancloud/</loc>
     <lastmod>2022-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

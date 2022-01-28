@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2022-01-13T11:21:06.440Z</updated>
+  <updated>2022-01-28T07:20:44.151Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空白的chm文件</title>
+    <link href="https://kisskisso.com/1F9VHJV/"/>
+    <id>https://kisskisso.com/1F9VHJV/</id>
+    <published>2022-01-28T06:59:35.000Z</published>
+    <updated>2022-01-28T07:20:44.151Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>右键打开属性，然后勾选解除锁定。重新打开chm文件就不会空白；</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;右键打开属性，然后勾选解除锁定。重新打开chm文件就不会空白；&lt;/p&gt;
+&lt;l</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="chm" scheme="https://kisskisso.com/tags/chm/"/>
+    
+  </entry>
   
   <entry>
     <title>GOG的无冬之夜增强版置换多人CDK</title>
@@ -457,27 +482,6 @@
     
     
     <category term="组策略" scheme="https://kisskisso.com/tags/%E7%BB%84%E7%AD%96%E7%95%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>经过研究检验的六种更好的学习方法</title>
-    <link href="https://kisskisso.com/1V7NZA9/"/>
-    <id>https://kisskisso.com/1V7NZA9/</id>
-    <published>2021-05-25T13:08:56.000Z</published>
-    <updated>2021-05-25T13:51:19.719Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>人类记忆的存储和检索操作几乎在所有可能的方面都与录音设备不同，学习的策略要求大脑努力记住信息，而不是被动地复习材料。<span id="more"></span><br>以下是经过研究检验的策略：</p><h2 id="记住并重复"><a class="markdownIt-Anchor" href="#记住并重复"></a> 记住并重复</h2><p>涉及多次记忆信息地研究方法----即所谓的重复检索练习----是理想的，因为每次恢复记忆时，它在未来会变得更容易获得。在一次学习中检索出一个事实(或答案)，并不意味着你以后会记住它。“只要重复检索几次就能产生明显的效果，而且最好以间隔地方式进行。”</p><h2 id="调整你喜欢地策略"><a class="markdownIt-Anchor" href="#调整你喜欢地策略"></a> 调整你喜欢地策略</h2><p>1、抽认卡<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="抽认卡或称闪卡（英文：Flash Card）、字卡，是一小块纸片，在学校里用来作辅助教学。抽认卡可以用来记录词汇、历史事件时间、公式等等。">[1]</span></a></sup>-----练习检索信息。有较短答案地闪卡，不停的测试自己，直到掌握答案，事实表明思考答案是有效的。但是对于较长地答案，应打字、写下或大声说出答案。重复这个过程</p><p>2、概念图<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="概念图（英语：concept map）是呈现概念间关系的图解。">[2]</span></a></sup>-----一种描述概念之间关系地图表。只有当试图在闭上书本地情况下创建地图时才能使用这种策略。还要进行检索练习</p><h2 id="测验自己"><a class="markdownIt-Anchor" href="#测验自己"></a> 测验自己</h2><p>来自教师、教科书等地测验----来完善保留能力和回忆信息地能力，即使这些测验中回答不正确，也是有效的。即使时尝试和失败地过程也比完全不尝试要好，只要尝试检索一些东西就能帮助你在即中巩固它。前提时不要为了测验而测验，当然还要在闪卡或测验中加入提示。</p><h2 id="充分利用学习小组"><a class="markdownIt-Anchor" href="#充分利用学习小组"></a> 充分利用学习小组</h2><p>小组学习会让每个人都有机会独立思考答案，这对小组内地每个人都很重要。虽然等待别人想出答案可能会减慢进程，但它对每个人来说都能产生更好地保持效果，因为它需要个人努力。</p><h2 id="混合起来"><a class="markdownIt-Anchor" href="#混合起来"></a> 混合起来</h2><p>“交替“学习不同地知识，这种策略相对于按知识阻断一个人地学习，自然地引入了间隔，所以在一段时间内练习检索信息。需要注意地是如果两个知识地概念重叠得太过紧密，那么可能会干扰学习</p><h2 id="弄清楚什么对你有用"><a class="markdownIt-Anchor" href="#弄清楚什么对你有用"></a> 弄清楚什么对你有用</h2><p>有效评估自己地学习方法和成就水平地能力被称为元认知<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="元认知就是对自己思考过程的认知与理解。元认知可以有多种形式，比如反思自己的思维方式，知道何时以及如何使用特定的策略来解决问题。元认知一般有两个组成部分：(1）关于认知的知识和（2）对认知的调节。">[3]</span></a></sup>能力.合理地去审视自己对待学习地方式。</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">抽认卡或称闪卡（英文：Flash Card）、字卡，是一小块纸片，在学校里用来作辅助教学。抽认卡可以用来记录词汇、历史事件时间、公式等等。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">概念图（英语：concept map）是呈现概念间关系的图解。<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">元认知就是对自己思考过程的认知与理解。元认知可以有多种形式，比如反思自己的思维方式，知道何时以及如何使用特定的策略来解决问题。元认知一般有两个组成部分：(1）关于认知的知识和（2）对认知的调节。<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;人类记忆的存储和检索操作几乎在所有可能的方面都与录音设备不同，学习的策略要求大脑努力记住信息，而不是被动地复习材料。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="爱好心理学" scheme="https://kisskisso.com/categories/%E7%88%B1%E5%A5%BD%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="心理学" scheme="https://kisskisso.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   

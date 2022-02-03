@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2022-01-28T07:20:44.151Z</updated>
+  <updated>2022-02-03T10:21:16.207Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>火狐浏览器某些网页花屏处理</title>
+    <link href="https://kisskisso.com/2CGWY43/"/>
+    <id>https://kisskisso.com/2CGWY43/</id>
+    <published>2022-02-03T10:05:57.000Z</published>
+    <updated>2022-02-03T10:21:16.207Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在火狐浏览器玩三国杀，发现登录之后，出现花屏情况，之前的B站的二维码也是出现不同程度的花屏。去网上搜说要清除启动缓存或者清除浏览器缓存；都试过了，但都没用；呈现以下问题：<span id="more"></span></p><p><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%B9%E5%88%AB%E8%8A%B1%E5%B1%8F.png" alt="花屏"></p><p>解决办法：</p><ol><li>单击<code>网站标识按钮</code>（网址左边的图标🔒）;</li><li>点击安全链接；</li><li>点击提示框里的<code>更多信息...</code> 钮。一个 <code>页面信息窗口</code> 会打开;</li><li>选择<code>权限</code>面板;</li><li>找到<code>获取Canvas数据</code>设置为允许；</li><li>关闭页面信息窗口并刷新网站；</li></ol><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今天在火狐浏览器玩三国杀，发现登录之后，出现花屏情况，之前的B站的二维码也是出现不同程度的花屏。去网上搜说要清除启动缓存或者清除浏览器缓存；都试过了，但都没用；呈现以下问题：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="火狐浏览器" scheme="https://kisskisso.com/tags/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="花屏" scheme="https://kisskisso.com/tags/%E8%8A%B1%E5%B1%8F/"/>
+    
+    <category term="部分花屏" scheme="https://kisskisso.com/tags/%E9%83%A8%E5%88%86%E8%8A%B1%E5%B1%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>空白的chm文件</title>
@@ -461,27 +486,6 @@
     
     
     <category term="powershell" scheme="https://kisskisso.com/tags/powershell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何用命令重置组策略</title>
-    <link href="https://kisskisso.com/293V77D/"/>
-    <id>https://kisskisso.com/293V77D/</id>
-    <published>2021-05-30T00:00:11.000Z</published>
-    <updated>2021-06-28T09:42:21.620Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Windows安全中心显示阻止可能不需要的应用选项，无法关闭。显示此设置由管理员进行设置。因为是私人电脑所以判断是策略组设置的问题，但是设置太过久远。忘了设置哪个了所以才有了以下解决办法（虽然没试过）<span id="more"></span></p><p>专业版，可以尝试任务栏搜索框输入 cmd ，点击右侧的以管理员身份运行，输入：<br>RD /S /Q “%WinDir%\System32\GroupPolicyUsers”<br>回车<br>RD /S /Q “%WinDir%\System32\GroupPolicy”<br>回车<br>gpupdate /force<br>回车<br>重启电脑。</p><p>以上并没有试过。因为是重置全部的策略组，再重头开始设置很麻烦。所以就先这样吧。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Windows安全中心显示阻止可能不需要的应用选项，无法关闭。显示此设置由管理员进行设置。因为是私人电脑所以判断是策略组设置的问题，但是设置太过久远。忘了设置哪个了所以才有了以下解决办法（虽然没试过）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="组策略" scheme="https://kisskisso.com/tags/%E7%BB%84%E7%AD%96%E7%95%A5/"/>
     
   </entry>
   

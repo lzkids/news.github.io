@@ -71,7 +71,7 @@
     <link href="https://kisskisso.com/355BJH8/"/>
     <id>https://kisskisso.com/355BJH8/</id>
     <published>2022-01-08T05:51:59.000Z</published>
-    <updated>2022-01-13T11:21:06.440Z</updated>
+    <updated>2022-04-06T11:10:45.591Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近在GOG平台购买了无冬之夜增强版，并玩了一段时间的单机游戏。想试一下联机版，发现需要输入CDK。搜了一下网上和贴吧都说需要置换多人CDK；以及GOG启动项里有个CDK转化器，当时我找遍全文件夹和软件设置都没有找到。最后发现终于找到方法了；ROFL 好简单的说：<span id="more"></span></p><p>首先去GOG官网并登录，把鼠标放在你的账号处，找到并打开<code>游戏</code><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里的打开游戏是指的网页">[1]</span></a></sup>找到无冬之夜增强版点击；<code>更多</code>里有个<code>序列号</code>；复制序列号进入游戏，打开多人联机粘贴序列号就可以了；</p><blockquote><p>对了，输入之后好像要下几百k的东西。会自动下载</p></blockquote><p><strong>总结一下</strong>：</p><ul><li><p>需要登陆GOG网页找到序列号；</p></li><li><p>复制序列号到游戏里；</p></li></ul><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里的打开游戏是指的网页<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
@@ -80,7 +80,7 @@
     
     
     
-    <category term="无冬之夜" scheme="https://kisskisso.com/categories/%E6%97%A0%E5%86%AC%E4%B9%8B%E5%A4%9C/"/>
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="GOG" scheme="https://kisskisso.com/tags/GOG/"/>

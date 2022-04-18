@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2022-02-03T10:21:16.207Z</updated>
+  <updated>2022-04-18T07:20:57.078Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows安装MSYS2与配置VScode</title>
+    <link href="https://kisskisso.com/3JZK07B/"/>
+    <id>https://kisskisso.com/3JZK07B/</id>
+    <published>2022-04-18T06:57:02.000Z</published>
+    <updated>2022-04-18T07:20:57.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在网页<a href="https://www.msys2.org/">msys2</a>下载安装；<br>完成后，勾选立即运行 MSYS2；<br>更新包数据库和基本包。除非您的安装文件是最新的，否则需要两个步骤。首次运行 ：<br><code>pacman -Syu</code><br>从“开始”菜单运行“MSYS2 MSYS”。使用 以下命令更新其余的基本包：<br><code>pacman -Su</code><br>现在 MSYS2 已为您准备就绪。您可能需要安装一些工具和 mingw-w64 GCC 来开始编译：<br><code>pacman -S --needed base-devel mingw-w64-x86_64-toolchain</code><br>打开Visual Studio Code</p><ul><li>按<code>Ctrl+Shift+P</code>运行C/C++:编辑配置(UI)打开后填写几个配置<ul><li>配置名称处<ul><li>删掉Win32填写GCC</li></ul></li></ul></li><li>编译器路径<ul><li>C:/msys64/mingw64/bin/g++.exe（下拉选择你的安装路径）</li></ul></li><li>IntelliSense模式<ul><li>选择gcc-x64</li></ul></li></ul><p>安装vscode扩展：<br>C/C++</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;在网页&lt;a href=&quot;https://www.msys2.org/&quot;&gt;ms</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="MSY2" scheme="https://kisskisso.com/tags/MSY2/"/>
+    
+    <category term="VScode" scheme="https://kisskisso.com/tags/VScode/"/>
+    
+    <category term="扩展" scheme="https://kisskisso.com/tags/%E6%89%A9%E5%B1%95/"/>
+    
+  </entry>
   
   <entry>
     <title>火狐浏览器某些网页花屏处理</title>
@@ -463,29 +491,6 @@
     <category term="内置App" scheme="https://kisskisso.com/tags/%E5%86%85%E7%BD%AEApp/"/>
     
     <category term="安卓" scheme="https://kisskisso.com/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何更新PowerShell帮助</title>
-    <link href="https://kisskisso.com/1YPDA17/"/>
-    <id>https://kisskisso.com/1YPDA17/</id>
-    <published>2021-05-30T00:53:07.000Z</published>
-    <updated>2021-07-10T01:14:27.362Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>更新Power Shell运行<code>update-help</code>会进行更新但是会报以下错误：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span> : 无法更新带有 UI 区域性 {zh<span class="literal">-CN</span>} 的模块“ConfigDefender, HostNetworkingService, </span><br><span class="line">PSReadline”帮助: 在 HelpInfo XML 文件中检索不到 UI 区域性 zh<span class="literal">-CN</span>。确保模块清单中的 HelpInfoUri 属</span><br><span class="line">性有效·或检查网络连接是否正常，然后重试该命令。</span><br></pre></td></tr></tbody></table></figure><p>通常你去网页上搜索答案都是让你运行以下两条命令：<span id="more"></span></p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span> <span class="literal">-ErrorAction</span> SilentlyContinue</span><br><span class="line">or</span><br><span class="line"><span class="built_in">Update-Help</span> <span class="literal">-Verbose</span> <span class="literal">-Force</span> <span class="literal">-ErrorAction</span> SilentlyContinue</span><br></pre></td></tr></tbody></table></figure><p>但是此两条命令的默认功能是“不向我显示错误，只需跳过它们”，特别是对新用户来说，因为它导致了错误的做法。而在power shell 7中则会让你尝试运行<code>Update-Help -UICulture en-US</code>但是她还是会报错：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Update-Help</span>: Failed to update Help <span class="keyword">for</span> the module(s) <span class="string">'PSReadline'</span> with UI culture(s)</span><br><span class="line">{en<span class="literal">-US</span>} : One or more errors occurred. (Response status code does not indicate success:</span><br><span class="line"><span class="number">404</span> (The specified blob does not exist.).).</span><br><span class="line">English<span class="literal">-US</span> help content is available and can be installed using: <span class="built_in">Update-Help</span> <span class="literal">-UICulture</span> en<span class="literal">-US</span>.</span><br></pre></td></tr></tbody></table></figure><p>这个错误的来源与在 PowerShell 6 及更高版本中，<strong>PSReadLine</strong>模块用大写<code>L</code>字符拼写。但是错误消息使用的是小写字母。可以使用以下步骤来解决这个问题，并更新帮助：</p><ol><li>关闭所有powerhell.exe进程。然后将PSReadline模块的文件夹名称重命名为PSReadLine。</li><li>在管理员权限下打开一个powershell.exe会话。</li><li>运行Remove-Module PSReadline来删除自动加载的PSReadline模块。</li><li>运行Import-Module PSReadLine（使用PSReadLine，大写字母L）。</li><li>然后运行Update-Help -Module PSReadLine -Force。</li></ol><p>扩展：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">help 要查询命令 <span class="literal">-full</span> <span class="comment">#查询某个命令的所有帮助文档</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-detailed</span>  <span class="comment">#查询某个命令的所有帮助文档，但是要简化参数部分的解释</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-examples</span> <span class="comment"># 查询某个命令的使用示例</span></span><br><span class="line"><span class="built_in">get-help</span> 要查询命令 <span class="literal">-online</span> <span class="comment"># 在网页中查看命令帮助，使用命令</span></span><br></pre></td></tr></tbody></table></figure><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;更新Power Shell运行&lt;code&gt;update-help&lt;/code&gt;会进行更新但是会报以下错误：&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Update-Help&lt;/span&gt; : 无法更新带有 UI 区域性 {zh&lt;span class=&quot;literal&quot;&gt;-CN&lt;/span&gt;} 的模块“ConfigDefender, HostNetworkingService, &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;PSReadline”帮助: 在 HelpInfo XML 文件中检索不到 UI 区域性 zh&lt;span class=&quot;literal&quot;&gt;-CN&lt;/span&gt;。确保模块清单中的 HelpInfoUri 属&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;性有效·或检查网络连接是否正常，然后重试该命令。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;通常你去网页上搜索答案都是让你运行以下两条命令：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="powershell" scheme="https://kisskisso.com/tags/powershell/"/>
     
   </entry>
   

@@ -1,6 +1,352 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.2.0"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://fastly.jsdelivr.net"><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><link rel="dns-prefetch" href="//unpkg.com"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#f8f8f8"><title>Git - 唯獨少了個字</title><meta name="description" content="如何使用Git： ​          第一步： 连接远程仓库：git remote add [name] [URL仓库地址] ​           第二步： git init 初始化 【注：隐藏.git 不要动】 ​"><meta property="og:type" content="article"><meta property="og:title" content="Git"><meta property="og:url" content="https://kisskisso.com/25246/index.html"><meta property="og:site_name" content="唯獨少了個字"><meta property="og:description" content="如何使用Git： ​          第一步： 连接远程仓库：git remote add [name] [URL仓库地址] ​           第二步： git init 初始化 【注：隐藏.git 不要动】 ​"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-02-25T06:59:41.000Z"><meta property="article:modified_time" content="2021-01-26T08:59:24.000Z"><meta property="article:author" content="唯獨少了個字"><meta property="article:tag" content="git"><meta name="twitter:card" content="summary"><link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css">
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.2.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://fastly.jsdelivr.net'>
+  <link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Git - 唯獨少了個字</title>
+
+  
+    <meta name="description" content="如何使用Git： ​          第一步： 连接远程仓库：git remote add [name] [URL仓库地址] ​           第二步： git init 初始化 【注：隐藏.git 不要动】 ​">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git">
+<meta property="og:url" content="https://kisskisso.com/25246/index.html">
+<meta property="og:site_name" content="唯獨少了個字">
+<meta property="og:description" content="如何使用Git： ​          第一步： 连接远程仓库：git remote add [name] [URL仓库地址] ​           第二步： git init 初始化 【注：隐藏.git 不要动】 ​">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-25T06:59:41.000Z">
+<meta property="article:modified_time" content="2021-01-26T08:59:24.000Z">
+<meta property="article:author" content="唯獨少了個字">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head><body><div class="l_body" id="start"><aside class="l_left" layout="post"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div><nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header><div class="widgets"><div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8git"><span class="toc-text">如何使用Git：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git%E7%89%88%E6%9C%AC%E6%9F%A5%E7%9C%8B%E5%92%8C%E7%89%88%E6%9C%AC%E7%A9%BF%E6%A2%AD"><span class="toc-text">git版本查看和版本穿梭：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-text">分支：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81"><span class="toc-text">合并冲突：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">推送到远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">如何克隆远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">如何连接远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5"><span class="toc-text">如何删除远程仓库链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-text">如何创建子模块：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0git"><span class="toc-text">如何学习Git：</span></a></li></ol></div></div></div></div></aside><div class="l_main"><div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-02-25T06:59:41.000Z">2020-02-25</time></div></div><article class="content md post"><h1 class="article-title"><span>Git</span></h1><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="如何使用git"><a class="markdownIt-Anchor" href="#如何使用git"></a> <strong>如何使用Git：</strong></h3><p>​ 第一步： 连接远程仓库：git remote add [name] [URL仓库地址]</p><p>​ 第二步： git init 初始化 【注：隐藏.git 不要动】</p><p>​ <span id="more"></span></p><p>​ 第三步： git add .将当前目录下所有文件添加</p><p>​ 第四步： git commit -m ‘描述信息’ 【注：初次使用会git会进行身份验证】</p><blockquote><p>​ git config --global user.email ‘邮箱’</p></blockquote><blockquote><p>​ git config --global <a target="_blank" rel="noopener" href="http://user.name">user.name</a> ‘名字’</p></blockquote><pre><code>      不要问然后呢？没然后了...没有 之后就是git add .  git commit -m ......无限循环直到循环到小盒子里||o(*°▽°*)o|Ю [有人吗?] 
-</code></pre><h3 id="git版本查看和版本穿梭"><a class="markdownIt-Anchor" href="#git版本查看和版本穿梭"></a> <strong>git版本查看和版本穿梭：</strong></h3><p>git log --oneline——查看版本</p><p>git reset --hard 版本号 ——进行版本穿梭</p><p><s>有的时候手会滑，把git给关闭了，正好穿梭在旧版本中，</s> 想看更新的版本号，使用git reflog 注：前面的话不重要，重要的是git reflog。</p><h3 id="分支"><a class="markdownIt-Anchor" href="#分支"></a> <strong>分支：</strong></h3><p><strong><u>默认只有主分支 master</u></strong></p><p>​ 一般来讲主分支需要保存的是没问题的，用于上线使用的代码</p><pre><code>   开发阶段的代码新建其它分支进行，不要在主分支上操作
-</code></pre><p>git branch 查看分支</p><p>git branch 【名字】 创建分支</p><p>git checkout 【名字】 切换分支</p><p>git checkout -b 【名字】 创建并切换</p><p>git push origin xxx:xxx 本地分支xxx作为远程xxx分支</p><p>git checkout -d 【名字】 删除分支 【注：不要把-b 和-d 搞混… 切记！！！切记！！！切记！！！】</p><p>git clone -b &lt;指定分支名&gt; &lt;远程仓库地址&gt; 克隆分支代码</p><p><strong><u>【杂：这这是删除本地的分支】</u></strong></p><blockquote><p><strong>如果要查看远程分支则git branch -a即可</strong></p><p><strong>git push 库名 --delete 分支名</strong></p></blockquote><p>git merge 【名字】 合并分支</p><p>​ 注：合并，是将指定分支合并到当前所处的分支下</p><pre><code>         Eg：当前在master，执行git merge dev，表示将dev合并到master中   
-</code></pre><p><s>应该是这样吧或许</s></p><h3 id="合并冲突"><a class="markdownIt-Anchor" href="#合并冲突"></a> <strong>合并冲突：</strong></h3><p>**出现的原因：**多个分支修改同一个文件的同一块内容，然后进行了合并</p><p>根据需要进行删除工作</p><h3 id="推送到远程仓库"><a class="markdownIt-Anchor" href="#推送到远程仓库"></a> <strong>推送到远程仓库：</strong></h3><p>git push</p><p><strong>将代码拉取更新到本地（本地有项目代码时使用）：</strong></p><p>git pull</p><p>也可以用可视化工具（看个人情况）</p><p>github desktop 软件</p><p>vscode插件 Gitlens</p><h3 id="如何克隆远程仓库"><a class="markdownIt-Anchor" href="#如何克隆远程仓库"></a> <strong>如何克隆远程仓库：</strong></h3><ol><li><p>git clone <a target="_blank" rel="noopener" href="http://xn--5mqt7rnb018b">http://仓库地址</a></p></li><li><p>git push 推送（注:第一次推送会输入密码和账号）</p></li><li><p>如果出现Everything up-to-date 则看 ①解决办法</p></li><li><p>git add.</p></li><li><p>git commit -m ‘message’</p></li><li><p>git push origin master</p><h3 id="如何连接远程仓库"><a class="markdownIt-Anchor" href="#如何连接远程仓库"></a> <strong>如何连接远程仓库：</strong></h3><ol><li>git remote add [name] [URL仓库地址]</li></ol><h3 id="如何删除远程仓库链接"><a class="markdownIt-Anchor" href="#如何删除远程仓库链接"></a> <strong>如何删除远程仓库链接</strong></h3><p>git remote rm origin</p><h3 id="如何创建子模块"><a class="markdownIt-Anchor" href="#如何创建子模块"></a> <strong>如何创建子模块：</strong></h3><p>**添加：**git submodule add 仓库地址 路径</p><p>**删除：**要在“.gitmodules”文件中删除相应配置信息。然后，执行“git rm –cached ”命令将子模块所在的文件从git中删除</p><p>**更新？：**git submodule update</p><h3 id="如何学习git"><a class="markdownIt-Anchor" href="#如何学习git"></a> 如何学习Git：</h3><p>推荐个网址：<a target="_blank" rel="noopener" href="https://backlog.com/git-tutorial/cn/">猴子都能懂得GIT入门</a></p><p>待更新中…</p></li></ol><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script><div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p></div></section></div></article><div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/63109/">xhr与FormData对象的使用<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/44244/">Git出现的错误<span class="note">较新</span></a></section></div><footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p><p>唯獨少了個字.</p></div></footer><div class="float-panel mobile-only blur" style="display:none"><button type="button" class="sidebar-toggle mobile" onclick="sidebar.toggle()"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script type="text/javascript">stellar={loadCSS:(e,s,n,t)=>{var i,a=window.document,l=a.createElement("link");if(s)i=s;else{var r=(a.body||a.getElementsByTagName("head")[0]).childNodes;i=r[r.length-1]}var d=a.styleSheets;if(t)for(var o in t)t.hasOwnProperty(o)&&l.setAttribute(o,t[o]);l.rel="stylesheet",l.href=e,l.media="only x",function e(s){if(a.body)return s();setTimeout((function(){e(s)}))}((function(){i.parentNode.insertBefore(l,s?i:i.nextSibling)}));var c=function(e){for(var s=l.href,n=d.length;n--;)if(d[n].href===s)return e();setTimeout((function(){c(e)}))};function p(){l.addEventListener&&l.removeEventListener("load",p),l.media=n||"all"}return l.addEventListener&&l.addEventListener("load",p),l.onloadcssdefined=c,c(p),l},loadScript:(e,s)=>new Promise((n,t)=>{var i=document.createElement("script");if(i.src=e,s)for(let e of Object.keys(s))i[e]=s[e];else i.async=!0;i.onerror=t,i.onload=i.onreadystatechange=function(){const e=this.readyState;e&&"loaded"!==e&&"complete"!==e||(i.onload=i.onreadystatechange=null,n())},document.head.appendChild(i)}),jQuery:e=>{"undefined"==typeof jQuery?stellar.loadScript(stellar.plugins.jQuery).then(e):e()}},stellar.github="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0",stellar.config={date_suffix:{just:"刚刚",min:"分钟前",hour:"小时前",day:"天前",month:"个月前"}},stellar.plugins={jQuery:"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js",sitesjs:"/js/plugins/sites.js",friendsjs:"/js/plugins/friends.js"},stellar.plugins.lazyload=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js",transition:"blur"}),stellar.plugins.swiper=Object.assign({enable:!0,css:"https://unpkg.com/swiper@6/swiper-bundle.min.css",js:"https://unpkg.com/swiper@6/swiper-bundle.min.js"}),stellar.plugins.preload=Object.assign({enable:!0,service:"flying_pages",instant_page:"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js",flying_pages:"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"}),stellar.plugins.fancybox=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",css:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css",selector:".swiper-slide img"})</script><script src="/js/main.js" async></script></div></body></html>
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8git"><span class="toc-text"> 如何使用Git：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git%E7%89%88%E6%9C%AC%E6%9F%A5%E7%9C%8B%E5%92%8C%E7%89%88%E6%9C%AC%E7%A9%BF%E6%A2%AD"><span class="toc-text"> git版本查看和版本穿梭：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-text"> 分支：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81"><span class="toc-text"> 合并冲突：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text"> 推送到远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text"> 如何克隆远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text"> 如何连接远程仓库：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5"><span class="toc-text"> 如何删除远程仓库链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-text"> 如何创建子模块：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0git"><span class="toc-text"> 如何学习Git：</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-02-25T06:59:41.000Z">2020-02-25</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Git</span></h1>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="如何使用git"><a class="markdownIt-Anchor" href="#如何使用git"></a> <strong>如何使用Git：</strong></h3>
+<p>​          第一步： 连接远程仓库：git remote add [name] [URL仓库地址]</p>
+<p>​           第二步： git init 初始化 【注：隐藏.git 不要动】</p>
+<p>​          <span id="more"></span></p>
+<p>​           第三步： git add .将当前目录下所有文件添加</p>
+<p>​            第四步： git commit -m ‘描述信息’  【注：初次使用会git会进行身份验证】</p>
+<blockquote>
+<p>​          git config --global user.email ‘邮箱’</p>
+</blockquote>
+<blockquote>
+<p>​        git config --global <a target="_blank" rel="noopener" href="http://user.name">user.name</a> ‘名字’</p>
+</blockquote>
+<pre><code>      不要问然后呢？没然后了...没有 之后就是git add .  git commit -m ......无限循环直到循环到小盒子里||o(*°▽°*)o|Ю [有人吗?] 
+</code></pre>
+<h3 id="git版本查看和版本穿梭"><a class="markdownIt-Anchor" href="#git版本查看和版本穿梭"></a> <strong>git版本查看和版本穿梭：</strong></h3>
+<p>git log --oneline——查看版本</p>
+<p>git reset  --hard 版本号 ——进行版本穿梭</p>
+<p><s>有的时候手会滑，把git给关闭了，正好穿梭在旧版本中，</s>  想看更新的版本号，使用git reflog  注：前面的话不重要，重要的是git reflog。</p>
+<h3 id="分支"><a class="markdownIt-Anchor" href="#分支"></a> <strong>分支：</strong></h3>
+<p><strong><u>默认只有主分支 master</u></strong></p>
+<p>​      一般来讲主分支需要保存的是没问题的，用于上线使用的代码</p>
+<pre><code>   开发阶段的代码新建其它分支进行，不要在主分支上操作
+</code></pre>
+<p>git branch 查看分支</p>
+<p>git branch 【名字】  创建分支</p>
+<p>git checkout 【名字】 切换分支</p>
+<p>git checkout -b 【名字】 创建并切换</p>
+<p>git push origin xxx:xxx  本地分支xxx作为远程xxx分支</p>
+<p>git checkout -d 【名字】 删除分支    【注：不要把-b 和-d 搞混…   切记！！！切记！！！切记！！！】</p>
+<p>git clone -b &lt;指定分支名&gt; &lt;远程仓库地址&gt;   克隆分支代码</p>
+<p><strong><u>【杂：这这是删除本地的分支】</u></strong></p>
+<blockquote>
+<p><strong>如果要查看远程分支则git branch -a即可</strong></p>
+<p><strong>git push 库名 --delete  分支名</strong></p>
+</blockquote>
+<p>git merge 【名字】 合并分支</p>
+<p>​    注：合并，是将指定分支合并到当前所处的分支下</p>
+<pre><code>         Eg：当前在master，执行git merge dev，表示将dev合并到master中   
+</code></pre>
+<p><s>应该是这样吧或许</s></p>
+<h3 id="合并冲突"><a class="markdownIt-Anchor" href="#合并冲突"></a> <strong>合并冲突：</strong></h3>
+<p>**出现的原因：**多个分支修改同一个文件的同一块内容，然后进行了合并</p>
+<p>根据需要进行删除工作</p>
+<h3 id="推送到远程仓库"><a class="markdownIt-Anchor" href="#推送到远程仓库"></a> <strong>推送到远程仓库：</strong></h3>
+<p>git push</p>
+<p><strong>将代码拉取更新到本地（本地有项目代码时使用）：</strong></p>
+<p>git pull</p>
+<p>也可以用可视化工具（看个人情况）</p>
+<p>github desktop 软件</p>
+<p>vscode插件   Gitlens</p>
+<h3 id="如何克隆远程仓库"><a class="markdownIt-Anchor" href="#如何克隆远程仓库"></a> <strong>如何克隆远程仓库：</strong></h3>
+<ol>
+<li>
+<p>git clone <a target="_blank" rel="noopener" href="http://xn--5mqt7rnb018b">http://仓库地址</a></p>
+</li>
+<li>
+<p>git push 推送（注:第一次推送会输入密码和账号）</p>
+</li>
+<li>
+<p>如果出现Everything up-to-date 则看 ①解决办法</p>
+</li>
+<li>
+<p>git add.</p>
+</li>
+<li>
+<p>git commit -m ‘message’</p>
+</li>
+<li>
+<p>git push origin master</p>
+<h3 id="如何连接远程仓库"><a class="markdownIt-Anchor" href="#如何连接远程仓库"></a> <strong>如何连接远程仓库：</strong></h3>
+<ol>
+<li>git remote add   [name] [URL仓库地址]</li>
+</ol>
+<h3 id="如何删除远程仓库链接"><a class="markdownIt-Anchor" href="#如何删除远程仓库链接"></a> <strong>如何删除远程仓库链接</strong></h3>
+<p>git remote rm origin</p>
+<h3 id="如何创建子模块"><a class="markdownIt-Anchor" href="#如何创建子模块"></a> <strong>如何创建子模块：</strong></h3>
+<p>**添加：**git submodule add 仓库地址 路径</p>
+<p>**删除：**要在“.gitmodules”文件中删除相应配置信息。然后，执行“git rm –cached ”命令将子模块所在的文件从git中删除</p>
+<p>**更新？：**git submodule update</p>
+<h3 id="如何学习git"><a class="markdownIt-Anchor" href="#如何学习git"></a> 如何学习Git：</h3>
+<p>推荐个网址：<a target="_blank" rel="noopener" href="https://backlog.com/git-tutorial/cn/">猴子都能懂得GIT入门</a></p>
+<p>待更新中…</p>
+</li>
+</ol>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/63109/">xhr与FormData对象的使用<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/44244/">Git出现的错误<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>唯獨少了個字.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

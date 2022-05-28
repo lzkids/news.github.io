@@ -1,3 +1,308 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.2.0"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://fastly.jsdelivr.net"><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><link rel="dns-prefetch" href="//unpkg.com"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#f8f8f8"><title>npm与包 - 唯獨少了個字</title><meta name="description" content="什么叫做包？ 就是指第三方模块，叫法同而已  ps:感觉就像是闲的无聊 包的来源？有网就可以下载，不是很麻烦  但是下载速吧。。。可能会让你抓狂  为什么需要包？ ​    为了提高开发效率 像是JQuery和浏览器内置API的关系 官网： https:&#x2F;&#x2F;www.npmjs.com  ps：没有中文请自备翻译器 初次安装包后，项目多node_module的文件夹和package-lock.js"><meta property="og:type" content="article"><meta property="og:title" content="npm与包"><meta property="og:url" content="https://kisskisso.com/50039/index.html"><meta property="og:site_name" content="唯獨少了個字"><meta property="og:description" content="什么叫做包？ 就是指第三方模块，叫法同而已  ps:感觉就像是闲的无聊 包的来源？有网就可以下载，不是很麻烦  但是下载速吧。。。可能会让你抓狂  为什么需要包？ ​    为了提高开发效率 像是JQuery和浏览器内置API的关系 官网： https:&#x2F;&#x2F;www.npmjs.com  ps：没有中文请自备翻译器 初次安装包后，项目多node_module的文件夹和package-lock.js"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-03-07T05:59:19.000Z"><meta property="article:modified_time" content="2021-01-26T09:27:22.000Z"><meta property="article:author" content="唯獨少了個字"><meta property="article:tag" content="npm"><meta name="twitter:card" content="summary"><link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css">
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.2.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://fastly.jsdelivr.net'>
+  <link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>npm与包 - 唯獨少了個字</title>
+
+  
+    <meta name="description" content="什么叫做包？ 就是指第三方模块，叫法同而已  ps:感觉就像是闲的无聊 包的来源？有网就可以下载，不是很麻烦  但是下载速吧。。。可能会让你抓狂  为什么需要包？ ​    为了提高开发效率 像是JQuery和浏览器内置API的关系 官网： https:&#x2F;&#x2F;www.npmjs.com  ps：没有中文请自备翻译器 初次安装包后，项目多node_module的文件夹和package-lock.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm与包">
+<meta property="og:url" content="https://kisskisso.com/50039/index.html">
+<meta property="og:site_name" content="唯獨少了個字">
+<meta property="og:description" content="什么叫做包？ 就是指第三方模块，叫法同而已  ps:感觉就像是闲的无聊 包的来源？有网就可以下载，不是很麻烦  但是下载速吧。。。可能会让你抓狂  为什么需要包？ ​    为了提高开发效率 像是JQuery和浏览器内置API的关系 官网： https:&#x2F;&#x2F;www.npmjs.com  ps：没有中文请自备翻译器 初次安装包后，项目多node_module的文件夹和package-lock.js">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-07T05:59:19.000Z">
+<meta property="article:modified_time" content="2021-01-26T09:27:22.000Z">
+<meta property="article:author" content="唯獨少了個字">
+<meta property="article:tag" content="npm">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head><body><div class="l_body" id="start"><aside class="l_left" layout="post"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div><nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header><div class="widgets"><div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E5%8F%AB%E5%81%9A%E5%8C%85"><span class="toc-text">什么叫做包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%8C%85"><span class="toc-text">为什么需要包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C%E9%97%AE%E9%A2%98"><span class="toc-text">多人协作问题：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dependencies-%E8%8A%82%E7%82%B9"><span class="toc-text">dependencies 节点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#devdependencies-%E8%8A%82%E7%82%B9"><span class="toc-text">devDependencies 节点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%85%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">包的分类：</span></a></li></ol></div></div></div></div></aside><div class="l_main"><div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-03-07T05:59:19.000Z">2020-03-07</time></div></div><article class="content md post"><h1 class="article-title"><span>npm与包</span></h1><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="什么叫做包"><a class="markdownIt-Anchor" href="#什么叫做包"></a> <strong>什么叫做包？</strong></h4><p>就是指第三方模块，叫法同而已 <s>ps:感觉就像是闲的无聊</s></p><p>包的来源？有网就可以下载，不是很麻烦 但是下载速吧。。。可能会让你抓狂</p><h4 id="为什么需要包"><a class="markdownIt-Anchor" href="#为什么需要包"></a> <strong>为什么需要包？</strong></h4><p>​ 为了提高开发效率</p><p>像是JQuery和浏览器内置API的关系</p><p>官网： <a target="_blank" rel="noopener" href="https://www.npmjs.com">https://www.npmjs.com</a> ps：没有中文请自备翻译器</p><p>初次安装包后，项目多node_module的文件夹和package-lock.json配置文件 <span id="more"></span></p><p><strong>node_modules</strong> 文件夹用来存放所有已安装到项目中的包。require() 导入第三方包时，就是从这个目录中查找并加载包。</p><p><strong>package-lock.json</strong>配置文件用来记录node_modules 目录下的每一个包的信息，例如包的名字、版本号、下载地址等。</p><p>注意：不要手动修改node_modules 或 package-lock.json文件中的任何代码，npm 包管理工具会自动维护它们 <s>ps：估计没人会手贱吧(￣.￣)</s></p><h4 id="多人协作问题"><a class="markdownIt-Anchor" href="#多人协作问题"></a> <strong>多人协作问题：</strong></h4><p>遇到的问题：第三方包的体积过大，不 方便团队成员之间共享项目源代码。</p><p>解决方法：</p><p>共享时剔除node_modules</p><p>package.json，用来记录项目中安装了哪些包。</p><p>注：运行时npm i 自动安装包和版本号</p><h4 id="dependencies-节点"><a class="markdownIt-Anchor" href="#dependencies-节点"></a> <strong>dependencies 节点：</strong></h4><p>package.json 文件中，有一个dependencies 节点，专门用来记录您使用npm install 命令安装了哪些包。</p><p>**注意：**npm install 命令运行完毕之后，会自动把包的信息，添加到package.json 的 dependencies 节点中。</p><h4 id="devdependencies-节点"><a class="markdownIt-Anchor" href="#devdependencies-节点"></a> <strong>devDependencies 节点：</strong></h4><p>某些包只在项目开发阶段会用到，在项目上线之后不会用到，则建议把这些包记录到devDependencies 节点</p><h4 id="包的分类"><a class="markdownIt-Anchor" href="#包的分类"></a> <strong>包的分类：</strong></h4><p>项目包与全局包</p><h6 id="项目包"><a class="markdownIt-Anchor" href="#项目包"></a> <strong>项目包</strong></h6><ol><li>那些被安装到项目的node_modules 目录中的包，都是项目包。<br>项目包又分为两类，分别是：</li><li>⚫ 开发依赖包（被记录到devDependencies 节点中的包，只在开发期间会用到）</li><li>⚫ 核心依赖包（被记录到dependencies 节点中的包，在开发期间和项目上线之后都会用到</li></ol><h6 id="全局包"><a class="markdownIt-Anchor" href="#全局包"></a> <strong>全局包</strong></h6><p>​ npm i 包名 -g 全局包</p><h6 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> <strong>注意：</strong></h6><p>① 只有工具性质的包，才有全局安装的必要性。因为它们提供了好用的终端命令。</p><p>② 判断某个包是否需要全局安装后才能使用，可以参考官方提供的使用说明即可。</p><h6 id="规范的包结构"><a class="markdownIt-Anchor" href="#规范的包结构"></a> <strong>规范的包结构：</strong></h6><p>① 包必须以单独的目录而存在</p><p>② 包的顶级目录下要必须包含package.json 这个包管理配置文件</p><p>③ package.json 中必须包含 name，version，main这三个属性，分别代表包的名字、版本号、包的入口。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script><div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p></div></section></div></article><div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/29567/">Node.js的加载方法<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/30590/">npm命令合集<span class="note">较新</span></a></section></div><footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p><p>唯獨少了個字.</p></div></footer><div class="float-panel mobile-only blur" style="display:none"><button type="button" class="sidebar-toggle mobile" onclick="sidebar.toggle()"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script type="text/javascript">stellar={loadCSS:(e,s,n,t)=>{var i,a=window.document,l=a.createElement("link");if(s)i=s;else{var r=(a.body||a.getElementsByTagName("head")[0]).childNodes;i=r[r.length-1]}var d=a.styleSheets;if(t)for(var o in t)t.hasOwnProperty(o)&&l.setAttribute(o,t[o]);l.rel="stylesheet",l.href=e,l.media="only x",function e(s){if(a.body)return s();setTimeout((function(){e(s)}))}((function(){i.parentNode.insertBefore(l,s?i:i.nextSibling)}));var c=function(e){for(var s=l.href,n=d.length;n--;)if(d[n].href===s)return e();setTimeout((function(){c(e)}))};function p(){l.addEventListener&&l.removeEventListener("load",p),l.media=n||"all"}return l.addEventListener&&l.addEventListener("load",p),l.onloadcssdefined=c,c(p),l},loadScript:(e,s)=>new Promise((n,t)=>{var i=document.createElement("script");if(i.src=e,s)for(let e of Object.keys(s))i[e]=s[e];else i.async=!0;i.onerror=t,i.onload=i.onreadystatechange=function(){const e=this.readyState;e&&"loaded"!==e&&"complete"!==e||(i.onload=i.onreadystatechange=null,n())},document.head.appendChild(i)}),jQuery:e=>{"undefined"==typeof jQuery?stellar.loadScript(stellar.plugins.jQuery).then(e):e()}},stellar.github="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0",stellar.config={date_suffix:{just:"刚刚",min:"分钟前",hour:"小时前",day:"天前",month:"个月前"}},stellar.plugins={jQuery:"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js",sitesjs:"/js/plugins/sites.js",friendsjs:"/js/plugins/friends.js"},stellar.plugins.lazyload=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js",transition:"blur"}),stellar.plugins.swiper=Object.assign({enable:!0,css:"https://unpkg.com/swiper@6/swiper-bundle.min.css",js:"https://unpkg.com/swiper@6/swiper-bundle.min.js"}),stellar.plugins.preload=Object.assign({enable:!0,service:"flying_pages",instant_page:"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js",flying_pages:"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"}),stellar.plugins.fancybox=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",css:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css",selector:".swiper-slide img"})</script><script src="/js/main.js" async></script></div></body></html>
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E5%8F%AB%E5%81%9A%E5%8C%85"><span class="toc-text"> 什么叫做包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%8C%85"><span class="toc-text"> 为什么需要包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C%E9%97%AE%E9%A2%98"><span class="toc-text"> 多人协作问题：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dependencies-%E8%8A%82%E7%82%B9"><span class="toc-text"> dependencies 节点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#devdependencies-%E8%8A%82%E7%82%B9"><span class="toc-text"> devDependencies 节点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%85%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text"> 包的分类：</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-03-07T05:59:19.000Z">2020-03-07</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>npm与包</span></h1>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="什么叫做包"><a class="markdownIt-Anchor" href="#什么叫做包"></a> <strong>什么叫做包？</strong></h4>
+<p>就是指第三方模块，叫法同而已  <s>ps:感觉就像是闲的无聊</s></p>
+<p>包的来源？有网就可以下载，不是很麻烦  但是下载速吧。。。可能会让你抓狂</p>
+<h4 id="为什么需要包"><a class="markdownIt-Anchor" href="#为什么需要包"></a> <strong>为什么需要包？</strong></h4>
+<p>​    为了提高开发效率</p>
+<p>像是JQuery和浏览器内置API的关系</p>
+<p>官网： <a target="_blank" rel="noopener" href="https://www.npmjs.com">https://www.npmjs.com</a>  ps：没有中文请自备翻译器</p>
+<p>初次安装包后，项目多node_module的文件夹和package-lock.json配置文件 <span id="more"></span></p>
+<p><strong>node_modules</strong> 文件夹用来存放所有已安装到项目中的包。require() 导入第三方包时，就是从这个目录中查找并加载包。</p>
+<p><strong>package-lock.json</strong>配置文件用来记录node_modules 目录下的每一个包的信息，例如包的名字、版本号、下载地址等。</p>
+<p>注意：不要手动修改node_modules 或 package-lock.json文件中的任何代码，npm 包管理工具会自动维护它们   <s>ps：估计没人会手贱吧(￣.￣)</s></p>
+<h4 id="多人协作问题"><a class="markdownIt-Anchor" href="#多人协作问题"></a> <strong>多人协作问题：</strong></h4>
+<p>遇到的问题：第三方包的体积过大，不 方便团队成员之间共享项目源代码。</p>
+<p>解决方法：</p>
+<p>共享时剔除node_modules</p>
+<p>package.json，用来记录项目中安装了哪些包。</p>
+<p>注：运行时npm i 自动安装包和版本号</p>
+<h4 id="dependencies-节点"><a class="markdownIt-Anchor" href="#dependencies-节点"></a> <strong>dependencies 节点：</strong></h4>
+<p>package.json 文件中，有一个dependencies 节点，专门用来记录您使用npm install 命令安装了哪些包。</p>
+<p>**注意：**npm install 命令运行完毕之后，会自动把包的信息，添加到package.json 的 dependencies 节点中。</p>
+<h4 id="devdependencies-节点"><a class="markdownIt-Anchor" href="#devdependencies-节点"></a> <strong>devDependencies 节点：</strong></h4>
+<p>某些包只在项目开发阶段会用到，在项目上线之后不会用到，则建议把这些包记录到devDependencies 节点</p>
+<h4 id="包的分类"><a class="markdownIt-Anchor" href="#包的分类"></a> <strong>包的分类：</strong></h4>
+<p>项目包与全局包</p>
+<h6 id="项目包"><a class="markdownIt-Anchor" href="#项目包"></a> <strong>项目包</strong></h6>
+<ol>
+<li>那些被安装到项目的node_modules 目录中的包，都是项目包。<br>
+项目包又分为两类，分别是：</li>
+<li>⚫ 开发依赖包（被记录到devDependencies 节点中的包，只在开发期间会用到）</li>
+<li>⚫ 核心依赖包（被记录到dependencies 节点中的包，在开发期间和项目上线之后都会用到</li>
+</ol>
+<h6 id="全局包"><a class="markdownIt-Anchor" href="#全局包"></a> <strong>全局包</strong></h6>
+<p>​       npm i 包名 -g 全局包</p>
+<h6 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> <strong>注意：</strong></h6>
+<p>① 只有工具性质的包，才有全局安装的必要性。因为它们提供了好用的终端命令。</p>
+<p>② 判断某个包是否需要全局安装后才能使用，可以参考官方提供的使用说明即可。</p>
+<h6 id="规范的包结构"><a class="markdownIt-Anchor" href="#规范的包结构"></a> <strong>规范的包结构：</strong></h6>
+<p>① 包必须以单独的目录而存在</p>
+<p>② 包的顶级目录下要必须包含package.json 这个包管理配置文件</p>
+<p>③ package.json 中必须包含 name，version，main这三个属性，分别代表包的名字、版本号、包的入口。</p>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/29567/">Node.js的加载方法<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/30590/">npm命令合集<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>唯獨少了個字.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

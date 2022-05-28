@@ -1,4 +1,325 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.2.0"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://fastly.jsdelivr.net"><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><link rel="dns-prefetch" href="//unpkg.com"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#f8f8f8"><title>流式布局 - 唯獨少了個字</title><meta name="description" content="流式布局 1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素] 2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]  视口(viewport) 1.禁止------水平滚动—页面缩放 2.视口-----pc[浏览器的大小]----移动[移动设备的大小]  视口的设置 1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;devic"><meta property="og:type" content="article"><meta property="og:title" content="流式布局"><meta property="og:url" content="https://kisskisso.com/1507/index.html"><meta property="og:site_name" content="唯獨少了個字"><meta property="og:description" content="流式布局 1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素] 2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]  视口(viewport) 1.禁止------水平滚动—页面缩放 2.视口-----pc[浏览器的大小]----移动[移动设备的大小]  视口的设置 1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;devic"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-01-06T10:15:45.000Z"><meta property="article:modified_time" content="2021-03-17T13:26:57.017Z"><meta property="article:author" content="唯獨少了個字"><meta property="article:tag" content="HTML"><meta name="twitter:card" content="summary"><link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css">
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.2.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://fastly.jsdelivr.net'>
+  <link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>流式布局 - 唯獨少了個字</title>
+
+  
+    <meta name="description" content="流式布局 1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素] 2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]  视口(viewport) 1.禁止------水平滚动—页面缩放 2.视口-----pc[浏览器的大小]----移动[移动设备的大小]  视口的设置 1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;devic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="流式布局">
+<meta property="og:url" content="https://kisskisso.com/1507/index.html">
+<meta property="og:site_name" content="唯獨少了個字">
+<meta property="og:description" content="流式布局 1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素] 2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]  视口(viewport) 1.禁止------水平滚动—页面缩放 2.视口-----pc[浏览器的大小]----移动[移动设备的大小]  视口的设置 1&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;devic">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-06T10:15:45.000Z">
+<meta property="article:modified_time" content="2021-03-17T13:26:57.017Z">
+<meta property="article:author" content="唯獨少了個字">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="唯獨少了個字" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head><body><div class="l_body" id="start"><aside class="l_left" layout="post"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div><nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header><div class="widgets"><div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-text">流式布局</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%8F%A3viewport"><span class="toc-text">视口(viewport)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%8F%A3%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-text">视口的设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%96%87%E5%AD%97%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-text">多行文字显示省略号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E6%AD%A2%E6%B1%89%E5%AD%97%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%BB%98%E8%AE%A4"><span class="toc-text">防止汉字自动换行(默认)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text">网页的步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text">html的步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">注: [初始化]</span></a></li></ol></li></div></div></div></div></aside><div class="l_main"><div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-01-06T10:15:45.000Z">2020-01-06</time></div></div><article class="content md post"><h1 class="article-title"><span>流式布局</span></h1><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="流式布局"><a class="markdownIt-Anchor" href="#流式布局"></a> <strong>流式布局</strong></h3><p>1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素]</p><p>2.dpr物理像素比(具体不能改变的比例关系–作用–适配) [硬件]</p><h2 id="视口viewport"><a class="markdownIt-Anchor" href="#视口viewport"></a> 视口(viewport)</h2><p>1.禁止------水平滚动—页面缩放</p><p>2.视口-----pc[浏览器的大小]----移动[移动设备的大小]</p><h3 id="视口的设置"><a class="markdownIt-Anchor" href="#视口的设置"></a> <strong>视口的设置</strong></h3><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;                      移动设备宽 ←↑         ↑→ 忘了</span><br></pre></td></tr></tbody></table></figure><p><strong>注:</strong> 左右固定—中自适应 **注:**精灵图----向上向左 <span id="more"></span></p><p>**注:**转元素转块元素、行内元素</p><p>​ ♦行内块元素是一个非标准的元素</p><p>​ ♦ 行内块元素默认都会找基线对齐—(底部多3像素空白)</p><p>​ ♦’‘图片是行内块元素转化为块元素 (加浮动=转化块=)----[清除浮动]’ ’</p><pre><code>             ∮  盒子之间用padding值撑开,切记不要用margin值
-</code></pre><h3 id="多行文字显示省略号"><a class="markdownIt-Anchor" href="#多行文字显示省略号"></a> <strong>多行文字显示省略号</strong></h3><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/* 实现多行文字溢出显示省略号 */</span></span><br><span class="line"> <span class="attribute">overflow</span>: hidden;</span><br><span class="line"><span class="comment">/* 文字溢出显示省略号：单行文字 */</span></span><br><span class="line"> <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"><span class="comment">/* 辅助属性：兼容性 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"><span class="comment">/* 文字就要垂直显示 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line"><span class="comment">/* 还需要设置一个弹性盒子 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br></pre></td></tr></tbody></table></figure><h3 id="防止汉字自动换行默认"><a class="markdownIt-Anchor" href="#防止汉字自动换行默认"></a> <strong>防止汉字自动换行</strong>(默认)</h3><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*解决让文字不在特殊符号(空格,特殊符号)位置处换行*/</span></span><br><span class="line">  <span class="attribute">word-break</span>:break-all;</span><br></pre></td></tr></tbody></table></figure><p>​</p><h3 id="网页的步骤"><a class="markdownIt-Anchor" href="#网页的步骤"></a> <strong>网页的步骤</strong></h3><ol><li><p>页面样式初始化</p></li><li><p>任何的一个项目都要单独的在一个文件夹中</p></li><li><p>任何文件的命名都不能出现汉字</p><h3 id="html的步骤"><a class="markdownIt-Anchor" href="#html的步骤"></a> <strong>html的步骤</strong></h3><p>1.一般情况下,在网页中先设置一个大盒子</p><p>​ ▶<u>如果是一个最外层的大盒子,设置宽度100%( 重要)</u></p><p>​ ▶如果盒子的高度可以直接测量出来,可以设置高度,反之让内容撑开</p><p>2.在最外层大盒子中划分其它盒子</p><p>​ ▶搜索盒子(宽度与设备一宽,要设置高度,设置背景颜色,固定定位盒子,以及内[三个盒子])</p><p>​ ▶搜索盒子中要实现 [两端固定大小,中间[设置padding值]自适应效果]</p><p>{为了防止padding撑大盒子设置! !初始化(最好用一个写一个,以防…以防…[<s>ps：想不起来用什么词了…</s>])’}</p><h3 id="注-初始化"><a class="markdownIt-Anchor" href="#注-初始化"></a> 注: [初始化]</h3><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">/*实际开发不写*/</span></span><br><span class="line">   *{</span><br><span class="line">      <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="comment">/*真确写法*/</span></span><br><span class="line">   <span class="selector-tag">body</span>,<span class="selector-tag">p</span>,<span class="selector-tag">h1</span>,<span class="selector-tag">h2</span>,<span class="selector-tag">h3</span>,<span class="selector-tag">h4</span>,<span class="selector-tag">h5</span>,<span class="selector-tag">h6</span>,<span class="selector-tag">ul</span>,<span class="selector-tag">ol</span>,<span class="selector-tag">dl</span>,<span class="selector-tag">dd</span>{</span><br><span class="line">       <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">list-style</span>:none;</span><br><span class="line">       <span class="attribute">font-size</span>:<span class="number">14px</span>;</span><br><span class="line">       <span class="attribute">font</span>-familt:<span class="string">'宋体'</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-tag">a</span>{</span><br><span class="line">       <span class="comment">/*清除下划线*/</span></span><br><span class="line">       <span class="attribute">text-decoration</span>:none;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-tag">img</span>,<span class="selector-tag">input</span>{</span><br><span class="line">         <span class="attribute">vertical-align</span>:middle;</span><br><span class="line">         <span class="comment">/*去掉边框*/</span></span><br><span class="line">       <span class="attribute">border</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="comment">/*轮廓线*/</span></span><br><span class="line">       <span class="attribute">outline</span>:none;</span><br><span class="line">       <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="comment">/*清除浮动*/</span></span><br><span class="line">   <span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>{</span><br><span class="line">       <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">       <span class="attribute">display</span>:block;</span><br><span class="line">       <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">visibility</span>:hidden;</span><br><span class="line">       <span class="attribute">clear</span>:both;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-class">.clearfix</span>{</span><br><span class="line">       *zoom:<span class="number">1</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><strong>例外 问题:</strong></p><p>♣背景图片:当页面中的标签某个图标效果,或者图片只是一个衬托效果(给高宽)</p><p>♣img图片:图片角色很重要[广告,商品]</p><p><strong>重要:</strong></p><p>选择器层级不要太高,类选择器不要超过3个[权限会很高]</p><p><strong>扩展知识点:</strong></p><p>♠定位 ------♪当一个元素加了定位有层级关系(后来居上原则)[z-index:*;]</p><p>​ ♪定位脱标元素盒子居中</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>:<span class="built_in">translate</span>(-<span class="number">50%</span>);<span class="selector-attr">[后期会讲,先记住]</span></span><br></pre></td></tr></tbody></table></figure><p>♠盒子模型 ------</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">♪<span class="attribute">max-width</span>---最大宽度    ♪<span class="attribute">min-width</span>-----最小宽度</span><br></pre></td></tr></tbody></table></figure><p>♠其它内部属性</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>{</span><br><span class="line">    <span class="attribute">position</span>:absolute;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="attribute">width</span>:**px;</span><br><span class="line">    <span class="attribute">height</span>:**px;</span><br><span class="line">    </span><br><span class="line">    <span class="attribute">font-size</span>:**px;        <span class="comment">/*字的大小颜色(背景)对齐方式*/</span></span><br><span class="line">    <span class="attribute">text-align</span>:****;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>底部的固定定位:需要加padding-bottom撑开</p><p>名:没有固定的宽或高</p></li></ol><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script><div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p></div></section></div></article><div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/58682/">移动回顾<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/50332/">响应式布局<span class="note">较新</span></a></section></div><footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p><p>唯獨少了個字.</p></div></footer><div class="float-panel mobile-only blur" style="display:none"><button type="button" class="sidebar-toggle mobile" onclick="sidebar.toggle()"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script type="text/javascript">stellar={loadCSS:(e,s,n,t)=>{var i,a=window.document,l=a.createElement("link");if(s)i=s;else{var r=(a.body||a.getElementsByTagName("head")[0]).childNodes;i=r[r.length-1]}var d=a.styleSheets;if(t)for(var o in t)t.hasOwnProperty(o)&&l.setAttribute(o,t[o]);l.rel="stylesheet",l.href=e,l.media="only x",function e(s){if(a.body)return s();setTimeout((function(){e(s)}))}((function(){i.parentNode.insertBefore(l,s?i:i.nextSibling)}));var c=function(e){for(var s=l.href,n=d.length;n--;)if(d[n].href===s)return e();setTimeout((function(){c(e)}))};function p(){l.addEventListener&&l.removeEventListener("load",p),l.media=n||"all"}return l.addEventListener&&l.addEventListener("load",p),l.onloadcssdefined=c,c(p),l},loadScript:(e,s)=>new Promise((n,t)=>{var i=document.createElement("script");if(i.src=e,s)for(let e of Object.keys(s))i[e]=s[e];else i.async=!0;i.onerror=t,i.onload=i.onreadystatechange=function(){const e=this.readyState;e&&"loaded"!==e&&"complete"!==e||(i.onload=i.onreadystatechange=null,n())},document.head.appendChild(i)}),jQuery:e=>{"undefined"==typeof jQuery?stellar.loadScript(stellar.plugins.jQuery).then(e):e()}},stellar.github="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0",stellar.config={date_suffix:{just:"刚刚",min:"分钟前",hour:"小时前",day:"天前",month:"个月前"}},stellar.plugins={jQuery:"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js",sitesjs:"/js/plugins/sites.js",friendsjs:"/js/plugins/friends.js"},stellar.plugins.lazyload=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js",transition:"blur"}),stellar.plugins.swiper=Object.assign({enable:!0,css:"https://unpkg.com/swiper@6/swiper-bundle.min.css",js:"https://unpkg.com/swiper@6/swiper-bundle.min.js"}),stellar.plugins.preload=Object.assign({enable:!0,service:"flying_pages",instant_page:"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js",flying_pages:"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"}),stellar.plugins.fancybox=Object.assign({enable:!0,js:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",css:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css",selector:".swiper-slide img"})</script><script src="/js/main.js" async></script></div></body></html>
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/image01.png" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-text"> 流式布局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%8F%A3viewport"><span class="toc-text"> 视口(viewport)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%8F%A3%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-text"> 视口的设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%96%87%E5%AD%97%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-text"> 多行文字显示省略号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E6%AD%A2%E6%B1%89%E5%AD%97%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%BB%98%E8%AE%A4"><span class="toc-text"> 防止汉字自动换行(默认)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text"> 网页的步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text"> html的步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text"> 注:                                                               [初始化]</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Web%E5%89%8D%E7%AB%AF/">Web前端</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-01-06T10:15:45.000Z">2020-01-06</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>流式布局</span></h1>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="流式布局"><a class="markdownIt-Anchor" href="#流式布局"></a> <strong>流式布局</strong></h3>
+<p>1.ppi 像素密度(越高画质越好,相反)-----没用[设备像素]</p>
+<p>2.dpr物理像素比(具体不能改变的比例关系–作用–适配)   [硬件]</p>
+<h2 id="视口viewport"><a class="markdownIt-Anchor" href="#视口viewport"></a> 视口(viewport)</h2>
+<p>1.禁止------水平滚动—页面缩放</p>
+<p>2.视口-----pc[浏览器的大小]----移动[移动设备的大小]</p>
+<h3 id="视口的设置"><a class="markdownIt-Anchor" href="#视口的设置"></a> <strong>视口的设置</strong></h3>
+<figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;                      移动设备宽 ←↑         ↑→ 忘了</span><br></pre></td></tr></tbody></table></figure>
+<p><strong>注:</strong> 左右固定—中自适应     **注:**精灵图----向上向左        <span id="more"></span></p>
+<p>**注:**转元素转块元素、行内元素</p>
+<p>​             ♦行内块元素是一个非标准的元素</p>
+<p>​             ♦  行内块元素默认都会找基线对齐—(底部多3像素空白)</p>
+<p>​             ♦’‘图片是行内块元素转化为块元素  (加浮动=转化块=)----[清除浮动]’ ’</p>
+<pre><code>             ∮  盒子之间用padding值撑开,切记不要用margin值
+</code></pre>
+<h3 id="多行文字显示省略号"><a class="markdownIt-Anchor" href="#多行文字显示省略号"></a> <strong>多行文字显示省略号</strong></h3>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/* 实现多行文字溢出显示省略号 */</span></span><br><span class="line"> <span class="attribute">overflow</span>: hidden;</span><br><span class="line"><span class="comment">/* 文字溢出显示省略号：单行文字 */</span></span><br><span class="line"> <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"><span class="comment">/* 辅助属性：兼容性 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"><span class="comment">/* 文字就要垂直显示 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line"><span class="comment">/* 还需要设置一个弹性盒子 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="防止汉字自动换行默认"><a class="markdownIt-Anchor" href="#防止汉字自动换行默认"></a> <strong>防止汉字自动换行</strong>(默认)</h3>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*解决让文字不在特殊符号(空格,特殊符号)位置处换行*/</span></span><br><span class="line">  <span class="attribute">word-break</span>:break-all;</span><br></pre></td></tr></tbody></table></figure>
+<p>​</p>
+<h3 id="网页的步骤"><a class="markdownIt-Anchor" href="#网页的步骤"></a> <strong>网页的步骤</strong></h3>
+<ol>
+<li>
+<p>页面样式初始化</p>
+</li>
+<li>
+<p>任何的一个项目都要单独的在一个文件夹中</p>
+</li>
+<li>
+<p>任何文件的命名都不能出现汉字</p>
+<h3 id="html的步骤"><a class="markdownIt-Anchor" href="#html的步骤"></a> <strong>html的步骤</strong></h3>
+<p>1.一般情况下,在网页中先设置一个大盒子</p>
+<p>​     ▶<u>如果是一个最外层的大盒子,设置宽度100%( 重要)</u></p>
+<p>​      ▶如果盒子的高度可以直接测量出来,可以设置高度,反之让内容撑开</p>
+<p>2.在最外层大盒子中划分其它盒子</p>
+<p>​       ▶搜索盒子(宽度与设备一宽,要设置高度,设置背景颜色,固定定位盒子,以及内[三个盒子])</p>
+<p>​         ▶搜索盒子中要实现     [两端固定大小,中间[设置padding值]自适应效果]</p>
+<p>{为了防止padding撑大盒子设置! !初始化(最好用一个写一个,以防…以防…[<s>ps：想不起来用什么词了…</s>])’}</p>
+<h3 id="注-初始化"><a class="markdownIt-Anchor" href="#注-初始化"></a> 注:                                                               [初始化]</h3>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">/*实际开发不写*/</span></span><br><span class="line">   *{</span><br><span class="line">      <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="comment">/*真确写法*/</span></span><br><span class="line">   <span class="selector-tag">body</span>,<span class="selector-tag">p</span>,<span class="selector-tag">h1</span>,<span class="selector-tag">h2</span>,<span class="selector-tag">h3</span>,<span class="selector-tag">h4</span>,<span class="selector-tag">h5</span>,<span class="selector-tag">h6</span>,<span class="selector-tag">ul</span>,<span class="selector-tag">ol</span>,<span class="selector-tag">dl</span>,<span class="selector-tag">dd</span>{</span><br><span class="line">       <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">list-style</span>:none;</span><br><span class="line">       <span class="attribute">font-size</span>:<span class="number">14px</span>;</span><br><span class="line">       <span class="attribute">font</span>-familt:<span class="string">'宋体'</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-tag">a</span>{</span><br><span class="line">       <span class="comment">/*清除下划线*/</span></span><br><span class="line">       <span class="attribute">text-decoration</span>:none;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-tag">img</span>,<span class="selector-tag">input</span>{</span><br><span class="line">         <span class="attribute">vertical-align</span>:middle;</span><br><span class="line">         <span class="comment">/*去掉边框*/</span></span><br><span class="line">       <span class="attribute">border</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="comment">/*轮廓线*/</span></span><br><span class="line">       <span class="attribute">outline</span>:none;</span><br><span class="line">       <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">   }</span><br><span class="line">   <span class="comment">/*清除浮动*/</span></span><br><span class="line">   <span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>{</span><br><span class="line">       <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">       <span class="attribute">display</span>:block;</span><br><span class="line">       <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">       <span class="attribute">visibility</span>:hidden;</span><br><span class="line">       <span class="attribute">clear</span>:both;</span><br><span class="line">   }</span><br><span class="line">   <span class="selector-class">.clearfix</span>{</span><br><span class="line">       *zoom:<span class="number">1</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><strong>例外 问题:</strong></p>
+<p>♣背景图片:当页面中的标签某个图标效果,或者图片只是一个衬托效果(给高宽)</p>
+<p>♣img图片:图片角色很重要[广告,商品]</p>
+<p><strong>重要:</strong></p>
+<p>选择器层级不要太高,类选择器不要超过3个[权限会很高]</p>
+<p><strong>扩展知识点:</strong></p>
+<p>♠定位 ------♪当一个元素加了定位有层级关系(后来居上原则)[z-index:*;]</p>
+<p>​        ♪定位脱标元素盒子居中</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>:<span class="built_in">translate</span>(-<span class="number">50%</span>);<span class="selector-attr">[后期会讲,先记住]</span></span><br></pre></td></tr></tbody></table></figure>
+<p>♠盒子模型 ------</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">♪<span class="attribute">max-width</span>---最大宽度    ♪<span class="attribute">min-width</span>-----最小宽度</span><br></pre></td></tr></tbody></table></figure>
+<p>♠其它内部属性</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>{</span><br><span class="line">    <span class="attribute">position</span>:absolute;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="attribute">width</span>:**px;</span><br><span class="line">    <span class="attribute">height</span>:**px;</span><br><span class="line">    </span><br><span class="line">    <span class="attribute">font-size</span>:**px;        <span class="comment">/*字的大小颜色(背景)对齐方式*/</span></span><br><span class="line">    <span class="attribute">text-align</span>:****;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>底部的固定定位:需要加padding-bottom撑开</p>
+<p>名:没有固定的宽或高</p>
+</li>
+</ol>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/58682/">移动回顾<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/50332/">响应式布局<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>唯獨少了個字.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

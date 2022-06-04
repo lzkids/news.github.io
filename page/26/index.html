@@ -69,7 +69,7 @@
 <div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">欢迎游客：</span></div><div class="widget-body fs14"><p>本站是记录日常遇到的问题和解决办法</p>
 </div></div>
 
-<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div><div class="more-item"><a class="title" href="/NR9XAW/">5种停止厌恶任务列表的方法</a></div><div class="more-item"><a class="title" href="/21015/">向你而生</a></div><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div></div></div>
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/2KJZ3E0/">如何让自己过得更好</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div><div class="more-item"><a class="title" href="/NR9XAW/">5种停止厌恶任务列表的方法</a></div><div class="more-item"><a class="title" href="/21015/">向你而生</a></div></div></div>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/lzkids" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer>
 
@@ -111,7 +111,18 @@
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/60824/">
+  <div class="post-list post"><a class="post-card post " href="/26071/">
+<article class="md"><h2 class="post-title">彻底删除软件依赖包</h2><div class="excerpt"><p>apt-get remove --purge xxx # 移除应用及配置
+apt-get autoremove # 移除没用的包
+1.删除已安装包（不保留配置文件）
+1apt-get purge
+
+删除为满足依赖而安装且不需要的软件包（保留配置文件）
+
+1apt-get autoremove 
+3.删除已安装的软件包（保留配置文件），不会删除依赖软件包，且保留配置文件。
+1apt-get r...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-06-02T13:39:20.000Z">2020-06-02</time></span><span class="cap breadcrumb">语言与Linux</span></div></article>
+</a><a class="post-card post " href="/60824/">
 <article class="md"><h2 class="post-title">rm删除命令</h2><div class="excerpt"><p>rm删除文件:  rm [选项]  文件夹名
 选项：
 123456-d：直接把欲删除的目录的硬连接数据删除成0，删除该目录；-f：强制删除文件或目录；-i：删除已有文件或目录之前先询问用户；-r或-R：递归处理，将指定目录下的所有文件与子目录一并处理；--preserve-root：不对根目录进行递归操作；-v：显示指令的详细执行过程。
@@ -137,23 +148,6 @@ Ps：除非有明确的width设置，否则不会超过父容器宽度。Eg：wh
 </a><a class="post-card post " href="/10525/">
 <article class="md"><h2 class="post-title">css简述(了解)</h2><div class="excerpt"><p>CSS 世界的诞生就是为图文信息展示服务的，CSS世界构建的基石是HTML，而HTML最具代表的两个基石&lt;\div&gt;和&lt;\span&gt;正好是CSS 世界中块级元素和内联级元素的代表.
 对 CSS2.1 的全面支持是从微软公司的 IE8 开始的</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-31T14:00:11.000Z">2020-05-31</time></span><span class="cap breadcrumb">Web前端</span></div></article>
-</a><a class="post-card post " href="/26714/">
-<article class="md"><h2 class="post-title">如何在Linux安装zsh</h2><div class="excerpt"><p>Z shell（Zsh）是一款可用作交互式登录的shell及脚本编写的命令解释器
-下载zsh  sudo apt-get install  zsh
-下载Oh My ZSH!
-
-根据官网的两条命令会出现以下错误
-sh -c “$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)”
-
-curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
-
-sh -c “$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)”
-
-正在解析主机 raw.githubusercontent.com (raw.githubusercontent.com)… 0.0.0.0
-正在连接 raw.githubusercontent.com (raw.githubusercontent.com)|0.0.0.0|:443… 失败：Connection refused。
-
-
-解决办法就是：</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-31T09:00:19.000Z">2020-05-31</time></span><span class="cap breadcrumb">应用与插件</span></div></article>
 </a></div>
   
   <div class='paginator-wrap dis-select'>

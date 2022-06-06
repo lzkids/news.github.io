@@ -43,7 +43,7 @@
 
   
     
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/main-5ebebc8c4b374282d5a2622d78c9f419.css">
 
   
 
@@ -142,7 +142,7 @@
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="number">1</span> 设置事件</span><br><span class="line">xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span><br><span class="line"> <span class="number">2</span> 检测响应是否下载完毕/请求是否成功</span><br><span class="line">  <span class="keyword">if</span> (xhr.readyState === <span class="number">4</span> &amp;&amp; xhr.status === <span class="number">200</span>) {</span><br><span class="line"> <span class="number">3</span> 接收响应内容</span><br><span class="line">    <span class="keyword">var</span> res = xhr.responseText;</span><br><span class="line"></span><br><span class="line">  <span class="number">4</span> 将<span class="built_in">JSON</span>转换为js对象</span><br><span class="line">    res = <span class="built_in">JSON</span>.parse(res);</span><br><span class="line">    <span class="built_in">console</span>.log(res);</span><br><span class="line">  }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="发送post请求"><a class="markdownIt-Anchor" href="#发送post请求"></a> <strong>发送post请求：</strong></h3>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> 初始化xhr对象</span><br><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"></span><br><span class="line"> <span class="number">2</span> 调用open</span><br><span class="line">xhr.open(<span class="string">'POST'</span>, <span class="string">'http://www.liulongbin.top:3006/api/addbook'</span>);</span><br><span class="line"></span><br><span class="line"> <span class="number">3</span> 设置本次请求发送的内容类型（告诉服务器请求参数的类型）</span><br><span class="line">   - 设置内容类型为urlencoded即可</span><br><span class="line">   - setRequestHeader() 用于设置请求头的信息</span><br><span class="line">     - 请求头：是请求发送的一些额外信息，这些额外信息用于确保请求发送的数据可以正确被服务器接收使用</span><br><span class="line">xhr.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>);</span><br><span class="line"></span><br><span class="line"> <span class="number">4</span> 发送请求</span><br><span class="line">   - post请求的请求参数为urlencoded形式，传入到send()中即可</span><br><span class="line">xhr.send(<span class="string">'bookname=老人与海&amp;author=海明威&amp;publisher=机械工业出版社'</span>);</span><br></pre></td></tr></tbody></table></figure>
-<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/markmap-d3daf60b4931b438fe1fa3773fed5591.css" type="text/css"><link rel="stylesheet" href="/css/spoiler-49db4316f654a3b826aedc57466ef778.css" type="text/css"><script src="/js/spoiler-a419c64a2ae44c2a0437d1c1795105dc.js" type="text/javascript" async></script>
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div></section></div>
@@ -276,7 +276,7 @@
       }
     }
   };
-  // stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0';
+  // stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0';
   stellar.config = {
     date_suffix: {
       just: '刚刚',
@@ -318,7 +318,7 @@
 <!-- required -->
 
   
-<script src="/js/main.js" async></script>
+<script src="/js/main-a9e24e6bc0dc2fa050ed869aacb20428.js" async></script>
 
 
 

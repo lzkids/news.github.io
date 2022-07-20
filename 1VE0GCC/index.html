@@ -43,7 +43,7 @@
 
   
     
-<link rel="stylesheet" href="/css/main-5ebebc8c4b374282d5a2622d78c9f419.css">
+<link rel="stylesheet" href="/css/main.css">
 
   
 
@@ -173,7 +173,7 @@
 <h2 id="来自verywell的消息"><a class="markdownIt-Anchor" href="#来自verywell的消息"></a> 来自Verywell的消息</h2>
 <p>虽然干扰只是对我们遗忘原因的一种解释，但它却是一个重要的解释。类似记忆之间的竞争可能会使你更难回忆起过去学过的东西。这种干扰也可能使你更难回忆起最近的记忆，这可能使学习变得困难。</p>
 <p>在实验室环境中的研究支持干扰的存在和影响，但在现实世界的环境中，要确定遗忘有多少可以与干扰的影响相联系，则要困难得多。</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.verywellmind.com/interference-definition-4587808">原文</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap-d3daf60b4931b438fe1fa3773fed5591.css" type="text/css"><link rel="stylesheet" href="/css/spoiler-49db4316f654a3b826aedc57466ef778.css" type="text/css"><script src="/js/spoiler-a419c64a2ae44c2a0437d1c1795105dc.js" type="text/javascript" async></script>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.verywellmind.com/interference-definition-4587808">原文</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div></section></div>
@@ -191,10 +191,12 @@
     <div class='cmt-title cap theme'>
       快来参与讨论吧
     </div>
-    <div class='cmt-body valine'>
+    <div class='cmt-body beaudar'>
       
 
-<div id="valine_container" class="valine_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="lzkids/CQL" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
 
     </div>
   </div>
@@ -349,59 +351,37 @@
 <!-- required -->
 
   
-<script src="/js/main-a9e24e6bc0dc2fa050ed869aacb20428.js" async></script>
+<script src="/js/main.js" async></script>
 
 
 
 <!-- optional -->
 
   <script>
-  function getEmojiMaps() {
-    function emoji(path, idx, ext) {
-      return path + "/" + path + "-" + idx + "." + ext;
-    }
-    var emojiMaps = {};
-    for (var i = 1; i <= 54; i++) {
-      emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-    }
-    for (var i = 1; i <= 101; i++) {
-      emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-    }
-    for (var i = 1; i <= 116; i++) {
-      emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-    }
-    for (var i = 1; i <= 125; i++) {
-      emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-    }
-    for (var i = 1; i <= 4; i++) {
-      emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-    }
-    return emojiMaps;
-  }
-  function load_comment(){
-    if(!document.getElementById("valine_container"))return;
-    stellar.loadScript('https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js', {defer:true}).then(function () {
-      const el = document.getElementById("valine_container");
-      var path = el.getAttribute('comment_id');
-      const placeholder = "";
-      if (!path) {
-        path = decodeURI(window.location.pathname);
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
       }
-      var valine = new Valine();
-      valine.init(Object.assign({"js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js","appId":"Qp9x4lDJOouMxfGDvocGY8nc-MdYXbMMI","appKey":"zshSuFcfld2R1k4pAXOKytEU","placeholder":null,"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"tagMeta":["博主","小伙伴","访客"],"metaPlaceholder":{"nick":"昵称/QQ号(必填)","mail":"邮箱（必填，完全保密）","link":"网址(https://)"},"master":["6783037F2DF30EAB99F9FC256157D875"],"friends":["6783037F2DF30EAB99F9FC256157D875"]}, {
-        el: '#valine_container',
-        path: path,
-        placeholder: placeholder,
-        emojiCDN: 'https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-        emojiMaps: getEmojiMaps(),
-      }));
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
     });
   }
   window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-    load_comment();
+      loadBeaudar();
   });
-
 </script>
 
 

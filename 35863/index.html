@@ -43,7 +43,7 @@
 
   
     
-<link rel="stylesheet" href="/css/main-5ebebc8c4b374282d5a2622d78c9f419.css">
+<link rel="stylesheet" href="/css/main.css">
 
   
 
@@ -103,7 +103,7 @@
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"btn1"</span>&gt;</span>使用innerHTML<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"btn2"</span>&gt;</span>使用createElement<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> btn1 = <span class="built_in">document</span>.querySelector(<span class="string">'#btn1'</span>)</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> btn2 = <span class="built_in">document</span>.querySelector(<span class="string">'#btn2'</span>)</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> list = <span class="built_in">document</span>.querySelector(<span class="string">'#list'</span>)</span></span><br><span class="line"><span class="javascript">		btn1.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span></span><br><span class="line"><span class="javascript">			<span class="comment">// 先将ul中的所有内容（元素）清掉</span></span></span><br><span class="line"><span class="javascript">			list.innerHTML = <span class="string">''</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> str = <span class="string">''</span>; <span class="comment">// 这个变量用于存储 html 代码</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> start = <span class="keyword">new</span> <span class="built_in">Date</span>();	<span class="comment">// 开始时间</span></span></span><br><span class="line"><span class="javascript">			<span class="comment">// 意图放入1000个li标签到ul中</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span></span><br><span class="line"><span class="javascript">				str += <span class="string">"&lt;li&gt;"</span> + <span class="built_in">Math</span>.random() + <span class="string">"&lt;/li&gt;"</span>;</span></span><br><span class="line">				list.innerHTML = str;</span><br><span class="line">			}</span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> end = <span class="keyword">new</span> <span class="built_in">Date</span>();	<span class="comment">// 结束事件</span></span></span><br><span class="line"><span class="javascript">			<span class="built_in">console</span>.log(<span class="string">'耗时：'</span> + (end - start));</span></span><br><span class="line"></span><br><span class="line">		}</span><br><span class="line"><span class="javascript">		btn2.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span></span><br><span class="line"><span class="javascript">			<span class="comment">// 先将ul中的所有内容（元素）清掉</span></span></span><br><span class="line"><span class="javascript">			list.innerHTML = <span class="string">''</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> start = <span class="keyword">new</span> <span class="built_in">Date</span>();	<span class="comment">// 开始时间</span></span></span><br><span class="line"><span class="javascript">			<span class="comment">// 意图放入1000个li标签到ul中</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) {</span></span><br><span class="line"><span class="javascript">				<span class="keyword">var</span> li = <span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span></span><br><span class="line"><span class="javascript">				li.innerText = <span class="built_in">Math</span>.random();</span></span><br><span class="line">				list.appendChild( li );</span><br><span class="line">			}</span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> end = <span class="keyword">new</span> <span class="built_in">Date</span>();	<span class="comment">// 结束事件</span></span></span><br><span class="line"><span class="javascript">			<span class="built_in">console</span>.log(<span class="string">'耗时：'</span> + (end - start));</span></span><br><span class="line">		}</span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="打折案例"><a class="markdownIt-Anchor" href="#打折案例"></a> 打折案例</h3>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"btn1"</span>&gt;</span>打8折！<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list1"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">oldPrice</span>=<span class="string">"222"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>产品1<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">oldPrice</span>=<span class="string">"414"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>产品2<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">oldPrice</span>=<span class="string">"244"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>产品3<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">oldPrice</span>=<span class="string">"513"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>产品4<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">oldPrice</span>=<span class="string">"144"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>产品5<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span>   </span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> btn1 = <span class="built_in">document</span>.querySelector(<span class="string">'#btn1'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> ul= <span class="built_in">document</span>.querySelector(<span class="string">'#list1'</span>);</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> lii = ul.children;   <span class="comment">//获取ul里面的li</span></span></span><br><span class="line"><span class="javascript">       <span class="comment">//1.初始显示原价</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i &lt; lii.length;i++){</span></span><br><span class="line"><span class="javascript">         		<span class="keyword">var</span> oldPrice = list[i].getAttribute(<span class="string">'oldPrice'</span>);</span></span><br><span class="line"><span class="javascript">			<span class="comment">// 当前 li 中的第2个span</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> span2 = list[i].children[<span class="number">1</span>];</span></span><br><span class="line"><span class="javascript">			span2.innerHTML = <span class="string">"，原价 &lt;del&gt;¥"</span> + oldPrice + <span class="string">"&lt;/del&gt;"</span>;</span></span><br><span class="line">		}</span><br><span class="line"><span class="javascript">    btn1.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; list.length; i++){</span></span><br><span class="line"><span class="javascript">				<span class="comment">// 先取出当前li的oldPrice这个自定义属性的值（原价）</span></span></span><br><span class="line"><span class="javascript">				<span class="keyword">var</span> oldPrice = list[i].getAttribute(<span class="string">'oldPrice'</span>);</span></span><br><span class="line"><span class="javascript">				<span class="comment">// 当前 li 中的第3个span</span></span></span><br><span class="line"><span class="javascript">				<span class="keyword">var</span> span3 = list[i].children[<span class="number">2</span>];</span></span><br><span class="line"><span class="javascript">				span3.innerHTML = <span class="string">"，折后价 &lt;del&gt;¥"</span> + (oldPrice*<span class="number">0.8</span>).toFixed(<span class="number">2</span>) + <span class="string">"&lt;/del&gt;"</span>;</span></span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">    }</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<link rel="stylesheet" href="/css/markmap-d3daf60b4931b438fe1fa3773fed5591.css" type="text/css"><link rel="stylesheet" href="/css/spoiler-49db4316f654a3b826aedc57466ef778.css" type="text/css"><script src="/js/spoiler-a419c64a2ae44c2a0437d1c1795105dc.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div></section></div>
@@ -121,10 +121,12 @@
     <div class='cmt-title cap theme'>
       快来参与讨论吧
     </div>
-    <div class='cmt-body valine'>
+    <div class='cmt-body beaudar'>
       
 
-<div id="valine_container" class="valine_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="lzkids/CQL" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
 
     </div>
   </div>
@@ -279,59 +281,37 @@
 <!-- required -->
 
   
-<script src="/js/main-a9e24e6bc0dc2fa050ed869aacb20428.js" async></script>
+<script src="/js/main.js" async></script>
 
 
 
 <!-- optional -->
 
   <script>
-  function getEmojiMaps() {
-    function emoji(path, idx, ext) {
-      return path + "/" + path + "-" + idx + "." + ext;
-    }
-    var emojiMaps = {};
-    for (var i = 1; i <= 54; i++) {
-      emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-    }
-    for (var i = 1; i <= 101; i++) {
-      emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-    }
-    for (var i = 1; i <= 116; i++) {
-      emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-    }
-    for (var i = 1; i <= 125; i++) {
-      emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-    }
-    for (var i = 1; i <= 4; i++) {
-      emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-    }
-    return emojiMaps;
-  }
-  function load_comment(){
-    if(!document.getElementById("valine_container"))return;
-    stellar.loadScript('https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js', {defer:true}).then(function () {
-      const el = document.getElementById("valine_container");
-      var path = el.getAttribute('comment_id');
-      const placeholder = "";
-      if (!path) {
-        path = decodeURI(window.location.pathname);
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
       }
-      var valine = new Valine();
-      valine.init(Object.assign({"js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js","appId":"Qp9x4lDJOouMxfGDvocGY8nc-MdYXbMMI","appKey":"zshSuFcfld2R1k4pAXOKytEU","placeholder":null,"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"tagMeta":["博主","小伙伴","访客"],"metaPlaceholder":{"nick":"昵称/QQ号(必填)","mail":"邮箱（必填，完全保密）","link":"网址(https://)"},"master":["6783037F2DF30EAB99F9FC256157D875"],"friends":["6783037F2DF30EAB99F9FC256157D875"]}, {
-        el: '#valine_container',
-        path: path,
-        placeholder: placeholder,
-        emojiCDN: 'https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-        emojiMaps: getEmojiMaps(),
-      }));
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
     });
   }
   window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-    load_comment();
+      loadBeaudar();
   });
-
 </script>
 
 

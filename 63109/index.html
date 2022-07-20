@@ -43,7 +43,7 @@
 
   
     
-<link rel="stylesheet" href="/css/main-5ebebc8c4b374282d5a2622d78c9f419.css">
+<link rel="stylesheet" href="/css/main.css">
 
   
 
@@ -110,7 +110,7 @@
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"ipt"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 由于没有form，button就不存在提交的问题 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"btn"</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"pic"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> ipt = <span class="built_in">document</span>.getElementById(<span class="string">'ipt'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> pic = <span class="built_in">document</span>.getElementById(<span class="string">'pic'</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">    <span class="comment">// 1 设置点击按钮事件</span></span></span><br><span class="line"><span class="javascript">    btn.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 2 创建FormData对象</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> fd = <span class="keyword">new</span> FormData();</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 3 根据需求将数据添加到fd中</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">//   - 如何进行文件添加</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">//     - 1 找到文件域中选择的文件</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">//       - ipt.files[0] 代表了要上传的文件</span></span></span><br><span class="line"><span class="javascript">      <span class="comment">//       - ipt.files.length 代表选择文件的个数，如果为0说明没选文件   </span></span></span><br><span class="line"><span class="javascript">      <span class="comment">//     - 2 使用append将文件添加到fd中即可</span></span></span><br><span class="line"><span class="javascript">      fd.append(<span class="string">'fileUpload'</span>, ipt.files[<span class="number">0</span>]);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">      <span class="comment">// 4 发送请求</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">      xhr.open(<span class="string">'post'</span>, <span class="string">'接口'</span>);</span></span><br><span class="line">      xhr.send(fd);</span><br><span class="line"></span><br><span class="line"><span class="javascript">      <span class="comment">// 5 接收响应，可以将线上图片地址进行展示</span></span></span><br><span class="line"><span class="javascript">      xhr.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span></span><br><span class="line">        if (xhr.status === 200) {</span><br><span class="line"><span class="javascript">          pic.src = <span class="string">'接口'</span> + <span class="built_in">JSON</span>.parse(xhr.responseText).url;</span></span><br><span class="line">        }</span><br><span class="line">      }</span><br><span class="line">    };</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="jquery发送formdata的方式"><a class="markdownIt-Anchor" href="#jquery发送formdata的方式"></a> <strong>JQuery发送FormData的方式：</strong></h3>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 如果要上传的是一个单独的表单域，没有form结构，需要进行单独处理 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"ipt"</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- 操作按钮 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"btn"</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- 用于展示线上的图片地址 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"pic"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./lib/jquery.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">   <span class="comment">// 1 设置按钮的点击事件</span></span></span><br><span class="line"><span class="javascript">   $(<span class="string">'#btn'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span></span><br><span class="line"><span class="javascript">     <span class="comment">// 2 获取文件域的文件信息</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">var</span> files = $(<span class="string">'#ipt'</span>)[<span class="number">0</span>].files;</span></span><br><span class="line"><span class="javascript">     <span class="built_in">console</span>.log(files);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">     <span class="comment">// 3 检测是否上传了文件</span></span></span><br><span class="line">     if (files.length === 0) {</span><br><span class="line"><span class="javascript">       <span class="keyword">return</span>;</span></span><br><span class="line">     }</span><br><span class="line"><span class="javascript">     <span class="comment">// 4 创建FormData对象</span></span></span><br><span class="line"><span class="javascript">     <span class="keyword">var</span> fd = <span class="keyword">new</span> FormData();</span></span><br><span class="line"><span class="javascript">     fd.append(<span class="string">'uploads'</span>, files[<span class="number">0</span>]);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">     <span class="comment">// 5 通过jQuery的ajax发送这个FormData</span></span></span><br><span class="line"><span class="javascript">     $.ajax({</span></span><br><span class="line"><span class="javascript">       type: <span class="string">'post'</span>,</span></span><br><span class="line"><span class="javascript">       url: <span class="string">'接口'</span>,</span></span><br><span class="line"><span class="javascript">       <span class="comment">// 将fd直接设置给data</span></span></span><br><span class="line">       data: fd,</span><br><span class="line"><span class="javascript">       <span class="comment">// 如果要发送FormData，必须设置以下属性</span></span></span><br><span class="line"><span class="javascript">       contentType: <span class="literal">false</span>, <span class="comment">// 无需jQuery设置请求参数的内容类型</span></span></span><br><span class="line"><span class="javascript">       processData: <span class="literal">false</span>, <span class="comment">// 无需jQuery进行数据处理</span></span></span><br><span class="line"><span class="javascript">       success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>{</span></span><br><span class="line">         if (res.status === 200) {</span><br><span class="line"><span class="javascript">           $(<span class="string">'#pic'</span>).prop(<span class="string">'src'</span>, <span class="string">'接口'</span> + res.url)</span></span><br><span class="line">         }</span><br><span class="line">       }</span><br><span class="line">     });</span><br><span class="line">   });</span><br><span class="line"> <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<link rel="stylesheet" href="/css/markmap-d3daf60b4931b438fe1fa3773fed5591.css" type="text/css"><link rel="stylesheet" href="/css/spoiler-49db4316f654a3b826aedc57466ef778.css" type="text/css"><script src="/js/spoiler-a419c64a2ae44c2a0437d1c1795105dc.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div></section></div>
@@ -128,10 +128,12 @@
     <div class='cmt-title cap theme'>
       快来参与讨论吧
     </div>
-    <div class='cmt-body valine'>
+    <div class='cmt-body beaudar'>
       
 
-<div id="valine_container" class="valine_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="lzkids/CQL" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
 
     </div>
   </div>
@@ -286,59 +288,37 @@
 <!-- required -->
 
   
-<script src="/js/main-a9e24e6bc0dc2fa050ed869aacb20428.js" async></script>
+<script src="/js/main.js" async></script>
 
 
 
 <!-- optional -->
 
   <script>
-  function getEmojiMaps() {
-    function emoji(path, idx, ext) {
-      return path + "/" + path + "-" + idx + "." + ext;
-    }
-    var emojiMaps = {};
-    for (var i = 1; i <= 54; i++) {
-      emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-    }
-    for (var i = 1; i <= 101; i++) {
-      emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-    }
-    for (var i = 1; i <= 116; i++) {
-      emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-    }
-    for (var i = 1; i <= 125; i++) {
-      emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-    }
-    for (var i = 1; i <= 4; i++) {
-      emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-    }
-    return emojiMaps;
-  }
-  function load_comment(){
-    if(!document.getElementById("valine_container"))return;
-    stellar.loadScript('https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js', {defer:true}).then(function () {
-      const el = document.getElementById("valine_container");
-      var path = el.getAttribute('comment_id');
-      const placeholder = "";
-      if (!path) {
-        path = decodeURI(window.location.pathname);
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
       }
-      var valine = new Valine();
-      valine.init(Object.assign({"js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js","appId":"Qp9x4lDJOouMxfGDvocGY8nc-MdYXbMMI","appKey":"zshSuFcfld2R1k4pAXOKytEU","placeholder":null,"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"tagMeta":["博主","小伙伴","访客"],"metaPlaceholder":{"nick":"昵称/QQ号(必填)","mail":"邮箱（必填，完全保密）","link":"网址(https://)"},"master":["6783037F2DF30EAB99F9FC256157D875"],"friends":["6783037F2DF30EAB99F9FC256157D875"]}, {
-        el: '#valine_container',
-        path: path,
-        placeholder: placeholder,
-        emojiCDN: 'https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-        emojiMaps: getEmojiMaps(),
-      }));
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
     });
   }
   window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-    load_comment();
+      loadBeaudar();
   });
-
 </script>
 
 

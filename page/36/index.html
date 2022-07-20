@@ -69,7 +69,7 @@
 <div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">欢迎游客：</span></div><div class="widget-body fs14"><p>本站是记录日常遇到的问题和解决办法</p>
 </div></div>
 
-<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/2KJZ3E0/">如何让自己过得更好</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/355BJH8/">GOG的无冬之夜增强版置换多人CDK</a></div><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/lzkids" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer>
 
@@ -111,14 +111,7 @@
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/10377/">
-<article class="md"><h2 class="post-title">节流与防抖</h2><div class="excerpt"><p>防抖:抖：高频率的发送请求
-思路：当函数被调用时，不立即执行，而是延迟10秒执行。
-如果在这10秒内再次调用了这个函数，则从当前被调用的时间开始计算</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-17T02:58:57.000Z">2020-04-17</time></span><span class="cap breadcrumb">Web前端</span></div></article>
-</a><a class="post-card post " href="/3359/">
-<article class="md"><h2 class="post-title">话三</h2><div class="excerpt"><p>正义从来不是道德的标杆，而是立场的选择
-</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-16T10:51:45.000Z">2020-04-16</time></span><span class="cap breadcrumb">话?画?</span></div></article>
-</a><a class="post-card post " href="/28382/">
+  <div class="post-list post"><a class="post-card post " href="/28382/">
 <article class="md"><h2 class="post-title">话二</h2><div class="excerpt"><p>人会有前  后的观念，只不过因为视野太小， 所谓的前进 也就只是向着狭小视野的方向移动罢了
 </p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-14T09:53:45.000Z">2020-04-14</time></span><span class="cap breadcrumb">话?画?</span></div></article>
 </a><a class="post-card post " href="/50152/">
@@ -145,6 +138,26 @@ registry=h...</p></div><div class="meta cap"><span class="cap" id="post-meta">�
 </a><a class="post-card post " href="/3039/">
 <article class="md"><h2 class="post-title">话一</h2><div class="excerpt"><p>要别人肯定你的同时，首先自己要先肯定自己，自己若不能肯定自己，那你最大的敌人永远也是你自己，这个观念讲起来很简单，但你有认真想过吗？自己是如何输给自己，又是如何赢了自己，又要如何才能超越自己。有些事没必要想的太复杂。犹豫不决，所换到的结果就是浪费时间，时间不是你想掌握就会停止的东西…所以珍惜现在吧
 </p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-09T12:43:02.000Z">2020-04-09</time></span><span class="cap breadcrumb">话?画?</span></div></article>
+</a><a class="post-card post " href="/49063/">
+<article class="md"><h2 class="post-title">vuex的核心</h2><div class="excerpt"><p>state：作用：定义全局数据(保存所以公共数据)。类似data
+123456export default new Vue.store({    state:{            }  })export default store
+获取数据：state
+直接使用：1.this.$store.state.自定义
+映射的方式：2.computed:{...mapState([''])}</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-08T05:33:08.000Z">2020-04-08</time></span><span class="cap breadcrumb">Web前端</span></div></article>
+</a><a class="post-card post " href="/52631/">
+<article class="md"><h2 class="post-title">组建之间共享方式</h2><div class="excerpt"><p>vuex独立于所有的组件
+作用
+对所以组件需要用到的公共数据,进行管理
+是一种新的组建之间数据共享的方式
+父子
+eventBus
+Vuex
+payload
+mapMutations
+mapState
+actions 中 调用 ———————— 去修改数据？
+mutation
+</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-06T02:14:06.000Z">2020-04-06</time></span><span class="cap breadcrumb">Web前端</span></div></article>
 </a></div>
   
   <div class='paginator-wrap dis-select'>
@@ -152,7 +165,7 @@ registry=h...</p></div><div class="meta cap"><span class="cap" id="post-meta">�
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/f049bbd4e88ec.svg'/>
     </a>
     <div class='paginator current'>
-      36<span class='sep'></span>50
+      36<span class='sep'></span>49
     </div>
     <a class='paginator next' href='/page/37/'>
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/064b95430caf4.svg'/>

@@ -69,7 +69,7 @@
 <div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">欢迎游客：</span></div><div class="widget-body fs14"><p>本站是记录日常遇到的问题和解决办法</p>
 </div></div>
 
-<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/2KJZ3E0/">如何让自己过得更好</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/355BJH8/">GOG的无冬之夜增强版置换多人CDK</a></div><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/lzkids" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer>
 
@@ -111,14 +111,7 @@
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/11961/">
-<article class="md"><h2 class="post-title">es5类的创建与继承</h2><div class="excerpt"><p>父类：</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-19T12:16:08.000Z">2020-05-19</time></span><span class="cap breadcrumb">算法与面试题</span></div></article>
-</a><a class="post-card post " href="/42493/">
-<article class="md"><h2 class="post-title">JQuery样式操作</h2><div class="excerpt"><p>Query中常用的样式操作：Jcss()和设置类样式方法
-操作css方法：JQuery使用css方法修改简单元素样式，操作类，修改多个样式
- 123456// 1.参数只写属性名，则返回属性值 var strColor = $(this).css('color');// 2.参数是属性名，属性值，逗号分隔（英文），设置一组样式，属性须加引号，如果是数字可不用加单位和引号 $(this).css("color", "red");// 3.参数可以是对象形式(css()用于样式少时)$(this).css({"color":"white", "font-size":"20px"});
-设置类样式：等同于classList，可以操作样式，注：操作类不加点且不会覆盖原先的类名</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-19T02:29:51.000Z">2020-05-19</time></span><span class="cap breadcrumb">Web前端</span></div></article>
-</a><a class="post-card post " href="/62118/">
+  <div class="post-list post"><a class="post-card post " href="/62118/">
 <article class="md"><h2 class="post-title">React组件</h2><div class="excerpt"><p>  React组件创建：特点：复用 独立 可组合
     函数创建：使用JS函数或箭头函数创建的组件
 1234567891011import React from 'react';const Dnz = () =&gt; {         return (       &lt;div&gt;             &lt;h2&gt;函数组件&lt;/h2&gt;              &lt;p onClick={fn}&gt;点击&lt;/p&gt;       &lt;/div&gt;     )}ReactDOM.render(&lt;Dnz /&gt;, root)
@@ -148,6 +141,60 @@ react：创建元素 react-dom：渲染元素
 1const h1 = React.createElement('h1', {classNmae: 'k', id: 'hh'}, 'hello react')
 渲染元素：
 1React.render(div, document...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-18T03:09:50.000Z">2020-05-18</time></span><span class="cap breadcrumb">Web前端</span></div></article>
+</a><a class="post-card post " href="/49804/">
+<article class="md"><h2 class="post-title">JQuery选择器</h2><div class="excerpt"><p>JQuery选择器：原生 JS 获取元素方式很多，很杂，而且兼容性情况不一致，因此 jQuery 做了封装，使获取元素统一标准。
+ 基础选择器：
+   1$('选择器') // 直接写css选择器，需加引号
+
+
+
+名称
+用法
+描述
+
+
+
+
+ID选择器
+$("#id")
+获取指定的ID的元素
+
+
+全选选择器
+$(’*’)
+匹配所有元素
+
+
+类选择器
+$(’.class’)
+获取同一类class的元素
+
+
+标签选择器
+$(‘div’)
+获取同一类标签的全有元素
+
+
+并集选择器
+$(‘div,p,li’)
+选取多个元素
+
+
+交集选择器
+$(‘li.current’)
+交集元素
+
+
+
+层级选择器：后代选择器和子代选择器</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-18T02:07:00.000Z">2020-05-18</time></span><span class="cap breadcrumb">Web前端</span></div></article>
+</a><a class="post-card post " href="/28029/">
+<article class="md"><h2 class="post-title">心流</h2><div class="excerpt"><p>心流的成因和特征：
+第一，注意力。(自律、集中注意力)
+第二，有一个愿意为之付出的目标。(目标是什么不要紧，只要那目标将他的注意力集中于此)
+第三，有即时的回馈。
+第四，因全神贯注于此，日常恼人的繁琐被忘却和屏蔽。
+第五，达到了忘我的状态。
+</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-05-18T01:02:00.000Z">2020-05-18</time></span><span class="cap breadcrumb">爱好心理学</span></div></article>
 </a></div>
   
   <div class='paginator-wrap dis-select'>
@@ -155,7 +202,7 @@ react：创建元素 react-dom：渲染元素
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/f049bbd4e88ec.svg'/>
     </a>
     <div class='paginator current'>
-      29<span class='sep'></span>50
+      29<span class='sep'></span>49
     </div>
     <a class='paginator next' href='/page/30/'>
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/064b95430caf4.svg'/>

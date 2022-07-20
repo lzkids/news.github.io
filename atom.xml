@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2022-06-04T11:07:26.764Z</updated>
+  <updated>2022-04-18T07:20:57.078Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>如何让自己过得更好</title>
-    <link href="https://kisskisso.com/2KJZ3E0/"/>
-    <id>https://kisskisso.com/2KJZ3E0/</id>
-    <published>2022-06-04T10:14:45.000Z</published>
-    <updated>2022-06-04T11:07:26.764Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="建立一种生活方式而不仅仅是一份事业"><a class="markdownIt-Anchor" href="#建立一种生活方式而不仅仅是一份事业"></a> 建立一种生活方式，而不仅仅是一份事业</h3><emp>如果改变了一方面，就会影响另一方面</emp><details class="tag-plugin folding" color="blue" child="codeblock"><summary><span>如何做</span></summary><div class="body"><p>写出你的理想</p></div></details><h3 id="不要试图证明自己"><a class="markdownIt-Anchor" href="#不要试图证明自己"></a> 不要试图证明自己</h3><div class="tag-plugin note" color="yellow"><div class="body"><p>如果真的想实现美好的生活必须放弃证明自己否则，永远不会自由、无法成为你生活规则的制定者，也无法永有强烈的自我意识</p></div></div><details class="tag-plugin folding" color="blue" child="codeblock"><summary><span>如何做</span></summary><div class="body"><p>找到内在的驱动的目标，(让他人的认可不在影响到你)。</p></div></details><p class="tag-plugin quot" type="text">如果你永远不能把你的成功告诉任何一个人，你还会追求它们吗？</p><h3 id="不要关注成本-要关注价值"><a class="markdownIt-Anchor" href="#不要关注成本-要关注价值"></a> 不要关注成本 要关注价值</h3><emp>有时绝对成本并不能衡量真正得到的价值</emp><div class="tag-plugin tabs" align="center" id="tab_1" "=""><ul class="nav-tabs"><li class="tab active"><a href="#tab_1-1">需要问</a></li><li class="tab"><a href="#tab_1-2">不需要问</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab_1-1"><p>它对我来说有多大价值？</p></div><div class="tab-pane" id="tab_1-2"><p>需要花多少钱？</p></div></div></div><h3 id="快速做决定避免在考虑中浪费精力"><a class="markdownIt-Anchor" href="#快速做决定避免在考虑中浪费精力"></a> 快速做决定—避免在考虑中浪费精力</h3><emp>是否“错了”并不重要，因为毕竟只有在行动后才会知道，只有那时你才能纠正方向</emp><div class="tag-plugin note" color="yellow"><div class="body"><p>最好的事情是做正确的事情；其次是做错误的事情；所有事情中最糟糕的是完全静止不动</p></div></div><h3 id="始终把成长放在首位"><a class="markdownIt-Anchor" href="#始终把成长放在首位"></a> 始终把成长放在首位</h3><h3 id="记住你生活在哪里把时间花费在现实生活中"><a class="markdownIt-Anchor" href="#记住你生活在哪里把时间花费在现实生活中"></a> 记住你生活在哪里—把时间花费在现实生活中</h3><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h3 id=&quot;建立一种生活方式而不仅仅是一份事业&quot;&gt;&lt;a class=&quot;mark</summary>
-      
-    
-    
-    
-    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="学习" scheme="https://kisskisso.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="思维" scheme="https://kisskisso.com/tags/%E6%80%9D%E7%BB%B4/"/>
-    
-    <category term="大脑" scheme="https://kisskisso.com/tags/%E5%A4%A7%E8%84%91/"/>
-    
-  </entry>
   
   <entry>
     <title>Windows安装MSYS2与配置VScode</title>
@@ -127,12 +99,12 @@
     <link href="https://kisskisso.com/355BJH8/"/>
     <id>https://kisskisso.com/355BJH8/</id>
     <published>2022-01-08T05:51:59.000Z</published>
-    <updated>2022-04-06T11:10:45.591Z</updated>
+    <updated>2022-07-20T10:43:55.015Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近在GOG平台购买了无冬之夜增强版，并玩了一段时间的单机游戏。想试一下联机版，发现需要输入CDK。搜了一下网上和贴吧都说需要置换多人CDK；以及GOG启动项里有个CDK转化器，当时我找遍全文件夹和软件设置都没有找到。最后发现终于找到方法了；ROFL 好简单的说：<span id="more"></span></p><p>首先去GOG官网并登录，把鼠标放在你的账号处，找到并打开<code>游戏</code><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里的打开游戏是指的网页">[1]</span></a></sup>找到无冬之夜增强版点击；<code>更多</code>里有个<code>序列号</code>；复制序列号进入游戏，打开多人联机粘贴序列号就可以了；</p><blockquote><p>对了，输入之后好像要下几百k的东西。会自动下载</p></blockquote><p><strong>总结一下</strong>：</p><ul><li><p>需要登陆GOG网页找到序列号；</p></li><li><p>复制序列号到游戏里；</p></li></ul><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里的打开游戏是指的网页<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近在GOG平台购买了无冬之夜增强版，并玩了一段时间的单机游戏。想试一下联机版，发现需要输入CDK。搜了一下网上和贴吧都说需要置换多人CDK；以及GOG启动项里有个CDK转化器，当时我找遍全文件夹和软件设置都没有找到。最后发现终于找到方法了；ROFL：<span id="more"></span></p><p>首先去GOG官网并登录，把鼠标放在你的账号处，找到并打开<code>游戏</code><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这里的打开游戏是指的网页">[1]</span></a></sup>找到无冬之夜增强版点击；<code>更多</code>里有个<code>序列号</code>；复制序列号进入游戏，打开多人联机粘贴序列号就可以了；</p><blockquote><p>对了，输入之后好像要下几百k的东西。会自动下载</p></blockquote><p><strong>总结一下</strong>：</p><ul><li><p>需要登陆GOG网页找到序列号；</p></li><li><p>复制序列号到游戏里；</p></li></ul><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这里的打开游戏是指的网页<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
-    <summary type="html">&lt;p&gt;最近在GOG平台购买了无冬之夜增强版，并玩了一段时间的单机游戏。想试一下联机版，发现需要输入CDK。搜了一下网上和贴吧都说需要置换多人CDK；以及GOG启动项里有个CDK转化器，当时我找遍全文件夹和软件设置都没有找到。最后发现终于找到方法了；ROFL 好简单的说：&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;最近在GOG平台购买了无冬之夜增强版，并玩了一段时间的单机游戏。想试一下联机版，发现需要输入CDK。搜了一下网上和贴吧都说需要置换多人CDK；以及GOG启动项里有个CDK转化器，当时我找遍全文件夹和软件设置都没有找到。最后发现终于找到方法了；ROFL：&lt;/p&gt;</summary>
     
     
     
@@ -496,6 +468,29 @@
     <category term="自我归因" scheme="https://kisskisso.com/tags/%E8%87%AA%E6%88%91%E5%BD%92%E5%9B%A0/"/>
     
     <category term="习得性无助" scheme="https://kisskisso.com/tags/%E4%B9%A0%E5%BE%97%E6%80%A7%E6%97%A0%E5%8A%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>非root卸载手机内置App软件</title>
+    <link href="https://kisskisso.com/1EFZC2H/"/>
+    <id>https://kisskisso.com/1EFZC2H/</id>
+    <published>2021-06-24T02:58:38.000Z</published>
+    <updated>2021-08-28T07:24:38.750Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>2021年我才刚刚找到不用root就能卸载掉内置无用的App软件的方法，虽然获取信息慢了点但也是知晓不是。root也可以卸载但是太麻烦了，当然root不止可以卸载内置的App也可以刷包，以及定制其它功能等等。这里说的卸载内置App的方法是——通过adb的方式连接手机，卸载手机内置app：<span id="more"></span></p><h2 id="需要的工具"><a class="markdownIt-Anchor" href="#需要的工具"></a> 需要的工具</h2><p>因为电脑上有安装的Android Studio软件，有自带的<code>adb.exe</code>。如果不需要Android Studio软件则需要下载独立的Android SDK平台工具软件包，可以在<a href="https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn">官网下载</a></p><h2 id="手机端步骤"><a class="markdownIt-Anchor" href="#手机端步骤"></a> 手机端步骤</h2><ol><li>用数据线将电脑和手机连接。</li><li>激活开发者模式，一般情况下找到关于手机(or我的设备)——&gt;多次点击版本号，直到提示点击7下打开开发者选项</li><li>进入开发者选项（一般在<code>更多设置</code>里）打开开发者选项和USB调试</li></ol><h2 id="电脑端步骤"><a class="markdownIt-Anchor" href="#电脑端步骤"></a> 电脑端步骤</h2><p>1.在官网下载的独立工具软件包，解压到你喜欢的磁盘中。</p><p>2.找到刚刚解压的文件夹，用你喜欢的终端（CMD、PowerShell、Windows Terminal等）打开文件夹：</p><p>Windows:</p><ul><li>按住shift+鼠标右键</li></ul><p>Linux :</p><ul><li>cd Android/Sdk/platform-tools   &amp;&amp;  ls</li></ul><p>​    PS：前提是你有这个路径</p><p>3.输入<code>adb.exe devices</code></p><div class="admonition note"><p></p><p>如果是win10的话，打完adb记得再按一下tab键，就会自动提示成 <code>.\adb.exe</code>,然后补齐上方命令</p></div><p>如果显示以下：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* daemon not running; starting now at tcp:<span class="number">5037</span></span><br><span class="line">* daemon started successfully</span><br><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx       unauthorized</span><br><span class="line"><span class="comment"># 代表连接手机完成，unauthorized表示手机并没有授权，如果此时手机提示授权，一定要同意。</span></span><br></pre></td></tr></tbody></table></figure><p>4.授权后再次输入<code>.\adb.exe devices</code>  显示以下：表示成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx        device</span><br></pre></td></tr></tbody></table></figure><h2 id="开始卸载"><a class="markdownIt-Anchor" href="#开始卸载"></a> 开始卸载</h2><div class="admonition error"><p></p><p>卸载内置App软件要想好在卸载，一旦执行卸载则无法恢复。卸载要慎重！！！有些内置App卸载之后会出现其它应用无法使用的情况。请按需卸载…切记！！切记</p></div><h3 id="进入命令交互模式"><a class="markdownIt-Anchor" href="#进入命令交互模式"></a> 进入命令交互模式</h3><p>1.执行<code>.\adb.exe shell</code>，进入命令交互模式。显示以下：表示成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx:/ <span class="variable">$</span>   <span class="comment"># 根据手机设备的不同xxx显示的名称不同</span></span><br></pre></td></tr></tbody></table></figure><h3 id="获得软件包名"><a class="markdownIt-Anchor" href="#获得软件包名"></a> 获得软件包名</h3><ul><li><p>本身系统有自带（小米、黑鲨）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="博客主本身只有小米、黑鲨和realme手机其它手机系统有没有并不清楚">[1]</span></a></sup></p><ul><li>找到<code>应用设置——&gt;应用管理</code>点击右上方的三个点 <code>⋮</code>找到想要卸载软件de软件包名<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="不是指安装软件的名字，一般来说都是com.厂商名.软件的英文名">[2]</span></a></sup></li></ul></li><li><p>进入命令交互模式下输入<code>am monitor</code></p><ul><li>输入完上边的命令之后需要在手机上打开你要选择卸载的软件，会显示软件包名如下：<br><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%9F%A5%E6%89%BE%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%90%8D.png" alt=""><ul><li>红色椭圆就是软件包的名。图中显示的是真我手机自带的浏览器包名</li></ul></li></ul></li><li><p>下载第三方文件管理器来进行查看（不推荐）</p></li></ul><figure class="highlight plain"><figcaption><span>wiki</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">软件包名：</span><br><span class="line">- 不是指安装软件的名字，一般来说都是com.xxx.xxx或者后缀更多；如下方的小米的游戏服务</span><br><span class="line">例子：</span><br><span class="line">黑鲨手机→com.blackshark.bsamagent   # 黑鲨手机的发现游戏</span><br><span class="line">小米手机→com.xiaomi.gamecenter.sdk.service # 小米的游戏服务</span><br><span class="line">系统→com.miui.systemAdSolution  #忘记</span><br><span class="line">软件→com.baidu.input_heisha   # 黑鲨内置的百度输入法定制版</span><br><span class="line">等。</span><br><span class="line">注：以上包名可能不正确</span><br></pre></td></tr></tbody></table></figure><div class="admonition note"><p></p><p>PS：在某些设备上，“应用详情”所在的位置或名称可能有所不同。</p></div><h3 id="font-colorred-卸载命令font"><a class="markdownIt-Anchor" href="#font-colorred-卸载命令font"></a> <font color="red">⚠ 卸载命令</font></h3><p>pm uninstall [options] package</p><ul><li><p>可选参数：</p><ul><li>-k 表示保存数据和缓存文件，如不需要，可去掉 -k。</li></ul></li></ul><p>如果显示以下：代表卸载成功</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xxx:/ <span class="variable">$</span> pm uninstall  com.baidu.input_heisha    <span class="comment"># 卸载黑鲨手机系统自带的输入法</span></span><br><span class="line">Success   <span class="comment"># 显示这个就卸载成功</span></span><br></pre></td></tr></tbody></table></figure><h3 id="退出"><a class="markdownIt-Anchor" href="#退出"></a> 退出</h3><p>输入<code>exit</code></p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">博客主本身只有小米、黑鲨和realme手机其它手机系统有没有并不清楚<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">不是指安装软件的名字，一般来说都是com.厂商名.软件的英文名<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;2021年我才刚刚找到不用root就能卸载掉内置无用的App软件的方法，虽然获取信息慢了点但也是知晓不是。root也可以卸载但是太麻烦了，当然root不止可以卸载内置的App也可以刷包，以及定制其它功能等等。这里说的卸载内置App的方法是——通过adb的方式连接手机，卸载手机内置app：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://kisskisso.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="内置App" scheme="https://kisskisso.com/tags/%E5%86%85%E7%BD%AEApp/"/>
+    
+    <category term="安卓" scheme="https://kisskisso.com/tags/%E5%AE%89%E5%8D%93/"/>
     
   </entry>
   

@@ -69,7 +69,7 @@
 <div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">欢迎游客：</span></div><div class="widget-body fs14"><p>本站是记录日常遇到的问题和解决办法</p>
 </div></div>
 
-<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/2KJZ3E0/">如何让自己过得更好</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/355BJH8/">GOG的无冬之夜增强版置换多人CDK</a></div><div class="more-item"><a class="title" href="/51349/">小學生水平</a></div><div class="more-item"><a class="title" href="/34859/">nvm的安裝与配置</a></div><div class="more-item"><a class="title" href="/3JZK07B/">Windows安装MSYS2与配置VScode</a></div><div class="more-item"><a class="title" href="/27617/">侧记</a></div></div></div>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/lzkids" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer>
 
@@ -111,27 +111,7 @@
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/49063/">
-<article class="md"><h2 class="post-title">vuex的核心</h2><div class="excerpt"><p>state：作用：定义全局数据(保存所以公共数据)。类似data
-123456export default new Vue.store({    state:{            }  })export default store
-获取数据：state
-直接使用：1.this.$store.state.自定义
-映射的方式：2.computed:{...mapState([''])}</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-08T05:33:08.000Z">2020-04-08</time></span><span class="cap breadcrumb">Web前端</span></div></article>
-</a><a class="post-card post " href="/52631/">
-<article class="md"><h2 class="post-title">组建之间共享方式</h2><div class="excerpt"><p>vuex独立于所有的组件
-作用
-对所以组件需要用到的公共数据,进行管理
-是一种新的组建之间数据共享的方式
-父子
-eventBus
-Vuex
-payload
-mapMutations
-mapState
-actions 中 调用 ———————— 去修改数据？
-mutation
-</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-04-06T02:14:06.000Z">2020-04-06</time></span><span class="cap breadcrumb">Web前端</span></div></article>
-</a><a class="post-card post " href="/65060/">
+  <div class="post-list post"><a class="post-card post " href="/65060/">
 <article class="md"><h2 class="post-title">vertical-align</h2><div class="excerpt"><p>CSS 的属性 vertical-align 用来指定行内元素（inline）或表格单元格（table-cell）元素的垂直对齐方式。
 语法：vertical-align: ;
  行内元素的值:
@@ -159,6 +139,23 @@ style: 绑定行内样式</p></div><div class="meta cap"><span class="cap" id="p
 el: 获取指定的容器（具体的标签）element的缩写注：不能指定html和body容器作为试图容器
 data: 数据驱动视图  响应式数据必须是 显性的声明       响应式数据必须在data当中提前声明
 methods: 声明函数   可以给vm使用也可以提供视图使用 不可使用箭头函数</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-03-15T10:11:05.000Z">2020-03-15</time></span><span class="cap breadcrumb">Web前端</span></div></article>
+</a><a class="post-card post " href="/12592/">
+<article class="md"><h2 class="post-title">前后端的身份验证（概念）</h2><div class="excerpt"><p>Web 开发模式：
+ 1**.服务器端渲染的传统模式Web开发模式**
+服务器通过字符串的拼接，动态生成的
+优点：
+① 前端耗时少。因为服务器端负责动态生成 HTML 内容，浏览器只需要直接渲染页面即可。尤其是移动端，更省电。
+② 有利于SEO。因为服务器端响应的是完整的 HTML 页面内容，所以爬虫更容易爬取获得信息，更有利于 SEO。
+缺点：</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-03-12T14:22:58.000Z">2020-03-12</time></span><span class="cap breadcrumb">Web前端</span></div></article>
+</a><a class="post-card post " href="/7535/">
+<article class="md"><h2 class="post-title">常见错误</h2><div class="excerpt"><p> 1.nodemon不是内部或外部命令，也不是可运行的程序
+问题解决： 全局安装nodemon包，这样新创建的node.js应用都可以使用nodemon 运行起来
+npm install -g nodemon
+ 2.不小心把磁盘变成EFI分区了
+解决办法：
+用管理员打开 CMD 或者 PowerShell
+第一步——输入diskpart 提示：在计算机上：*
+第二步——输入list vol 显示EFI分区</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2020-03-12T12:37:41.000Z">2020-03-12</time></span><span class="cap breadcrumb">笔记</span></div></article>
 </a></div>
   
   <div class='paginator-wrap dis-select'>
@@ -166,7 +163,7 @@ methods: 声明函数   可以给vm使用也可以提供视图使用 不可使�
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/f049bbd4e88ec.svg'/>
     </a>
     <div class='paginator current'>
-      37<span class='sep'></span>50
+      37<span class='sep'></span>49
     </div>
     <a class='paginator next' href='/page/38/'>
       <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/064b95430caf4.svg'/>

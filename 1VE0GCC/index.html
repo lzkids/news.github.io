@@ -75,14 +75,21 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/头像.png"" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div>
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/头像.png"" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">唯獨少了個字</div><div class="sub cap">我爱我的生活,希望一切安好</div></a></div>
 
 
 <nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">专栏</a><a class="nav-item" href="/note/">便签簿</a><a class="nav-item" href="/about/">关于</a></nav>
 </header>
 
 
-<div class="widgets"></div>
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">心理学中的干扰类型</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E6%BA%90"><span class="toc-text"> 起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%B0%E5%8F%98%E7%90%86%E8%AE%BA"><span class="toc-text"> 衰变理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E5%B9%B2%E6%89%B0"><span class="toc-text"> 主动干扰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%BD%E6%BA%AF%E6%80%A7%E5%B9%B2%E6%89%B0"><span class="toc-text"> 追溯性干扰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="toc-text"> 过度学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B2%E6%89%B0%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-text"> 干扰的例子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E8%A1%A8%E6%98%8E"><span class="toc-text"> 研究表明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-text"> 应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A5%E8%87%AAverywell%E7%9A%84%E6%B6%88%E6%81%AF"><span class="toc-text"> 来自Verywell的消息</span></a></li></ol></div></div></div>
+
+
+
+
+</div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/lzkids" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer>
 
     </aside>
@@ -315,8 +322,8 @@
       }
     }
   };
-  stellar.version = '1.8.0';
-  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0';
+  stellar.version = '1.14.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.14.0';
   stellar.config = {
     date_suffix: {
       just: '刚刚',
@@ -329,28 +336,28 @@
 
   // required plugins (only load if needs)
   stellar.plugins = {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js'
+    jQuery: 'https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js'
   };
 
   // stellar js
-  stellar.plugins.stellar = Object.assign();
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js"});
 
-  stellar.plugins.marked = Object.assign();
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
   // optional plugins
   if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://fastly.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
   }
   if ('' == 'true') {
-    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://fastly.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
   if ('true' == 'true') {
-    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://fastly.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://fastly.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
   if ('true' == 'true') {
-    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
   }
   if ('false' == 'true') {
     stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});

@@ -11,6 +11,7 @@
     const robserver = new ResizeObserver((entries) => {
         entries.forEach(entry => entry.target.dispatchEvent(markmapResize))
     })
+    
     const autoFit = (el, obj) => {
         robserver.observe(el.parentNode)
         el.parentNode.addEventListener('markmapResize', debounce(() => obj.fit(), 100))
@@ -19,6 +20,7 @@
         document.querySelectorAll('.markmap-container>svg').forEach(el => {
           let obj = markmap.Markmap.create(el, { autoFit: true }, JSON.parse(el.getAttribute('data')))
           autoFit(el, obj)
+          
         })
     }
     if (window.markmap && Object.keys(window.markmap).length != 0) { createMarkmap(); return }

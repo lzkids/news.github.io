@@ -113,9 +113,9 @@
 <p>用管理员打开 CMD 或者 PowerShell</p>
 <p>第一步——输入<code>diskpart</code> 提示：在计算机上：*</p>
 <p>第二步——输入<code>list vol</code> 显示EFI分区<span id="more"></span></p>
-<p>第三步——输入<code>sel vol</code>多余EFI分区的号<br>
+<p>第三步——输入<code>sel vol </code>多余EFI分区的号<br>
 卷 * 是所选的卷</p>
-<p>第三步——<code>del vol override</code>成功删除了卷</p>
+<p>第三步——<code>del vol override </code>成功删除了卷</p>
 <p>注：别删错EFI分区</p>
 <h3 id="3u盘启动盘提示缺少mmx64efi的问题"><a class="markdownIt-Anchor" href="#3u盘启动盘提示缺少mmx64efi的问题"></a> <strong>3.U盘启动盘提示缺少mmx64.efi的问题</strong></h3>
 <p>解决：</p>
@@ -132,11 +132,11 @@
 <p>​     方案：</p>
 <p>​     安装n模块：<code>npm install -g n</code></p>
 <p>​     升级node.js到最新稳定版</p>
-<p>​    <code>n stable(推荐)</code></p>
+<p>​    <code> n stable(推荐)</code></p>
 <p>​     升级node.js到最新版</p>
-<p>​     <code>n latest</code></p>
+<p>​     <code> n latest</code></p>
 <p>报错：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/lib': No such file or directory</span><br><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/include': No such file or directory</span><br><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/share': No such file or directory</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/lib': No such file or directory</span><br><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/include': No such file or directory</span><br><span class="line">cp: cannot stat `/usr/local/n/versions/node/12.16.1/share': No such file or directory</span><br></pre></td></tr></tbody></table></figure>
 <p>执行 n - 版本号</p>
 <p>然后重新安装</p>
 <p>注：可能需要酸酸乳</p>
@@ -157,7 +157,7 @@
 <p>再次创建<code>vue create xx</code>或提示选择配置</p>
 <p>②手动修改<code>.vuerc</code>下的包</p>
 <p>注：*修改为<code>npm</code>或者<code>yarn</code></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  "useTaobaoRegistry": true,</span><br><span class="line">  "packageManager": "***"</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  "useTaobaoRegistry": true,</span><br><span class="line">  "packageManager": "***"</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>Linux：</p>
 <p><code>~/.vuerc</code></p>
 <p>!!! info “”<br>
@@ -180,7 +180,7 @@ Please type ‘yes’, ‘no’ or the fingerprint: yes</p>
 </blockquote>
 <p>其实写入yes就可以了</p>
 <h3 id="10如何解决npm下载错误问题"><a class="markdownIt-Anchor" href="#10如何解决npm下载错误问题"></a> 10.如何解决npm下载错误问题？</h3>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! Unexpected end of JSON input while parsing near '...TURE-----\r\n"}},"1.2'</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! Unexpected end of JSON input while parsing near '...TURE-----\r\n"}},"1.2'</span><br></pre></td></tr></tbody></table></figure>
 <p>问题的原因可能是：<code>1.网络问题：需替换淘宝镜像源</code>，<code>2.解析时JSON输入的意外结束</code></p>
 <p>解决：</p>
 <p>1.运行<code>npm cache clean --force</code></p>
@@ -223,7 +223,7 @@ Please type ‘yes’, ‘no’ or the fingerprint: yes</p>
 <p>以管理员打开PowerShell输入<font color="#2296a2" size="4">set-executionpolicy remotesigned</font></p>
 <p>恢复原来设置则<font color="#2296a2" size="4">set-executionpolicy Restricted</font></p>
 <p>已完（开新）<a href="https://kisskisso.com/26624/">常见错误（二）</a>…</p>
-<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

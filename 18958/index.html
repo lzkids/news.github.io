@@ -124,10 +124,10 @@
 </table>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过&lt;script src=<span class="string">'js文件路径'</span>&gt;&lt;/script&gt;引用js文件</span><br></pre></td></tr></tbody></table></figure>
 <p>行内式写法：（了解）</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.点击事件onclick</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.点击事件onclick</span><br></pre></td></tr></tbody></table></figure>
 <p>js输出消息：<span id="more"></span></p>
 <p>●为什么学习js输出消息的方式？</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">展示的结果给用户查看</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">展示的结果给用户查看</span><br></pre></td></tr></tbody></table></figure>
 <p>在控制台中输出消息：</p>
 <table>
 <thead>
@@ -158,20 +158,20 @@
 <h3 id="变量名的命名规则"><a class="markdownIt-Anchor" href="#变量名的命名规则"></a> 变量名的命名规则</h3>
 <p>1.变量名在合法的时候还要具有一定的语义</p>
 <p>2.不能用关键字命名【关键字不能作为变量名】-----关键字-----在js中有特殊含义</p>
-<p>3.不能数字开头命名【不能以特殊符号开头，‘_’ ,’$'除外】</p>
+<p>3.不能数字开头命名【不能以特殊符号开头，‘_’ ,'$'除外】</p>
 <p>4.变量中不能出现空格</p>
 <p>5.不能使用汉字定义变量</p>
 <p>6.不建议直接使用‘name’作为变量名，容易和属性冲突</p>
 <p>7.不建议使用js中的<strong>保留字</strong>作为变量名------------在当前版本没有特殊含义，但是js其它版本或以后版本中具有关键字的作用</p>
 <h3 id="练习1"><a class="markdownIt-Anchor" href="#练习1"></a> <strong>练习1:</strong></h3>
 <p>让用户输入任意的摄氏度,得到对应的华氏度.[华氏度=9/5*摄氏度+32]</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> kid =  prompt(<span class="string">'请输入摄氏度...'</span>);</span><br><span class="line"><span class="keyword">var</span> kids = <span class="number">9</span>/<span class="number">5</span>*kid+<span class="number">32</span>;</span><br><span class="line">  <span class="built_in">document</span>.write(kids);</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> kid =  <span class="title function_">prompt</span>(<span class="string">'请输入摄氏度...'</span>);</span><br><span class="line"><span class="keyword">var</span> kids = <span class="number">9</span>/<span class="number">5</span>*kid+<span class="number">32</span>;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">write</span>(kids);</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="练习2"><a class="markdownIt-Anchor" href="#练习2"></a> <strong>练习2:</strong></h3>
 <p>交换两个变量的值</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">水杯问题:</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> c = a;</span><br><span class="line">a=b;</span><br><span class="line">b=c;</span><br><span class="line"><span class="built_in">document</span>.write(a,b);</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">水杯问题:</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> c = a;</span><br><span class="line">a=b;</span><br><span class="line">b=c;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a,b);</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="练习3"><a class="markdownIt-Anchor" href="#练习3"></a> <strong>练习3:</strong></h3>
 <p>求和</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> kid = <span class="number">3</span>;  <span class="comment">//var kid = '3';</span></span><br><span class="line"><span class="keyword">var</span> kids = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> kll = kid + kids;</span><br><span class="line"><span class="built_in">console</span>.log(kll);</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> kid = <span class="number">3</span>;  <span class="comment">//var kid = '3';</span></span><br><span class="line"><span class="keyword">var</span> kids = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> kll = kid + kids;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(kll);</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> <strong>数据类型</strong></h3>
 <p><strong>1.简单数据类型</strong>【掌握】</p>
 <p>●数字类型number</p>
@@ -180,7 +180,7 @@
 <p>●undefined类型</p>
 <p><strong>2.复杂类型【注】</strong></p>
 <p>object</p>
-<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

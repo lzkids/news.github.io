@@ -109,7 +109,7 @@
 <h1 class="article-title"><span>React组件</span></h1>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><font color="#65c1e0" size="5">  React组件创建：</font>特点：复用 独立 可组合</p>
 <p><font color="#eb60aa" size="3">    函数创建：</font>使用JS函数或<u>箭头函数</u>创建的组件</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import React from 'react';</span><br><span class="line">const Dnz = () =&gt; {</span><br><span class="line">    </span><br><span class="line">     return (</span><br><span class="line">       &lt;div&gt;</span><br><span class="line">             &lt;h2&gt;函数组件&lt;/h2&gt;</span><br><span class="line">              &lt;p onClick={fn}&gt;点击&lt;/p&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">     )</span><br><span class="line">}</span><br><span class="line">ReactDOM.render(&lt;Dnz /&gt;, root)</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import React from 'react';</span><br><span class="line">const Dnz = () =&gt; {</span><br><span class="line">    </span><br><span class="line">     return (</span><br><span class="line">       &lt;div&gt;</span><br><span class="line">             &lt;h2&gt;函数组件&lt;/h2&gt;</span><br><span class="line">              &lt;p onClick={fn}&gt;点击&lt;/p&gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">     )</span><br><span class="line">}</span><br><span class="line">ReactDOM.render(&lt;Dnz /&gt;, root)</span><br></pre></td></tr></tbody></table></figure>
 <p>【注意事项：</p>
 <p>​           1.类与函数名称都需以大写字母开头，使用<font color="#4aeadb">大驼峰命名法</font>。</p>
 <p>​           2.函数组件必须有返回值，表示该组件的结构，而类组件则需提供render()方法。<span id="more"></span></p>
@@ -117,7 +117,7 @@
 <p>】</p>
 <p><font color="#65c1e0" size="4">  class创建组件：</font>使用ES6的class关键字创建的组件</p>
 <p>类组件应继承React.Component父类，从而可以使用父类中提供的方法和属性。有关继承请访问<a href="#">es5类的创建与继承</a>与<a href="#">es6类的创建与继承</a></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import React from 'react';</span><br><span class="line">class Hello extends React Component {</span><br><span class="line">    render() {</span><br><span class="line">        return &lt;div&gt;Hello Class Component!&lt;/div&gt;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">ReactDOM.render(&lt;Hello /&gt;, root)</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import React from 'react';</span><br><span class="line">class Hello extends React Component {</span><br><span class="line">    render() {</span><br><span class="line">        return &lt;div&gt;Hello Class Component!&lt;/div&gt;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">ReactDOM.render(&lt;Hello /&gt;, root)</span><br></pre></td></tr></tbody></table></figure>
 <p><font color="#55a7ce" size="4">组件抽离：</font>将每个组件放到单独的JS文件中。独立体放单独JS文件中</p>
 <p>步骤:</p>
 <p>​      1.创建JS文件</p>
@@ -136,7 +136,7 @@
 <li>类组件有自己的状态，负责更新 UI，让页面“动” 起来 （响应式）</li>
 <li>函数组件没有自己的状态，只负责数据展示（静）</li>
 </ul>
-<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

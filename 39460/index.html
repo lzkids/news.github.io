@@ -109,20 +109,20 @@
 <h1 class="article-title"><span>JSX基本使用</span></h1>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Babel会把JSX转译成一个名为React.createElement()函数调用</p>
 <p><font color="#1688a0" size="4">原生创建recat元素：</font></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const span = React.createElement('span', null, 'span')</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const span = React.createElement('span', null, 'span')</span><br></pre></td></tr></tbody></table></figure>
 <p><font color="#1688a0" size="4">用JSX创建react元素：</font></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const ul = &lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;hello worde!!!&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const ul = &lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;hello worde!!!&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p><font color="#1688a0" size="4">JSX中使用JS表达式：</font></p>
 <p>语法：{JavaScript表达式}</p>
 <p><font color="#de5c6a" size="3"> 注：语法中是单大括号，不是双大括号</font>       <span id="more"></span></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const name = 'kl'</span><br><span class="line"> const div = (</span><br><span class="line">   &lt;div&gt;XXX:{name}&lt;/div&gt;</span><br><span class="line"> )</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const name = 'kl'</span><br><span class="line"> const div = (</span><br><span class="line">   &lt;div&gt;XXX:{name}&lt;/div&gt;</span><br><span class="line"> )</span><br></pre></td></tr></tbody></table></figure>
 <p><font color="#1688a0" size="4">使用jsx注意事项：</font>自身也是js表达式</p>
 <p>​       1.添加类名需小驼峰命名法：第一个单词首字母小写，从第二个单词及以后的首字母是大写开头</p>
 <p>​       2.声明的jsx元素需圆括号下只能有一个根元素</p>
 <p>3.不能在{}中出现语句和对象（if/for,{a:555}等）</p>
 <p><font color="#1688a0" size="4">数据类型支持：</font></p>
 <p>单大括号：值、变量、函数调用、三元运算符、数组（基本类型，jsx）</p>
-<link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

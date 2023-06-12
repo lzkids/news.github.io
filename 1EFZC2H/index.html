@@ -32,16 +32,16 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%9F%A5%E6%89%BE%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%90%8D.png">
 <meta property="article:published_time" content="2021-06-24T02:58:38.000Z">
-<meta property="article:modified_time" content="2021-08-28T07:24:38.750Z">
+<meta property="article:modified_time" content="2021-08-28T08:09:48.519Z">
 <meta property="article:author" content="唯獨少了個字">
-<meta property="article:tag" content="内置App">
 <meta property="article:tag" content="安卓">
+<meta property="article:tag" content="内置App">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%9F%A5%E6%89%BE%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%90%8D.png">
   
   
   
-  <meta name="keywords" content="内置App,安卓">
+  <meta name="keywords" content="安卓,内置App">
 
   <!-- feed -->
   
@@ -130,14 +130,14 @@
 </ul>
 <p>​    PS：前提是你有这个路径</p>
 <p>3.输入<code>adb.exe devices</code></p>
-<div class="admonition note"><p></p><p>如果是win10的话，打完adb记得再按一下tab键，就会自动提示成 <code>.\adb.exe</code>,然后补齐上方命令</p>
+<div class="admonition note"><p class="admonition-title">Note</p><p>如果是win10的话，打完adb记得再按一下tab键，就会自动提示成 <code>.\adb.exe</code>,然后补齐上方命令</p>
 </div>
 <p>如果显示以下：</p>
 <figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* daemon not running; starting now at tcp:<span class="number">5037</span></span><br><span class="line">* daemon started successfully</span><br><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx       unauthorized</span><br><span class="line"><span class="comment"># 代表连接手机完成，unauthorized表示手机并没有授权，如果此时手机提示授权，一定要同意。</span></span><br></pre></td></tr></tbody></table></figure>
 <p>4.授权后再次输入<code>.\adb.exe devices</code>  显示以下：表示成功</p>
 <figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List of devices attached</span><br><span class="line">xxxxxxxx        device</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="开始卸载"><a class="markdownIt-Anchor" href="#开始卸载"></a> 开始卸载</h2>
-<div class="admonition error"><p></p><p>卸载内置App软件要想好在卸载，一旦执行卸载则无法恢复。卸载要慎重！！！有些内置App卸载之后会出现其它应用无法使用的情况。请按需卸载…切记！！切记</p>
+<div class="admonition error"><p class="admonition-title">Note</p><p>卸载内置App软件要想好在卸载，一旦执行卸载则无法恢复。卸载要慎重！！！有些内置App卸载之后会出现其它应用无法使用的情况。请按需卸载…切记！！切记</p>
 </div>
 <h3 id="进入命令交互模式"><a class="markdownIt-Anchor" href="#进入命令交互模式"></a> 进入命令交互模式</h3>
 <p>1.执行<code>.\adb.exe shell</code>，进入命令交互模式。显示以下：表示成功</p>
@@ -154,20 +154,18 @@
 <li>
 <p>进入命令交互模式下输入<code>am monitor</code></p>
 <ul>
-<li>输入完上边的命令之后需要在手机上打开你要选择卸载的软件，会显示软件包名如下：<br>
-<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/%E6%9F%A5%E6%89%BE%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%90%8D.png" alt="">
-<ul>
-<li>红色椭圆就是软件包的名。图中显示的是真我手机自带的浏览器包名</li>
+<li>输入完上边的命令之后需要在手机上打开你要选择卸载的软件，会显示软件包名如下：</li>
 </ul>
-</li>
-</ul>
+   <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/查找软件包名.png"></div></div>
+<pre><code>  - 红色椭圆就是软件包的名。图中显示的是真我手机自带的浏览器包名
+</code></pre>
 </li>
 <li>
 <p>下载第三方文件管理器来进行查看（不推荐）</p>
 </li>
 </ul>
-<figure class="highlight plain"><figcaption><span>wiki</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">软件包名：</span><br><span class="line">	- 不是指安装软件的名字，一般来说都是com.xxx.xxx或者后缀更多；如下方的小米的游戏服务</span><br><span class="line">例子：</span><br><span class="line">	黑鲨手机→com.blackshark.bsamagent   # 黑鲨手机的发现游戏</span><br><span class="line">	小米手机→com.xiaomi.gamecenter.sdk.service # 小米的游戏服务</span><br><span class="line">	系统→com.miui.systemAdSolution  #忘记</span><br><span class="line">	软件→com.baidu.input_heisha   # 黑鲨内置的百度输入法定制版</span><br><span class="line">等。</span><br><span class="line">注：以上包名可能不正确</span><br></pre></td></tr></tbody></table></figure>
-<div class="admonition note"><p></p><p>PS：在某些设备上，“应用详情”所在的位置或名称可能有所不同。</p>
+<figure class="highlight plaintext"><figcaption><span>wiki</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">软件包名：</span><br><span class="line">	- 不是指安装软件的名字，一般来说都是com.xxx.xxx或者后缀更多；如下方的小米的游戏服务</span><br><span class="line">例子：</span><br><span class="line">	黑鲨手机→com.blackshark.bsamagent   # 黑鲨手机的发现游戏</span><br><span class="line">	小米手机→com.xiaomi.gamecenter.sdk.service # 小米的游戏服务</span><br><span class="line">	系统→com.miui.systemAdSolution  #忘记</span><br><span class="line">	软件→com.baidu.input_heisha   # 黑鲨内置的百度输入法定制版</span><br><span class="line">等。</span><br><span class="line">注：以上包名可能不正确</span><br></pre></td></tr></tbody></table></figure>
+<div class="admonition note"><p class="admonition-title">Note</p><p>PS：在某些设备上，“应用详情”所在的位置或名称可能有所不同。</p>
 </div>
 <h3 id="font-colorred-卸载命令font"><a class="markdownIt-Anchor" href="#font-colorred-卸载命令font"></a> <font color="red">⚠ 卸载命令</font></h3>
 <p>pm uninstall [options] package</p>
@@ -183,7 +181,7 @@
 <figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xxx:/ <span class="variable">$</span> pm uninstall  com.baidu.input_heisha    <span class="comment"># 卸载黑鲨手机系统自带的输入法</span></span><br><span class="line">Success   <span class="comment"># 显示这个就卸载成功</span></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="退出"><a class="markdownIt-Anchor" href="#退出"></a> 退出</h3>
 <p>输入<code>exit</code></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">博客主本身只有小米、黑鲨和realme手机其它手机系统有没有并不清楚<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">不是指安装软件的名字，一般来说都是com.厂商名.软件的英文名<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/markmap.css" type="text/css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">博客主本身只有小米、黑鲨和realme手机其它手机系统有没有并不清楚<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">不是指安装软件的名字，一般来说都是com.厂商名.软件的英文名<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

@@ -311,7 +311,7 @@ sh -c “$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

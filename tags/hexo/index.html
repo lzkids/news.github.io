@@ -244,7 +244,7 @@ WARN Deprecated config detected: “use_date_for_updated” is deprecated, pleas
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

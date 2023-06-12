@@ -246,7 +246,7 @@ Note官方：nvm不支持Windows(见#284)，但可能在WSL(Windows Subsystem fo
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

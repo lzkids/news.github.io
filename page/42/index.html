@@ -310,7 +310,7 @@ ps：可能会用不到，因为我大部分都是在kindle里面看 ：）
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

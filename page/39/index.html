@@ -280,7 +280,7 @@ date写成data     dateFormat写成dataFormat  粗心导致</p></div><div class=
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

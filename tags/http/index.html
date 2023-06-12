@@ -253,7 +253,7 @@ GET /api/getbooksid=1&amp;bookname=%E8%A5%BF%E6%B8%B8%E8%AE%B0 HTTP/1.1</p></div
     stellar.search = {};
     stellar.search.service = 'local_search';
     if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      let service_obj = Object.assign({}, {"field":"all","path":"search.json","content":true,"sort":"-date"});
       stellar.search[stellar.search.service] = service_obj;
     }
   }

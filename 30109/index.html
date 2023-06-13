@@ -31,7 +31,7 @@
 <meta property="og:description" content="随着hexo5.0的发布，打着尝试最新功能的心，准备升级看看。之前尝试过升级，但都已失败告终。废话不多说直奔主题。 首先推荐一个npm包——npm-check-updates。 它是查找比你的package.json所允许的更新版本的软件包依赖关系。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-10T12:33:45.000Z">
-<meta property="article:modified_time" content="2021-03-30T09:02:02.057Z">
+<meta property="article:modified_time" content="2023-06-13T01:02:20.409Z">
 <meta property="article:author" content="唯獨少了個字">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -108,9 +108,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>随着hexo5.0的发布，打着尝试最新功能的心，准备升级看看。之前尝试过升级，但都已失败告终。废话不多说直奔主题。</p>
 <p>首先推荐一个npm包——<code>npm-check-updates</code>。<br>
 它是查找比你的package.json所允许的更新版本的软件包依赖关系。<span id="more"></span></p>
-<h3 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> <strong>安装</strong></h3>
-<p><code>npm install -g npm-check-updates</code></p>
-<h3 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> <strong>使用方法</strong></h3>
+<h3 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-check-updates  </span><br></pre></td></tr></tbody></table></figure>
+<h3 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> 使用方法</h3>
 <p><strong>显示当前目录下项目的任何新的依赖关系。</strong> <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="红色=主要升级(和所有[主要的零版本](https://semver.org/#spec-item-4));青色=小规模升级;绿色=补丁升级
 ">[1]</span></a></sup></p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ ncu</span><br><span class="line">Checking package.json</span><br><span class="line">[====================] 5/5 100%</span><br><span class="line"></span><br><span class="line"> express           4.12.x  →   4.13.x</span><br><span class="line"> multer            ^0.1.8  →   ^1.0.1</span><br><span class="line"> react-bootstrap  ^0.22.6  →  ^0.24.0</span><br><span class="line"> react-a11y        ^0.1.1  →   ^0.2.6</span><br><span class="line"> webpack          ~1.9.10  →  ~1.10.5</span><br><span class="line"></span><br><span class="line">Run ncu -u to upgrade package.json</span><br></pre></td></tr></tbody></table></figure>
@@ -119,7 +119,7 @@
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ncu -u</span><br><span class="line">Upgrading package.json</span><br><span class="line">[====================] 1/1 100%</span><br><span class="line"></span><br><span class="line"> express           4.12.x  →   4.13.x</span><br><span class="line"></span><br><span class="line">Run npm install to install new versions.</span><br><span class="line"></span><br><span class="line">$ npm install      <span class="comment"># update installed packages and package-lock.json</span></span><br></pre></td></tr></tbody></table></figure>
 <p><strong>检查全局包:</strong></p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ncu -g</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="注意事项"><a class="markdownIt-Anchor" href="#注意事项"></a> <strong>注意事项：</strong></h3>
+<h3 id="注意事项"><a class="markdownIt-Anchor" href="#注意事项"></a> 注意事项：</h3>
 <p>hexo如果是4.x版本升级会报以下错误，需要修改<code>_config.yml</code></p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">WARN  Deprecated config detected: <span class="string">"use_date_for_updated"</span> is deprecated, please use <span class="string">"updated_option"</span> instead. See https://hexo.io/docs/configuration <span class="keyword">for</span> more details.</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure>
 <p>修改如下：</p>

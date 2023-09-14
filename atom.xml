@@ -6,7 +6,7 @@
   <link href="https://kisskisso.com/atom.xml" rel="self"/>
   
   <link href="https://kisskisso.com/"/>
-  <updated>2023-09-14T14:01:50.751Z</updated>
+  <updated>2023-09-14T14:18:32.652Z</updated>
   <id>https://kisskisso.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://kisskisso.com/2XA6FVC/"/>
     <id>https://kisskisso.com/2XA6FVC/</id>
     <published>2023-09-14T13:00:38.000Z</published>
-    <updated>2023-09-14T14:01:50.751Z</updated>
+    <updated>2023-09-14T14:18:32.652Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>eset的卸载之前需要下载<a href="https://support.eset.com/en/kb2289-uninstall-eset-manually-using-the-eset-uninstaller-tool#Win_7">ESETuninstaller</a>如下:<br><a href="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ESETUninstaller.png">https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ESETUninstaller.png</a></p><p>下载之后不要打开，再打开之前还要有其它要做的，具体可以根据这篇<a href="https://www.eset.com/tw/about/newsroom/press-releases/news/eset-%E7%A7%BB%E9%99%A4%E5%B7%A5%E5%85%B7%E8%88%87%E6%AD%A5%E9%A9%9F-uninstaller-tool-1/#:~:text=ESET%20%E7%A7%BB%E9%99%A4%E5%B7%A5%E5%85%B7%E8%88%87%E6%AD%A5%E9%A9%9F%20%28%20Uninstaller%20Tool%20%29%201%20ESET,%E6%AD%A5%E9%A9%9F2%E3%80%81%20%E9%9B%BB%E8%85%A6%E9%80%B2%E5%85%A5%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F%20%E6%AD%A5%E9%A9%9F3%E3%80%81%20%E5%9F%B7%E8%A1%8CESET%20Uninstaller%20Tool%20%E6%AD%A5%E9%A9%9F4%E3%80%81%20%E7%B5%90%E6%9D%9F%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F">文章</a>来卸载eset。</p><p>这里具体讲安全模式下卸载eset重启之后无法上网，左下角黄色感叹号或者显示正常但是就是无法访问网络，不能访问网页或者软件。这里可以尝试重置一下网络如下：<br>点击左下角的<code>Windows图标</code>➡打开<code>设置</code>➡打开<code>网络和internet</code>➡在状态栏找到并点击<code>网络重置</code>(在最下边)，然后重启电脑。（Windows10系统）</p><p>如果重启电脑后还是不行可以试试这个方法：<br>打开<code>Windows安全中心</code>找到<code>防火墙和网络保护</code>找到并点击<code>将防火墙还原为默认设置</code>，然后重启电脑</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>eset的卸载之前需要下载<a href="https://support.eset.com/en/kb2289-uninstall-eset-manually-using-the-eset-uninstaller-tool#Win_7">ESETuninstaller</a>如下:</p><div class="tag-plugin image"><div class="image-bg"><img src="https://img-1302744895.cos.ap-hongkong.myqcloud.com/img/ESETUninstaller.png"></div></div><p>下载之后不要打开，再打开之前还要有其它要做的，具体可以根据这篇<a href="https://www.eset.com/tw/about/newsroom/press-releases/news/eset-%E7%A7%BB%E9%99%A4%E5%B7%A5%E5%85%B7%E8%88%87%E6%AD%A5%E9%A9%9F-uninstaller-tool-1/#:~:text=ESET%20%E7%A7%BB%E9%99%A4%E5%B7%A5%E5%85%B7%E8%88%87%E6%AD%A5%E9%A9%9F%20%28%20Uninstaller%20Tool%20%29%201%20ESET,%E6%AD%A5%E9%A9%9F2%E3%80%81%20%E9%9B%BB%E8%85%A6%E9%80%B2%E5%85%A5%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F%20%E6%AD%A5%E9%A9%9F3%E3%80%81%20%E5%9F%B7%E8%A1%8CESET%20Uninstaller%20Tool%20%E6%AD%A5%E9%A9%9F4%E3%80%81%20%E7%B5%90%E6%9D%9F%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F">文章</a>来卸载eset。</p><p>这里具体讲安全模式下卸载eset重启之后无法上网，左下角黄色感叹号或者显示正常但是就是无法访问网络，不能访问网页或者软件。这里可以尝试重置一下网络如下：<br>点击左下角的<code>Windows图标</code>➡打开<code>设置</code>➡打开<code>网络和internet</code>➡在状态栏找到并点击<code>网络重置</code>(在最下边)，然后重启电脑。（Windows10系统）</p><p>如果重启电脑后还是不行可以试试这个方法：<br>打开<code>Windows安全中心</code>找到<code>防火墙和网络保护</code>找到并点击<code>将防火墙还原为默认设置</code>，然后重启电脑</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
       
